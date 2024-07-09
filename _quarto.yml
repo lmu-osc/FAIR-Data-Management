@@ -1,0 +1,56 @@
+project:
+  type: website
+
+website:
+  title: "FAIR Data Management Workshop"
+  page-navigation: true
+  page-footer: 
+    center: "Developed for the LMU & MPG Open Science Summer School 2024, CCBY4.0"
+  reader-mode: false
+  repo-url: https://github.com/quarto-dev/quarto-demo
+  repo-actions: [edit, issue]
+  
+  
+  navbar:
+    left:
+      - href: index.qmd
+        text: Welcome
+      - about.qmd
+      
+  sidebar:
+    style: "floating"
+    search: true
+    
+    contents:
+      - section: "0) Welcome"
+        href: welcome.qmd
+        contents: 
+          - text: "Install" 
+            href: install.qmd
+          - text: "Example datasets"
+            href: example-datasets.qmd
+      - section: "1) Data organisaton"
+        href: data-organisation.qmd
+      - section: "2) Documentation"
+        href: documentation.qmd
+        contents:
+          - href: documentation.qmd#metadata
+            text: Metadata 
+          - href: documentation.qmd#readme-file
+            text: README file
+          - href: documentation.qmd#code-book
+            text: Codebook
+      - section: "3) Publication"
+        href: publication.qmd
+      - section: "4) Data Management Plans"
+        href: dmp.qmd
+        
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: true
+
+editor: visual
+

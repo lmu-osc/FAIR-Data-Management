@@ -1,0 +1,29 @@
+#### Fragebögen MPDL
+* Horizon Europe
+* **Kurzer Fragenkatalog**
+* DFG-Checkliste
+* VW-Stiftung – Sciene Europe
+* **RDMO**
+* Fragenkatalog zur Erstellung einer Projekt-Forschungsdaten-Policy
+* Software-Management-Plan für Forschende
+* European Research Council (ERC)
+* DFG
+* NFDI4Ing
+* Math+ (Beta-Testmodus)
+* MPIfG Project Management Plan (Beta-Testmodus)
+* Datenmanagement für Klimamodellierung (Beta-Testmodus)
+
+#### Fragebögen LMU
+* **RDMO**
+* DFG-Anträge (Alte Kulturen, Fachkollegium 101)
+* DFG-Anträge (Chemie)
+* DFG-Anträge (Physik)
+* DFG-Anträge (Sozial- & Kulturanthropologie, Judaistik, Religionswissenschaft)
+* DFG-Anträge (Wirtschafts/Sozialwissenschaften)
+* DFG-Anträge (Wissenschaftliche Editionen in den Literaturwissenschaften)
+* European Research Council (ERC)
+* Horizon 2020 Katalog
+* Horizon Europe
+* VW-Stiftung - Science Europe Datenmanagementplan
+* Software-Management-Plan für Forschende
+* Datenmanagement-Plan für Teilprojekte im SFB 1369

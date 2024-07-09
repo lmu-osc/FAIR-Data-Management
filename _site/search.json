@@ -1,0 +1,128 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "install.html",
+    "href": "install.html",
+    "title": "FAIR Data Management Workshop",
+    "section": "",
+    "text": "Fragebögen MPDL\n\nHorizon Europe\nKurzer Fragenkatalog\nDFG-Checkliste\nVW-Stiftung – Sciene Europe\nRDMO\nFragenkatalog zur Erstellung einer Projekt-Forschungsdaten-Policy\nSoftware-Management-Plan für Forschende\nEuropean Research Council (ERC)\nDFG\nNFDI4Ing\nMath+ (Beta-Testmodus)\nMPIfG Project Management Plan (Beta-Testmodus)\nDatenmanagement für Klimamodellierung (Beta-Testmodus)\n\n\n\nFragebögen LMU\n\nRDMO\nDFG-Anträge (Alte Kulturen, Fachkollegium 101)\nDFG-Anträge (Chemie)\nDFG-Anträge (Physik)\nDFG-Anträge (Sozial- & Kulturanthropologie, Judaistik, Religionswissenschaft)\nDFG-Anträge (Wirtschafts/Sozialwissenschaften)\nDFG-Anträge (Wissenschaftliche Editionen in den Literaturwissenschaften)\nEuropean Research Council (ERC)\nHorizon 2020 Katalog\nHorizon Europe\nVW-Stiftung - Science Europe Datenmanagementplan\nSoftware-Management-Plan für Forschende\nDatenmanagement-Plan für Teilprojekte im SFB 1369",
+    "crumbs": [
+      "Welcome",
+      "0) Welcome",
+      "Install"
+    ]
+  },
+  {
+    "objectID": "example-datasets.html",
+    "href": "example-datasets.html",
+    "title": "Example Datasets",
+    "section": "",
+    "text": "Example Datasets\nIntro Your job is to investigate an existing dataset (discuss and note what is good or bad about it, which alternatives exist), to improve it, and to ‘publish’ the improved version. Note: As you shall not really publish the improved dataset in the end, the discussion is more important than the result. Do not hesitate to contact us for questions and for involving us in the discussion. - Choose your dataset and download the data: - Dataset 1 (Groups 1, 2): https://doi.org/10.17617/3.1STIJV * Dataset 2 (Groups 3, 4): https://doi.org/10.5282/ubm/data.288 * Dataset 3 (Groups 5, 6): https://osf.io/6p9bf/ * Dataset 4 (Groups 7, 8): https://doi.org/10.5281/zenodo.10650332\n\nhttps://edmond.mpg.de/dataset.xhtml?persistentId=doi:10.17617/3.1STIJV\nhttps://data.ub.uni-muenchen.de/288/\nhttps://osf.io/6p9bf/\nhttps://zenodo.org/records/10650333",
+    "crumbs": [
+      "Welcome",
+      "0) Welcome",
+      "Example datasets"
+    ]
+  },
+  {
+    "objectID": "documentation.html",
+    "href": "documentation.html",
+    "title": "2) Documentation",
+    "section": "",
+    "text": "Effective documentation is a crucial aspect of FAIR data management, ensuring that research data is not only well-organized but also easily discoverable, accessible, and reusable by others. In this section, we’ll delve into the importance of documentation by exploring how to create best practice documentation that supports the entire research lifecycle. We’ll cover the essential components like including metadata that provides context and description of the data set, as well as README files that offer a concise introduction to the data set. Additionally, we’ll discuss the role of code books for making all components of the data set self-explanatory.",
+    "crumbs": [
+      "Welcome",
+      "2) Documentation"
+    ]
+  },
+  {
+    "objectID": "documentation.html#overview",
+    "href": "documentation.html#overview",
+    "title": "2) Documentation",
+    "section": "",
+    "text": "Effective documentation is a crucial aspect of FAIR data management, ensuring that research data is not only well-organized but also easily discoverable, accessible, and reusable by others. In this section, we’ll delve into the importance of documentation by exploring how to create best practice documentation that supports the entire research lifecycle. We’ll cover the essential components like including metadata that provides context and description of the data set, as well as README files that offer a concise introduction to the data set. Additionally, we’ll discuss the role of code books for making all components of the data set self-explanatory.",
+    "crumbs": [
+      "Welcome",
+      "2) Documentation"
+    ]
+  },
+  {
+    "objectID": "documentation.html#code-book",
+    "href": "documentation.html#code-book",
+    "title": "2) Documentation",
+    "section": "Code book",
+    "text": "Code book\nWhereas general metadata and README information typically focuses on the data set or project as a whole, code books delve deeper, providing detailed explanations and clarifications about the specific data contained in individual files. A code book should make all components of a data set file self-explanatory. It helps to identify e.g what certain variables and value labels mean or in which format the data points have been collected. This makes the data set more accessible by allowing re-users to work independent of a research paper.Some people include this information in the README file. However, we advise against it to keep the README concise and maintain its readability.\nIf all of your data files are structured and labeled according to the same system it is enough to provide one code book that describes and explain this system. If you have differently structured files you should provide multiple code books.\nHere are some of the elements that can be included in a code book:\n\nvariables\nvalue labels\ndata types\ndata format\ndata dictionary\ndata quality notes\ntechnical info\n\n\nBasic level:\nA first step is to provide this information about your data in a .csv table, a .txt file or .md (markdown) file. These are easy to create via a text editor of your choice. They can be opened by everyone independent of proprietary systems and are easily readable by humans.\n\n\n\n\n\n\nExample of a simple .csv code book\n\n\n\n\n\n“variable”,“data_type”,“format”\n“species”,“string”,“Adelie,Chinstrap,Gentoo”\n“population_size”,“integer”,“0-100000”\n“location”,“string”,“Latitude, Longitude”\n“date”,“string”,“YYYY-MM-DD”\n“latitude”,“number”,“-90 to 90”\n“longitude”,“number”,“-180 to 180”\n\n\n\n\n\n\nAdvanced level:\nTo improve the quality and usability of your code book you can provide it as a JSON file. This provides the advantage to be machine-readable and -actionable. It makes it easier to extract this information and work with it in coding scripts.\n\n\n\n\n\n\nExample of a detailed JSON code book\n\n\n\n\n\n{\n  \"title\": \"Penguin Populations Code book\",\n  \"description\": \"Code book for the Penguin Populations data set\",\n  \"variables\": [\n    {\n      \"name\": \"species\",\n      \"description\": \"The species of penguin\",\n      \"data_type\": \"string\",\n      \"format\": [\"Adelie\", \"Chinstrap\", \"Gentoo\"]\n    },\n    {\n      \"name\": \"population_size\",\n      \"description\": \"The number of penguins in the population\",\n      \"data_type\": \"integer\",\n      \"format\": \"0-100000\"\n    },\n    {\n      \"name\": \"location\",\n      \"description\": \"The region or location where the population is found\",\n      \"data_type\": \"string\",\n      \"format\": \"Latitude, Longitude\"\n    },\n    {\n      \"name\": \"date\",\n      \"description\": \"The date when the population size was recorded\",\n      \"data_type\": \"string\",\n      \"format\": \"YYYY-MM-DD\"\n    },\n    {\n      \"name\": \"latitude\",\n      \"description\": \"The latitude of the location\",\n      \"data_type\": \"number\",\n      \"format\": \"-90 to 90\"\n    },\n    {\n      \"name\": \"longitude\",\n      \"description\": \"The longitude of the location\",\n      \"data_type\": \"number\",\n      \"format\": \"-180 to 180\"\n    }\n  ],\n  \"data_dictionary\": {\n    \"species\": {\n      \"Adelie\": \"A small to medium-sized penguin species found in Antarctica\",\n      \"Chinstrap\": \"A medium-sized penguin species found in the Antarctic and sub-Antarctic\",\n      \"Gentoo\": \"A large penguin species found in the Antarctic and sub-Antarctic\"\n    }\n  },\n  \"data_quality_notes\": [\n    \"Population sizes are estimates and may not reflect the actual number of penguins in the population.\",\n    \"Locations are approximate and may not reflect the exact location of the population.\",\n    \"Dates are in the format YYYY-MM-DD and are in the UTC timezone.\"\n  ],\n  \"technical_info\": {\n    \"format\": \"JSON\",\n    \"compression\": \"gzip\",\n    \"required_software\": \"JSON parser\"\n  }\n}\n\n\n\n\n\n\n\n\n\n\nTask Z:\n\n\n\nOption 1: Your (example) data set does not contain a code book\n\nOpen one of the data files of your data set.\nCan you make sense of the data provided? Note down difficulties you identify.\nCan you find supportive information to understand the provided data in other documents? Note them down and link them if possible.\n\nOption 2: Your (example) data set does contain a code book\n\nIn what format was the code book provided?\nOpen one of the data files of your data set.\nCan you make sense of the data provided? Does the code book help you?",
+    "crumbs": [
+      "Welcome",
+      "2) Documentation"
+    ]
+  },
+  {
+    "objectID": "documentation.html#metadata",
+    "href": "documentation.html#metadata",
+    "title": "2) Documentation",
+    "section": "Metadata",
+    "text": "Metadata\nMetadata is “data that provides information about other data”1, describing the context, content, and structure of a dataset. It contains essential information about the data, such as authorship, creation context, contents, provenance and accessibility. Making it possible to understand and work with the data effectively. By providing a clear understanding of the data’s origin, and meaning, metadata plays a critical role in ensuring data quality, reproducibility, and FAIRness.\nMetadata should provide answers to the following questions:\n\nWho created the data set?\nWhat do the data files contain?\nWhen was the data set generated?\nWhere was the data set generated?\nWhy was the data set generated?\nHow was the data set generated?\nWhat research is this data set connected to?\nCan this data set be re-used?\n\n\n\n\n\n\n\nTask X:\n\n\n\nCan you answer all of these questions by looking through your (example) data set?\nWhere did you find this information?\nWas everything readily understandable?\nBonus:\nTime yourself - how long does it take you to answer all questions?\n\n\n\n\n\n\n\n\nExpand to learn more about where to find metadata\n\n\n\n\n\nMetadata can be found at several different points:\n\nRepository description: You are often asked about entering metadata, when you upload your data set to a repository. The quality and extent of metadata you can provide varies from repository to repository. We will cover repositories in Chapter 3). Jump here to go to the chapter directly.\nREADME file: Before you publish your data set you might already want to keep track of your metadata. A good way to not loose the overview yourself and inform others is by creating a README file. We will cover README files in the next section.\n\n\n\n\n\n\n\n\n\n\nExcursion: Community Standards\n\n\n\nCommunity standards for metadata allow for improved comparison between data sets. Some disciplines have agreed-upon formal standards that define how metadata should be documented. If you publish your data via a discipline specific repository it is likely that their form already guides you through the community metadata standard. You can look for metadata standards that are specific to your discipline e.g. via FAIRsharing.org. If a standard for your research field exist you should follow it as best as possible.\nEven if your discipline does not adhere to strict standards, there is an advantage in using generic standards. By using controlled vocabularies or ontologies for your metadata you can increase the machine-readability and -actionability of your data.\nMachine-readability refers to the ability of machines (computers, algorithms, etc.) to automatically understand and interpret the meaning of metadata, such as keywords, descriptions, and concepts, without human intervention. Machine-actionability takes it a step further, enabling machines to not only understand the metadata but also to perform actions or take decisions based on that metadata, such as data integration, filtering, or visualization, without human intervention.",
+    "crumbs": [
+      "Welcome",
+      "2) Documentation"
+    ]
+  },
+  {
+    "objectID": "documentation.html#footnotes",
+    "href": "documentation.html#footnotes",
+    "title": "2) Documentation",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\n„metadata“. Merriam-Webster Dictionary, accessed 7. Juli 2024, www.merriam-webster.com/dictionary/metadata.↩︎",
+    "crumbs": [
+      "Welcome",
+      "2) Documentation"
+    ]
+  },
+  {
+    "objectID": "documentation.html#further-resources",
+    "href": "documentation.html#further-resources",
+    "title": "2) Documentation",
+    "section": "Further Resources:",
+    "text": "Further Resources:\n\n“Documentation and Metadata”, The Turing Way, accessed 7. July 2024. https://book.the-turing-way.org/reproducible-research/rdm/rdm-metadata",
+    "crumbs": [
+      "Welcome",
+      "2) Documentation"
+    ]
+  },
+  {
+    "objectID": "documentation.html#readme-file",
+    "href": "documentation.html#readme-file",
+    "title": "2) Documentation",
+    "section": "README file",
+    "text": "README file\nWe already established that metadata and README files are strongly connected. They form a great way to provide an introduction to and documentation about a data set and its research context. A README file is a plain text file often written in markdown and therefore named “README.md”. This naming convention helps spotting the README file for humans and machines alike, e.g. in GitHub repositories the README.md file is identified automatically and its content displayed on the repositories main page. The README file should be one of the first files your create for a new project. You can then continue filling it with the relevant information.\nWhat should be in a README file? - Ideally all the answers to the questions posed under the metadata section should be given in the README file. To determine what should be best included in your README file it can also be helpful to go through the questions of a Research Data Management Plan. While your README file should be very descriptive it is also important to stay concise and clear. Avoid e.g. using jargon to improve inter-disciplinary usage.\n\n\n\n\n\n\nTask Y:\n\n\n\nOption 1: Your (example) data set does not contain a README file\n\nCreate a README file using the template below in a text editor of your choice.\nFill out as much information as possible according to the metadata provided.\nMake note of the information that was difficult to obtain.\nUpload the file to your group folder.\n\nOption 2: Your (example) data set does contain a README file\n\nDownload and open the README file in a text editor of your choice.\nWhere does the provided information differ from the template below? Adapt the README file to improve its quality.\nMake note of any information missing from the template that you think improved the quality of the README.\nUpload your file to your group folder.\n\nExclude the last section “METHODOLOGICAL INFORMATION” for this task.\n\n\n\n\n\n\n\n\nREADME template\n\n\n\n\n\nThis readme file was generated on [YYYY-MM-DD] by [NAME]\n&lt;help text in angle brackets should be deleted before finalizing your document&gt; &lt;[text in square brackets should be changed for your specific data set]&gt;\n# GENERAL INFORMATION\nTitle of Data set: Description: &lt;provide a short description of the study/project&gt;\n&lt;provide at least one contact&gt;\nAuthor/Principal Investigator Information\nName:\nORCID:\nInstitution:\nEmail:\n\nDate of data collection: &lt;provide single date, range, or approximate date; suggested format YYYY-MM-DD&gt;\nGeographic location of data collection: &lt;provide latitude, longitude, or city/region, State, Country&gt;\nInformation about funding sources that supported the collection of the data:\n# SHARING/ACCESS Data\nLicenses/restrictions placed on the data:\nLinks to publications that cite or use the data:\nLinks to other publicly accessible locations of the data:\nLinks/relationships to ancillary data sets:\nWas data derived from another source? If yes, list source(s):\n# DATA & FILE OVERVIEW\nFile List: &lt;list all files (or folders, as appropriate for data set organization) contained in the data set, with a brief description&gt;\nRelationship between files, if important:\nAdditional related data collected that was not included in the current data package:\n# METHODOLOGICAL INFORMATION\nDescription of methods used for collection/generation of data: \nMethods for processing the data: \nInstrument- or software-specific information needed to interpret the data: &lt;include full name and version of software, and any necessary packages or libraries needed to run scripts&gt;\nStandards and calibration information, if appropriate:\nEnvironmental/experimental conditions:\nDescribe any quality-assurance procedures performed on the data:\nPeople involved with sample collection, processing, analysis and/or submission:\n\n\n\n\n\n\n\n\n\nNote:\n\n\n\nFor your own research project you can, of course, adapt this template to include the information that is relevant to your own data set. Also look out for other projects in your discipline and what they include in their README files.\nYou might also suggest to your department/research group/institute/research community to set up a discipline specific README template that can improve the interoperability, reusability and comparability of your research projects.",
+    "crumbs": [
+      "Welcome",
+      "2) Documentation"
+    ]
+  },
+  {
+    "objectID": "documentation.html#basic-level",
+    "href": "documentation.html#basic-level",
+    "title": "2) Documentation",
+    "section": "Basic level:",
+    "text": "Basic level:\nA first step is to provide this information about your data in a .csv table, a .txt file or .md (markdown) file. These are easy to create via a text editor of your choice. They can also be opened by everyone independent of proprietary systems and easy to read for humans.\n\n\n\n\n\n\nExample of a simple .csv codebook\n\n\n\n“variable”,“data_type”,“format”\n“species”,“string”,“Adelie,Chinstrap,Gentoo”\n“population_size”,“integer”,“0-100000”\n“location”,“string”,“Latitude, Longitude”\n“date”,“string”,“YYYY-MM-DD”\n“latitude”,“number”,“-90 to 90”\n“longitude”,“number”,“-180 to 180”\n\n\n\nAdvanced: JSON –&gt; machine readable\nCan you convert a table into JSON try out on a plattform of your liking",
+    "crumbs": [
+      "Welcome",
+      "2) Documentation"
+    ]
+  }
+]
