@@ -4,18 +4,52 @@ Permission (e.g., Personal data – GDPR compliance, copyright)
 Cf. [Decision tree](https://zenodo.org/doi/10.5281/zenodo.3368292)
 
 
-## Data availability statement
+## Data and/or Code Availability Statement
 
-## Licence
+A Data Availability Statement (also sometimes called a ‘data access statement’) tells the reader where the research data associated with a paper is available, and under what conditions the data can be accessed. They also include links (where applicable) to the data set.
 
-Contract that regulates usage rights for published work
-Provide others with the opportunity to reuse data
-[Creative Commons](https://creativecommons.org/), MIT (software), Apache (software), [Open Data Commons](https://opendatacommons.org/)
-[Choo-choo-choose your license](https://www.joeran.de/wp-content/dox/sites/10/cc-licencse-choo-choo-train.png)
+Data Availability Statements should generally be placed in the back matter of your manuscript, just before your References, unless your chosen journal specifies otherwise.
+
+However, if your journal uses a double-blind peer review process, it's important to ensure that the information in your Data Availability Statement doesn't compromise the anonymity of you or your co-authors. If there is information in your Data Availability Statement that could be used to identify the manuscript authors, please submit your Data Availability Statement the same way as you would any other identifying information associated with your manuscript, as instructed by your journal. This might be for example as part of a Title Page, submitted as a separate document from your manuscript.
+
+Source: https://www.cambridge.org/core/services/authors/open-data/data-availability-statements
+
+::: callout-tip
+## Task X:
+
+Is your data set the basis for a published article? \\
+If so, does the article include a Data Availability Statement?
+:::
+
+## License
+
+If we in the end would like to share our research data and enable reuse for other researchers, we should keep in mind that our data might be protected by copyright law. 
+This depends on the level of originality in the data and here it is very important to differentiate between the instrument and the data. If you developed a comprehensive questionnaire or an elaborate fMRI task then this is the thing that ought to be protected whereas the data are most likely not. 
+In any case, you should define conditions under which the data can be reused.
+And this is actually where licenses come into play. 
+Licenses are in a way standard contracts that regulate usage rights for published work. And as I already mentioned, thereby enables other people to reuse the published work. If no license is provided with your dataset, it is not clear to others under which conditions they can reuse it and they might (against your good intentions) rather refrain from reusing it at all.
+There are several licenses out there, as e.g. [Creative Commons](https://creativecommons.org/), MIT (software), Apache (software), [Open Data Commons](https://opendatacommons.org/). 
 Rules of thumb: Go with the least restrictive license!
 CC0 if unsure of copyright 
 CC-BY if holding and insisting on copyright
 Public Domain Mark if not protected by copyright
+
+::: callout-tip
+## Task X:
+
+Are you actually allowed to reuse your data set? \\
+If so, under which conditions?
+:::
+
+::: {.callout-note title="Excursion: Creative Commons licences"}
+From our point of view the creative commons licenses are somewhat dominating in the area of research and we will therefore go into a little bit of detail on these.
+CC provides four features, which form the basis of a fixed set of six CC licenses. These are attribution (the obligation to credit the author and other parties designated for attribution); “ND” means NoDerivatives (only verbatim copies of the work can be shared); “NC” stands for NonCommercial (commercial use is excluded from the license grant and “SA” represents ShareAlike (i.e. the work can be modified and modified versions can be published but only under the original or a compatible license).
+And these are the 6 licenses that result from the combination of the four features. The least restrictive is the CC BY license: It grants an unrestricted license to use the respective content. How the content is used, e.g. in original or modified form, by whom or for what purpose, is irrelevant.
+In addition, there are 2 further labels, to dedicate the published work to the public domain, these are CC0 and the public domain mark. When you put your work under CC0 you are allowing others to reuse your work without conditions, so even if you were copyright holder you are not insisting on it. I do want to stress at this point that the good scientific practice obviously foresee that you will in any case credit the author of the work, so in a way, this would be the preferred option.
+And then there is the Public domain mark which can be used to label work that is not restricted by copyright. 
+
+To help you decide on a licence, the is [Choo-choo-choose your license](https://www.joeran.de/wp-content/dox/sites/10/cc-licencse-choo-choo-train.png).
+:::
 
 ## Persistent identifier
 
