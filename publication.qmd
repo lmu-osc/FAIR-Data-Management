@@ -1,0 +1,59 @@
+## Overview
+
+Permission (e.g., Personal data – GDPR compliance, copyright)
+Cf. [Decision tree](https://zenodo.org/doi/10.5281/zenodo.3368292)
+
+
+## Data availability statement
+
+## Licence
+
+Contract that regulates usage rights for published work
+Provide others with the opportunity to reuse data
+[Creative Commons](https://creativecommons.org/), MIT (software), Apache (software), [Open Data Commons](https://opendatacommons.org/)
+[Choo-choo-choose your license](https://www.joeran.de/wp-content/dox/sites/10/cc-licencse-choo-choo-train.png)
+Rules of thumb: Go with the least restrictive license!
+CC0 if unsure of copyright 
+CC-BY if holding and insisting on copyright
+Public Domain Mark if not protected by copyright
+
+## Persistent identifier
+
+### DOI
+
+(digital object identifier)
+Points directly to a digital object (publication, data set) rather than to its location online (unlike URL)
+E.g., 10.5281/zenodo.4322849
+
+
+### ORCID
+
+(Open Researcher and Contributor ID)
+Unique scientific ID, even when changing name/ institution etc.
+
+### ROR
+
+(Research Organization Registry)
+Unique identifier for every research organization in the world
+
+## Repository
+
+(Re3data.org)
+Discipline-specific (e.g. OpenNeuro)
+General (e.g. Zenodo)
+Institutional (e.g. Edmond MPG)
+
+### Criteria
+
++ Costs/ User rights
++ Hosting country (GDPR)
++ Persistent identifier
++ License
++ Access control/ Embargo
++ Certified/ Sustainability
++ Data limit
+
+### FAIR assessment tools https://zenodo.org/records/7701941
+
++ Short [questionnaire](https://www.cessda.eu/content/download/3845/35038/file/20170707_How_FAIR_are_your_data_Jones.pdf)
++ [F-uji Tool](https://www.f-uji.net/)
