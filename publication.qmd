@@ -1,8 +1,17 @@
+---
+title: "3) Publication"
+link-external-newwindow: true
+---
+
 ## Overview
 
-Permission (e.g., Personal data – GDPR compliance, copyright)
-Cf. [Decision tree](https://zenodo.org/doi/10.5281/zenodo.3368292)
+Data publication is the final step of FAIR data management, ensuring data accessibility, and when done well, also findability. If you have taken care of the previous sections and thereby made your data interoperable and reusable, publishing those data will take minimal effort. Most commonly, data are published as supplements to journal articles and an increasing number of journals actually requires that. Data sets can also be published in specialized data journals (e.g., Scientific data, Data in Brief), which means that the article itself contains a rich and detailed description of the data set. As you may have guessed, this option is mainly chosen for rather large, sampling-intensive data sets. Last but not least, it is also possible to publish an independent (without connected publication) data set in a repository and this is often required by funders as the DFG or EU. Irrespective of the publication option, there are common good practices when publishing data, namely defining usage conditions, ensuring reliable access, and choosing a repository, and these will be handled in the course of this chapter. 
 
+::: callout-warning
+## Legal basis
+Even though publishing data (and code) is a prerequisite for transparent and reproducible research do note that in some cases the legal basis may prevent you from doing so. This most commonly concerns copyright or data protection issues. E.g., someone else may have the copyrights on the data you are working with, or when working with personal data (i.e., data from identifiable living people), you would violate subjects' rights according to the general data protection regulations (GDPR). There is a very nice [decision tree](https://zenodo.org/doi/10.5281/zenodo.3368292) (unfortunately only in German) that can help you find out whether and under what conditions you can publish your data set.
+Broadly speaking, publishing personal data is only possible if either they can be fully anonymized (and no longer fall under GDPR) or if participants consented to their data being published. It is hence important to consider even before collecting personal data, whether they ought to be published to eventually include it in the consent form.
+:::
 
 ## Data and/or Code Availability Statement
 
@@ -17,77 +26,84 @@ Source: https://www.cambridge.org/core/services/authors/open-data/data-availabil
 ::: callout-tip
 ## Task X:
 
-Is your data set the basis for a published article? \\
+Is your data set the basis for a published article? 
+
 If so, does the article include a Data Availability Statement?
 :::
 
 ## License
 
-If we in the end would like to share our research data and enable reuse for other researchers, we should keep in mind that our data might be protected by copyright law. 
-This depends on the level of originality in the data and here it is very important to differentiate between the instrument and the data. If you developed a comprehensive questionnaire or an elaborate fMRI task then this is the thing that ought to be protected whereas the data are most likely not. 
-In any case, you should define conditions under which the data can be reused.
-And this is actually where licenses come into play. 
-Licenses are in a way standard contracts that regulate usage rights for published work. And as I already mentioned, thereby enables other people to reuse the published work. If no license is provided with your dataset, it is not clear to others under which conditions they can reuse it and they might (against your good intentions) rather refrain from reusing it at all.
-There are several licenses out there, as e.g. [Creative Commons](https://creativecommons.org/), MIT (software), Apache (software), [Open Data Commons](https://opendatacommons.org/). 
-Rules of thumb: Go with the least restrictive license!
-CC0 if unsure of copyright 
-CC-BY if holding and insisting on copyright
-Public Domain Mark if not protected by copyright
+If we in the end would like to share our research data and enable reuse for other researchers, we should keep in mind that our data might be protected by copyright law. This depends on the level of originality in the data and here it is very important to differentiate between the instrument and the data. If you developed a comprehensive questionnaire or an elaborate fMRI task then this is the thing that ought to be protected whereas the data are most likely not. In any case, you should define conditions under which the data can be reused. And this is actually where licenses come into play. Licenses are in a way standard contracts that regulate usage rights for published work. And as I already mentioned, thereby enables other people to reuse the published work. If no license is provided with your dataset, it is not clear to others under which conditions they can reuse it and they might (against your good intentions) rather refrain from reusing it at all. There are several licenses out there, as e.g. [Creative Commons](https://creativecommons.org/), MIT (software), Apache (software), [Open Data Commons](https://opendatacommons.org/). Rules of thumb: Go with the least restrictive license! CC0 if unsure of copyright CC-BY if holding and insisting on copyright Public Domain Mark if not protected by copyright
 
 ::: callout-tip
 ## Task X:
 
-Are you actually allowed to reuse your data set? \\
+Are you actually allowed to reuse your data set? 
+
 If so, under which conditions?
 :::
 
 ::: {.callout-note title="Excursion: Creative Commons licences"}
-From our point of view the creative commons licenses are somewhat dominating in the area of research and we will therefore go into a little bit of detail on these.
-CC provides four features, which form the basis of a fixed set of six CC licenses. These are attribution (the obligation to credit the author and other parties designated for attribution); “ND” means NoDerivatives (only verbatim copies of the work can be shared); “NC” stands for NonCommercial (commercial use is excluded from the license grant and “SA” represents ShareAlike (i.e. the work can be modified and modified versions can be published but only under the original or a compatible license).
-And these are the 6 licenses that result from the combination of the four features. The least restrictive is the CC BY license: It grants an unrestricted license to use the respective content. How the content is used, e.g. in original or modified form, by whom or for what purpose, is irrelevant.
-In addition, there are 2 further labels, to dedicate the published work to the public domain, these are CC0 and the public domain mark. When you put your work under CC0 you are allowing others to reuse your work without conditions, so even if you were copyright holder you are not insisting on it. I do want to stress at this point that the good scientific practice obviously foresee that you will in any case credit the author of the work, so in a way, this would be the preferred option.
-And then there is the Public domain mark which can be used to label work that is not restricted by copyright. 
+From our point of view the creative commons licenses are somewhat dominating in the area of research and we will therefore go into a little bit of detail on these. CC provides four features, which form the basis of a fixed set of six CC licenses. These are attribution (the obligation to credit the author and other parties designated for attribution); “ND” means NoDerivatives (only verbatim copies of the work can be shared); “NC” stands for NonCommercial (commercial use is excluded from the license grant and “SA” represents ShareAlike (i.e. the work can be modified and modified versions can be published but only under the original or a compatible license). And these are the 6 licenses that result from the combination of the four features. The least restrictive is the CC BY license: It grants an unrestricted license to use the respective content. How the content is used, e.g. in original or modified form, by whom or for what purpose, is irrelevant. In addition, there are 2 further labels, to dedicate the published work to the public domain, these are CC0 and the public domain mark. When you put your work under CC0 you are allowing others to reuse your work without conditions, so even if you were copyright holder you are not insisting on it. I do want to stress at this point that the good scientific practice obviously foresee that you will in any case credit the author of the work, so in a way, this would be the preferred option. And then there is the Public domain mark which can be used to label work that is not restricted by copyright.
 
 To help you decide on a licence, the is [Choo-choo-choose your license](https://www.joeran.de/wp-content/dox/sites/10/cc-licencse-choo-choo-train.png).
 :::
 
 ## Persistent identifier
 
-### DOI
+Imagine a scenario in which a repository is no longer maintained, so that all data sets published in that repository are no longer available at the repository's URLs (a quite real scenario, as you can see in [this article](https://doi.org/10.48550/arXiv.2310.06712). To avoid data loss, the original repository migrated its data sets to another repository, where it however gets a new URL. Consequently, if the corresponding article linked to its data set via the URL (e.g., https://osf.io/gn47c/), it can no longer be found. What now?
+In such cases, persistent identifiers are extremely helpful if not essential. The ones we consider crucial are listed below. 
 
-(digital object identifier)
-Points directly to a digital object (publication, data set) rather than to its location online (unlike URL)
-E.g., 10.5281/zenodo.4322849
+### Digital object identifier
 
+A digital object identifier (DOI) points directly to a digital object rather than to its location online (unlike URL). You may know it already from publications. It consists of a unique number made up of a prefix and a suffix separated by a forward slash as e.g., 10.5281/zenodo.4322849. It allows things to be uniquely identified and accessed reliably by using the DOI proxy server https://doi.org/ and appending the DOI, e.g., https://doi.org/10.5281/zenodo.4322849. 
 
 ### ORCID
 
-(Open Researcher and Contributor ID)
-Unique scientific ID, even when changing name/ institution etc.
+(Open Researcher and Contributor ID) https://orcid.org/ Unique scientific ID, even when changing name/ institution etc.Persistent even if:
+• Changing name/ institution etc.
+• Spelling errors
 
 ### ROR
 
-(Research Organization Registry)
-Unique identifier for every research organization in the world
+(Research Organization Registry) Unique identifier for every research organization in the world https://ror.org/
+
+::: callout-tip
+## Task X:
+
+Can your dataset be accessed reliably?
+
+Who would you contact, if questions concering the data set arose?
+
+Is that contact still available?
+:::
 
 ## Repository
 
-(Re3data.org)
-Discipline-specific (e.g. OpenNeuro)
-General (e.g. Zenodo)
-Institutional (e.g. Edmond MPG)
+Repositories are database systems to document, store and publish digital objects. Thereby, they ensure visibility (via meta data) and sustainability (via use of PIDs) of the digital objects they are holding. Repositories can be:
+* Discipline-specific (e.g. OpenNeuro)
+* General (e.g. Zenodo, OSF)
+* Institutional (e.g. Edmond MPG, LMU)
+
+The Registry of research data repositories ([Re3data.org](Re3data.org)) provides a collection of repositories with very nice search and overview functions. E.g., you can browse by subject (i.e., discipline).
+![re3data](images/re3data.png)
+When looking for a repository there are various criteria that should be considered. 
 
 ### Criteria
 
-+ Costs/ User rights
-+ Hosting country (GDPR)
-+ Persistent identifier
-+ License
-+ Access control/ Embargo
-+ Certified/ Sustainability
-+ Data limit
+-   Costs/ User rights
+-   Hosting country (GDPR)
+-   Persistent identifier
+-   License
+-   Access control/ Embargo
+-   Certified/ Sustainability
+-   Data limit
+
+When searching re3data, most of these criteria are displayed beside the repository, so can immediately check whether a potential repository fulfills your requirements.
+
+![re3data](images/re3data-criteria.png)
 
 ### FAIR assessment tools https://zenodo.org/records/7701941
 
-+ Short [questionnaire](https://www.cessda.eu/content/download/3845/35038/file/20170707_How_FAIR_are_your_data_Jones.pdf)
-+ [F-uji Tool](https://www.f-uji.net/)
+-   Short [questionnaire](https://www.cessda.eu/content/download/3845/35038/file/20170707_How_FAIR_are_your_data_Jones.pdf)
+-   [F-uji Tool](https://www.f-uji.net/)
