@@ -123,12 +123,21 @@ CC0 is great, because it is universally compatible and ensures free resusability
 ## Excursion: Creative Commons licences
 Creative commons licenses are widely used in research and we will therefore go into a little bit of detail on these. CC provides four features, which form the basis of a fixed set of six CC licenses. These are:
 
+<<<<<<< HEAD
 * BY: For "attribution", i.e., the obligation to credit the author and other parties designated for attribution
 * ND: For "no derivatives", i.e., only verbatim copies of the work can be shared
 * NC: For "non-commercial", i.e., commercial use is excluded from the license grant
 * SA: For "share alike", i.e., the work can be modified and modified versions can be published but only under the original or a compatible license. 
 
 The following six licenses result from the combination of these four features, listed from most (left) to least (right) permissive here: 
+=======
+* BY: For "attribution", i.e., the obligation to credit the author and other parties designated for attribution)
+* ND: For NoDerivatives, i.e., only verbatim copies of the work can be shared
+* NC: For NonCommercial, i.e., commercial use is excluded from the license grant
+* SA: For ShareAlike, i.e., the work can be modified and modified versions can be published but only under the original or a compatible license. 
+
+The following six licenses result from the combination of these four features, listed from most to least permissive here: 
+>>>>>>> b4c79ffdba799071111f5cdecb99a654858d8321
 
 ::: {layout-ncol=6}
 ![[CC BY](https://creativecommons.org/licenses/by/4.0/)](images/cc-by.png)
