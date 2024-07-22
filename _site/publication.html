@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./dmp.html" rel="next">
+<link href="./publication.qmd#data-availability-statement" rel="next">
 <link href="./documentation.qmd#code-book" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -163,7 +163,34 @@ ul.task-list li input[type="checkbox"] {
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">3) Publication</span>
+      <div class="sidebar-item-container"> 
+            <a href="./publication.html" class="sidebar-item-text sidebar-link active">3) Publication</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./publication.html#data-availability-statement" class="sidebar-item-text sidebar-link">Data Availability Statement</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./publication.html#license" class="sidebar-item-text sidebar-link">License</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./publication.html#persistent-identifier" class="sidebar-item-text sidebar-link">Persistent identifier</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./publication.html#repository" class="sidebar-item-text sidebar-link">Repository</a>
+  </div>
+</li>
+      </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <span class="sidebar-item-text sidebar-link text-start">4) Data Management Plans</span>
@@ -178,7 +205,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#data-andor-code-availability-statement" id="toc-data-andor-code-availability-statement" class="nav-link" data-scroll-target="#data-andor-code-availability-statement">Data and/or Code Availability Statement</a></li>
+  <li><a href="#data-availability-statement" id="toc-data-availability-statement" class="nav-link" data-scroll-target="#data-availability-statement">Data Availability Statement</a></li>
   <li><a href="#license" id="toc-license" class="nav-link" data-scroll-target="#license">License</a></li>
   <li><a href="#persistent-identifier" id="toc-persistent-identifier" class="nav-link" data-scroll-target="#persistent-identifier">Persistent identifier</a>
   <ul class="collapse">
@@ -191,6 +218,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#criteria" id="toc-criteria" class="nav-link" data-scroll-target="#criteria">Criteria</a></li>
   <li><a href="#fair-assessment-tools-httpszenodo.orgrecords7701941" id="toc-fair-assessment-tools-httpszenodo.orgrecords7701941" class="nav-link" data-scroll-target="#fair-assessment-tools-httpszenodo.orgrecords7701941">FAIR assessment tools https://zenodo.org/records/7701941</a></li>
   </ul></li>
+  <li><a href="#benefits" id="toc-benefits" class="nav-link" data-scroll-target="#benefits">Benefits</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/quarto-dev/quarto-demo/edit/main/publication.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/quarto-dev/quarto-demo/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -216,7 +244,14 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>Data publication is the final step of FAIR data management, ensuring data accessibility, and when done well, also findability. If you have taken care of the previous sections and thereby made your data interoperable and reusable, publishing those data will take minimal effort. Most commonly, data are published as supplements to journal articles and an increasing number of journals actually requires that. Data sets can also be published in specialized data journals (e.g., Scientific data, Data in Brief), which means that the article itself contains a rich and detailed description of the data set. As you may have guessed, this option is mainly chosen for rather large, sampling-intensive data sets. Last but not least, it is also possible to publish an independent (without connected publication) data set in a repository and this is often required by funders as the DFG or EU. Irrespective of the publication option, there are common good practices when publishing data, namely defining usage conditions, ensuring reliable access, and choosing a repository, and these will be handled in the course of this chapter.</p>
+<p>Data publication is the final step of FAIR data management, ensuring data accessibility and findability (when done well). If you have taken care of the previous sections <a href="">Data organization</a> and <a href="./documentation.html">Documentation</a> and thereby made your data interoperable and reusable, publishing those data will take minimal effort. Most commonly, data are published as supplements to journal articles and an increasing number of journals actually requires that. Data sets can also be published in specialized data journals (e.g., Scientific data, Data in Brief), which means that the article itself is a rich and detailed description of the data set. As you may have guessed, this option is mainly chosen for rather large, sampling-intensive data sets. Last but not least, it is also possible to publish an independent (without connected publication) data set in a repository and this is often required by funders as the DFG or EU. Irrespective of the publication option, there are common good practices when publishing data, namely</p>
+<ul>
+<li>indicating that data and/or code are available</li>
+<li>defining usage conditions</li>
+<li>ensuring reliable access</li>
+<li>choosing an appropriate repository.</li>
+</ul>
+<p>These will be handled in the course of this chapter.</p>
 <div class="callout-warning callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -227,17 +262,27 @@ Legal basis
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Even though publishing data (and code) is a prerequisite for transparent and reproducible research do note that in some cases the legal basis may prevent you from doing so. This most commonly concerns copyright or data protection issues. E.g., someone else may have the copyrights on the data you are working with, or when working with personal data (i.e., data from identifiable living people), you would violate subjects’ rights according to the general data protection regulations (GDPR). There is a very nice <a href="https://zenodo.org/doi/10.5281/zenodo.3368292">decision tree</a> (unfortunately only in German) that can help you find out whether and under what conditions you can publish your data set. Broadly speaking, publishing personal data is only possible if either they can be fully anonymized (and no longer fall under GDPR) or if participants consented to their data being published. It is hence important to consider even before collecting personal data, whether they ought to be published to eventually include it in the consent form.</p>
+<p>Even though publishing data (and code) is a prerequisite for transparent and reproducible research do note that in some cases the legal basis may prevent you from doing so. This most commonly concerns copyright or data protection issues. E.g., someone else may have the copyrights on the data you are working with and they do not allow the data to be published. Or when working with personal data (i.e., data from identifiable living people), you would violate subjects’ rights according to the general data protection regulations (GDPR) when publishing these. There is a very nice <a href="https://zenodo.org/doi/10.5281/zenodo.3368292">decision tree</a> (unfortunately only in German) that can help you find out whether and under what conditions you can publish your data set. Broadly speaking, publishing personal data is only possible if either they can be fully anonymized (and no longer fall under GDPR) or if participants consented to their data being published. It is hence important to consider even before collecting personal data, whether they ought to be published to eventually include that in the consent form.</p>
 </div>
 </div>
 </section>
-<section id="data-andor-code-availability-statement" class="level2">
-<h2 class="anchored" data-anchor-id="data-andor-code-availability-statement">Data and/or Code Availability Statement</h2>
-<p>A Data Availability Statement (also sometimes called a ‘data access statement’) tells the reader where the research data associated with a paper is available, and under what conditions the data can be accessed. They also include links (where applicable) to the data set.</p>
-<p>Data Availability Statements should generally be placed in the back matter of your manuscript, just before your References, unless your chosen journal specifies otherwise.</p>
-<p>However, if your journal uses a double-blind peer review process, it’s important to ensure that the information in your Data Availability Statement doesn’t compromise the anonymity of you or your co-authors. If there is information in your Data Availability Statement that could be used to identify the manuscript authors, please submit your Data Availability Statement the same way as you would any other identifying information associated with your manuscript, as instructed by your journal. This might be for example as part of a Title Page, submitted as a separate document from your manuscript.</p>
-<p>Source: https://www.cambridge.org/core/services/authors/open-data/data-availability-statements</p>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<section id="data-availability-statement" class="level2">
+<h2 class="anchored" data-anchor-id="data-availability-statement">Data Availability Statement</h2>
+<p>A Data Availability Statement (as well as a Code Availability Statement) is a special section in an article that states whether the authors have made the evidence supporting their findings available, and if so, where readers may access it. They are usually placed somewhere towards the end of the article, mostly before the Reference section. As part of their commitment to supporting open research, some journals now require all manuscripts to include a Data Availability Statement in order to be accepted for publication. Even if a journal does not require such a statement, it is highly recommendable to include it and make transparent that the data underlying the article’s findings are available<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>!</p>
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Double-blind peer review process
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>When submitting to a journal that uses a double-blind peer review process, it’s important to ensure that the information in the Data Availability Statement doesn’t compromise the anonymity of you or your co-authors. If there is information in your Data Availability Statement that could be used to identify the manuscript authors (e.g., by linking to a repository that reveals author information), make sure to ask the journal what they would like you to do<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
+</div>
+</div>
+<div class="callout-important callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -247,15 +292,226 @@ Task X:
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Is your data set the basis for a published article?</p>
-<p>If so, does the article include a Data Availability Statement?</p>
+<ol type="1">
+<li><p>Is your data set the basis for a published article?</p></li>
+<li><p>How did you find out?</p></li>
+<li><p>If so, does the article include a Data Availability Statement?</p></li>
+<li><p>Where did you find it?</p></li>
+</ol>
+</div>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Solution: Group 1 (~ 5 minutes)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Yes, this data set is the basis for a published article.</p></li>
+<li><p>In the meta data field “Related Publication”.</p></li>
+<li><p>Yes, it does but without linking it to the data on Edmond. You should rather contact one coauthor without providing contact details.</p></li>
+<li><p>Before the Appendices.</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Solution: Group 2 (~ 5 minutes)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Yes, this data set is the basis for a published article.</p></li>
+<li><p>As part of the title.</p></li>
+<li><p>Yes.</p></li>
+<li><p>In the very beginning following Abstract and Figures. However, no special section therefore not very intuitive to find.</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Solution: Group 3 (~ 5 minutes)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Yes, this data set is the basis for a published article.</p></li>
+<li><p>It is stated in the README.</p></li>
+<li><p>Yes.</p></li>
+<li><p>In the “Open Research” section before the Reference section.</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Solution: Group 4 (~ 5 minutes)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Yes, this data set is the basis for a published article.</p></li>
+<li><p>In “Related works”, a link to a github repo is provided and when going there it is stated in the README.</p></li>
+<li><p>Yes.</p></li>
+<li><p>As separate section before “Code availability” and the Reference section.</p></li>
+</ol>
+</div>
 </div>
 </div>
 </section>
 <section id="license" class="level2">
 <h2 class="anchored" data-anchor-id="license">License</h2>
-<p>If we in the end would like to share our research data and enable reuse for other researchers, we should keep in mind that our data might be protected by copyright law. This depends on the level of originality in the data and here it is very important to differentiate between the instrument and the data. If you developed a comprehensive questionnaire or an elaborate fMRI task then this is the thing that ought to be protected whereas the data are most likely not. In any case, you should define conditions under which the data can be reused. And this is actually where licenses come into play. Licenses are in a way standard contracts that regulate usage rights for published work. And as I already mentioned, thereby enables other people to reuse the published work. If no license is provided with your dataset, it is not clear to others under which conditions they can reuse it and they might (against your good intentions) rather refrain from reusing it at all. There are several licenses out there, as e.g.&nbsp;<a href="https://creativecommons.org/">Creative Commons</a>, MIT (software), Apache (software), <a href="https://opendatacommons.org/">Open Data Commons</a>. Rules of thumb: Go with the least restrictive license! CC0 if unsure of copyright CC-BY if holding and insisting on copyright Public Domain Mark if not protected by copyright</p>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<p>If we in the end would like to share our research data and enable reuse for other researchers, we should define conditions under which the data can be reused. At this point licenses come into play. Licenses are in a way standard contracts that regulate usage rights for published work. As already mentioned, thereby enabling other people to reuse the published work. If no license is provided with a data set, it is not clear to others under which conditions they can reuse it and they might (against your good intentions) rather refrain from reusing it at all.</p>
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+License and Copyright
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>It is important to keep in mind that you can only define usage conditions by assigning licenses for work that “is yours”, i.e., that you have the copyright for. This is not always the case for data. Data and data schemes resulting from a significant creative process (as is often the case in the humanities or qualitative social sciences) are more likely covered by copyright while data that result from rather simple measurement processes (as is often the case for natural or quantitative social sciences) are likely not covered. Also, note the distinction between the <strong>instrument</strong> used to create the data and the data themselves in this regard. E.g., if the data you are about to publish result from a comprehensive questionnaire that you have developed, <strong>the questionnaire</strong> ought to be protected by copyright whereas the data are most likely not. As mentioned in the beginning, you can only assign licenses to work that you hold the copyright for. If this is not the case or you are unsure, it is safest to go with CC0 as this is strictly speaking not a license, but rather a waiver of copyright. You explicitly release your work into the public domain.</p>
+</div>
+</div>
+<p>There are several licenses out there, as e.g.&nbsp;<a href="https://creativecommons.org/">Creative Commons</a>, <a href="https://opensource.org/license/mit">MIT</a> (software), <a href="https://www.apache.org/licenses/">Apache</a> (software), <a href="https://opendatacommons.org/">Open Data Commons</a> and it ultimately is your responsibility to pick one. If you have no advise and you do not want to read through all licenses out there, the Creative Commons licences are usually a save choice (see box below). As rule of thumb, you may want to remember to go with the least restrictive license to maximize your data’s reuse potential. A recent article gives the following recommendations <a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>:</p>
+<ul>
+<li>Provide open research data under the CC-BY license or the CC0 label.</li>
+<li>If it can be assumed that research data are <strong>not</strong> protected by copyright, CC0 should be preferred.</li>
+</ul>
+<p>Even if CC-BY is possible copyright-wise, be aware that it merely paraphrases the rules of good scientific practice. So you are setting conditions that are rather self-evident for scientists but nevertheless imply an extra effort for reuse, namely figuring out how to attribute correctly according to the license. For similar reasons, using more restrictive licenses should be extremely carefully considered, at least if you are intending to make your data reusable for others. In particular, it can become impossible to merge data published under different, more restrictive licenses as their licenses may be incompatible, preventing follow-up research, archiving or even publication of the combined data. CC0 is great, because it is universally compatible and ensures free resusability of research data.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Excursion: Creative Commons licences
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Creative commons licenses are widely used in research and we will therefore go into a little bit of detail on these. CC provides four features, which form the basis of a fixed set of six CC licenses. These are:</p>
+<ul>
+<li>BY: For “attribution”, i.e., the obligation to credit the author and other parties designated for attribution)</li>
+<li>ND: For NoDerivatives, i.e., only verbatim copies of the work can be shared</li>
+<li>NC: For NonCommercial, i.e., commercial use is excluded from the license grant</li>
+<li>SA: For ShareAlike, i.e., the work can be modified and modified versions can be published but only under the original or a compatible license.</li>
+</ul>
+<p>The following six licenses result from the combination of these four features, listed from most to least permissive here:</p>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 16.7%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/cc-by.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption"><a href="https://creativecommons.org/licenses/by/4.0/">CC BY</a></figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 16.7%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/cc-by-sa.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption"><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a></figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 16.7%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/cc-by-nc.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption"><a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC</a></figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 16.7%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/cc-by-nc-sa.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA</a></figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 16.7%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/cc-by-nd.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption"><a href="https://creativecommons.org/licenses/by-nd/4.0/">CC BY-ND</a></figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 16.7%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/cc-by-nc-nd.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption"><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND</a></figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>In addition, there are two further labels, to dedicate the published work to the <strong>public domain</strong>.</p>
+<ul>
+<li>CC0: Allowing others to reuse your work without conditions, i.e., even if you were copyright holder you are not insisting on it. Good scientific practice obviously foresees that you will in any case credit the author(s) of work you are (re)using!</li>
+<li>Public domain mark: Explicitly label work that is not restricted by copyright.</li>
+</ul>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 15.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/cc-zero.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption"><a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a></figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 10.0%;justify-content: center;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 15.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/cc-pdm.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption"><a href="https://creativecommons.org/publicdomain/mark/1.0/">PDM</a></figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 60.0%;justify-content: center;">
+<p>&nbsp;</p>
+</div>
+</div>
+</div>
+<p>As stated above, the CC0 label or the CC-BY license should be your preferred choice. In (the unlikely) case that you need a more restrictive license, there is a nice graphical illustration to help you <a href="https://www.joeran.de/wp-content/dox/sites/10/cc-licencse-choo-choo-train.png">choo-choo-choose your license</a>.</p>
+</div>
+</div>
+<div class="callout-important callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -269,18 +525,82 @@ Task X:
 <p>If so, under which conditions?</p>
 </div>
 </div>
-<div class="callout-note callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-caption-container flex-fill">
-Note
+Solution: Group 1 (~ 2 minutes if only the license is enough, if delving deeper into the conditions obviously longer)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Yes.</p></li>
+<li><p><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p></li>
+</ol>
 </div>
 </div>
-<div class="callout-body-container callout-body" title="Excursion: Creative Commons licences">
-<p>From our point of view the creative commons licenses are somewhat dominating in the area of research and we will therefore go into a little bit of detail on these. CC provides four features, which form the basis of a fixed set of six CC licenses. These are attribution (the obligation to credit the author and other parties designated for attribution); “ND” means NoDerivatives (only verbatim copies of the work can be shared); “NC” stands for NonCommercial (commercial use is excluded from the license grant and “SA” represents ShareAlike (i.e.&nbsp;the work can be modified and modified versions can be published but only under the original or a compatible license). And these are the 6 licenses that result from the combination of the four features. The least restrictive is the CC BY license: It grants an unrestricted license to use the respective content. How the content is used, e.g.&nbsp;in original or modified form, by whom or for what purpose, is irrelevant. In addition, there are 2 further labels, to dedicate the published work to the public domain, these are CC0 and the public domain mark. When you put your work under CC0 you are allowing others to reuse your work without conditions, so even if you were copyright holder you are not insisting on it. I do want to stress at this point that the good scientific practice obviously foresee that you will in any case credit the author of the work, so in a way, this would be the preferred option. And then there is the Public domain mark which can be used to label work that is not restricted by copyright.</p>
-<p>To help you decide on a licence, the is <a href="https://www.joeran.de/wp-content/dox/sites/10/cc-licencse-choo-choo-train.png">Choo-choo-choose your license</a>.</p>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Solution: Group 2 (~ 2 minutes, as above)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Yes.</p></li>
+<li><p><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-NC-SA 4.0</a>.</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Solution: Group 3 (~ 5 minutes)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>No.</p></li>
+<li><ul>
+<li></li>
+</ul></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Solution: Group 4 (~ 2 minutes)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Yes.</p></li>
+<li><p><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. However the git repo is under a Apache License Version 2.0, so depending on which version you use, the conditions are different.</p></li>
+</ol>
+</div>
 </div>
 </div>
 </section>
@@ -344,12 +664,39 @@ Task X:
 <li>Short <a href="https://www.cessda.eu/content/download/3845/35038/file/20170707_How_FAIR_are_your_data_Jones.pdf">questionnaire</a></li>
 <li><a href="https://www.f-uji.net/">F-uji Tool</a></li>
 </ul>
+</section>
+</section>
+<section id="benefits" class="level2">
+<h2 class="anchored" data-anchor-id="benefits">Benefits</h2>
+<p>As soon as research data is shared, your own research becomes comprehensible to others. It becomes reproducible and can be verified. This is a central point in the implementation of good scientific practice. Additional benefits are displayed in the graphic <img src="images/data-sharing.png" class="img-fluid" alt="Source: Hole, B. (2015). Open Science: A New publisher Perspective. Ubiquity press. (CC BY 4.0 International)"></p>
+<p>In addition, open access to research data offers new opportunities for scientific collaboration. Another advantage of data sharing is the possibility of reusing well-documented data. of well-documented data. This approach can, for example, save time in scientific work and thus enable more efficient handling of research results, as they do not have to be collected again and again</p>
+<p>To ensure that research data can be accessed and reused, it makes sense to publish the associated data on which the research results are based in addition to the ‘traditional’ scientific articles. published. The publication and findability of your research data via national and international information portals can make a significant contribution to enhancing the reputation of data producers - even beyond the boundaries of your own scientific community. By publishing the data that forms the basis of an article, it can be reused and cited in a timely manner. Citation of the data by other researchers increases visibility and can strengthen the reputation of the research.</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Task X:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>How would you cite your data set?</p>
+</div>
+</div>
 
 
 </section>
-</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Source https://www.cambridge.org/core/services/authors/open-data/data-availability-statements.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Source https://www.cambridge.org/core/services/authors/open-data/data-availability-statements.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Brettschneider, P., Axtmann, A., Böker, E., &amp; von Suchodoletz, D. (2021): Offene Lizenzen für Forschungsdaten: Rechtliche Bewertung und Praxistauglichkeit verbreiteter Lizenzmodelle, in: O-Bib. Das Offene Bibliotheksjournal 8(3), pp.&nbsp;1–22, https://doi.org/10.5282/o-bib/5749. [only in German]<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -504,8 +851,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./dmp.html" class="pagination-link">
-        <span class="nav-page-text">4) Data Management Plans</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./publication.html#data-availability-statement" class="pagination-link">
+        <span class="nav-page-text">Data Availability Statement</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
