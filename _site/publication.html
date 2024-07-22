@@ -210,8 +210,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#persistent-identifier" id="toc-persistent-identifier" class="nav-link" data-scroll-target="#persistent-identifier">Persistent identifier</a>
   <ul class="collapse">
   <li><a href="#digital-object-identifier" id="toc-digital-object-identifier" class="nav-link" data-scroll-target="#digital-object-identifier">Digital object identifier</a></li>
-  <li><a href="#orcid" id="toc-orcid" class="nav-link" data-scroll-target="#orcid">ORCID</a></li>
-  <li><a href="#ror" id="toc-ror" class="nav-link" data-scroll-target="#ror">ROR</a></li>
+  <li><a href="#open-researcher-and-contributor-id" id="toc-open-researcher-and-contributor-id" class="nav-link" data-scroll-target="#open-researcher-and-contributor-id">Open Researcher and Contributor ID</a></li>
+  <li><a href="#research-organization-registry" id="toc-research-organization-registry" class="nav-link" data-scroll-target="#research-organization-registry">Research Organization Registry</a></li>
   </ul></li>
   <li><a href="#repository" id="toc-repository" class="nav-link" data-scroll-target="#repository">Repository</a>
   <ul class="collapse">
@@ -246,9 +246,9 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>Data publication is the final step of FAIR data management, ensuring data accessibility and findability (when done well). If you have taken care of the previous sections <a href="">Data organization</a> and <a href="./documentation.html">Documentation</a> and thereby made your data interoperable and reusable, publishing those data will take minimal effort. Most commonly, data are published as supplements to journal articles and an increasing number of journals actually requires that. Data sets can also be published in specialized data journals (e.g., Scientific data, Data in Brief), which means that the article itself is a rich and detailed description of the data set. As you may have guessed, this option is mainly chosen for rather large, sampling-intensive data sets. Last but not least, it is also possible to publish an independent (without connected publication) data set in a repository and this is often required by funders as the DFG or EU. Irrespective of the publication option, there are common good practices when publishing data, namely</p>
 <ul>
-<li>indicating that data and/or code are available</li>
-<li>defining usage conditions</li>
-<li>ensuring reliable access</li>
+<li>indicating in the article that data and/or code are available,</li>
+<li>defining usage conditions,</li>
+<li>ensuring reliable access,</li>
 <li>choosing an appropriate repository.</li>
 </ul>
 <p>These will be handled in the course of this chapter.</p>
@@ -387,7 +387,7 @@ Solution: Group 4 (~ 5 minutes)
 </section>
 <section id="license" class="level2">
 <h2 class="anchored" data-anchor-id="license">License</h2>
-<p>If we in the end would like to share our research data and enable reuse for other researchers, we should define conditions under which the data can be reused. At this point licenses come into play. Licenses are in a way standard contracts that regulate usage rights for published work. As already mentioned, thereby enabling other people to reuse the published work. If no license is provided with a data set, it is not clear to others under which conditions they can reuse it and they might (against your good intentions) rather refrain from reusing it at all.</p>
+<p>If we in the end would like to share our research data and enable reuse for other researchers, we should define conditions under which the data can be reused. At this point licenses come into play. Licenses are standard contracts that regulate usage rights for published work. As already mentioned, thereby enabling other people to reuse the published work. If no license is provided with a data set, it is not clear to others under which conditions they can reuse it and they might (against your good intentions) rather refrain from reusing it at all.</p>
 <div class="callout-warning callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -398,7 +398,7 @@ License and Copyright
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>It is important to keep in mind that you can only define usage conditions by assigning licenses for work that “is yours”, i.e., that you have the copyright for. This is not always the case for data. Data and data schemes resulting from a significant creative process (as is often the case in the humanities or qualitative social sciences) are more likely covered by copyright while data that result from rather simple measurement processes (as is often the case for natural or quantitative social sciences) are likely not covered. Also, note the distinction between the <strong>instrument</strong> used to create the data and the data themselves in this regard. E.g., if the data you are about to publish result from a comprehensive questionnaire that you have developed, <strong>the questionnaire</strong> ought to be protected by copyright whereas the data are most likely not. As mentioned in the beginning, you can only assign licenses to work that you hold the copyright for. If this is not the case or you are unsure, it is safest to go with CC0 as this is strictly speaking not a license, but rather a waiver of copyright. You explicitly release your work into the public domain.</p>
+<p>It is important to keep in mind that you can only define usage conditions by assigning licenses for work that “is yours”, i.e., that you have the copyright for. This is not always the case for data. Data that result from a significant creative process (as is often the case in the humanities or qualitative social sciences) are more likely covered by copyright while data that result from rather simple measurement processes (as is often the case for natural or quantitative social sciences) are likely not covered. Also, note the distinction between the <strong>instrument</strong> used to create the data and the data themselves in this regard. E.g., if the data you are about to publish result from a comprehensive questionnaire that you have developed, <strong>the questionnaire</strong> ought to be protected by copyright whereas the data are most likely not. As mentioned in the beginning, you can only assign licenses to work that you hold the copyright for. If this is not the case or you are unsure, it is safest to go with CC0 as this is strictly speaking not a license, but rather a waiver of copyright. You explicitly release your work into the public domain.</p>
 </div>
 </div>
 <p>There are several licenses out there, as e.g.&nbsp;<a href="https://creativecommons.org/">Creative Commons</a>, <a href="https://opensource.org/license/mit">MIT</a> (software), <a href="https://www.apache.org/licenses/">Apache</a> (software), <a href="https://opendatacommons.org/">Open Data Commons</a> and it ultimately is your responsibility to pick one. If you have no advise and you do not want to read through all licenses out there, the Creative Commons licences are usually a save choice (see box below). As rule of thumb, you may want to remember to go with the least restrictive license to maximize your data’s reuse potential. A recent article gives the following recommendations <a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>:</p>
@@ -406,7 +406,7 @@ License and Copyright
 <li>Provide open research data under the CC-BY license or the CC0 label.</li>
 <li>If it can be assumed that research data are <strong>not</strong> protected by copyright, CC0 should be preferred.</li>
 </ul>
-<p>Even if CC-BY is possible copyright-wise, be aware that it merely paraphrases the rules of good scientific practice. So you are setting conditions that are rather self-evident for scientists but nevertheless imply an extra effort for reuse, namely figuring out how to attribute correctly according to the license. For similar reasons, using more restrictive licenses should be extremely carefully considered, at least if you are intending to make your data reusable for others. In particular, it can become impossible to merge data published under different, more restrictive licenses as their licenses may be incompatible, preventing follow-up research, archiving or even publication of the combined data. CC0 is great, because it is universally compatible and ensures free resusability of research data.</p>
+<p>Even if CC BY is possible copyright-wise, be aware that it merely paraphrases the rules of good scientific practice. So you are setting conditions that are rather self-evident for scientists but nevertheless imply an extra effort for reuse, namely figuring out how to attribute correctly according to the license.\ For similar reasons, using more restrictive licenses should be extremely carefully considered, at least if you are intending to make your data reusable for others. In particular, it can become impossible to merge data published under different, more restrictive licenses as their licenses may be incompatible, preventing follow-up research, archiving or even publication of the combined data. \ CC0 is great, because it is universally compatible and ensures free reusability of research data.</p>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -419,12 +419,12 @@ Excursion: Creative Commons licences
 <div class="callout-body-container callout-body">
 <p>Creative commons licenses are widely used in research and we will therefore go into a little bit of detail on these. CC provides four features, which form the basis of a fixed set of six CC licenses. These are:</p>
 <ul>
-<li>BY: For “attribution”, i.e., the obligation to credit the author and other parties designated for attribution)</li>
-<li>ND: For NoDerivatives, i.e., only verbatim copies of the work can be shared</li>
-<li>NC: For NonCommercial, i.e., commercial use is excluded from the license grant</li>
-<li>SA: For ShareAlike, i.e., the work can be modified and modified versions can be published but only under the original or a compatible license.</li>
+<li>BY: For “attribution”, i.e., the obligation to credit the author and other parties designated for attribution</li>
+<li>ND: For “no derivatives”, i.e., only verbatim copies of the work can be shared</li>
+<li>NC: For “non-commercial”, i.e., commercial use is excluded from the license grant</li>
+<li>SA: For “share alike”, i.e., the work can be modified and modified versions can be published but only under the original or a compatible license.</li>
 </ul>
-<p>The following six licenses result from the combination of these four features, listed from most to least permissive here:</p>
+<p>The following six licenses result from the combination of these four features, listed from most (left) to least (right) permissive here:</p>
 <div class="quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 16.7%;justify-content: center;">
@@ -508,7 +508,7 @@ Excursion: Creative Commons licences
 </div>
 </div>
 </div>
-<p>As stated above, the CC0 label or the CC-BY license should be your preferred choice. In (the unlikely) case that you need a more restrictive license, there is a nice graphical illustration to help you <a href="https://www.joeran.de/wp-content/dox/sites/10/cc-licencse-choo-choo-train.png">choo-choo-choose your license</a>.</p>
+<p>As stated above, the CC0 label or the CC BY license should be your preferred choice. In (the unlikely) case that you need a more restrictive license, there is a nice graphical illustration to help you <a href="https://www.joeran.de/wp-content/dox/sites/10/cc-licencse-choo-choo-train.png">choo-choo-choose your license</a>.</p>
 </div>
 </div>
 <div class="callout-important callout callout-style-default callout-captioned">
@@ -606,18 +606,18 @@ Solution: Group 4 (~ 2 minutes)
 </section>
 <section id="persistent-identifier" class="level2">
 <h2 class="anchored" data-anchor-id="persistent-identifier">Persistent identifier</h2>
-<p>Imagine a scenario in which a repository is no longer maintained, so that all data sets published in that repository are no longer available at the repository’s URLs (a quite real scenario, as you can see in <a href="https://doi.org/10.48550/arXiv.2310.06712">this article</a>. To avoid data loss, the original repository migrated its data sets to another repository, where it however gets a new URL. Consequently, if the corresponding article linked to its data set via the URL (e.g., https://osf.io/gn47c/), it can no longer be found. What now? In such cases, persistent identifiers are extremely helpful if not essential. The ones we consider crucial are listed below.</p>
+<p>Imagine a scenario in which a repository is no longer maintained, so that all data sets published in that repository are no longer available at the repository’s URLs (a quite real scenario, as you can see in <a href="https://doi.org/10.48550/arXiv.2310.06712">this article</a>). To avoid data loss, the original repository migrated its data sets to another repository, where it however gets a new URL. Consequently, if the corresponding article linked to its data set via the URL (e.g., https://osf.io/gn47c/), it can no longer be found. What now? In such cases, persistent identifiers are extremely helpful if not essential. The ones we consider crucial are listed below.</p>
 <section id="digital-object-identifier" class="level3">
 <h3 class="anchored" data-anchor-id="digital-object-identifier">Digital object identifier</h3>
 <p>A digital object identifier (DOI) points directly to a digital object rather than to its location online (unlike URL). You may know it already from publications. It consists of a unique number made up of a prefix and a suffix separated by a forward slash as e.g., 10.5281/zenodo.4322849. It allows things to be uniquely identified and accessed reliably by using the DOI proxy server https://doi.org/ and appending the DOI, e.g., https://doi.org/10.5281/zenodo.4322849.</p>
 </section>
-<section id="orcid" class="level3">
-<h3 class="anchored" data-anchor-id="orcid">ORCID</h3>
-<p>(Open Researcher and Contributor ID) https://orcid.org/ Unique scientific ID, even when changing name/ institution etc.Persistent even if: • Changing name/ institution etc. • Spelling errors</p>
+<section id="open-researcher-and-contributor-id" class="level3">
+<h3 class="anchored" data-anchor-id="open-researcher-and-contributor-id">Open Researcher and Contributor ID</h3>
+<p>The Open Researcher and Contributor ID (<a href="https://orcid.org/">ORCID</a>) provides a unique and persistent identifier that you yourself connect with your professional (scientific) information. This helps to recognize all your work, even when you change your name or it is misspelled, you move on to a new institution etc. Getting an ORCID is free and quick and there are several platforms from grant application to manuscript submission and beyond that allow you to use to log into their system.</p>
 </section>
-<section id="ror" class="level3">
-<h3 class="anchored" data-anchor-id="ror">ROR</h3>
-<p>(Research Organization Registry) Unique identifier for every research organization in the world https://ror.org/</p>
+<section id="research-organization-registry" class="level3">
+<h3 class="anchored" data-anchor-id="research-organization-registry">Research Organization Registry</h3>
+<p>Last but not least, the Research Organization Registry (<a href="https://ror.org/">ROR</a>) is a global, community-led registry of open persistent identifiers for research organizations. The LMU has one and all Max-Planck-Institutes have one as well. These are much easier to use than entering all the affiliation information whenever asked for it and at the same time help disambiguate institutional affiliations.</p>
 <div class="callout-tip callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -628,16 +628,17 @@ Task X:
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Can your dataset be accessed reliably?</p>
-<p>Who would you contact, if questions concering the data set arose?</p>
+<p>Can your data set be accessed reliably?</p>
+<p>Who would you contact, if questions concerning the data set arose?</p>
 <p>Is that contact still available?</p>
+<p>Does your institution have a ROR?</p>
 </div>
 </div>
 </section>
 </section>
 <section id="repository" class="level2">
 <h2 class="anchored" data-anchor-id="repository">Repository</h2>
-<p>Repositories are database systems to document, store and publish digital objects. Thereby, they ensure visibility (via meta data) and sustainability (via use of PIDs) of the digital objects they are holding. Repositories can be: * Discipline-specific (e.g.&nbsp;OpenNeuro) * General (e.g.&nbsp;Zenodo, OSF) * Institutional (e.g.&nbsp;Edmond MPG, LMU)</p>
+<p>Repositories are database systems to document, store and publish digital objects. Thereby, they ensure visibility (via meta data) and sustainability (via use of PIDs) of the digital objects they are holding. Repositories can be: * Discipline-specific (e.g.&nbsp;OpenNeuro) * General (e.g.&nbsp;Zenodo, OSF) * Institutional (e.g.&nbsp;Edmond MPG, Open Data LMU)</p>
 <p>The Registry of research data repositories (<a href="Re3data.org">Re3data.org</a>) provides a collection of repositories with very nice search and overview functions. E.g., you can browse by subject (i.e., discipline). <img src="images/re3data.png" class="img-fluid" alt="re3data"> When looking for a repository there are various criteria that should be considered.</p>
 <section id="criteria" class="level3">
 <h3 class="anchored" data-anchor-id="criteria">Criteria</h3>
@@ -650,7 +651,7 @@ Task X:
 <li>Certified/ Sustainability</li>
 <li>Data limit</li>
 </ul>
-<p>When searching re3data, most of these criteria are displayed beside the repository, so can immediately check whether a potential repository fulfills your requirements.</p>
+<p>When searching re3data, most of these criteria are displayed beside the repository, so you can immediately check whether a potential repository fulfills your requirements.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/re3data-criteria.png" class="img-fluid figure-img"></p>

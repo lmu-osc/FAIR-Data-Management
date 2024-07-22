@@ -98,11 +98,11 @@ When submitting to a journal that uses a double-blind peer review process, it's 
 
 ## License
 
-If we in the end would like to share our research data and enable reuse for other researchers, we should define conditions under which the data can be reused. At this point licenses come into play. Licenses are in a way standard contracts that regulate usage rights for published work. As already mentioned, thereby enabling other people to reuse the published work. If no license is provided with a data set, it is not clear to others under which conditions they can reuse it and they might (against your good intentions) rather refrain from reusing it at all. 
+If we in the end would like to share our research data and enable reuse for other researchers, we should define conditions under which the data can be reused. At this point licenses come into play. Licenses are standard contracts that regulate usage rights for published work. As already mentioned, thereby enabling other people to reuse the published work. If no license is provided with a data set, it is not clear to others under which conditions they can reuse it and they might (against your good intentions) rather refrain from reusing it at all. 
 
 ::: callout-warning
 ## License and Copyright
-It is important to keep in mind that you can only define usage conditions by assigning licenses for work that "is yours", i.e., that you have the copyright for. This is not always the case for data. Data and data schemes resulting from a significant creative process (as is often the case in the humanities or qualitative social sciences) are more likely covered by copyright while data that result from rather simple measurement processes (as is often the case for natural or quantitative social sciences) are likely not covered. 
+It is important to keep in mind that you can only define usage conditions by assigning licenses for work that "is yours", i.e., that you have the copyright for. This is not always the case for data. Data that result from a significant creative process (as is often the case in the humanities or qualitative social sciences) are more likely covered by copyright while data that result from rather simple measurement processes (as is often the case for natural or quantitative social sciences) are likely not covered. 
 Also, note the distinction between the **instrument** used to create the data and the data themselves in this regard. E.g., if the data you are about to publish result from a comprehensive questionnaire that you have developed, **the questionnaire** ought to be protected by copyright whereas the data are most likely not.
 As mentioned in the beginning, you can only assign licenses to work that you hold the copyright for. If this is not the case or you are unsure, it is safest to go with CC0 as this is strictly speaking not a license, but rather a waiver of copyright. You explicitly release your work into the public domain.
 
@@ -115,9 +115,9 @@ There are several licenses out there, as e.g. [Creative Commons](https://creativ
 
 [^2]: Brettschneider, P., Axtmann, A., Böker, E., & von Suchodoletz, D. (2021): Offene Lizenzen für Forschungsdaten: Rechtliche Bewertung und Praxistauglichkeit verbreiteter Lizenzmodelle, in: O-Bib. Das Offene Bibliotheksjournal 8(3), pp. 1–22, https://doi.org/10.5282/o-bib/5749. [only in German]
 
-Even if CC-BY is possible copyright-wise, be aware that it merely paraphrases the rules of good scientific practice. So you are setting conditions that are rather self-evident for scientists but nevertheless imply an extra effort for reuse, namely figuring out how to attribute correctly according to the license.
-For similar reasons, using more restrictive licenses should be extremely carefully considered, at least if you are intending to make your data reusable for others. In particular, it can become impossible to merge data published under different, more restrictive licenses as their licenses may be incompatible, preventing follow-up research, archiving or even publication of the combined data. 
-CC0 is great, because it is universally compatible and ensures free resusability of research data.
+Even if CC BY is possible copyright-wise, be aware that it merely paraphrases the rules of good scientific practice. So you are setting conditions that are rather self-evident for scientists but nevertheless imply an extra effort for reuse, namely figuring out how to attribute correctly according to the license.\\
+For similar reasons, using more restrictive licenses should be extremely carefully considered, at least if you are intending to make your data reusable for others. In particular, it can become impossible to merge data published under different, more restrictive licenses as their licenses may be incompatible, preventing follow-up research, archiving or even publication of the combined data. \\
+CC0 is great, because it is universally compatible and ensures free reusability of research data.
 
 ::: {.callout-note}
 ## Excursion: Creative Commons licences
@@ -155,7 +155,7 @@ In addition, there are two further labels, to dedicate the published work to the
 ![[PDM](https://creativecommons.org/publicdomain/mark/1.0/)](images/cc-pdm.png)
 :::
 
-As stated above, the CC0 label or the CC-BY license should be your preferred choice. In (the unlikely) case that you need a more restrictive license, there is a nice graphical illustration to help you [choo-choo-choose your license](https://www.joeran.de/wp-content/dox/sites/10/cc-licencse-choo-choo-train.png).
+As stated above, the CC0 label or the CC BY license should be your preferred choice. In (the unlikely) case that you need a more restrictive license, there is a nice graphical illustration to help you [choo-choo-choose your license](https://www.joeran.de/wp-content/dox/sites/10/cc-licencse-choo-choo-train.png).
 :::
 
 ::: callout-important
@@ -207,24 +207,24 @@ In such cases, persistent identifiers are extremely helpful if not essential. Th
 
 A digital object identifier (DOI) points directly to a digital object rather than to its location online (unlike URL). You may know it already from publications. It consists of a unique number made up of a prefix and a suffix separated by a forward slash as e.g., 10.5281/zenodo.4322849. It allows things to be uniquely identified and accessed reliably by using the DOI proxy server https://doi.org/ and appending the DOI, e.g., https://doi.org/10.5281/zenodo.4322849. 
 
-### ORCID
+### Open Researcher and Contributor ID
 
-(Open Researcher and Contributor ID) https://orcid.org/ Unique scientific ID, even when changing name/ institution etc.Persistent even if:
-• Changing name/ institution etc.
-• Spelling errors
+The Open Researcher and Contributor ID ([ORCID](https://orcid.org/)) provides a unique and persistent identifier that you yourself connect with your professional (scientific) information. This helps to recognize all your work, even when you change your name or it is misspelled, you move on to a new institution etc. Getting an ORCID is free and quick and there are several platforms from grant application to manuscript submission and beyond that allow you to use to log into their system.
 
-### ROR
+### Research Organization Registry
 
-(Research Organization Registry) Unique identifier for every research organization in the world https://ror.org/
+Last but not least, the Research Organization Registry ([ROR](https://ror.org/)) is a global, community-led registry of open persistent identifiers for research organizations. The LMU has one and all Max-Planck-Institutes have one as well. These are much easier to use than entering all the affiliation information whenever asked for it and at the same time help disambiguate institutional affiliations.
 
 ::: callout-tip
 ## Task X:
 
-Can your dataset be accessed reliably?
+Can your data set be accessed reliably?
 
-Who would you contact, if questions concering the data set arose?
+Who would you contact, if questions concerning the data set arose?
 
 Is that contact still available?
+
+Does your institution have a ROR?
 :::
 
 ## Repository
@@ -232,7 +232,7 @@ Is that contact still available?
 Repositories are database systems to document, store and publish digital objects. Thereby, they ensure visibility (via meta data) and sustainability (via use of PIDs) of the digital objects they are holding. Repositories can be:
 * Discipline-specific (e.g. OpenNeuro)
 * General (e.g. Zenodo, OSF)
-* Institutional (e.g. Edmond MPG, LMU)
+* Institutional (e.g. Edmond MPG, Open Data LMU)
 
 The Registry of research data repositories ([Re3data.org](Re3data.org)) provides a collection of repositories with very nice search and overview functions. E.g., you can browse by subject (i.e., discipline).
 ![re3data](images/re3data.png)
@@ -248,7 +248,7 @@ When looking for a repository there are various criteria that should be consider
 -   Certified/ Sustainability
 -   Data limit
 
-When searching re3data, most of these criteria are displayed beside the repository, so can immediately check whether a potential repository fulfills your requirements.
+When searching re3data, most of these criteria are displayed beside the repository, so you can immediately check whether a potential repository fulfills your requirements.
 
 ![re3data](images/re3data-criteria.png)
 
