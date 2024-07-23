@@ -205,7 +205,7 @@ In such cases, persistent identifiers are extremely helpful if not essential. Th
 
 ### Digital object identifier
 
-A digital object identifier (DOI) points directly to a digital object rather than to its location online (unlike URL). You may know it already from publications. It consists of a unique number made up of a prefix and a suffix separated by a forward slash as e.g., 10.5281/zenodo.4322849. It allows things to be uniquely identified and accessed reliably by using the DOI proxy server https://doi.org/ and appending the DOI, e.g., https://doi.org/10.5281/zenodo.4322849. 
+A digital object identifier ([DOI](https://www.doi.org/)) points directly to a digital object rather than to its location online (unlike URL). You may know it already from publications. It consists of a unique number made up of a prefix and a suffix separated by a forward slash as e.g., 10.5281/zenodo.4322849. It allows things to be uniquely identified and accessed reliably by using the DOI proxy server https://doi.org/ and appending the DOI, e.g., https://doi.org/10.5281/zenodo.4322849. 
 
 ### Open Researcher and Contributor ID
 
@@ -225,6 +225,54 @@ Who would you contact, if questions concerning the data set arose?
 Is that contact still available?
 
 Does your institution have a ROR?
+:::
+
+::: {.callout-tip collapse="true"}
+## Solution: Group 1 (~ 5 minutes)
+1. Yes, via DOI https://doi.org/10.17617/3.1STIJV.
+
+2. The first author as listed corresponding author in the article.
+
+3. No, he has moved on but he also connected his ORCID profile, which is however not well maintained.
+
+4. ???
+
+:::
+
+::: {.callout-tip collapse="true"}
+## Solution: Group 2 (~ 5 minutes)
+1. Yes, via DOI https://doi.org/10.5282/ubm/data.288.
+
+2. There is a contact person listed in the meta data with corresponding email address.
+
+3. Unsure, he is not listed at the Institut für Soziologie anymore, but he also connected his ORCID profile in the article.
+
+4. ???
+
+:::
+
+::: {.callout-tip collapse="true"}
+## Solution: Group 3 (~ 5 minutes)
+1. No, it only has a URL.
+
+2. The first author as listed corresponding author in the article.
+
+3. Yes but if it were not, there is no alternative.
+
+4. ???
+
+:::
+
+::: {.callout-tip collapse="true"}
+## Solution: Group 4 (~ 5 minutes)
+1. Yes, via DOI https://doi.org/10.5281/zenodo.10650333.
+
+2. The first author as listed corresponding author in the article.
+
+3. Yes, and he also connected his ORCID profile.
+
+4. ???
+
 :::
 
 ## Repository
