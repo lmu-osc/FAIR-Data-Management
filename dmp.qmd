@@ -1,0 +1,84 @@
+---
+title: "4) Data management plans"
+link-external-newwindow: true
+author:
+  - name: Laura Meier
+    id: lm
+    orcid: 0000-0003-1368-2306
+    email: laura.meier@ub.uni-muenchen.de
+    affiliation: 
+      - name: University Library of LMU Munich
+        city: Munich
+        url: https://www.en.ub.uni-muenchen.de/
+---
+
+## Overview
+
+The previous sections showed that data management is a large topic that includes various aspects. To keep track of all aspects, good planning is crucial. A helpful tool are (research) data management plans. This section gives you an overview of the components of a data management plan, provides tips on how to create one, and introduces helpful tools. We conclude with a practical excercise. 
+
+## General Information
+
+A Data Management Plan (DMP) is a written document that describes the data you expect to acquire or generate during the course of a research project, how you will manage, describe, analyse, and store the data, and what mechanisms you will use at the end of your project to share and preserve your data. Thus, a data management plan accompanies and guides you throughout the project and encompasses all phases that research data go through in a project.
+
+## Components of a DMP
+
+A data management plan should cover all stages of the data lifecycle: Planning/Collection, Processing, Analyzing, Preserving/Archiving, Publication/Sharing, Reusing. 
+
+Here are some main points that a DMP should contain:
+
+-   What data will be collected and where do they come from?
+-   Which metadata should be used to describe the data?
+-   Where should the data be stored? During the project phase? After the project?
+-   What is about Open Data? Do you plan to publish the data? 
+-   Is sufficient staff provided? Does your project require special infrastructure?
+-   How do you ensure the quality of your data?
+-   Does your project process personal or sensitive data? What law will be applied? Are there ethnic aspects you need to consider?
+
+## Why is a DMP helpful?
+
+
+
+## DMP tool: RDMO
+
+To support you during this process, there is software to create data management plans. It simplifies the workflow and is designed to support collaborative work. 
+
+::: {.callout-warning title="Note:"}
+It is important to clarify the difference between a DMP tool and a repository at this point: A DMP tool is a planning tool where you gather information about research data management in general, e.g. about the collection, description, etc. You can also use it as a documentation tool. A repository, whereas, is a platform where you can store and publish your data. A DMP tool does not store your research data and is more of a project management tool that helps you (and others) keep track of your research data management.
+:::
+
+One of these tools is Research Data Management Organiser (RDMO). RDMO is an Open Source online tool to create, store and print your DMP and supports you in planning projects and administrating data management tasks throughout the whole data lifecycle. The tool is the outcome of a project co-funded by the DFG (German research foundation) between 2015 and 2020. Thanks to the large and active user community, the tool can be constantly developed and optimized. The LMU University Library and the Max Planck Digital Library offer instances of the web-based software on their servers. You can register on the [LMU instance](https://rdmo.ub.uni-muenchen.de/) using you mail address or ORCID id. For the [MPG instance](https://rdmo.mpdl.mpg.de/) a MPG login is needed (Shibboleth).
+
+To create a DMP (called project in RDMO) you choose one of the templates which are designed as questionnaires. The questions point out the aspects we discussed earlier and guide you through the creation process. The questionnaires are based on requirements of different research funding agencies, e.g. German Research Foundation. It is possible to work collaborativly on one data management plan as a team. Therefore, RDMO supports different roles for the project members: visitor, author, manager and owner. The owner can edit and even delete the project, whereas a visitor has read-only rights. Furthermore, import and export is supported. A DMP can be exported to various standard file formats, like PDF, XML or Markdown. This not only provides a good guide for internal documentation but could also be a suitable tool for reporting to the funding agency. RDMO stores only the current version of a DMP but sometimes it may be necessary to store a particular version. Here, the "Snapshot" feature comes into play. It stores a particular version that can be exported and allows a rollback. 
+
+Further information on the features of RDMO can be found here: [RDMO Quick Start Guide by LMU University Library (Download, PDF)](https://rdmo.ub.uni-muenchen.de/doc/Quick_Start_Guide_RDMO.pdf) and [Quick Start to RDMO for MPG](https://rdmo.mpdl.mpg.de/quickstart/)
+
+::: {.callout-note title="Excursion: Further DMP tools"}
+
+The following table[^1] provides an overview of discipline-agnostic DMP tools that are freely available online:
+
+| Name | Provider | Templates |
+|---------|-----|------|------|
+| [ARGOS](https://argos.openaire.eu/home)               | OpenAIRE, EUDAT                               |      [CHIST-ERA](https://www.chistera.eu/)   |
+| [DMPonline](https://dmponline.dcc.ac.uk/)             | Digital Curation Center                       |      european programs (e.g. ERC, Horizon Europe), funding agencies from different european countries, mainly UK, DDC template   |
+| [DMPTool](https://dmptool.org/)                       | University of California, California Digital Library      |      mostly US funding agencies, DCC template |
+| [Data Stewardship Wizard](https://ds-wizard.org/)     | [ELIXIR CZ](https://www.elixir-czech.cz/) / [ELIXIR NL](https://www.dtls.nl/elixir-nl/)    |  Horizon Europe, Horizon 2020, Science Europe, [maDMP](https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard)    |
+| [GFBio DMPT](https://dmp.gfbio.org/)     | GFBio    |  -    |
+
+: Overview of DMP tools
+
+[^1]: based on: forschungsdaten.info, accessed 24. Juli 2024, [https://forschungsdaten.info/themen/informieren-und-planen/datenmanagementplan/](https://forschungsdaten.info/themen/informieren-und-planen/datenmanagementplan/).
+
+:::
+
+::: callout-tip
+# Task A:
+Login in the RDMO and create a new project using the RDMO template. 
+
+Answer the questions in the following section(s) for the dataset you previously worked on:
+
+-   Section 1
+-   Section 2
+-   ...
+
+Discuss the topics. 
+:::
