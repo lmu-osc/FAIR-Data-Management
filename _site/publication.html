@@ -216,7 +216,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#repository" id="toc-repository" class="nav-link" data-scroll-target="#repository">Repository</a>
   <ul class="collapse">
   <li><a href="#criteria" id="toc-criteria" class="nav-link" data-scroll-target="#criteria">Criteria</a></li>
-  <li><a href="#fair-assessment-tools-httpszenodo.orgrecords7701941" id="toc-fair-assessment-tools-httpszenodo.orgrecords7701941" class="nav-link" data-scroll-target="#fair-assessment-tools-httpszenodo.orgrecords7701941">FAIR assessment tools https://zenodo.org/records/7701941</a></li>
   </ul></li>
   <li><a href="#benefits" id="toc-benefits" class="nav-link" data-scroll-target="#benefits">Benefits</a></li>
   </ul>
@@ -244,13 +243,9 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>Data publication is the final step of FAIR data management, ensuring data accessibility and findability (when done well). If you have taken care of the previous sections <a href="">Data organization</a> and <a href="./documentation.html">Documentation</a> and thereby made your data interoperable and reusable, publishing those data will take minimal effort. Most commonly, data are published as supplements to journal articles and an increasing number of journals actually requires that. Data sets can also be published in specialized data journals (e.g., Scientific data, Data in Brief), which means that the article itself is a rich and detailed description of the data set. As you may have guessed, this option is mainly chosen for rather large, sampling-intensive data sets. Last but not least, it is also possible to publish an independent (without connected publication) data set in a repository and this is often required by funders as the DFG or EU. Irrespective of the publication option, there are common good practices when publishing data, namely</p>
-<ul>
-<li>indicating in the article that data and/or code are available,</li>
-<li>defining usage conditions,</li>
-<li>ensuring reliable access,</li>
-<li>choosing an appropriate repository.</li>
-</ul>
+<p>Data publication is the final step of FAIR data management, ensuring data <strong>f</strong>indability and <strong>a</strong>ccessibility (when done well). If you have taken care of the previous sections <a href="">Data organization</a> and <a href="./documentation.html">Documentation</a> and thereby made your data <strong>i</strong>nteroperable and <strong>r</strong>eusable, publishing those data will take minimal effort.<br>
+Most commonly, data are published as supplements to journal articles and an increasing number of journals actually requires that. Data sets can also be published in specialized data journals (e.g., Scientific data, Data in Brief), which means that the article itself is a rich and detailed description of the data set. As you may have guessed, this option is mainly chosen for rather large, sampling-intensive data sets. Last but not least, it is also possible to publish an independent (without connected publication) data set in a repository and this is often required by funders as the DFG or EU. Irrespective of the publication option, there are common good practices when publishing data, namely<br>
+- indicating in the article that data and/or code are available, - defining usage conditions, - ensuring reliable access, - choosing an appropriate repository.</p>
 <p>These will be handled in the course of this chapter.</p>
 <div class="callout-warning callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
@@ -406,7 +401,9 @@ License and Copyright
 <li>Provide open research data under the CC-BY license or the CC0 label.</li>
 <li>If it can be assumed that research data are <strong>not</strong> protected by copyright, CC0 should be preferred.</li>
 </ul>
-<p>Even if CC BY is possible copyright-wise, be aware that it merely paraphrases the rules of good scientific practice. So you are setting conditions that are rather self-evident for scientists but nevertheless imply an extra effort for reuse, namely figuring out how to attribute correctly according to the license.\ For similar reasons, using more restrictive licenses should be extremely carefully considered, at least if you are intending to make your data reusable for others. In particular, it can become impossible to merge data published under different, more restrictive licenses as their licenses may be incompatible, preventing follow-up research, archiving or even publication of the combined data. \ CC0 is great, because it is universally compatible and ensures free reusability of research data.</p>
+<p>Even if CC BY is possible copyright-wise, be aware that it merely paraphrases the rules of good scientific practice. So you are setting conditions that are rather self-evident for scientists but nevertheless imply an extra effort for reuse, namely figuring out how to attribute correctly according to the license.<br>
+For similar reasons, using more restrictive licenses should be extremely carefully considered, at least if you are intending to make your data reusable for others. In particular, it can become impossible to merge data published under different, more restrictive licenses as their licenses may be incompatible, preventing follow-up research, archiving or even publication of the combined data (cf.&nbsp;<a href="https://creativecommons.org/faq/#can-i-combine-material-under-different-creative-commons-licenses-in-my-work">this CC FAQ</a>).<br>
+CC0 is great, because it is universally compatible and ensures free reusability of research data.</p>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -606,19 +603,19 @@ Solution: Group 4 (~ 2 minutes)
 </section>
 <section id="persistent-identifier" class="level2">
 <h2 class="anchored" data-anchor-id="persistent-identifier">Persistent identifier</h2>
-<p>Imagine a scenario in which a repository is no longer maintained, so that all data sets published in that repository are no longer available at the repository’s URLs (a quite real scenario, as you can see in <a href="https://doi.org/10.48550/arXiv.2310.06712">this article</a>). To avoid data loss, the original repository migrated its data sets to another repository, where it however gets a new URL. Consequently, if the corresponding article linked to its data set via the URL (e.g., https://osf.io/gn47c/), it can no longer be found. What now? In such cases, persistent identifiers are extremely helpful if not essential. The ones we consider crucial are listed below.</p>
+<p>Imagine a scenario in which a repository is no longer maintained, so that all data sets published in that repository are no longer available at the repository’s URLs (a quite real scenario, as you can see in <a href="https://doi.org/10.48550/arXiv.2310.06712">this article</a>). To avoid data loss, the original repository migrated its data sets to another repository, where it however gets a new URL. Consequently, if the corresponding article linked to its data set via the URL (e.g., https://osf.io/gn47c/), it can no longer be found. What now? In such cases, persistent identifiers (PIDs) are extremely helpful if not essential. The ones we consider crucial are listed below.</p>
 <section id="digital-object-identifier" class="level3">
 <h3 class="anchored" data-anchor-id="digital-object-identifier">Digital object identifier</h3>
-<p>A digital object identifier (DOI) points directly to a digital object rather than to its location online (unlike URL). You may know it already from publications. It consists of a unique number made up of a prefix and a suffix separated by a forward slash as e.g., 10.5281/zenodo.4322849. It allows things to be uniquely identified and accessed reliably by using the DOI proxy server https://doi.org/ and appending the DOI, e.g., https://doi.org/10.5281/zenodo.4322849.</p>
+<p>A digital object identifier (<a href="https://www.doi.org/">DOI</a>) points directly to a digital object rather than to its location online (unlike URL). You may know it already from publications. It consists of a unique number made up of a prefix and a suffix separated by a forward slash as e.g., 10.5281/zenodo.4322849. It allows things to be uniquely identified and accessed reliably by using the DOI proxy server https://doi.org/ and appending the DOI, e.g., https://doi.org/10.5281/zenodo.4322849. To avoid</p>
 </section>
 <section id="open-researcher-and-contributor-id" class="level3">
 <h3 class="anchored" data-anchor-id="open-researcher-and-contributor-id">Open Researcher and Contributor ID</h3>
-<p>The Open Researcher and Contributor ID (<a href="https://orcid.org/">ORCID</a>) provides a unique and persistent identifier that you yourself connect with your professional (scientific) information. This helps to recognize all your work, even when you change your name or it is misspelled, you move on to a new institution etc. Getting an ORCID is free and quick and there are several platforms from grant application to manuscript submission and beyond that allow you to use to log into their system.</p>
+<p>The Open Researcher and Contributor ID (<a href="https://orcid.org/">ORCID</a>) provides a unique and persistent identifier that you yourself connect with your professional (scientific) information. This helps to recognize all your work, even if e.g., you change your name, one of your coauthors misspells it, or you move on to a new institution. Getting an ORCID is free and quick and meanwhile, several platforms, from grant application to manuscript submission and beyond, allow you to use your ORCID to log into their system.</p>
 </section>
 <section id="research-organization-registry" class="level3">
 <h3 class="anchored" data-anchor-id="research-organization-registry">Research Organization Registry</h3>
 <p>Last but not least, the Research Organization Registry (<a href="https://ror.org/">ROR</a>) is a global, community-led registry of open persistent identifiers for research organizations. The LMU has one and all Max-Planck-Institutes have one as well. These are much easier to use than entering all the affiliation information whenever asked for it and at the same time help disambiguate institutional affiliations.</p>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-important callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -634,42 +631,246 @@ Task X:
 <p>Does your institution have a ROR?</p>
 </div>
 </div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Solution: Group 1 (~ 5 minutes)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-16" class="callout-16-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Yes, via DOI https://doi.org/10.17617/3.1STIJV.</p></li>
+<li><p>The first author as listed corresponding author in the article.</p></li>
+<li><p>Unsure, he has moved on but he also connected his ORCID profile, which is however not well maintained.</p></li>
+<li><p>???</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Solution: Group 2 (~ 5 minutes)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-17" class="callout-17-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Yes, via DOI https://doi.org/10.5282/ubm/data.288.</p></li>
+<li><p>There is a contact person listed in the meta data with corresponding email address.</p></li>
+<li><p>Unsure, he is not listed at the Institut für Soziologie anymore, but he also connected his ORCID profile in the article.</p></li>
+<li><p>???</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Solution: Group 3 (~ 5 minutes)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-18" class="callout-18-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>No, it only has a URL.</p></li>
+<li><p>The first author as listed corresponding author in the article.</p></li>
+<li><p>Unsure, she has moved on, but there is no alternative.</p></li>
+<li><p>???</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Solution: Group 4 (~ 5 minutes)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-19" class="callout-19-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Yes, via DOI https://doi.org/10.5281/zenodo.10650333.</p></li>
+<li><p>The first author as listed corresponding author in the article.</p></li>
+<li><p>Yes, and he also connected his ORCID profile.</p></li>
+<li><p>???</p></li>
+</ol>
+</div>
+</div>
+</div>
 </section>
 </section>
 <section id="repository" class="level2">
 <h2 class="anchored" data-anchor-id="repository">Repository</h2>
-<p>Repositories are database systems to document, store and publish digital objects. Thereby, they ensure visibility (via meta data) and sustainability (via use of PIDs) of the digital objects they are holding. Repositories can be: * Discipline-specific (e.g.&nbsp;OpenNeuro) * General (e.g.&nbsp;Zenodo, OSF) * Institutional (e.g.&nbsp;Edmond MPG, Open Data LMU)</p>
-<p>The Registry of research data repositories (<a href="Re3data.org">Re3data.org</a>) provides a collection of repositories with very nice search and overview functions. E.g., you can browse by subject (i.e., discipline). <img src="images/re3data.png" class="img-fluid" alt="re3data"> When looking for a repository there are various criteria that should be considered.</p>
+<p>Repositories are database systems to document, store and publish digital objects. Thereby, they ensure visibility (via meta data) and sustainability (via use of PIDs) of the digital objects they are holding. Repositories can be:<br>
+- Discipline-specific (e.g.&nbsp;OpenNeuro) - General (e.g.&nbsp;Zenodo, OSF) - Institutional (e.g.&nbsp;Edmond MPG, Open Data LMU)</p>
+<p>The “Registry of research data repositories” (<a href="Re3data.org">Re3data.org</a>) provides a collection of repositories with very nice search and overview functions. E.g., you can browse by subject (i.e., discipline).</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="images/re3data.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<p></p><figcaption class="figure-caption">re3data.org</figcaption><p></p>
+</figure>
+</div>
+<p>When looking for a repository there are various criteria that should be considered.</p>
 <section id="criteria" class="level3">
 <h3 class="anchored" data-anchor-id="criteria">Criteria</h3>
 <ul>
-<li>Costs/ User rights</li>
-<li>Hosting country (GDPR)</li>
-<li>Persistent identifier</li>
-<li>License</li>
-<li>Access control/ Embargo</li>
-<li>Certified/ Sustainability</li>
-<li>Data limit</li>
+<li>Is the data completely open? Can I control access or set an embargo period?</li>
+<li>Under what license can I publish data?</li>
+<li>Does the repository provide a persistent identifier?</li>
+<li>Is the repository certified as an indicator for its sustainability?</li>
+<li>What are the costs?</li>
+<li>What are the user rights?</li>
+<li>Where are the data hosted? Is this compliant with the General Data Protection Regulation?</li>
+<li>Is there a limit to the amount of data I can upload?</li>
 </ul>
-<p>When searching re3data, most of these criteria are displayed beside the repository, so you can immediately check whether a potential repository fulfills your requirements.</p>
-<div class="quarto-figure quarto-figure-center">
+<p>When searching re3data, most of these criteria are displayed beside the repository via icons, so you can immediately check whether a potential repository fulfills your requirements.</p>
+<div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><img src="images/re3data-criteria.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">re3data</figcaption><p></p>
+<p><img src="images/re3data-criteria.png" class="img-fluid figure-img" style="width:35.0%"></p>
+<p></p><figcaption class="figure-caption">Criteria icons in re3data.org</figcaption><p></p>
 </figure>
 </div>
-</section>
-<section id="fair-assessment-tools-httpszenodo.orgrecords7701941" class="level3">
-<h3 class="anchored" data-anchor-id="fair-assessment-tools-httpszenodo.orgrecords7701941">FAIR assessment tools https://zenodo.org/records/7701941</h3>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Excursion: FAIR assessment tools
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Overview of tools https://zenodo.org/records/7701941</p>
 <ul>
 <li>Short <a href="https://www.cessda.eu/content/download/3845/35038/file/20170707_How_FAIR_are_your_data_Jones.pdf">questionnaire</a></li>
 <li><a href="https://www.f-uji.net/">F-uji Tool</a></li>
 </ul>
+</div>
+</div>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Task X:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Which repository was used to publish your data set?</p>
+<p>Can you find that repository on re3data.org?</p>
+<p>Under what criteria can you publish your data in that repository?</p>
+</div>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-22-contents" aria-controls="callout-22" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Solution: Group 1 (~ 5 minutes)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-22" class="callout-22-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Edmond.</p></li>
+<li><p>Yes.</p></li>
+<li><p>Click on the repository and go through the details: It assigns a DOI, you can publish under various licenses, it is certified etc.</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-23-contents" aria-controls="callout-23" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Solution: Group 4 (~ 5 minutes)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-23" class="callout-23-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Open Data LMU.</p></li>
+<li><p>Yes.</p></li>
+<li><p>Click on the repository and go through the details: It assigns a DOI, you can publish under various licenses, it is certified etc.</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-24-contents" aria-controls="callout-24" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Solution: Group 3 (~ 5 minutes)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-24" class="callout-24-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>OSF.</p></li>
+<li><p>Yes.</p></li>
+<li><p>Click on the repository and go through the details: It assigns a DOI, you can publish under various licenses, it is certified etc.</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-25-contents" aria-controls="callout-25" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Solution: Group 4 (~ 5 minutes)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-25" class="callout-25-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Zenodo.</p></li>
+<li><p>Yes.</p></li>
+<li><p>Click on the repository and go through the details: It assigns a DOI, you can publish under various licenses, it is certified etc.</p></li>
+</ol>
+</div>
+</div>
+</div>
 </section>
 </section>
 <section id="benefits" class="level2">
 <h2 class="anchored" data-anchor-id="benefits">Benefits</h2>
-<p>As soon as research data is shared, your own research becomes comprehensible to others. It becomes reproducible and can be verified. This is a central point in the implementation of good scientific practice. Additional benefits are displayed in the graphic <img src="images/data-sharing.png" class="img-fluid" alt="Source: Hole, B. (2015). Open Science: A New publisher Perspective. Ubiquity press. (CC BY 4.0 International)"></p>
+<p>As soon as research data is shared, your own research becomes comprehensible to others. It becomes reproducible and can be verified. This is a central point in the implementation of good scientific practice. Additional benefits are displayed in the graphic.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="images/data-sharing.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p></p><figcaption class="figure-caption">Source: Hole, B. (2015). Open Science: A New publisher Perspective. Ubiquity press. (<a href="https://creativecommons.org/licenses/by/4.0/legalcode">CC BY 4.0 International</a>)</figcaption><p></p>
+</figure>
+</div>
 <p>In addition, open access to research data offers new opportunities for scientific collaboration. Another advantage of data sharing is the possibility of reusing well-documented data. of well-documented data. This approach can, for example, save time in scientific work and thus enable more efficient handling of research results, as they do not have to be collected again and again</p>
 <p>To ensure that research data can be accessed and reused, it makes sense to publish the associated data on which the research results are based in addition to the ‘traditional’ scientific articles. published. The publication and findability of your research data via national and international information portals can make a significant contribution to enhancing the reputation of data producers - even beyond the boundaries of your own scientific community. By publishing the data that forms the basis of an article, it can be reused and cited in a timely manner. Citation of the data by other researchers increases visibility and can strengthen the reputation of the research.</p>
 <div class="callout-tip callout callout-style-default callout-captioned">

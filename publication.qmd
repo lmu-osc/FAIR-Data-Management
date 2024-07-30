@@ -1,136 +1,133 @@
 ---
 title: "3) Publication"
 link-external-newwindow: true
-
 ---
 
 ## Overview
 
-Data publication is the final step of FAIR data management, ensuring data accessibility and findability (when done well). If you have taken care of the previous sections [Data organization]() and [Documentation](documentation.qmd) and thereby made your data interoperable and reusable, publishing those data will take minimal effort. 
-Most commonly, data are published as supplements to journal articles and an increasing number of journals actually requires that. Data sets can also be published in specialized data journals (e.g., Scientific data, Data in Brief), which means that the article itself is a rich and detailed description of the data set. As you may have guessed, this option is mainly chosen for rather large, sampling-intensive data sets. Last but not least, it is also possible to publish an independent (without connected publication) data set in a repository and this is often required by funders as the DFG or EU. 
-Irrespective of the publication option, there are common good practices when publishing data, namely 
+Data publication is the final step of FAIR data management, ensuring data **f**indability and **a**ccessibility (when done well). If you have taken care of the previous sections [Data organization]() and [Documentation](documentation.qmd) and thereby made your data **i**nteroperable and **r**eusable, publishing those data will take minimal effort.  
+Most commonly, data are published as supplements to journal articles and an increasing number of journals actually requires that. Data sets can also be published in specialized data journals (e.g., Scientific data, Data in Brief), which means that the article itself is a rich and detailed description of the data set. As you may have guessed, this option is mainly chosen for rather large, sampling-intensive data sets. Last but not least, it is also possible to publish an independent (without connected publication) data set in a repository and this is often required by funders as the DFG or EU. Irrespective of the publication option, there are common good practices when publishing data, namely  
+-   indicating in the article that data and/or code are available,
+-   defining usage conditions,
+-   ensuring reliable access,
+-   choosing an appropriate repository.
 
-- indicating in the article that data and/or code are available,
-- defining usage conditions,
-- ensuring reliable access,
-- choosing an appropriate repository.
-
-These will be handled in the course of this chapter. 
+These will be handled in the course of this chapter.
 
 ::: callout-warning
 ## Legal basis
-Even though publishing data (and code) is a prerequisite for transparent and reproducible research do note that in some cases the legal basis may prevent you from doing so. This most commonly concerns copyright or data protection issues. E.g., someone else may have the copyrights on the data you are working with and they do not allow the data to be published. Or when working with personal data (i.e., data from identifiable living people), you would violate subjects' rights according to the general data protection regulations (GDPR) when publishing these. There is a very nice [decision tree](https://zenodo.org/doi/10.5281/zenodo.3368292) (unfortunately only in German) that can help you find out whether and under what conditions you can publish your data set.
-Broadly speaking, publishing personal data is only possible if either they can be fully anonymized (and no longer fall under GDPR) or if participants consented to their data being published. It is hence important to consider even before collecting personal data, whether they ought to be published to eventually include that in the consent form.
+
+Even though publishing data (and code) is a prerequisite for transparent and reproducible research do note that in some cases the legal basis may prevent you from doing so. This most commonly concerns copyright or data protection issues. E.g., someone else may have the copyrights on the data you are working with and they do not allow the data to be published. Or when working with personal data (i.e., data from identifiable living people), you would violate subjects' rights according to the general data protection regulations (GDPR) when publishing these. There is a very nice [decision tree](https://zenodo.org/doi/10.5281/zenodo.3368292) (unfortunately only in German) that can help you find out whether and under what conditions you can publish your data set. Broadly speaking, publishing personal data is only possible if either they can be fully anonymized (and no longer fall under GDPR) or if participants consented to their data being published. It is hence important to consider even before collecting personal data, whether they ought to be published to eventually include that in the consent form.
 :::
 
 ## Data Availability Statement
 
-A Data Availability Statement (as well as a Code Availability Statement) is a special section in an article that states  whether the authors have made the evidence supporting their findings available, and if so, where readers may access it. They are usually placed somewhere towards the end of the article, mostly before the Reference section. 
-As part of their commitment to supporting open research, some journals now require all manuscripts to include a Data Availability Statement in order to be accepted for publication. Even if a journal does not require such a statement, it is highly recommendable to include it and make transparent that the data underlying the article's findings are available[^1]! 
-
-::: callout-warning
-## Double-blind peer review process
-When submitting to a journal that uses a double-blind peer review process, it's important to ensure that the information in the Data Availability Statement doesn't compromise the anonymity of you or your co-authors. If there is information in your Data Availability Statement that could be used to identify the manuscript authors (e.g., by linking to a repository that reveals author information), make sure to ask the journal what they would like you to do[^1].
-:::
+A Data Availability Statement (as well as a Code Availability Statement) is a special section in an article that states whether the authors have made the evidence supporting their findings available, and if so, where readers may access it. They are usually placed somewhere towards the end of the article, mostly before the Reference section. As part of their commitment to supporting open research, some journals now require all manuscripts to include a Data Availability Statement in order to be accepted for publication. Even if a journal does not require such a statement, it is highly recommendable to include it and make transparent that the data underlying the article's findings are available[^1]!
 
 [^1]: Source https://www.cambridge.org/core/services/authors/open-data/data-availability-statements.
 
-::: callout-important 
+::: callout-warning
+## Double-blind peer review process
+
+When submitting to a journal that uses a double-blind peer review process, it's important to ensure that the information in the Data Availability Statement doesn't compromise the anonymity of you or your co-authors. If there is information in your Data Availability Statement that could be used to identify the manuscript authors (e.g., by linking to a repository that reveals author information), make sure to ask the journal what they would like you to do[^2].
+:::
+
+[^2]: Source https://www.cambridge.org/core/services/authors/open-data/data-availability-statements.
+
+::: callout-important
 ## Task X:
 
-1. Is your data set the basis for a published article? 
+1.  Is your data set the basis for a published article?
 
-2. How did you find out?
+2.  How did you find out?
 
-3. If so, does the article include a Data Availability Statement?
+3.  If so, does the article include a Data Availability Statement?
 
-4. Where did you find it?
-:::
-
-
-::: {.callout-tip collapse="true"}
-## Solution: Group 1 (~ 5 minutes)
-1. Yes, this data set is the basis for a published article.
-
-2. In the meta data field "Related Publication".
-
-3. Yes, it does but without linking it to the data on Edmond. You should rather contact one coauthor without providing contact details.
-
-4. Before the Appendices.
-
+4.  Where did you find it?
 :::
 
 ::: {.callout-tip collapse="true"}
-## Solution: Group 2 (~ 5 minutes)
-1. Yes, this data set is the basis for a published article.
+## Solution: Group 1 (\~ 5 minutes)
 
-2. As part of the title.
+1.  Yes, this data set is the basis for a published article.
 
-3. Yes.
+2.  In the meta data field "Related Publication".
 
-4. In the very beginning following Abstract and Figures. However, no special section therefore not very intuitive to find.
+3.  Yes, it does but without linking it to the data on Edmond. You should rather contact one coauthor without providing contact details.
 
+4.  Before the Appendices.
 :::
 
 ::: {.callout-tip collapse="true"}
-## Solution: Group 3 (~ 5 minutes)
-1. Yes, this data set is the basis for a published article.
+## Solution: Group 2 (\~ 5 minutes)
 
-2. It is stated in the README.
+1.  Yes, this data set is the basis for a published article.
 
-3. Yes.
+2.  As part of the title.
 
-4. In the "Open Research" section before the Reference section.
+3.  Yes.
 
+4.  In the very beginning following Abstract and Figures. However, no special section therefore not very intuitive to find.
 :::
 
 ::: {.callout-tip collapse="true"}
-## Solution: Group 4 (~ 5 minutes)
-1. Yes, this data set is the basis for a published article.
+## Solution: Group 3 (\~ 5 minutes)
 
-2. In "Related works", a link to a github repo is provided and when going there it is stated in the README.
+1.  Yes, this data set is the basis for a published article.
 
-3. Yes.
+2.  It is stated in the README.
 
-4. As separate section before "Code availability" and the Reference section.
+3.  Yes.
 
+4.  In the "Open Research" section before the Reference section.
+:::
+
+::: {.callout-tip collapse="true"}
+## Solution: Group 4 (\~ 5 minutes)
+
+1.  Yes, this data set is the basis for a published article.
+
+2.  In "Related works", a link to a github repo is provided and when going there it is stated in the README.
+
+3.  Yes.
+
+4.  As separate section before "Code availability" and the Reference section.
 :::
 
 ## License
 
-If we in the end would like to share our research data and enable reuse for other researchers, we should define conditions under which the data can be reused. At this point licenses come into play. Licenses are standard contracts that regulate usage rights for published work. As already mentioned, thereby enabling other people to reuse the published work. If no license is provided with a data set, it is not clear to others under which conditions they can reuse it and they might (against your good intentions) rather refrain from reusing it at all. 
+If we in the end would like to share our research data and enable reuse for other researchers, we should define conditions under which the data can be reused. At this point licenses come into play. Licenses are standard contracts that regulate usage rights for published work. As already mentioned, thereby enabling other people to reuse the published work. If no license is provided with a data set, it is not clear to others under which conditions they can reuse it and they might (against your good intentions) rather refrain from reusing it at all.
 
 ::: callout-warning
 ## License and Copyright
-It is important to keep in mind that you can only define usage conditions by assigning licenses for work that "is yours", i.e., that you have the copyright for. This is not always the case for data. Data that result from a significant creative process (as is often the case in the humanities or qualitative social sciences) are more likely covered by copyright while data that result from rather simple measurement processes (as is often the case for natural or quantitative social sciences) are likely not covered. 
-Also, note the distinction between the **instrument** used to create the data and the data themselves in this regard. E.g., if the data you are about to publish result from a comprehensive questionnaire that you have developed, **the questionnaire** ought to be protected by copyright whereas the data are most likely not.
-As mentioned in the beginning, you can only assign licenses to work that you hold the copyright for. If this is not the case or you are unsure, it is safest to go with CC0 as this is strictly speaking not a license, but rather a waiver of copyright. You explicitly release your work into the public domain.
 
+It is important to keep in mind that you can only define usage conditions by assigning licenses for work that "is yours", i.e., that you have the copyright for. This is not always the case for data. Data that result from a significant creative process (as is often the case in the humanities or qualitative social sciences) are more likely covered by copyright while data that result from rather simple measurement processes (as is often the case for natural or quantitative social sciences) are likely not covered. Also, note the distinction between the **instrument** used to create the data and the data themselves in this regard. E.g., if the data you are about to publish result from a comprehensive questionnaire that you have developed, **the questionnaire** ought to be protected by copyright whereas the data are most likely not. As mentioned in the beginning, you can only assign licenses to work that you hold the copyright for. If this is not the case or you are unsure, it is safest to go with CC0 as this is strictly speaking not a license, but rather a waiver of copyright. You explicitly release your work into the public domain.
 :::
 
-There are several licenses out there, as e.g. [Creative Commons](https://creativecommons.org/), [MIT](https://opensource.org/license/mit) (software), [Apache](https://www.apache.org/licenses/) (software), [Open Data Commons](https://opendatacommons.org/) and it ultimately is your responsibility to pick one. If you have no advise and you do not want to read through all licenses out there, the Creative Commons licences are usually a save choice (see box below). As rule of thumb, you may want to remember to go with the least restrictive license to maximize your data's reuse potential. A recent article gives the following recommendations [^2]:
+There are several licenses out there, as e.g. [Creative Commons](https://creativecommons.org/), [MIT](https://opensource.org/license/mit) (software), [Apache](https://www.apache.org/licenses/) (software), [Open Data Commons](https://opendatacommons.org/) and it ultimately is your responsibility to pick one. If you have no advise and you do not want to read through all licenses out there, the Creative Commons licences are usually a save choice (see box below). As rule of thumb, you may want to remember to go with the least restrictive license to maximize your data's reuse potential. A recent article gives the following recommendations [^3]:
 
-* Provide open research data under the CC-BY license or the CC0 label.
-* If it can be assumed that research data are **not** protected by copyright, CC0 should be preferred.
+[^3]: Brettschneider, P., Axtmann, A., Böker, E., & von Suchodoletz, D. (2021): Offene Lizenzen für Forschungsdaten: Rechtliche Bewertung und Praxistauglichkeit verbreiteter Lizenzmodelle, in: O-Bib. Das Offene Bibliotheksjournal 8(3), pp. 1–22, https://doi.org/10.5282/o-bib/5749. \[only in German\]
 
-[^2]: Brettschneider, P., Axtmann, A., Böker, E., & von Suchodoletz, D. (2021): Offene Lizenzen für Forschungsdaten: Rechtliche Bewertung und Praxistauglichkeit verbreiteter Lizenzmodelle, in: O-Bib. Das Offene Bibliotheksjournal 8(3), pp. 1–22, https://doi.org/10.5282/o-bib/5749. [only in German]
+-   Provide open research data under the CC-BY license or the CC0 label.
+-   If it can be assumed that research data are **not** protected by copyright, CC0 should be preferred.
 
-Even if CC BY is possible copyright-wise, be aware that it merely paraphrases the rules of good scientific practice. So you are setting conditions that are rather self-evident for scientists but nevertheless imply an extra effort for reuse, namely figuring out how to attribute correctly according to the license.\\
-For similar reasons, using more restrictive licenses should be extremely carefully considered, at least if you are intending to make your data reusable for others. In particular, it can become impossible to merge data published under different, more restrictive licenses as their licenses may be incompatible, preventing follow-up research, archiving or even publication of the combined data. \\
+Even if CC BY is possible copyright-wise, be aware that it merely paraphrases the rules of good scientific practice. So you are setting conditions that are rather self-evident for scientists but nevertheless imply an extra effort for reuse, namely figuring out how to attribute correctly according to the license.   
+For similar reasons, using more restrictive licenses should be extremely carefully considered, at least if you are intending to make your data reusable for others. In particular, it can become impossible to merge data published under different, more restrictive licenses as their licenses may be incompatible, preventing follow-up research, archiving or even publication of the combined data (cf. [this CC FAQ](https://creativecommons.org/faq/#can-i-combine-material-under-different-creative-commons-licenses-in-my-work)).   
 CC0 is great, because it is universally compatible and ensures free reusability of research data.
 
-::: {.callout-note}
+::: callout-note
 ## Excursion: Creative Commons licences
+
 Creative commons licenses are widely used in research and we will therefore go into a little bit of detail on these. CC provides four features, which form the basis of a fixed set of six CC licenses. These are:
 
-* BY: For "attribution", i.e., the obligation to credit the author and other parties designated for attribution
-* ND: For "no derivatives", i.e., only verbatim copies of the work can be shared
-* NC: For "non-commercial", i.e., commercial use is excluded from the license grant
-* SA: For "share alike", i.e., the work can be modified and modified versions can be published but only under the original or a compatible license. 
+-   BY: For "attribution", i.e., the obligation to credit the author and other parties designated for attribution
+-   ND: For "no derivatives", i.e., only verbatim copies of the work can be shared
+-   NC: For "non-commercial", i.e., commercial use is excluded from the license grant
+-   SA: For "share alike", i.e., the work can be modified and modified versions can be published but only under the original or a compatible license.
 
-The following six licenses result from the combination of these four features, listed from most (left) to least (right) permissive here: 
+The following six licenses result from the combination of these four features, listed from most (left) to least (right) permissive here:
 
-::: {layout-ncol=6}
+::: {layout-ncol="6"}
 ![[CC BY](https://creativecommons.org/licenses/by/4.0/)](images/cc-by.png)
 
 ![[CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/)](images/cc-by-sa.png)
@@ -144,10 +141,10 @@ The following six licenses result from the combination of these four features, l
 ![[CC BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/4.0/)](images/cc-by-nc-nd.png)
 :::
 
-In addition, there are two further labels, to dedicate the published work to the **public domain**. 
+In addition, there are two further labels, to dedicate the published work to the **public domain**.
 
-* CC0: Allowing others to reuse your work without conditions, i.e., even if you were copyright holder you are not insisting on it. Good scientific practice obviously foresees that you will in any case credit the author(s) of work you are (re)using!
-* Public domain mark: Explicitly label work that is not restricted by copyright.
+-   CC0: Allowing others to reuse your work without conditions, i.e., even if you were copyright holder you are not insisting on it. Good scientific practice obviously foresees that you will in any case credit the author(s) of work you are (re)using!
+-   Public domain mark: Explicitly label work that is not restricted by copyright.
 
 ::: {layout="[15,-10,15,-60]"}
 ![[CC0](https://creativecommons.org/publicdomain/zero/1.0/)](images/cc-zero.png)
@@ -161,61 +158,62 @@ As stated above, the CC0 label or the CC BY license should be your preferred cho
 ::: callout-important
 ## Task X:
 
-Are you actually allowed to reuse your data set? 
+Are you actually allowed to reuse your data set?
 
 If so, under which conditions?
 :::
 
 ::: {.callout-tip collapse="true"}
-## Solution: Group 1 (~ 2 minutes if only the license is enough, if delving deeper into the conditions obviously longer)
-1. Yes.
+## Solution: Group 1 (\~ 2 minutes if only the license is enough, if delving deeper into the conditions obviously longer)
 
-2. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+1.  Yes.
 
+2.  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 :::
 
 ::: {.callout-tip collapse="true"}
-## Solution: Group 2 (~ 2 minutes, as above)
-1. Yes.
+## Solution: Group 2 (\~ 2 minutes, as above)
 
-2. [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+1.  Yes.
 
+2.  [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 :::
 
 ::: {.callout-tip collapse="true"}
-## Solution: Group 3 (~ 5 minutes)
-1. No.
+## Solution: Group 3 (\~ 5 minutes)
 
-2. -
+1.  No.
 
+2.  
+
+    -   
 :::
 
 ::: {.callout-tip collapse="true"}
-## Solution: Group 4 (~ 2 minutes)
-1. Yes.
+## Solution: Group 4 (\~ 2 minutes)
 
-2. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). However the git repo is under a Apache License Version 2.0, so depending on which version you use, the conditions are different.
+1.  Yes.
 
+2.  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). However the git repo is under a Apache License Version 2.0, so depending on which version you use, the conditions are different.
 :::
 
 ## Persistent identifier
 
-Imagine a scenario in which a repository is no longer maintained, so that all data sets published in that repository are no longer available at the repository's URLs (a quite real scenario, as you can see in [this article](https://doi.org/10.48550/arXiv.2310.06712)). To avoid data loss, the original repository migrated its data sets to another repository, where it however gets a new URL. Consequently, if the corresponding article linked to its data set via the URL (e.g., https://osf.io/gn47c/), it can no longer be found. What now?
-In such cases, persistent identifiers are extremely helpful if not essential. The ones we consider crucial are listed below. 
+Imagine a scenario in which a repository is no longer maintained, so that all data sets published in that repository are no longer available at the repository's URLs (a quite real scenario, as you can see in [this article](https://doi.org/10.48550/arXiv.2310.06712)). To avoid data loss, the original repository migrated its data sets to another repository, where it however gets a new URL. Consequently, if the corresponding article linked to its data set via the URL (e.g., https://osf.io/gn47c/), it can no longer be found. What now? In such cases, persistent identifiers (PIDs) are extremely helpful if not essential. The ones we consider crucial are listed below.
 
 ### Digital object identifier
 
-A digital object identifier ([DOI](https://www.doi.org/)) points directly to a digital object rather than to its location online (unlike URL). You may know it already from publications. It consists of a unique number made up of a prefix and a suffix separated by a forward slash as e.g., 10.5281/zenodo.4322849. It allows things to be uniquely identified and accessed reliably by using the DOI proxy server https://doi.org/ and appending the DOI, e.g., https://doi.org/10.5281/zenodo.4322849. 
+A digital object identifier ([DOI](https://www.doi.org/)) points directly to a digital object rather than to its location online (unlike URL). You may know it already from publications. It consists of a unique number made up of a prefix and a suffix separated by a forward slash as e.g., 10.5281/zenodo.4322849. It allows things to be uniquely identified and accessed reliably by using the DOI proxy server https://doi.org/ and appending the DOI, e.g., https://doi.org/10.5281/zenodo.4322849. To avoid 
 
 ### Open Researcher and Contributor ID
 
-The Open Researcher and Contributor ID ([ORCID](https://orcid.org/)) provides a unique and persistent identifier that you yourself connect with your professional (scientific) information. This helps to recognize all your work, even when you change your name or it is misspelled, you move on to a new institution etc. Getting an ORCID is free and quick and there are several platforms from grant application to manuscript submission and beyond that allow you to use to log into their system.
+The Open Researcher and Contributor ID ([ORCID](https://orcid.org/)) provides a unique and persistent identifier that you yourself connect with your professional (scientific) information. This helps to recognize all your work, even if e.g., you change your name, one of your coauthors misspells it, or you move on to a new institution. Getting an ORCID is free and quick and meanwhile, several platforms, from grant application to manuscript submission and beyond, allow you to use your ORCID to log into their system.
 
 ### Research Organization Registry
 
 Last but not least, the Research Organization Registry ([ROR](https://ror.org/)) is a global, community-led registry of open persistent identifiers for research organizations. The LMU has one and all Max-Planck-Institutes have one as well. These are much easier to use than entering all the affiliation information whenever asked for it and at the same time help disambiguate institutional affiliations.
 
-::: callout-tip
+::: callout-important
 ## Task X:
 
 Can your data set be accessed reliably?
@@ -228,102 +226,147 @@ Does your institution have a ROR?
 :::
 
 ::: {.callout-tip collapse="true"}
-## Solution: Group 1 (~ 5 minutes)
-1. Yes, via DOI https://doi.org/10.17617/3.1STIJV.
+## Solution: Group 1 (\~ 5 minutes)
 
-2. The first author as listed corresponding author in the article.
+1.  Yes, via DOI https://doi.org/10.17617/3.1STIJV.
 
-3. No, he has moved on but he also connected his ORCID profile, which is however not well maintained.
+2.  The first author as listed corresponding author in the article.
 
-4. ???
+3.  Unsure, he has moved on but he also connected his ORCID profile, which is however not well maintained.
 
+4.  ???
 :::
 
 ::: {.callout-tip collapse="true"}
-## Solution: Group 2 (~ 5 minutes)
-1. Yes, via DOI https://doi.org/10.5282/ubm/data.288.
+## Solution: Group 2 (\~ 5 minutes)
 
-2. There is a contact person listed in the meta data with corresponding email address.
+1.  Yes, via DOI https://doi.org/10.5282/ubm/data.288.
 
-3. Unsure, he is not listed at the Institut für Soziologie anymore, but he also connected his ORCID profile in the article.
+2.  There is a contact person listed in the meta data with corresponding email address.
 
-4. ???
+3.  Unsure, he is not listed at the Institut für Soziologie anymore, but he also connected his ORCID profile in the article.
 
+4.  ???
 :::
 
 ::: {.callout-tip collapse="true"}
-## Solution: Group 3 (~ 5 minutes)
-1. No, it only has a URL.
+## Solution: Group 3 (\~ 5 minutes)
 
-2. The first author as listed corresponding author in the article.
+1.  No, it only has a URL.
 
-3. Yes but if it were not, there is no alternative.
+2.  The first author as listed corresponding author in the article.
 
-4. ???
+3.  Unsure, she has moved on, but there is no alternative.
 
+4.  ???
 :::
 
 ::: {.callout-tip collapse="true"}
-## Solution: Group 4 (~ 5 minutes)
-1. Yes, via DOI https://doi.org/10.5281/zenodo.10650333.
+## Solution: Group 4 (\~ 5 minutes)
 
-2. The first author as listed corresponding author in the article.
+1.  Yes, via DOI https://doi.org/10.5281/zenodo.10650333.
 
-3. Yes, and he also connected his ORCID profile.
+2.  The first author as listed corresponding author in the article.
 
-4. ???
+3.  Yes, and he also connected his ORCID profile.
 
+4.  ???
 :::
 
 ## Repository
 
-Repositories are database systems to document, store and publish digital objects. Thereby, they ensure visibility (via meta data) and sustainability (via use of PIDs) of the digital objects they are holding. Repositories can be:
-* Discipline-specific (e.g. OpenNeuro)
-* General (e.g. Zenodo, OSF)
-* Institutional (e.g. Edmond MPG, Open Data LMU)
+Repositories are database systems to document, store and publish digital objects. Thereby, they ensure visibility (via meta data) and sustainability (via use of PIDs) of the digital objects they are holding. Repositories can be:  
+- Discipline-specific (e.g. OpenNeuro)
+- General (e.g. Zenodo, OSF)
+- Institutional (e.g. Edmond MPG, Open Data LMU)
 
-The Registry of research data repositories ([Re3data.org](Re3data.org)) provides a collection of repositories with very nice search and overview functions. E.g., you can browse by subject (i.e., discipline).
-![re3data](images/re3data.png)
-When looking for a repository there are various criteria that should be considered. 
+The "Registry of research data repositories" ([Re3data.org](Re3data.org)) provides a collection of repositories with very nice search and overview functions. E.g., you can browse by subject (i.e., discipline).  
+
+![re3data.org](images/re3data.png){fig-align="left" width=50%}
+
+When looking for a repository there are various criteria that should be considered.
 
 ### Criteria
 
--   Costs/ User rights
--   Hosting country (GDPR)
--   Persistent identifier
--   License
--   Access control/ Embargo
--   Certified/ Sustainability
--   Data limit
+- Is the data completely open? Can I control access or set an embargo period?
+- Under what license can I publish data?
+- Does the repository provide a persistent identifier?
+- Is the repository certified as an indicator for its sustainability?
+- What are the costs?
+- What are the user rights?
+- Where are the data hosted? Is this compliant with the General Data Protection Regulation?
+- Is there a limit to the amount of data I can upload?
 
-When searching re3data, most of these criteria are displayed beside the repository, so you can immediately check whether a potential repository fulfills your requirements.
+When searching re3data, most of these criteria are displayed beside the repository via icons, so you can immediately check whether a potential repository fulfills your requirements.
 
-![re3data](images/re3data-criteria.png)
+![Criteria icons in re3data.org](images/re3data-criteria.png){fig-align="left" width=35%}
 
-### FAIR assessment tools https://zenodo.org/records/7701941
 
--   Short [questionnaire](https://www.cessda.eu/content/download/3845/35038/file/20170707_How_FAIR_are_your_data_Jones.pdf)
--   [F-uji Tool](https://www.f-uji.net/)
-
-## Benefits
-
-As soon as research data is shared, your own research becomes comprehensible to others. It becomes reproducible and can be verified. This is a central point in the implementation of good scientific practice.
-Additional benefits are displayed in the graphic 
-![Source: Hole, B. (2015). Open Science: A New publisher Perspective. Ubiquity press. (CC BY 4.0 International)](images/data-sharing.png)
-
-In addition, open access to research data offers new opportunities for scientific collaboration. 
-Another advantage of data sharing is the possibility of reusing well-documented data.
-of well-documented data. This approach can, for example, save time in scientific work and thus enable more efficient handling of research results, as they do not have to be collected again and again
-
-To ensure that research data can be accessed and reused, it makes sense to publish the associated data on which the research results are based in addition to the 'traditional' scientific articles.
-published.
-The publication and findability of your research data via national and international information portals can make a significant contribution to enhancing the reputation of data producers - even beyond the boundaries of your own scientific community.
-By publishing the data that forms the basis of an article, it can be reused and cited in a timely manner. Citation of the data by other researchers increases visibility and can strengthen the reputation of the research.
-
-::: callout-tip
+::: callout-important
 ## Task X:
 
-How would you cite your data set?
+Which repository was used to publish your data set?
+
+Can you find that repository on re3data.org?
+
+Under what criteria can you publish your data in that repository?
+:::
+
+::: {.callout-tip collapse="true"}
+## Solution: Group 1 (\~ 5 minutes)
+
+1.  Edmond.
+
+2. Yes.
+
+3. Click on the repository and go through the details: It assigns a DOI, you can publish under various licenses, it is certified etc.
+:::
+
+::: {.callout-tip collapse="true"}
+## Solution: Group 4 (\~ 5 minutes)
+
+1. Open Data LMU.
+
+2. Yes.
+
+3. Click on the repository and go through the details: It assigns a DOI, you can publish under various licenses, it is certified etc.
+:::
+
+::: {.callout-tip collapse="true"}
+## Solution: Group 3 (\~ 5 minutes)
+
+1.  OSF.
+
+2.  Yes.
+
+3.  Click on the repository and go through the details: It assigns a DOI, you can publish under various licenses, it is certified etc.
+:::
+
+::: {.callout-tip collapse="true"}
+## Solution: Group 4 (\~ 5 minutes)
+
+1.  Zenodo.
+
+2.  Yes.
+
+3.  Click on the repository and go through the details: It assigns a DOI, you can publish under various licenses, it is certified etc.
+:::
+
+::: callout-note
+## Excursion: FAIR assessment tools 
+
+With the emerging requisite of research data being FAIR, a number of tools have been developed that automatically check how FAIR published data are. These tools have been evaluated and a nice overview has been published (c.p. https://zenodo.org/records/7701941). We invite you to play around with these tools, especially the automatic tools [F-uji Tool](https://www.f-uji.net/) and [FAIR enough](https://fair-enough.semanticscience.org/). E.g., you may input your dataset to different tools and look at the output, check whether the output confirms your impression of the dataset's reusability, or find a dataset that has been published in different repositories and see how that influences a tool's output (e.g., https://doi.org/10.5281/zenodo.7298798 vs. https://doi.org/10.17617/3.LLWRWR.
 :::
 
 
+
+## Benefits
+
+Publishing data comes with numerous benefits that usually outperform the extra amount of work that is needed. Planning the management of your data in the beginning is however crucial in order to make the most of it. Having well-organized and documented data will not only increase their value for others but also for your futures self, when going back into your data folder e.g., for a revision after a year.  
+Sharing research data your own research becomes comprehensible to others. It becomes reproducible and can be verified. This is a central point in the implementation of good scientific practice. Additional benefits are displayed in the graphic.
+
+![Source: Hole, B. (2015). Open Science: A New publisher Perspective. Ubiquity press. ([CC BY 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode))](images/data-sharing.png){fig-align="left" width=75%}
+
+In addition, open access to research data offers new opportunities for scientific collaboration. Another advantage of data sharing is the possibility of reusing well-documented data. of well-documented data. This approach can, for example, save time in scientific work and thus enable more efficient handling of research results, as they do not have to be collected again and again
+
+To ensure that research data can be accessed and reused, it makes sense to publish the associated data on which the research results are based in addition to the 'traditional' scientific articles. published. The publication and findability of your research data via national and international information portals can make a significant contribution to enhancing the reputation of data producers - even beyond the boundaries of your own scientific community. By publishing the data that forms the basis of an article, it can be reused and cited in a timely manner. Citation of the data by other researchers increases visibility and can strengthen the reputation of the research.
