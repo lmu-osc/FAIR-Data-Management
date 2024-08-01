@@ -277,6 +277,7 @@ Does your institution have a ROR?
 ## Repository
 
 Repositories are database systems to document, store and publish digital objects. Thereby, they ensure visibility (via meta data) and sustainability (via use of PIDs) of the digital objects they are holding. Repositories can be:  
+
 - Discipline-specific (e.g. OpenNeuro)
 - General (e.g. Zenodo, OSF)
 - Institutional (e.g. Edmond MPG, Open Data LMU)
@@ -358,18 +359,3 @@ Under what criteria can you publish your data in that repository?
 
 With the emerging requisite of research data being FAIR, a number of tools have been developed that automatically check how FAIR published data are. These tools have been evaluated and a nice overview has been published (c.p. https://zenodo.org/records/7701941). We invite you to play around with these tools, especially the automatic tools [F-uji Tool](https://www.f-uji.net/) and [FAIR enough](https://fair-enough.semanticscience.org/). E.g., you may input your dataset to different tools and look at the output, check whether the output confirms your impression of the dataset's reusability, or find a dataset that has been published in different repositories and see how that influences a tool's output (e.g., https://doi.org/10.5281/zenodo.7298798 vs. https://doi.org/10.17617/3.LLWRWR.
 :::
-
-
-
-## Benefits
-
-Publishing data can be a hassle, especially when it is an unforeseen requirement when actually submitting an article. Planning the management of your data in the beginning is thus crucial in order to benefit most from it. The extra amount of work this may take is well invested, since having well-organized and documented data will not only increase their value for others but also for your futures self, when going back into your data folder e.g., for a revision after a year.  
-On the other hand, publishing data comes with numerous benefits:  
-
--   Data can be reused and cited in a timely manner. Citation of the data by other researchers increases visibility and can strengthen the reputation of your research.
--   New scientific collaborations may arise through data published according to FAIR, i.e., in reusable format. Collecting data is a time consuming business, so other researchers might as well benefit from already existing data (collected on public money) and you receive credit for producing the data.
--   Publishing data on which research results are based (in addition to the 'traditional' scientific articles) will support the credibility, reproducability, and validity of the results. This increases public trust in science.  
-
-Additional benefits are displayed in the graphic.
-
-![Source: Hole, B. (2015). Open Science: A New publisher Perspective. Ubiquity press. ([CC BY 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode))](images/data-sharing.png){fig-align="left" width=75%}
