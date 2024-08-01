@@ -42,7 +42,16 @@ website:
             text: Codebook
       - section: "3) Publication"
         href: publication.qmd
-      - section: "4) Data Management Plans"
+        contents: 
+          - href: publication.qmd#data-availability-statement
+            text: Data Availability Statement
+          - href: publication.qmd#license
+            text: License
+          - href: publication.qmd#persistent-identifier
+            text: Persistent identifier
+          - href: publication.qmd#repository
+            text: Repository
+        - section: "4) Data Management Plans"
         href: dmp.qmd
         contents:
           - href: dmp.qmd#general-information
@@ -59,4 +68,3 @@ format:
     toc: true
 
 editor: visual
-
