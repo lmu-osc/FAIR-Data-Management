@@ -36,8 +36,8 @@ Metadata should provide answers to the following questions:
 ::: callout-tip
 ## Task X:
 
-Can you answer all of these questions by looking through your (example) data set? \
-Where did you find this information? \
+Can you answer all of these questions by looking through your (example) data set?\
+Where did you find this information?\
 Was everything readily understandable?
 
 Bonus:\
@@ -188,14 +188,14 @@ A first step is to provide this information about your data in a .csv table, a .
 "longitude","number","-180 to 180"\
 :::
 
-### Advanced level: 
+### Advanced level:
 
-To improve the quality and usability of your code book you can provide it as a JSON file. This provides the advantage to be machine-readable and -actionable. It makes it easier to extract this information and work with it in coding scripts. 
+To improve the quality and usability of your code book you can provide it as a JSON file. This provides the advantage to be machine-readable and -actionable. It makes it easier to extract this information and work with it in coding scripts.
 
 ::: {.callout-note icon="false" collapse="true"}
 # Example of a detailed JSON code book
 
-```<JSON>
+``` <json>
 {
   "title": "Penguin Populations Code book",
   "description": "Code book for the Penguin Populations data set",
@@ -255,7 +255,6 @@ To improve the quality and usability of your code book you can provide it as a J
     "required_software": "JSON parser"
   }
 }
-
 ```
 :::
 
@@ -264,20 +263,17 @@ To improve the quality and usability of your code book you can provide it as a J
 
 Option 1: Your (example) data set **does not** contain a code book
 
--  Open one of the data files of your data set. 
--  Can you make sense of the data provided? Note down difficulties you identify. 
--  Can you find supportive information to understand the provided data in other documents? Note them down and link them if possible. 
+-   Open one of the data files of your data set.
+-   Can you make sense of the data provided? Note down difficulties you identify.
+-   Can you find supportive information to understand the provided data in other documents? Note them down and link them if possible.
 
 Option 2: Your (example) data set **does** contain a code book
 
--  In what format was the code book provided? 
--  Open one of the data files of your data set. 
--  Can you make sense of the data provided? Does the code book help you? 
-
+-   In what format was the code book provided?
+-   Open one of the data files of your data set.
+-   Can you make sense of the data provided? Does the code book help you?
 :::
-
-
 
 ## Further Resources:
 
--   "Documentation and Metadata", The Turing Way, accessed 7. July 2024. [https://book.the-turing-way.org/reproducible-research/rdm/rdm-metadata](https://book.the-turing-way.org/reproducible-research/rdm/rdm-metadata)
+-   "Documentation and Metadata", The Turing Way, accessed 7. July 2024. <https://book.the-turing-way.org/reproducible-research/rdm/rdm-metadata>
