@@ -194,7 +194,7 @@ Most of the common funding agencies ask for information on handling research dat
 
 Different software is used to streamline the DMP creation process, simplify workflows, and empower collaborative work.
 
-::: {.callout-warning title="Note:"}
+::: {.callout-warning title="DMP Tool vs. repository"}
 It is essential to clarify the difference between a DMP tool and a repository: A DMP tool is a planning tool where you gather information about research data management in general, e.g. about the collection, description, etc. You can also use it as a documentation tool. A repository whereas is a platform where you can store and publish your data. A DMP tool does not store your research data; instead, it is a project management tool that helps you (and others) keep track of your research data management.
 :::
 
