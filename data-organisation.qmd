@@ -1,21 +1,12 @@
 ---
-title: "1) Data organisation"
+title: "1) Organization"
 link-external-newwindow: true
-author:
-  - name: David Walter
-    id: dw
-    orcid: 0000-0001-6807-5007
-    email: d.walter@mpdl.mpg.de
-    affiliation: 
-      - name: Max Planck Digital Library
-        city: Munich
-        url: https://www.mpdl.mpg.de/en/
 ---
 
 
 ## General notes
 
-A clear and consistent folder structure and folder and file name convention is important for making your your data findable. You should think about it aforehand in order to avoid inconsistencies or the need for renaming your data.
+A clear and consistent folder structure and folder and file name convention is important for making your data findable. You should think about it aforehand in order to avoid inconsistencies or the need for renaming your data.
 
 Your structure and your naming conventions should be intuitive. However, you should explicitly describe them (typically in a README file), because they may not be that intuitive for others, or for yourself in future ("why did I do that like this?").
 
@@ -25,21 +16,22 @@ Your structure and your naming conventions should be intuitive. However, you sho
 
 Check the file (and potentially folder) structure of the dataset.
 
-::: {.callout-tip collapse="false" icon="true" title="Tasks"}
-For each of the aspects mentioned in the section please do following:
+::: {.callout-tip collapse="false" icon="true" title="Tasks (\~ 30 minutes)"}
+For each of the aspects mentioned in the sections below, please do following:
 
-- Discuss and note the current situation:
+- Check the current situation:
   - What is done how and why?
+- Discuss:
   - What would you keep like it is, what would you do better or which alternatives exist? Why?
-
-Then, improve the dataset (or mention the improvements you would do, in case you have not enough time).
+- Then, improve the dataset (or just briefly mention the improvements you would do, in case you have not enough time).
 :::
 
+The most important action here is to discuss, because for most aspects, there are several possible solutions.
 
 
 ## Aspects to look at
 
-Following are some aspects to look at. Not all of them may apply to all datasets. Besides the tasks (questions), there are some general hints and rules given.
+Following are some aspects to look at. Not all of them may apply to all datasets. Besides the tasks (green boxes), there are some general hints and rules given.
 
 Some of the rules are not applicable for all use cases, and sometimes there are good arguments for not sticking to every rule. However, in such case you should know (and potentially document) why you decide differently.
 
@@ -49,13 +41,13 @@ Some of the rules are not applicable for all use cases, and sometimes there are 
 Depending on the structure of your data and documentation, you have to decide on how to arrange your files and folders.
 This may also require judgment and compromises: Many files per folder versus deep folder structure, intuitive names versus strict conventions, structuring either by processing level or permissions or size or ...
 
-::: {.callout-tip collapse="false" icon="true" title="Check"}
+::: {.callout-tip collapse="false" icon="true" title="Check (\~ 5 minutes)"}
 - Is the folder structure intuitive and logical?
 - Is it explicitly described? Where (metadata of repository or in a readme file)?
 - How many files per folder, how deeply nested?
 :::
 
-::: {.callout-warning collapse="true" icon="true" title="Avoid too long file paths."}
+::: {.callout-warning collapse="false" icon="true" title="Avoid too long file paths."}
 Depending on the operating system, there is an upper limit of the total path length, e.g. 255 characters. And if you synchronize or backup your data, the path of the copy might be even longer than your orginal path, in which case your sync or backup job might fail.
 Therefore try to keep your full path clearly below such upper limits.
 
@@ -66,13 +58,39 @@ Therefore try to keep your full path clearly below such upper limits.
 ::: {.callout-note collapse="true" icon="true" title="Further hints about folder structure"}
 * Avoid too deeply nested folder structures: SubSubSubSubSubFolders can be quite inconvenient.
 * Avoid too many files or subfolders within one folder.\
-  It can be quite inconvenient to look through dozens of heterogeneous file names. In case of clearly structured file names (e.g. numbered files like "Image003.tif" or "Plot01_Part03.tab"), also larger number of elements per folder can be fine. But for very many files (several thousands), the performance of the file browser may decrease.
-* In case different project members should have different access restrictions to files, this could be represented by your folder structure.
+  It can be quite inconvenient to look through dozens of heterogeneous file names. In case of clearly structured file names (e.g. numbered files like "Image003.tif" or "Plot01_Part03.tab"), also larger number of elements per folder can be fine. But for very many files (several thousands), the performance of the file explorer may decrease.
+* In case different project members should have different access restrictions to files, this could be considered in your folder structure.
 :::
 
 ::: {.callout-note collapse="true" icon="false" title="Examples"}
 
-Example, adapted from Suse Prejawa (2021, [https://hdl.handle.net/21.11116/0000-0008-662A-7](https://hdl.handle.net/21.11116/0000-0008-662A-7))
+Example for structuring a dataset: organized by File type, adapted from [https://datadryad.org/stash/best_practices#organize](https://datadryad.org/stash/best_practices#organize)
+
+```
++ DatasetA
+  + Data
+    + Processed
+    + Raw
+  + Results
+    + Figure1.tif
+    + Figure2.tif
+```
+
+Example for structuring a dataset: organized by Analysis, adapted from [https://datadryad.org/stash/best_practices#organize](https://datadryad.org/stash/best_practices#organize)
+
+```
++ DatasetB
+  + Figure1
+    + RawData
+    + Results
+      + Figure1.tif
+  + Figure2
+    + RawData
+    + Results
+      + Figure2.tif
+```
+
+Example for a project folder structure: adapted from Suse Prejawa (2021, [https://hdl.handle.net/21.11116/0000-0008-662A-7](https://hdl.handle.net/21.11116/0000-0008-662A-7))
 
 ```
 + Project_Folder
@@ -94,30 +112,27 @@ Example, adapted from Suse Prejawa (2021, [https://hdl.handle.net/21.11116/0000-
     + Outputs
 ```
 
-Example, organized by File type, adapted from [https://datadryad.org/stash/best_practices#organize](https://datadryad.org/stash/best_practices#organize)
+Example for a project folder structure: adapted from template used at the Max Planck Institute for Chemistry, used for measurement projects/campaigns (e.g. with a research aircraft)
 
 ```
-+ DatasetA
-  + Data
-    + Processed
-    + Raw
-  + Results
-    + Figure1.tif
-    + Figure2.tif
-```
-
-Example, organized by Analysis, adapted from [https://datadryad.org/stash/best_practices#organize](https://datadryad.org/stash/best_practices#organize)
-
-```
-+ DatasetB
-  + Figure1
-    + RawData
-    + Results
-      + Figure1.tif
-  + Figure2
-    + RawData
-    + Results
-      + Figure2.tif
+\\file.mpic.de\projects\ExampleProject\
+  + GeneralOverview  # General documentation of the project
+  + Meetings         # Meeting notes, presentations
+  + INST             # Instruments
+    + Instrument1    # One folder per instrument
+      + Doc          # Documentation for this instrument
+      + L_0          # Raw data
+      + L_2          # Processed/analyzed data on original resolution
+        + Product1   # One folder per data product
+          + Code     # Code used for creating the data of this product
+          + Data     # Data files of this product
+          + Doc      # Documentation for this data product
+      + L_3          # Gridded data products
+        + Product1   # One folder per data product (e.g. hourly averages)
+          + Code     # Code used for creating the data of this product
+          + Data     # Data files of this product
+          + Doc      # Documentation for this data product
+      + Labbook      # Labbook (photos of paper logbook or exports from ELN)
 ```
 
 :::
@@ -133,43 +148,52 @@ File or folder names have following major purposes:
 
 For the naming of folders, widely the same rules apply as for files. They shall allow to choose the desired file amongst all the other files of the folder. Therefor, the names should be concise and intuitive (if applicable). In particular in case of non-intuitive names, they have to be explained somewhere, typically in a README file. Well-structured folders have clear naming conventions, which are explicitly described.
 
-::: {.callout-tip collapse="false" icon="true" title="Check"}
+::: {.callout-tip collapse="false" icon="true" title="Check (\~ 10 minutes)"}
 - What is the convention of the naming? Is it intuitive and logical? Is it explicitly described?
 - Are the names meaningful?
-- Are there (potentially) misleading names?
+- Are there misleading names?
 - In case of many files: Do they show up in a logical order when sorting alphabetically?
 - Are there problematic characters like spaces, non-ASCII characters etc?
 - Length of the name
 :::
 
-::: {.callout-warning collapse="true" icon="true" title="Do not use bad characters."}
+::: {.callout-warning collapse="false" icon="true" title="Do not use bad characters."}
 Depending on the operating system etc, some characters are forbidden or may lead to problems, and thus should be avoided.
 
-- very bad: Any non-ASCII character, e.g.: `öäüßµαδ°±•€→☺É`.
-- bad: Any whitespace character, e.g. `File 1.txt`. They can cause problems e.g. in some batch tasks, in particular if on forgets to surround the name with quotes. Furthermore, double or multiple spaces, and spaces at the begin of the name are not clearly visible.
-- forbidden in Windows: `\/:*?"<>|`
-- also not recommended: `,;()[]{}` etc
+- Very bad: any non-ASCII character, e.g.: `öäüßµαδ°±•€→☺É`
+- Bad: any whitespace character, e.g. `File 1.txt`. They can cause problems e.g. in some batch tasks, in particular if on forgets to surround the name with quotes. Furthermore, double or multiple spaces, and spaces at the begin of the name are not clearly visible.
+- Forbidden in Windows: `\/:*?"<>|`
+- Also not recommended: `,;()[]{}` etc
 
 To summarize: You should only use latin letters A-Z, a-z, digits 0-9, underscore, hyphen and dot, i.e. following characters: `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789_-.`
 
-The dot should only used in file names, and there only once, namely before the line extension, e.g. "Notes.txt".
+The dot should only be used in file names, and there only once, namely before the line extension, e.g. "Notes.txt".
 
 Some programs use dot or underscore as first character for special files, e.g. `_quarto.yml` or `.git` and thus should be avoided for regular data files.
 :::
 
+::: {.callout-warning collapse="true" icon="true" title="No 'hello.txt' and 'Hello.txt' in same folder"}
+Take care, that subfolders and files have unique names within a common folder, even in a case-insensitive way. For example, do not put two files named `hello.txt` and `Hello.txt` in the same folder.
+
+This note is in particular relevant for Linux users, where it would be possible to put both files in same folder. But in Windows that is not allowed, thus sharing such a folder would cause problems.
+:::
 
 ::: {.callout-note collapse="true" icon="true" title="Order and timestamps"}
 A naming convention can enable a logical order of the file or folder names when sorting them alphabetically. Here some tips:
 
 - When numbers are included, leading zeros are useful in most cases:
-  - with "0": `Scan01.csv Scan02.csv Scan03.csv Scan04.csv Scan05.csv Scan06.csv Scan07.csv Scan08.csv Scan09.csv Scan10.csv Scan11.csv Scan12.csv`
-  - without: `Scan1.csv Scan10.csv Scan11.csv Scan12.csv Scan2.csv Scan3.csv Scan4.csv Scan5.csv Scan6.csv Scan7.csv Scan8.csv Scan9.csv`
-- Timestamps should always be given with leading in the order 'big..small', e.g. year, month, day of month, hour, minute, second. This is in compliance with the international format ISO 8601 (e.g. "2024-07-31", "2024-07-31T2313"). Examples:
-  - very bad: `13Jan2024 21April2021 3Dec2025`
-  - also bad: `03122025 13012024 21042021`
-  - good: `2021-04-21 2024-01-13 2025-12-03`
-  - also ok: `20210421 20240113 20251203`
-  - including time of day: `20210421T0345 20240113T1730 20251203T1900` for 03:45, 17:30, 19:00
+  - with "0":\
+    `Scan01.csv`, `Scan02.csv`, `Scan03.csv`, `Scan04.csv`, `Scan05.csv`, `Scan06.csv`,\
+    `Scan07.csv`, `Scan08.csv`, `Scan09.csv`, `Scan10.csv`, `Scan11.csv`, `Scan12.csv`
+  - without:\
+    `Scan1.csv`, `Scan10.csv`, `Scan11.csv`, `Scan12.csv`, `Scan2.csv`, `Scan3.csv`,\
+    `Scan4.csv`, `Scan5.csv`, `Scan6.csv`, `Scan7.csv`, `Scan8.csv`, `Scan9.csv`
+- Timestamps should always be given with leading zero and in the order 'from big to small', i.e. year, month, day of month, hour, minute, second. This is in compliance with the international format ISO 8601 (e.g. "2024-07-31", "2024-07-31T2313"). Examples:
+  - very bad: `13Jan2024`, `21April2021`, `3Dec2025`
+  - also bad: `03122025`, `13012024`, `21042021`
+  - good: `2021-04-21`, `2024-01-13`, `2025-12-03`
+  - also ok: `20210421`, `20240113`, `20251203`
+  - including time of day: `20210421T0345`, `20240113T1730`, `20251203T1900` for 03:45, 17:30, 19:00
 :::
 
 ::: {.callout-note collapse="true" icon="true" title="Good practice for file naming"}
@@ -202,9 +226,35 @@ For the releases of software-products, GitHub recommends version names like '1.3
 
 ### File formats
 
-When storing information in a file, a file format has to be chosen. For the sake of interoperability, the format needs a clear stucture, making it easy to read with many software products (out of the box, or by writing a small script). A clear documentation of the file format shall be publicly available. With that, the chance is high, that the file can be read in future, making ist suitable for long-term preservation. Therefore, open file formats are recommended, while proprietary formats (typically without available documentation, readable only by proprietary software) should be avoided.
+When storing information in a file, a file format has to be chosen. For the sake of interoperability, the format needs a clear stucture, making it easy to read with many software products (out of the box, or by writing a small script). A clear documentation of the file format shall be publicly available. With that, the chance is high, that the file can be read in future, making ist suitable for long-term preservation. Therefore, open file formats are recommended, while proprietary formats should be avoided.
 
-Examples for recommended formats:
+Ideally, when choosing a good format, has following properties:
+
+- readable by human with simple editor
+- readable with many programs
+- easy to understand, low complexity
+- small (storage space)
+- quick to read (performance)
+
+However, compromises have to be done. For example, binary files are usually more performant than csv-files and thus more suitable during the active research process, while csv is a well-established format for long-term preservation.
+
+::: {.callout-tip collapse="false" icon="true" title="Check (\~ 10 minutes)"}
+- Are the files in a open or a proprietary format?
+- Are they future-proof, i.e. suitable for long-term archiving?
+- How easy to open it (available programs, file size)?
+- How complex are they, what is their internal structure?
+- What about performance and file size?
+- How easy to understand them as human?
+- Are they machine-readable? How easy to write a script for reading them?
+- Which alternative formats exist?
+:::
+
+::: {.callout-note collapse="true" icon="true" title="To avoid: Proprietary formats"}
+Often, proprietary formats have intentially no proper documentation, in some cases even technical protection-mechanisms, making them readable only by commercial software. This reduces the interoperability and reusability of the files, and in worst case makes them unreadable on the long-term. Furthermore, the files might contain hidden (potenically sensitive) information. Thus, such formats should be avoided.
+:::
+
+::: {.callout-note collapse="true" icon="true" title="Examples for recommended formats"}
+Following some formats which are widely used, documented and readable with several programs.
 
 - For documentation:
   - Plain text (.txt)
@@ -220,26 +270,24 @@ Examples for recommended formats:
   - XML
 - Further formats:
   - NetCDF, HDF5, ...
+  - png, jpg, ...
 
-Ideally, when choosing a good format, has following properties:
+Notes:
 
-- readable by human with simple editor
-- readable with many programs
-- easy to understand, low complexity
-- small (storage space)
-- quick to read (performance)
+- **PDF**: PDF has been developed by Adobe Inc and thus originally had been a proprietary format, and several versions exist. For archival purposes, a PDF/A version should be taken. PDF is suited for fix documentation, but editing PDF files or extracting data from them is not straightforward.
+- **Spreadsheet files**: Spreadsheets may look nice, in particular when being formatted in a colourful way. But for the machine-readability this can cause problems. In particular, you should not represent relevant information just by formatting content in different ways. As a rule of thumb: Spreadsheet files like .xlsx or .ods are not well machine-readable.
+:::
 
-However, compromises have to be done. For example, binary files are usually more performant than csv-files and thus more suitable during the active research process, while csv is a well-established format for long-term preservation.
+::: {.callout-note collapse="true" icon="true" title="Premium format ASCII"}
+A kind of gold-standard for storing digital information are ASCII files. In an ASCII file, each byte represents one visible character (except for the white spaces and for control characters like tabstop and linebreaks).
 
-::: {.callout-tip collapse="false" icon="true" title="Check"}
-- Are the files in a open or a proprietary format?
-- Are they future-proof, i.e. suitable for long-term archiving?
-- How easy to open it (available programs, file size)?
-- How complex are they, what is their internal structure?
-- What about performance and file size?
-- How easy to understand them as human
-- Are they machine-readable? How easy to write a script for reading them?
-- Which alternative formats exist?
+Therefore, except for potential limitations regarding the file size, ASCII files can be read or opened by any text editor or data-processing software, even with programs like Excel, Word, Wordpad or web browsers.
+
+Excursion - Characters beyond ASCII:
+
+> An ASCII file can only contain following visible characters - otherwise it is not an ACII file: ``!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~``
+> 
+> Since some years, the Unicode-based file format "UTF-8" is available, which can also represent many characters beyond the ASCII characters, like "ü", "€", and even some smilies ☺. Nowadays, UTF-8 is supported by many editors and browsers. And the good thing about UTF-8: As long as a UTF-8 file contains only ASCII characters, the UTF-8 file is automatically an ASCII file. Or in other words: An ASCII file is a super-interoperable UTF-8 file.
 :::
 
 
@@ -255,15 +303,86 @@ Even after deciding to store tabular data in text files (i.e. files which can be
 - Header lines with meta information?
 - Encoding: Recommended is ASCII or UTF-8
 
-::: {.callout-tip collapse="false" icon="true" title="Check"}
+::: {.callout-tip collapse="false" icon="true" title="Check (\~ 5 minutes)"}
 - File encoding (ASCII, UTF-8, ?)
 - Numbers: precision - enough? too much?
-- Special numbers: "NA", "", "N/A", "999", "0"? Meaning of them?
-- Time: Format of date and time of day, time zone
+- Special numbers: "NA", "", "N/A", "999", "0"? Meaning of them documented?
+- Time: Format of date and time of day, time zone?
 - Tables: Choice of separator, whitespaces, missing columns?
 - Content self-explaining? Column description? Units? Detailed information elsewhere?
 :::
 
+::: {.callout-note collapse="true" icon="false" title="Example for a bad file"}
+Following an example for a very bad file, below a better version of it.
+
+File `Measured last month.txt`:
+```
+date, time,sensor,sensor
+03/07/24 12.00 AM,17.3
+03/07/24 1.00 AM,16.9
+03/07/24 2.00 AM,16.7
+03/07/24 3.00 AM,16.4
+03/07/24 4.00 AM,16.2
+03/07/24 5.00 AM,15.9
+03/07/24 6.00 AM
+03/07/24 7.00 AM
+03/07/24 8.00 AM
+03/07/24 9.00 AM,16.5
+03/07/24 10.00 AM,17.0,7.2
+03/07/24 11.00 AM,17.6,4.6
+03/07/24 12.00 PM,18.0
+03/07/24 1.00 PM,18.5
+```
+
+Comments on that file:
+
+- Already the file name is bad: It contains spaces, and "last month" is only valid for one month.
+- That file is not a proper csv file, because it has not a proper tabular shape:
+    - The header line has one comma too much, indicating that date and time of day would be in different columns.
+    - Most data rows have one comma too few, i.e. the value of the last column is missing.
+- The header line contains twice the word "sensor", thus the column names are not unique.
+- The time column is horrible:
+    - Date is given in an ambiguous format - is it 03 July 2024 or 07 March 2024 or 24 July 2003, or 1924 or in the year 24 AD ? You should use the international format [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601), here "2024-03-07" for 7 March 2024.
+    - Time is given according to 12h clock with "AM" and "PM". Hint: **Never use "AM" or "PM"** in scientific context, always use 24h clock!
+    - The hour is noted without leading zero.
+    - Between hour and minute, a dot is used, but a colon should be used, e.g. "00:00"
+- Important information is missing (but might be given in a separate readme file or Code book), e.g.:
+    - Time zone?
+    - What is the file about? What are the other 2 columns?
+    - Why missing values?
+    - Unit?
+
+And here a better version:
+File `Temp_Rain_202407.csv`:
+```
+# Averaged temperature and precipitation of Ex_Emplum station
+#
+# File created on 2024-04-22 by Schlaubi Schlumpf.
+# This files contains temperature and precipitation measured at the fictitious weather station 'Ex_Emplum' at 55.432 degree North, 55.678 degree East.
+# Raw data have been averaged over 1 hour.
+# NA indicates missing values due to measurement interruption or instrument malfunction.
+# Column description:
+#   - Time: Start time of the 1-hour interval, given as UTC, in ISO 8601 format 'YYYY-MM-DDThh:mm'.
+#   - Temp: Temperature at 2 m above ground level, averaged over the 1-hour interval, in degree Celsius. The error of the given value is expected to be below 0.3 degree Celsius.
+#   - Rain: Precipitation height accumulated within the 1-hour interval, in mm. The error of the given value is expected to be below 0.5 mm.
+#
+Time,Temp,Rain
+2024-03-07T00:00,17.3,0
+2024-03-07T01:00,16.9,0
+2024-03-07T02:00,16.7,0
+2024-03-07T03:00,16.4,0
+2024-03-07T04:00,16.2,0
+2024-03-07T05:00,15.9,0
+2024-03-07T06:00,NA,NA
+2024-03-07T07:00,NA,NA
+2024-03-07T08:00,NA,NA
+2024-03-07T09:00,16.5,0
+2024-03-07T10:00,17.0,7.2
+2024-03-07T11:00,17.6,4.6
+2024-03-07T12:00,18.0,0
+2024-03-07T13:00,18.5,0
+```
+:::
 
 
 ## References
@@ -271,4 +390,6 @@ Even after deciding to store tabular data in text files (i.e. files which can be
 Examples and notes have been adapted from:
 
 - Onboarding into Research Data Management, Franke et al. 2024, [https://hdl.handle.net/21.11116/0000-000E-194D-1](https://hdl.handle.net/21.11116/0000-000E-194D-1), file "FDM-Onboarding-2024_CPT-Slides.pdf" pages 44-51, 56-59.
+
+
 
