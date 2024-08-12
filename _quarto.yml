@@ -15,7 +15,8 @@ website:
     left:
       - href: index.qmd
         text: Welcome
-      - about.qmd
+      - href: about.qmd
+        text: About
       
   sidebar:
     style: "floating"
@@ -67,4 +68,5 @@ format:
     css: styles.css
     toc: true
 
-editor: visual
+editor: source
+
