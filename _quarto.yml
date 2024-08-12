@@ -13,7 +13,7 @@ website:
   
   navbar:
     left:
-      - href: index.qmd
+      - href: welcome.qmd
         text: Welcome
       - href: about.qmd
         text: About
@@ -24,13 +24,15 @@ website:
     
     contents:
       - section: "0) Welcome"
-        href: index.qmd
+        href: welcome.qmd
         contents: 
-          - text: "Install" 
-            href: install.qmd
-          - text: "Example datasets"
-            href: example-datasets.qmd
-      - section: "1) Data organisaton"
+          - text: "Target audience" 
+            href: welcome.qmd#who-is-this-workshop-for
+          - text: "Benefits"
+            href: welcome.qmd#what-is-the-purpose-of-this-workshop
+          - text: "Instructions"
+            href: welcome.html#how-to
+      - section: "1) Organization"
         href: data-organisation.qmd
       - section: "2) Documentation"
         href: documentation.qmd
@@ -52,7 +54,7 @@ website:
             text: Persistent identifier
           - href: publication.qmd#repository
             text: Repository
-        - section: "4) Data Management Plans"
+      - section: "4) Data Management Plans"
         href: dmp.qmd
         contents:
           - href: dmp.qmd#general-information
