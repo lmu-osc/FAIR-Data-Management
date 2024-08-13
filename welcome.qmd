@@ -33,10 +33,10 @@ The purpose of this workshop is thus really to encourage you to plan the managem
 
 Setting out this workshop, we quickly agreed that data management is best understood through learning by doing. For this reason, the whole workshop evolves around four published datasets:
 
--   https://edmond.mpg.de/dataset.xhtml?persistentId=doi:10.17617/3.1STIJV
--   https://data.ub.uni-muenchen.de/288/
--   https://osf.io/6p9bf/
--   https://zenodo.org/records/10650333
+-   Example 1: [https://edmond.mpg.de/dataset.xhtml?persistentId=doi:10.17617/3.1STIJV](https://edmond.mpg.de/dataset.xhtml?persistentId=doi:10.17617/3.1STIJV)
+-   Example 2: [https://data.ub.uni-muenchen.de/288/](https://data.ub.uni-muenchen.de/288/)
+-   Example 3: [https://osf.io/6p9bf/](https://osf.io/6p9bf/)
+-   Example 4: [https://zenodo.org/records/10650333](https://zenodo.org/records/10650333)
 
 It is your job to investigate one of these datasets with respect to the topics introduced in this workshop. The topics are accompanied by distinct boxes that are color-coded for their content:
 
