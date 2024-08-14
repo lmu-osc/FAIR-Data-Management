@@ -101,7 +101,7 @@ Metadata can be found at several different points:
 :::{.callout-important collapse="true"}
 ## Solution: Example 3 
 -   Who created the dataset?\
-    + Sarah Polk; Maike Kleemeyer
+    + Sarah Polk; Maike Kleemeyer (0000-0002-9388-5535)
 -   What do the data files contain?\
     + This repository contains data and code for the manuscript entitled "Reliability of quantitative multiparameter maps is high for MT and PD but attenuated for R1 and R2* in healthy young adults"
     + The data folder contains the extracted data from the 11 different regions of interest (gray matter, white matter, pars triangularis of the inferior frontal gyrus, pars opercularis of the inferior frontal gyrus, orbitofrontal cortex, anterior cingulate cortex, precuneus, poster middle temporal gyrus, caudate, putamen, and pallidum) for each parameter map (MTsat, PD, R1, R2*) for each day (one and two) and each session (1 and 2). Regions of interest were taken from the Harvard-Oxford atlas as included in FSL 5.0.
@@ -267,9 +267,10 @@ You might also suggest to your department/research group/institute/research comm
 
 ::: {.callout-important collapse=true}
 ## Solution: Example 3 
-- X section can be filled based on the Example dataset README alone.  
-- Excluding the "METHODOLOGICAL INFORMATION" section, ~XX of the 19 open fields can be filled based on the information collected in task 2.1. 
+- 5 section can be filled based on the Example dataset README alone.  
+- Excluding the "METHODOLOGICAL INFORMATION" section, ~10 of the 19 open fields can be filled based on the information collected in task 2.1. 
 - Find the filled out README template for example 3 [here](/Example3_READMETemplate.md)
+- Note: Only the README file for the OSF repository was taken in consideration.
 :::
 
 ::: {.callout-important collapse=true}
