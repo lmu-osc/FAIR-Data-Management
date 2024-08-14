@@ -6,48 +6,55 @@ link-external-newwindow: true
 We welcome you to the FAIR Data Management workshop
 
 ## Who is this workshop for?
+
 This workshop was designed for early career researchers who are either about to start or want to become more effective in managing their empirical research data. Although it was developed with this target group in mind, it can most probably benefit many other researchers as well who are in the process of consolidating their data management skills.
 
 ## What is the purpose of this workshop?
+
 Appreciation of adequate data management usually occurs when looking into someone else's data folder:
 
 ![Piled Higher and Deeper by Jorge Cham](images/phd052810s.gif){fig-align="left"}
 
-However, it usually takes a while to get to this point and meanwhile your own data folder unfortunately tends to look similar, only that you are mastering your own structures better than other people's.  
-With this workshop, we are artificially advancing your experience of navigating other researcher's data, thereby hoping to point out good as well as bad practices that shall soon inspire your own data management.  
-Because we do know that the trend towards transparent and reproducible research is increasing and more and more journals require the publication of data on which research results are based. And the effort of publishing these data is negligible if you have a good data management strategy in place right from the beginning. Publishing FAIR data, i.e., data that are of actual use to others also comes with numerous scientific benefits:  
+However, it usually takes a while to get to this point and meanwhile your own data folder unfortunately tends to look similar, only that you are mastering your own structures better than other people's.\
+With this workshop, we are artificially advancing your experience of navigating other researcher's data, thereby hoping to point out good as well as bad practices that shall soon inspire your own data management.\
+Because we do know that the trend towards transparent and reproducible research is increasing and more and more journals require the publication of data on which research results are based. And the effort of publishing these data is negligible if you have a good data management strategy in place right from the beginning. Publishing FAIR data, i.e., data that are of actual use to others also comes with numerous scientific benefits:
 
 -   Data can be reused and cited in a timely manner. Citation of the data by other researchers increases visibility and can strengthen the reputation of your research.
 -   New scientific collaborations may arise through data published according to FAIR, i.e., in reusable format. Collecting data is a time consuming business, so other researchers might as well benefit from already existing data (collected on public money) and you receive credit for producing the data.
--   Publishing data on which research results are based (in addition to the 'traditional' scientific articles) will support the credibility, reproducibility, and validity of the results. This increases public trust in science.  
+-   Publishing data on which research results are based (in addition to the 'traditional' scientific articles) will support the credibility, reproducibility, and validity of the results. This increases public trust in science.
 
 Additional benefits are displayed in the graphic.
 
-![Source: Hole, B. (2015). Open Science: A New publisher Perspective. Ubiquity press. ([CC BY 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode))](images/data-sharing.png){fig-align="left" width=75%}
- 
-The purpose of this workshop is thus really to encourage you to plan the management of your data very early in the course of the project in order to benefit most from it. The extra amount of work this may take is well invested, since having well-organized and documented data will not only increase their value for others but also for your future self, when going back into your data folder e.g., for a revision after a year. 
+![Source: Hole, B. (2015). Open Science: A New publisher Perspective. Ubiquity press. ([CC BY 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode))](images/data-sharing.png){fig-align="left" width="75%"}
+
+The purpose of this workshop is thus really to encourage you to plan the management of your data very early in the course of the project in order to benefit most from it. The extra amount of work this may take is well invested, since having well-organized and documented data will not only increase their value for others but also for your future self, when going back into your data folder e.g., for a revision after a year.
 
 ## How to?
+
 Setting out this workshop, we quickly agreed that data management is best understood through learning by doing. For this reason, the whole workshop evolves around four published datasets:
 
-- https://edmond.mpg.de/dataset.xhtml?persistentId=doi:10.17617/3.1STIJV
-- https://data.ub.uni-muenchen.de/288/
-- https://osf.io/6p9bf/
-- https://zenodo.org/records/10650333
+-   Example 1: [https://edmond.mpg.de/dataset.xhtml?persistentId=doi:10.17617/3.1STIJV](https://edmond.mpg.de/dataset.xhtml?persistentId=doi:10.17617/3.1STIJV)
+-   Example 2: [https://data.ub.uni-muenchen.de/288/](https://data.ub.uni-muenchen.de/288/)
+-   Example 3: [https://osf.io/6p9bf/](https://osf.io/6p9bf/)
+-   Example 4: [https://zenodo.org/records/10650333](https://zenodo.org/records/10650333)
 
 It is your job to investigate one of these datasets with respect to the topics introduced in this workshop. The topics are accompanied by distinct boxes that are color-coded for their content:
 
 ::: callout-warning
 ## Orange boxes contain information crucial for that topic
 :::
+
 ::: callout-note
 ## Gray boxes contain excursions to related topics
 :::
+
 ::: callout-tip
 ## Green boxes contain hands-on exercises
 :::
+
 ::: {.callout-important collapse="true"}
 ## Red boxes contain the solutions and are collapsed
+
 Only open the box when you want to see the solution.
 :::
 

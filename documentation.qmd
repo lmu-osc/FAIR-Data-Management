@@ -1,42 +1,34 @@
 ---
 title: "2) Documentation"
 link-external-newwindow: true
-author:
-  - name: Larissa Leiminger
-    id: ll
-    orcid: 0000-0002-6491-3197
-    email: leiminger@mpdl.mpg.de
-    affiliation: 
-      - name: Max Planck Digital Library
-        city: Munich
-        url: https://www.mpdl.mpg.de/en/
 ---
 
 ## Overview
 
-Effective documentation is a crucial aspect of FAIR data management, ensuring that research data is not only well-organized but also easily discoverable, accessible, and reusable by others. In this section, we'll delve into the importance of documentation by exploring how to create best practice documentation that supports the entire research lifecycle. We'll cover the essential components like including metadata that provides context and description of the data set, as well as README files that offer a concise introduction to the data set. Additionally, we'll discuss the role of code books for making all components of the data set self-explanatory.
+Effective documentation is a crucial aspect of FAIR data management, ensuring that research data are not only well-organized but also easily discoverable, accessible, and reusable by others. In this section, we'll delve into the importance of documentation by exploring how to create best practice documentation that supports the entire research lifecycle. We'll cover the essential components like including metadata that provide context and description of the dataset, as well as README files that offer a concise introduction to the dataset. Additionally, we'll discuss the role of codebooks for making all components of the dataset self-explanatory.
 
 ## Metadata
 
-Metadata is "data that provides information about other data"[^1], describing the context, content, and structure of a dataset. It contains essential information about the data, such as authorship, creation context, contents, provenance and accessibility. Making it possible to understand and work with the data effectively. By providing a clear understanding of the data's origin, and meaning, metadata plays a critical role in ensuring data quality, reproducibility, and FAIRness.
+Metadata are "data that provide information about other data"[^1], describing the context, content, and structure of a dataset. It contains essential information about the data, such as authorship, creation context, contents, provenance and accessibility. Making it possible to understand and work with the data effectively. By providing a clear understanding of the data's origin, and meaning, metadata play a critical role in ensuring data quality, reproducibility, and FAIRness.
 
-[^1]: „metadata“. Merriam-Webster Dictionary, accessed 7. Juli 2024, [www.merriam-webster.com/dictionary/metadata](www.merriam-webster.com/dictionary/metadata).
+[^1]: „metadata“. Merriam-Webster Dictionary, accessed 7. July 2024, [www.merriam-webster.com/dictionary/metadata](www.merriam-webster.com/dictionary/metadata).
 
-Metadata should provide answers to the following questions:
+::: {.callout-tip}
+## Task 2.1: (~10 min)
 
--   Who created the data set?
--   What do the data files contain?
--   When was the data set generated?
--   Where was the data set generated?
--   Why was the data set generated?
--   How was the data set generated?
--   What research is this data set connected to?
--   Can this data set be re-used?
+Can you answer all of these questions by looking through your (example) dataset? \
+(Concentrate on what you can find on the dataset level and only look further if you have the time.)
 
-::: callout-tip
-## Task X:
+-   Who created the dataset?\
+-   What do the data files contain?\
+-   When was the dataset generated?\
+-   Where was the dataset generated?\
+-   Why was the dataset generated?\
+-   How was the dataset generated?\
+-   What research is this dataset connected to?\
+-   Can this dataset be re-used?\
 
-Can you answer all of these questions by looking through your (example) data set?\
+Discuss:\
 Where did you find this information?\
 Was everything readily understandable?
 
@@ -44,18 +36,126 @@ Bonus:\
 [Time yourself](https://www.online-stopwatch.com/) - how long does it take you to answer all questions?
 :::
 
-::: {.callout-caution collapse="true"}
-## Expand to learn more about where to find metadata
+::: {.callout-warning}
+## Tips on where to find metadata
 
 Metadata can be found at several different points:
 
-1.  Repository description: You are often asked about entering metadata, when you upload your data set to a repository. The quality and extent of metadata you can provide varies from repository to repository. We will cover repositories in Chapter 3). Jump [here](publication.qmd#repositories) to go to the chapter directly.
+1.  Repository description: You are often asked about entering metadata, when you upload your dataset to a repository. The quality and extent of metadata you can provide varies from repository to repository. We will cover repositories in Chapter 3).
 
-2.  README file: Before you publish your data set you might already want to keep track of your metadata. A good way to not loose the overview yourself and inform others is by creating a README file. We will cover README files in the next section.
+2.  README file: Before you publish your dataset you might already want to keep track of your metadata. A good way to not loose the overview yourself and inform others is by creating a README file. We will cover README files in the next section.
+
+3. Related publication: Most datasets that are published are connected to scientific papers, which detail what has been done to generate the dataset, what it consists of and its analysis process. While this can provide very detailed information it makes it difficult to assess the dataset on its own.  
 :::
 
-::: {.callout-note title="Excursion: Community Standards"}
-Community standards for metadata allow for improved comparison between data sets. Some disciplines have agreed-upon formal standards that define how metadata should be documented. If you publish your data via a discipline specific repository it is likely that their form already guides you through the community metadata standard. You can look for metadata standards that are specific to your discipline e.g. via [FAIRsharing.org](https://fairsharing.org/search?fairsharingRegistry=Standard). If a standard for your research field exist you should follow it as best as possible.
+:::{.callout-important collapse="true"}
+## Solution: Example 1 
+-   Who created the dataset? 
+    + Göckede, Mathias; Reum, Friedemann; Heimann, Martin
+-   What do the data files contain?
+    + Atmospheric mixing ratios of CO2 and CH4 at Ambarchik, NE Siberia,
+    + Tabular data about measurements taken at the meteorological station for each month.  
+-   When was the dataset generated?
+    + The data were collected between August 2014 and December 2017. 
+    + The dataset was published in 2023
+-   Where was the dataset generated?
+    + At the meteorological station in Ambarchik. Ambarchik is located at the mouth of the Kolyma River, which opens to the East Siberian Sea (69.62N, 162.30E).
+-   Why was the dataset generated?
+    + Unclear from the dataset alone
+    + From the related publication: Sparse data coverage in the Arctic hampers our understanding of its carbon cycle dynamics and our predictions of the fate of its vast carbon reservoirs in a changing climate. In this paper, we present accurate measurements of atmospheric carbon dioxide (CO2) and methane (CH4) dry air mole fractions at the new atmospheric carbon observation station Ambarchik, which closes a large gap in the atmospheric trace gas monitoring network in northeastern Siberia.
+-   How was the dataset generated?
+    + The atmospheric carbon observation station Ambarchik consists of a 27 m tall tower with two air inlets and meteorological measurements, while the majority of the instrumentation is hosted in a rack inside a building. Atmospheric mole fractions of CH4 , CO2 , and H2O are measured by an analyzer based on the cavity ring-down spectroscopy (CRDS) technique (G2301, Picarro Inc.), which is calibrated against WMO-traceable reference gases at regular intervals. 
+-   What research is this data set connected to?
+    + Reum, F., Göckede, M., Lavric, J. V., Kolle, O., Zimov, S., Zimov, N., Pallandt, M., and Heimann, M.: Accurate measurements of atmospheric carbon dioxide and methane mole fractions at the Siberian coastal site Ambarchik, Atmos. Meas. Tech., 12, 5717-5740, 2019.
+    + [https://doi.org/10.5194/amt-12-5717-2019](https://doi.org/10.5194/amt-12-5717-2019) (Not provided on dataset level)
+-   Can this data set be re-used?
+    + Yes, under the conditions of the CC BY 4.0 License 
+
+:::
+
+:::{.callout-important collapse="true"}
+## Solution: Example 2 
+-   Who created the dataset?
+    + Tekles, Alexander; Auspurg, Katrin; Bornmann, Lutz
+-   What do the data files contain?
+    + This repository contains the data and code that was used for generating the results presented in the paper "Same-gender citations do not indicate a substantial gender homophily bias".
+    + Further information is unclear. 
+-   When was the dataset generated?
+    + The dataset was uploaded on February 16th 2022 
+    + No information about the time frame of the data creation on the dataset level. 
+-   Where was the dataset generated?
+    + Not indicated on dataset level 
+-   Why was the dataset generated?
+    + Not indicated on dataset level 
+    + From the related publication: When controlling for research topics at a high level of granularity, there is only little evidence for a gender homophily bias in citation decisions. Our study points out the importance of controlling structural aspects such as gendered specialization in research topics when investigating gender bias in science.
+-   How was the dataset generated?
+    + Not indicated on dataset level 
+    + From the related publication: The bibliometric data used in this paper are from an in-house database developed and maintained in cooperation with the Max Planck Digital Library (MPDL, Munich) and derived from the Science Citation Index Expanded (SCI-E), Social Sciences Citation Index (SSCI), Arts and Humanities Citation Index (AHCI) prepared by Clarivate Analytics (Philadelphia, Pennsylvania, USA).
+-   What research is this dataset connected to?
+    + Article: "Same-gender citations do not indicate a substantial gender homophily bias"
+    + [https://doi.org/10.1371/journal.pone.0274810](https://doi.org/10.1371/journal.pone.0274810) (Not provided on dataset level)
+-   Can this dataset be re-used?
+    + The dataset is under a CC BY-NC-SA 4.0 License, which makes its reuse highly restricted. 
+:::
+
+:::{.callout-important collapse="true"}
+## Solution: Example 3 
+-   Who created the dataset?\
+    + Sarah Polk; Maike Kleemeyer (0000-0002-9388-5535)
+-   What do the data files contain?\
+    + This repository contains data and code for the manuscript entitled "Reliability of quantitative multiparameter maps is high for MT and PD but attenuated for R1 and R2* in healthy young adults"
+    + The data folder contains the extracted data from the 11 different regions of interest (gray matter, white matter, pars triangularis of the inferior frontal gyrus, pars opercularis of the inferior frontal gyrus, orbitofrontal cortex, anterior cingulate cortex, precuneus, poster middle temporal gyrus, caudate, putamen, and pallidum) for each parameter map (MTsat, PD, R1, R2*) for each day (one and two) and each session (1 and 2). Regions of interest were taken from the Harvard-Oxford atlas as included in FSL 5.0.
+-   When was the dataset generated?\
+    + The data repository was created on November 3, 2021 and last modified on March 12, 2022 
+    + Further information on the time frame of the data creation is unclear on dataset level. 
+-   Where was the dataset generated?\
+    + Not indicated on dataset level. 
+-   Why was the dataset generated?\
+    + Not indicated on dataset level. 
+    + From the related publication: In sum, in this sample of healthy young adults, the four MPM parameters showed very little variability over four measurements over two days but differed in how well they could assess between-person differences. We conclude that R1 and R2* might carry only limited person-specific information in samples of healthy young adults, and, by implication, might be of restricted utility for studying associations to between-person differences in behavior.
+-   How was the dataset generated?\
+    + Not indicated on dataset level. 
+    + From the related publication: We acquired data from 15 volunteers, who each were assessed four times. On Day 1, participants were measured twice back-to-back, without repositioning between MPM datasets. On Day 2, participants were also measured twice, but this time with a break in between measurements, which afforded repositioning of the participants’ head.
+-   What research is this dataset connected to?\
+    + Article: "Reliability of quantitative multiparameter maps is high for MT and PD but attenuated for R1 and R2* in healthy young adults"
+    + [https://doi.org/10.1101/2021.11.10.467254](https://doi.org/10.1101/2021.11.10.467254) (Not provided on dataset level)
+-   Can this dataset be re-used?\
+    + The provided dataset does not have a license. Re-use is therefore unclear. 
+:::
+
+:::{.callout-important collapse="true"}
+## Solution: Example 4 
+-   Who created the dataset?\
+    + Dominik Deffner; Benjamin (Kahl) 
+-   What do the data files contain?\
+    + Not indicated on dataset level. 
+    + From file structure: Data from 40 Group sessions and 40 solo sessions with relating scripts. 
+    + From related Github repository: This repository contains the full data and scripts to reproduce all analyses and figures as well as the experimental game itself used in Deffner, D., Mezey, D., Kahl, B., Schakowski, A., Romanczuk, P., Wu, C. & Kurvers, R. (accepted, in principle, at Nature Communications): "Collective incentives reduce over-exploitation of social information in unconstrained human groups"
+-   When was the dataset generated?\
+    + From file structure: Sessions were between July 5th, 2022 and September 21, 2022.
+    + The dataset was published on February 12, 2024.
+-   Where was the dataset generated?\
+    + Not indicated on dataset level.
+    + From the related publication: At the Max Planck Institute for Human Development 
+-   Why was the dataset generated?\
+    + Not indicated on dataset level. 
+    + From the related publication: Collective dynamics emerge from countless individual decisions. Yet, we poorly understand the processes governing dynamically-interacting individuals in human collectives under realistic conditions. We present a naturalistic immersive-reality experiment where groups of participants searched for rewards in different environments, studying how individuals weigh personal and social information and how this shapes individual and collective outcomes.
+-   How was the dataset generated?\
+    + Not indicated on dataset level. 
+    + From related publication: 160 participants were recruited from the Max Planck Institute for Human Development (MPIB) recruitment pool and invited in anonymous groups of four to the behavioral laboratory at the MPIB in Berlin, Germany (63 identified as male, 97 as female; Mage = 28.5, SDage = 6.4 years; all were proficient in German and most came from Western, educated, industrialized, rich, and democratic societies70,71). Fourty additional participants were recruited for an individual control condition (14 identified as male, 26 as female; Mage = 29.8, SDage = 5.7 years). See further section: "Procedure"
+-   What research is this dataset connected to?\
+    + Not indicated on dataset level. 
+    + From related GitHub Repository: Deffner, D., Mezey, D., Kahl, B., Schakowski, A., Romanczuk, P., Wu, C. & Kurvers, R. (accepted, in principle, at Nature Communications): "Collective incentives reduce over-exploitation of social information in unconstrained human groups"
+    + [https://doi.org/10.1038/s41467-024-47010-3](https://doi.org/10.1038/s41467-024-47010-3) (Not provided on dataset level) 
+-   Can this dataset be re-used?\
+    + The dataset is under a CC BY 4.0, which would allow re-use under the given conditions.
+    + However, the GitHub repository is connected to an Apache License 2.0, which makes it difficult to know what license applies.  
+:::
+
+
+::: {.callout-note }
+## Excursion: Community Standards
+Community standards for metadata allow for improved comparison between datasets. Some disciplines have agreed-upon formal standards that define how metadata should be documented. If you publish your data via a discipline specific repository it is likely that their entry form already guides you through the community metadata standard. You can look for metadata standards that are specific to your discipline e.g. via [FAIRsharing.org](https://fairsharing.org/search?fairsharingRegistry=Standard). If a standard for your research field exist you should follow it as best as possible.
 
 Even if your discipline does not adhere to strict standards, there is an advantage in using generic standards. By using controlled vocabularies or ontologies for your metadata you can increase the machine-readability and -actionability of your data.
 
@@ -64,31 +164,24 @@ Machine-readability refers to the ability of machines (computers, algorithms, et
 
 ## README file
 
-We already established that metadata and README files are strongly connected. They form a great way to provide an introduction to and documentation about a data set and its research context. A README file is a plain text file often written in markdown and therefore named "README.md". This naming convention helps spotting the README file for humans and machines alike, e.g. in GitHub repositories the README.md file is identified automatically and its content displayed on the repositories main page. The README file should be one of the first files your create for a new project. You can then continue filling it with the relevant information.
+We already established that metadata and README files are strongly connected. They form a great way to provide an introduction to and documentation of a dataset and its research context. A README file is a plain text file often written in markdown and therefore named "README.md". This naming convention helps spotting the README file for humans and machines alike, e.g. in GitHub repositories the README.md file is identified automatically and its content displayed on the repositories main page. The README file should be one of the first files your create for a new project. You can then continue filling it with the relevant information.
 
-What should be in a README file? - Ideally all the answers to the questions posed under the metadata section should be given in the README file. To determine what should be best included in your README file it can also be helpful to go through the questions of a [Research Data Management Plan](RDMP.qmd). While your README file should be very descriptive it is also important to stay concise and clear. Avoid e.g. using jargon to improve inter-disciplinary usage.
+What should be in a README file? - Ideally all the answers to the questions posed under the metadata section should be given in the README file. To determine what should be best included in your README file, it can also be helpful to go through the questions of a [Research Data Management Plan](RDMP.qmd). While your README file should be very descriptive it is also important to stay concise and clear. Avoid e.g. using jargon to improve inter-disciplinary usage.
 
-::: callout-tip
-# Task Y:
+::: {.callout-tip}
+# Task 2.2: (~10 min)
 
-Option 1: Your (example) data set **does not** contain a README file
+-   Download and open the README file of your example dataset in a text editor of your choice.
+-   Copy the template into another text editor file. 
+-   Where does the provided information of the example README differ from the template below? Mark the sections of the template in \*\*bold\*\* that you can answer solely from the provided README. 
+-   How many of the 19 open fields of the template could you answer based on your solutions from task 2.1?
+-   Discuss: What information can be found in the README example that is not contained in the template but contributes to understanding the data set? 
 
--   Create a README file using the template below in a text editor of your choice.
--   Fill out as much information as possible according to the metadata provided.
--   Make note of the information that was difficult to obtain.
--   Upload the file to your group folder.
-
-Option 2: Your (example) data set **does** contain a README file
-
--   Download and open the README file in a text editor of your choice.
--   Where does the provided information differ from the template below? Adapt the README file to improve its quality.
--   Make note of any information missing from the template that you think improved the quality of the README.
--   Upload your file to your group folder.
-
-Exclude the last section "METHODOLOGICAL INFORMATION" for this task.
+For brevity reasons we exclude the last section "METHODOLOGICAL INFORMATION" from the provided example solutions.
 :::
 
-::: {.callout-note icon="false" title="README template" collapse="true"}
+::: {.callout-note collapse="true"}
+## README Template
 \n
 
 This readme file was generated on \[YYYY-MM-DD\] by \[NAME\]
@@ -97,11 +190,12 @@ This readme file was generated on \[YYYY-MM-DD\] by \[NAME\]
 
 \# GENERAL INFORMATION
 
-Title of Data set: Description: \<provide a short description of the study/project\>
+Title of Data set: \
+Description: \<provide a short description of the study/project\>
 
 \<provide at least one contact\>
 
-Author/Principal Investigator Information\
+Author/Principal Investigator Information \
 Name:\
 ORCID:\
 Institution:\
@@ -150,19 +244,49 @@ Describe any quality-assurance procedures performed on the data:
 People involved with sample collection, processing, analysis and/or submission:
 :::
 
-::: {.callout-warning title="Note:"}
-For your own research project you can, of course, adapt this template to include the information that is relevant to your own data set. Also look out for other projects in your discipline and what they include in their README files.
+::: {.callout-warning}
+## Tips for your own README
+For your own research project you can, of course, adapt this template to include the information that is relevant to your own dataset. Also look out for other projects in your discipline and what they include in their README files.
 
 You might also suggest to your department/research group/institute/research community to set up a discipline specific README template that can improve the interoperability, reusability and comparability of your research projects.
 :::
 
-## Code book
+::: {.callout-important collapse=true}
+## Solution: Example 1 
+- 1 section can be filled based on the Example dataset README alone. 
+- Excluding the "METHODOLOGICAL INFORMATION" section, ~12 of the 19 open fields can be filled based on the information collected in task 2.1. 
+- Find the filled out README template for example 1 [here](/Example1_READMETemplate.md)
+:::
 
-Whereas general metadata and README information typically focuses on the data set or project as a whole, code books delve deeper, providing detailed explanations and clarifications about the specific data contained in individual files. A code book should make all components of a data set file self-explanatory. It helps to identify e.g what certain variables and value labels mean or in which format the data points have been collected. This makes the data set more accessible by allowing re-users to work independent of a research paper.Some people include this information in the README file. However, we advise against it to keep the README concise and maintain its readability.
+::: {.callout-important collapse=true}
+## Solution: Example 2 
+- 2 sections can be filled based on the Example dataset README alone. 
+- Excluding the "METHODOLOGICAL INFORMATION" section, ~10 of the 19 open fields can be filled based on the information collected in task 2.1. 
+- Find the filled out README template for example 2 [here](/Example2_READMETemplate.md)
+:::
 
-If all of your data files are structured and labeled according to the same system it is enough to provide one code book that describes and explain this system. If you have differently structured files you should provide multiple code books.
+::: {.callout-important collapse=true}
+## Solution: Example 3 
+- 5 section can be filled based on the Example dataset README alone.  
+- Excluding the "METHODOLOGICAL INFORMATION" section, ~10 of the 19 open fields can be filled based on the information collected in task 2.1. 
+- Find the filled out README template for example 3 [here](/Example3_READMETemplate.md)
+- Note: Only the README file for the OSF repository was taken in consideration.
+:::
 
-Here are some of the elements that can be included in a code book:
+::: {.callout-important collapse=true}
+## Solution: Example 4 
+- X section can be filled based on the Example dataset README alone. 
+- Excluding the "METHODOLOGICAL INFORMATION" section, ~XX of the 19 open fields can be filled based on the information collected in task 2.1. 
+- Find the filled out README template for example 4 [here](/Example4_READMETemplate.md)
+:::
+
+## Codebook
+
+Whereas general metadata and README information typically focus on the dataset or project as a whole, codebooks delve deeper, providing detailed explanations and clarifications about the specific data contained in individual files. A code book should make all components of a dataset file self-explanatory. It helps to identify e.g what certain variables and value labels mean or in which format the data points have been collected. This makes the dataset more accessible by allowing re-users to work independent of a research paper. Some people include this information in the README file. However, this can significantly extent the length of the README. It is always best to keep README files concise to maintain their readability.
+
+If all of your data files are structured and labeled according to the same system it is enough to provide one codebook that describes and explain this system. If you have differently structured files you should consider providing multiple codebooks.
+
+Here are some of the elements that can be included in a codebook:
 
 -   variables
 -   value labels
@@ -174,10 +298,10 @@ Here are some of the elements that can be included in a code book:
 
 ### Basic level:
 
-A first step is to provide this information about your data in a .csv table, a .txt file or .md (markdown) file. These are easy to create via a text editor of your choice. They can be opened by everyone independent of proprietary systems and are easily readable by humans.
+A first step is to provide this information about your data is in a .csv table, a .txt file or .md (markdown) file. These are easy to create via a text editor of your choice. They can be opened by everyone independent of proprietary systems and are easily readable by humans.
 
-::: {.callout-note icon="false" collapse="true"}
-# Example of a simple .csv code book
+::: {.callout-note collapse="true"}
+# Example of a simple .csv codebook
 
 "variable","data_type","format"\
 "species","string","Adelie,Chinstrap,Gentoo"\
@@ -190,9 +314,9 @@ A first step is to provide this information about your data in a .csv table, a .
 
 ### Advanced level:
 
-To improve the quality and usability of your code book you can provide it as a JSON file. This provides the advantage to be machine-readable and -actionable. It makes it easier to extract this information and work with it in coding scripts.
+To improve the quality and usability of your codebook you can provide it as a JSON file. This has the advantage to be machine-readable and -actionable. It makes it easier to extract this information and work with it in coding scripts.
 
-::: {.callout-note icon="false" collapse="true"}
+::: {.callout-note collapse="true"}
 # Example of a detailed JSON code book
 
 ``` <json>
@@ -258,20 +382,33 @@ To improve the quality and usability of your code book you can provide it as a J
 ```
 :::
 
-::: callout-tip
-# Task Z:
+::: {.callout-tip}
+# Task 2.3: (~10 min)
 
-Option 1: Your (example) data set **does not** contain a code book
-
--   Open one of the data files of your data set.
+-   Open one of the data files of your example dataset.
 -   Can you make sense of the data provided? Note down difficulties you identify.
--   Can you find supportive information to understand the provided data in other documents? Note them down and link them if possible.
+-   Can you find supportive information to understand the provided data in other documents? Make a note of them.
 
-Option 2: Your (example) data set **does** contain a code book
+:::
 
--   In what format was the code book provided?
--   Open one of the data files of your data set.
--   Can you make sense of the data provided? Does the code book help you?
+::: {.callout-important collapse=true}
+## Solution: Example 1
+-   The column names within the data files are not very descriptive. However, all data files work with the same columns. 
+-   Explanations of the column names, variables, as well as data types an formats are given in the example's README file. 
+:::
+
+::: {.callout-important collapse=true}
+## Solution: Example 2
+-   It is a very large dataset and files are compressed. Explanation on how to extract the data is provided. 
+-   Explanations for the column names of the different files are provided in the example's README file. 
+:::
+
+::: {.callout-important collapse=true}
+## Solution: Example 3
+:::
+
+::: {.callout-important collapse=true}
+## Solution: Example 4
 :::
 
 ## Further Resources:
