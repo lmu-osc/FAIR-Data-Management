@@ -1,9 +1,44 @@
 ---
 title: "About"
+link-external-newwindow: true
+author:
+  - name: Maike Kleemeyer
+    id: mk
+    orcid: 0000-0002-9388-5535
+    email: kleemeyer@mpib-berlin.mpg.de
+    affiliation: 
+      - name: Max Planck Institute for Human Development
+        city: Berlin
+        url: https://www.mpib-berlin.mpg.de/en 
+        
+  - name: Larissa Leiminger
+    id: ll
+    orcid: 0000-0002-6491-3197
+    email: leiminger@mpdl.mpg.de
+    affiliation: 
+      - name: Max Planck Digital Library
+        city: Munich
+        url: https://www.mpdl.mpg.de/en/
+  
+  - name: Laura Meier
+    id: lm
+    orcid: 0000-0003-1368-2306
+    email: Laura.Meier@ub.uni-muenchen.de 
+    affiliation: 
+      - name: University Library Ludwig-Maximilians-Universität 
+        city: Munich
+        url: https://www.en.ub.uni-muenchen.de
+        
+  - name: David Walter
+    id: dw
+    orcid: 0000-0001-6807-5007
+    email: d.walter@mpdl.mpg.de 
+    affiliation: 
+      - name: Max Planck Digital Library
+        city: Munich
+        url: https://www.mpdl.mpg.de/en/ 
 ---
 
-About this site
+This material was created for the LMU & MPG Open Science Summer School 2024. During the Summer School the material was accompanied by slides and the tasks were done in groups. Independent of this event, the materials can be used to get an insight into Research Data Management in the context of Open Science and therefore with the goal of a FAIR publication. 
 
-```{r}
-1 + 1
-```
+The materials can be used, remixed, adapted and shared according to the [CCBY4.0 Licence](https://creativecommons.org/licenses/by/4.0/). 
