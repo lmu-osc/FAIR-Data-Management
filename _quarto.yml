@@ -34,6 +34,13 @@ website:
             href: welcome.html#how-to
       - section: "1) Organization"
         href: data-organisation.qmd
+        contents:
+          - text: General notes
+            href: data-organisation.qmd#general-notes
+          - text: General task
+            href: data-organisation.qmdl#general-task
+          - text: Aspects to look at
+            href: data-organisation.qmd#aspects-to-look-at
       - section: "2) Documentation"
         href: documentation.qmd
         contents:
@@ -61,8 +68,13 @@ website:
             text: General information
           - href: dmp.qmd#components-of-a-dmp
             text: Components of a DMP
-          - href: dmp.qmd#dmp-tool:-RDMO
-            text: DMP tool RDMO
+          - href: dmp.qmd#example-data-storage-and-security
+            text: Example
+          - href: dmp.qmd#why-is-a-dmp-helpful
+            text: Why is a DMP helpful?
+          - href: dmp.qmd#dmp-tool-rdmo
+            text: RDMO
+          
 
 format:
   html:
