@@ -5,21 +5,21 @@ link-external-newwindow: true
 
 ## Overview
 
-As the previous sections have shown, data management is a broad topic encompassing various aspects. Therefore, good planning is essential to effectively manage all these aspects according to the [FAIR principles](https://www.go-fair.org/fair-principles/). A valuable tool for this purpose is a (research) data management plan (DMP). This section provides an overview of the components of a DMP, offers tips on creating one, and introduces helpful tools. We conclude with a practical exercise where you will work on a small section of a DMP.
+As the previous sections have shown, data management is a broad topic encompassing various aspects. Hence, good planning is essential to effectively manage all these aspects according to the [FAIR principles](https://www.go-fair.org/fair-principles/). A valuable tool for this purpose is a (research) data management plan (DMP). This part of the workshop provides an overview of the components of a DMP, offers tips on creating one, and introduces helpful tools. We conclude with a practical exercise where you will work on a small section of a DMP.
 
 ## General information
 
-A data management plan is a written document that describes the data you expect to acquire or generate during the course of a research project, how you will manage, describe, analyze, and store the data, and what mechanisms you will use at the end of your project to share and preserve your data. Thus, a data management plan accompanies and guides you throughout the project and encompasses all phases that research data go through in a project. Following the motto “start early, refine often”, creating a DMP at the beginning of your project enables it to be a living document that evolves alongside your research. Begin with basic information and enrich the document as your project progresses. Also, it is not required to answer all questions; stick to those relevant to your data. DMPs apply to any research project, from a PHD thesis to large collaborative research projects.
+A data management plan is a written document describing the data you expect to collect or use during a research project. Further, a DMP shows how you will manage, describe, analyze, and store the data, as well as the mechanisms for sharing and preserving data when your project is complete. Thus, a data management plan accompanies and guides you throughout the project and encompasses all phases that research data go through in a project. Following the motto “start early, refine often”, creating a DMP at the beginning of your project enables it to be a living document that evolves alongside your research. Begin with basic information and enrich the document as your project progresses. Note that it is not required to answer all questions; stick to those relevant to your data. DMPs apply to any research project, from a PHD thesis to large collaborative research projects.
 
 ## Components of a DMP
 
 Throughout a project, there are different processing stages regarding the data. You can illustrate the process as a life cycle with the following stages[^2]:  
 
-[![](\images\RD-Lifecycle.png){width=80%}](https://www.fdm-bayern.org/forschungsdatenmanagement/#fd-lebenszyklus)
+[![Research data life cycle](\images\RD-Lifecycle.png){width=80%}](https://www.fdm-bayern.org/forschungsdatenmanagement/#fd-lebenszyklus)
 
 [^2]: based on: [https://www.fdm-bayern.org/forschungsdatenmanagement/#fd-lebenszyklus](https://www.fdm-bayern.org/forschungsdatenmanagement/#fd-lebenszyklus)
 
-A data management plan covers all stages of the data life cycle. Therefore, one can assign questions to each stage. By addressing these questions, you create an effective DMP:
+A data management plan covers all stages of the research data life cycle. Therefore, one can assign questions to each stage. By addressing these questions, you create an effective DMP:
 
 - What data will be collected, and where do they come from?
 - Which metadata should be used to describe the data?
@@ -27,63 +27,64 @@ A data management plan covers all stages of the data life cycle. Therefore, one 
 - What is about Open Data? Do you plan to publish the data?
 - Is sufficient staff provided? Does your project require special infrastructure?
 - How do you ensure the quality of your data?
-- Does your project process personal or sensitive data? What law will be applied? Are there ethnic aspects you need to consider?
-- Please note that this list is incomplete, and the questions may vary depending on your discipline and data specifics.
+- Does your project process personal or sensitive data? What law will be applied? Are there ethnic aspects you need to consider?[^9]
+
+Please note that this list is incomplete, and the questions may vary depending on your discipline and data specifics.
+
+[^9]: Questions based on: [https://www.fdm.uni-hamburg.de/fdm/datenmanagementplan.html](https://www.fdm.uni-hamburg.de/fdm/datenmanagementplan.html)
 
 ::: {.callout-note}
 ## Excursion: Published DMPs
 
-To gain more practical insight, it may be helpful to look at published DMPs. You can find them on different repositories, e.g. [Zenodo](https://zenodo.org/search?q=DMP&l=list&p=1&s=10&sort=bestmatch). 
+Looking at published DMPs, especially from your discipline, may be helpful to gain a deeper insight into the topic. You can find them on different repositories, e.g. [Zenodo](https://zenodo.org/search?q=DMP&l=list&p=1&s=10&sort=bestmatch). 
 
 :::
 
 ## Example: Data storage and security
 
-In this section, we approach a DMP from a practical perspective: DMPs are typically divided into different sections, e.g. based on the data lifecycle. In the following, we will look at the section "Data storage and security" of a DMP template, discuss the questions, and provide example answers. Before we start with this, we give some background knowledge on data storage and security. (If you already feel comfortable with it, you can skip this part.) 
+In this section, we approach a DMP from a practical perspective: DMPs are usually divided into logical units, e.g. based on the data life cycle. In the following, we will look at the section "Data storage and security" of a DMP template and provide example answers for two datasets. Before we get started, here is some background information on data storage and security. (If you already feel comfortable with the topic, you can [skip this part](dmp.qmd#questions-in-the-dmp).) 
 
-Regarding data storage and security, the following three "S" encompass the topic: safe - secure - sustainable. Now, we dive into the main principles:
+Regarding data storage and security, the following three "S" encompass the topic: safe - secure - sustainable. Now, we dive into the main principles of each part:
 
 ### Safe
 
-Safety focuses on the protection of data against loss of physical data.[^7] Therefore, establish a regular backup routine to ensure your data's safety and recoverability. This involves creating copies of your data at specified times and storing them separately from the originals, ideally adhering to the 3-2-1 rule (see below). Consider using external hard drives or USB sticks for local backups. Additionally, if your institution offers backup systems like [LRZ cloud storage](https://doku.lrz.de/cloud-storage-kurzbeschreibung-11476147.html?showLanguage=en_US) or [LRZ Sync+Share](https://syncandshare.lrz.de/login), you can store your data there where they have automated backup mechanisms. Another synched storage is [Keeper](https://keeper.mpdl.mpg.de/accounts/login/?next=/), a service available for all Max Planck employees.
+Safety focuses on the protection of data against physical loss.[^7] To ensure your data's safety and recoverability, establish a regular backup routine. This involves creating copies of your data at specified times and storing them separately from the originals, ideally adhering to the 3-2-1 rule (see below). Consider using external hard drives or USB sticks for local backups.[^3] Additionally, if your institution offers backup systems like [LRZ cloud storage](https://doku.lrz.de/cloud-storage-kurzbeschreibung-11476147.html?showLanguage=en_US) or [LRZ Sync+Share](https://syncandshare.lrz.de/login), you can store your data there where they have automated backup mechanisms. Another synched storage is [Keeper](https://keeper.mpdl.mpg.de/accounts/login/?next=/), a service available for all Max Planck employees.
 
 ::: {.callout-warning}
 ## 3-2-1 rule
 
-Maintain three copies of your data on two different storage mediums (e.g. local storage and external hard drive), with one copy stored in a remote location. A remote copy can be stored in a cloud or kept in your office. 
+The 3-2-1 backup rule states that you should maintain three copies of your data on two different storage mediums (e.g. local storage and external hard drive), with one copy stored in a remote location. A remote copy can be stored in the cloud. 
 :::
 
 Remember, your backups should encompass your data files and include software applications if necessary. This ensures a comprehensive recovery if needed.[^3]
 
-For larger files exceeding 100 GB, consider services like GigaMove, which allows for efficient file sharing. For long-term data preservation with advanced security features, explore [EUDAT B2ACCESS](https://b2access.eudat.eu/home/) – you can find more information about EUDAT services on their [website](https://eudat.eu/catalogue).
+For larger files exceeding 100GB, consider using services such as [GigaMove](https://gigamove.rwth-aachen.de/de) (RWTH Aachen) to share files efficiently. For long-term data preservation with advanced security features, explore [EUDAT B2ACCESS](https://b2access.eudat.eu/home/) – you can find more information about EUDAT services on their [website](https://eudat.eu/catalogue).
 
 [^3]: based on: [https://www.forschungsdaten.info/themen/speichern-und-rechnen/datensicherheit-und-backup/](https://www.forschungsdaten.info/themen/speichern-und-rechnen/datensicherheit-und-backup/)
 [^7]: based on: [https://www.baramundi.com/de-de/blog/artikel/unterschied-safety-security/](https://www.baramundi.com/de-de/blog/artikel/unterschied-safety-security/)
 
 ### Secure
 
-To protect data against unauthorized access and data misuse is one of the main goals of security.[^7] We recommend using access control mechanisms and encryption to prevent unauthorized access to the data and protect sensitive information. 
-
+To protect data against unauthorized access and data misuse is one of the main goals of security.[^7] We recommend using access control mechanisms and encryption to prevent unauthorized access to the data and to protect sensitive information. 
 Confidential data is sensitive information that could cause harm if disclosed, such as details about endangered species, vulnerable archaeological sites, or personal information. Personal data is subject to strict privacy laws and requires secure handling. To protect both types of data, it is crucial to minimize the risk of identification through techniques like pseudonymization or anonymization. 
-
 Additionally, strong password protection using reliable password management tools is essential to prevent unauthorized access.[^4]
 
 [^4]: based on: [https://doi.org/10.17605/OSF.IO/GDQ93](https://doi.org/10.17605/OSF.IO/GDQ93) and [https://www.forschungsdaten.info/themen/speichern-und-rechnen/datensicherheit-und-backup/](https://doi.org/10.17605/OSF.IO/GDQ93)
 
 ### Sustainable 
 
-Data sustainability refers to data that persists across technological and human evolution.[^8] Concretely, this means choosing file formats that are unlikely to become obsolete and ensuring the long-term readability and accessibility of your data. For more details on this topic, revisit Chapter 1: organization/file formats (*Link to data organisation/file formats*).
+Data sustainability refers to data that persists across technological and human evolution.[^8] Concretely, this means choosing file formats that are unlikely to become obsolete and ensuring the long-term readability and accessibility of your data. For more details on this topic, revisit [Part 1: Organization / File formats](data-organisation.qmd#file-formats) (*Link to data organisation/file formats*).
 
 [^8]: based on: [https://doi.org/10.1016/j.infoandorg.2023.100449](https://doi.org/10.1016/j.infoandorg.2023.100449)
 
 ### Questions in the DMP 
 
-These questions are part of the [RDMO](dmp.qmd#dmp-tool-rdmo) template, section "Data usage / Data storage and security" and "Data usage / Interoperability". For each question, we will provide you with example answers. These answers do not rely on any existing project. Also, the data and some tools (e.g. software) are made up. The example answers are based on the information in this [example DMP](https://gitlab.rrze.fau.de/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/ERC/ERC_Example.md). 
+The following questions are part of the [RDMO](dmp.qmd#dmp-tool-rdmo) template, section "Data usage / Data storage and security" and "Data usage / Interoperability". For each question, we will provide you with example answers for two datasets. These answers do not rely on any existing project. Also, the data and some tools (e.g. software) are made up. The example answers are based on the information in this [example DMP](https://gitlab.rrze.fau.de/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/ERC/ERC_Example.md). The examples are intended to show how specific questions can be answered in a DMP. 
 
 ::: {.callout-important title="Example data" collapse="true"}
 
 - **Dataset "Simulations of neural signal transmission"**: The simulations use the open-source “QuantumNeuroBrain” (made up) software suite. We determine potentials and signals for various environments. The simulations vary the environment parameters (ion concentrations, temperature, …) and consider eight different models for the transduction mechanism proposed in the literature (also not relying on actual literature research). The simulations themselves follow from input files (for models, parameters, etc.) and configuration files that capture the used settings in software and hardware. The simulation output is further analyzed and forms the basis for illustrative images. Input, configuration files, output and derived data, such as images, are intimately connected and are considered a single diverse dataset.
-- **Dataset "EEG measurements"**: This dataset includes high-resolution EEG measurements from up to 100 probands. Additional measurements will accompany the measurements to determine the environmental conditions (see previous dataset). The measurements will be performed using a Neuro++ machine (made up), allowing for state-of-the-art sensitivity. Existing measurements will supplement the dataset from a local neuroscience group. We use the open-source tool EEGalyse (made up) to analyze and visualize the results.
+- **Dataset "EEG measurements"**: This dataset includes high-resolution EEG measurements from up to 100 probands. Additional measurements will accompany the EEG measurements to determine the environmental conditions (see previous dataset). The measurements will be performed using a Neuro++ machine (made up), allowing for state-of-the-art sensitivity. Existing measurements will supplement the dataset from a local neuroscience group. We use the open-source tool EEGalyse (made up) to analyze and visualize the results.
 :::
 
 **Safe**:
@@ -122,21 +123,21 @@ These questions are part of the [RDMO](dmp.qmd#dmp-tool-rdmo) template, section 
 ::: {.callout-important title="Answer for example data" collapse="true"}
 
 - **Dataset "Simulations of neural signal transmission"**: 
-  - Protection against unauthorized access: detailed access and rights management via the university IDM system
+  - Protection against unauthorized access: Detailed access and rights management via the university identity management (IdM) system
   - Data recovery - backups: Automated backups to university computing centre servers
 
 - **Dataset "EEG measurements"**:
-   - Protection against unauthorized access: detailed access and rights management via the university IDM system, additional password protection of sensitive data 
-   - Data robustness - encryption: transfer of data between systems only in encrypted form
+   - Protection against unauthorized access: Detailed access and rights management via the university IdM system, additional password protection of sensitive data 
+   - Data robustness - encryption: Transfer of data between systems only in encrypted form (AES encrpytion)
    - Data recovery - backups: Each encrypted and fully anonymized dataset is backed up by IT centre servers. The local secure RAID system provides redundancy for sensitive data during all stages of data handling.
-   - Sensitive data - anonymization or pseudonymization: access to sensitive (not fully anonymous) data is only possible for the EEG group members and on a computer physically located in the rooms of the research group
-   - Other: The research manager will ensure that all group members are comfortable with the established data handling procedures, particularly regarding sensitive information, as well as using the backup service and documentation of all data handling and versioning steps.
+   - Sensitive data - anonymization or pseudonymization: Access to sensitive (not fully anonymous) data is only possible for the EEG group members and on a computer physically located in the rooms of the research group.
+   - Other: The research data manager will ensure that all group members are comfortable with the established data handling procedures, particularly regarding sensitive information, as well as using the backup service and documentation of all data handling and versioning steps.
 
 :::
 
 **Sustainable**:
 
-- Is this dataset interoperable, e.g. allowing data exchange and reuse between researchers, institutions, organizations, countries, etc.?
+- Is this dataset interoperable, e.g. allowing data exchange and reuse between researchers, institutions, organizations, countries, etc.? (Note that this question covers a broader scope than just sustainability.)
 
   - [ ] The dataset adheres to standardized formats: …
   - [ ] The dataset is usable with available (open) software applications or software applications that are established and widely used in the respective community: …
@@ -148,16 +149,16 @@ These questions are part of the [RDMO](dmp.qmd#dmp-tool-rdmo) template, section 
 - **Dataset "Simulations of neural signal transmission"**: 
   
   - [X] Standardized formats: Input and simulation output are stored in CSV format. Derived datasets, such as cleansed or aggregated data from multiple simulations and statistical analyses, are stored in standard CSV formats. All illustrative images created from the data are stored as jpg. Each data file is accompanied by a ReadMe (plain text) file that provides information on the structure of the associated data file, such as column descriptions, units, software version, initial configuration, etc.
-  - [X] Usable with available (open) /established, widely used software applications: Since all files use standardized formats (see summary section - not available here), no special software is needed.
+  - [X] Usable with available open / established, widely used software applications: Since all files use standardized formats, no special software is needed.
   - [X] Re-combination with different datasets from different origins:  Notebooks and scripts are provided that can be used to retrace the more involved analysis steps and include other data. The scripts can be found on GitHub [Link to group Git]. The notebooks and the scripts require no specific tool beyond basic and free software (python, emacs, …).
-  - [ ] Other aspects in terms of interoperability: -
+  - [ ] Other aspects in terms of interoperability: 
 
 - **Dataset "EEG measurements"**:
 
   - [X] Standardized formats: The created EEG data records are converted to and initially stored as BrainVision Core Data Format triples (.vhdr, .vmrk, .eeg). Additional information, such as information extracted from the manufacturer-provided data files, is recorded as JSON files. The data will automatically be transformed to the EEG-BIDS standard, which allows for combination with the existing EEG dataset.
-  - [X] Usable with available (open) /established, widely used software applications: Since all files use established and highly standardized formats, the data can be used in the scientific community. The needed software is broadly available, and open-source/free solutions exist.
+  - [X] Usable with available open / established, widely used software applications: Since all files use established and highly standardized formats, the data can be used in the scientific community. The needed software is broadly available, and open-source/free solutions exist.
   - [X] Re-combination with different datasets from different origins: Reusing the data in other research contexts requires the entire dataset (pre-anonymization), which can only be made available upon detailed ethical approval.
-  - [ ] Other aspects in terms of interoperability: -
+  - [ ] Other aspects in terms of interoperability: 
   
 :::
 
@@ -165,13 +166,13 @@ These questions are part of the [RDMO](dmp.qmd#dmp-tool-rdmo) template, section 
 
 Creating a DMP may seem like a lot of work, but it also benefits you and your research:
 
--   **Enhanced Organization**: A DMP ensures your data is well-documented, organized, and easily accessible throughout the project.
--   **Improved Reproducibility**: Clear documentation promotes transparency and facilitates replication of your research findings.
--   **Efficient Data Sharing**: A DMP helps preparing your data for publication and therefore simplifies data sharing once the project ends.
+-   **Enhanced organization**: A DMP ensures your data is well-documented, organized, and easily accessible throughout the project.
+-   **Improved reproducibility**: Clear documentation promotes transparency and facilitates replication of your research findings.
+-   **Efficient data sharing**: A DMP helps preparing your data for publication and therefore simplifies data sharing once the project ends.
 
-As mentioned, a DMP addresses crucial technical, organizational, legal, and financial considerations for your project right from the beginning and provides a comprehensive overview of all potential data management tasks. A DMP structures your workflow and builds the base for optimizations. Also, it supports your own good scientific work by ensuring your data is complete, accurate and trustworthy.
+As mentioned, a DMP addresses crucial technical, organizational, legal, and financial considerations for your project right from the beginning and provides a comprehensive overview of all potential data management tasks. It structures your workflow and builds the base for optimizations. Also, a DMP supports your own good scientific work by ensuring your data is complete, accurate and trustworthy.
 
-Furthermore, a DMP can be part of applications and reports to third-party-funded projects. When applying for, submitting a DMP may be mandatory (e.g. DFG, DMBF or ERC)funding. Beyond that, more and more institutions adopt guidelines for handling research data. You can find an overview of universities in Bavaria with a research data policy [here](https://www.fdm-bayern.org/policies/). 
+Furthermore, a data management plan can be part of applications and reports to third-party-funded projects. When applying for grants, submitting a DMP may be mandatory (see Excursion: Funder requirements). Beyond that, more and more institutions adopt guidelines for handling research data. You can find an overview of universities in Bavaria with a research data policy [here](https://www.fdm-bayern.org/policies/). 
 
 In conclusion, a DMP is a helpful tool that streamlines your workflow and supports you in fostering research integrity.
 
@@ -182,10 +183,12 @@ Many funding agencies ask for information on handling research data. The followi
 
 | Funder | DMP demanded? | Submission on application? | Content | Updates?  |
 |--------|---------------|----------------------------|---------|----------|
-| European Commission, Horizon Europe            | Yes                               |      No, first plan within the first 6 weeks of the project   | Contents of the [Horizon Europe DMP template](https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/agr-contr/general-mga_horizon-euratom_en.pdf); [Information and template for ERC grants](https://erc.europa.eu/sites/default/files/document/file/ERC_info_document-Open_Research_Data_and_Data_Management_Plans.pdf) | Update, if significant changes occur and at the end of the project | 
+| European Commission, Horizon Europe            | Yes                               |      Comprehensive plan within the first 6 month of the project   | [Horizon Europe DMP template](https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/agr-contr/general-mga_horizon-euratom_en.pdf); [Information and template for ERC grants](https://erc.europa.eu/sites/default/files/document/file/ERC_info_document-Open_Research_Data_and_Data_Management_Plans.pdf) | Update, if significant changes occur and at the end of the project | 
 | German Research Foundation (DFG)            | Information on the handling of research data                |     Yes | Contents of the [DFG Guidelines on the Handling of Research Data](https://www.dfg.de/en/basics-topics/basics-and-principles-of-funding/research-data) | No |
-| German Federal Ministry of Education and Research (BMBF)                     | Plan sometimes required, depending on the programme      |      If required, yes | Content depends on the respective programme; Educational research: Checklist (in German) | Depends on the programme |
+| German Federal Ministry of Education and Research (BMBF)                     | Plan sometimes required, depending on the programme      |      If required, yes | Content depends on the respective programme; [Educational research: Checklist](https://www.forschungsdaten-bildung.de/files/fdbinfo_2.pdf) (in German) | Depends on the programme |
 | Volkswagen Stiftung (VW Foundation)     | Yes   | Yes |  Template for a [Base-DMP](https://www.volkswagenstiftung.de/de/faqservice#download_formulare_berichte)    |  No  |
+
+: Overview of funder requirements
 
 [^5]: based on: [https://doi.org/10.5281/zenodo.5773203](https://doi.org/10.5281/zenodo.5773203)
 
@@ -195,20 +198,20 @@ Many funding agencies ask for information on handling research data. The followi
 
 Different software is used to streamline the DMP creation process, simplify workflows, and empower collaborative work.
 
-::: {.callout-warning title="DMP Tool vs. repository"}
-It is essential to clarify the difference between a DMP tool and a repository: A DMP tool is a planning tool where you gather information about research data management in general, e.g. about the collection, description, etc. You can also use it as a documentation tool. A repository whereas is a platform where you can store and publish your data. A DMP tool does not store your research data; instead, it is a project management tool that helps you (and others) keep track of your research data management.
+::: {.callout-warning title="DMP tool vs. repository"}
+It is essential to clarify the difference between a DMP tool and a repository: A DMP tool is a planning tool where you gather information about research data management in general, e.g. about the data collection, description, etc. You can also use it as a documentation tool. A repository whereas is a platform where you can store and publish your data. A DMP tool does not store your research data; instead, it is a project management tool that helps you (and others) keep track of your research data management.
 :::
 
-One of these tools is [Research Data Management Organiser (RDMO)](https://rdmorganiser.github.io/). RDMO is an [open-source](https://github.com/rdmorganiser) online tool designed to create, store and print your DMP. It supports you in planning projects and administrating data management tasks throughout the whole data lifecycle. The tool is the outcome of a project co-funded by the German Research Foundation (DFG) between 2015 and 2020. The tool can be constantly developed and optimized thanks to the large and active user community. The LMU University Library and the Max Planck Digital Library offer instances of the web-based software on their servers. Register using your email or ORCID id for LMU ([LMU RDMO](https://rdmo.ub.uni-muenchen.de/)) or your MPG login (Shibboleth) for MPG ([MPG RDMO](https://rdmo.mpdl.mpg.de/)).
+One of these tools is the [Research Data Management Organiser (RDMO)](https://rdmorganiser.github.io/). RDMO is an [open-source](https://github.com/rdmorganiser) online tool designed to create, store and print your DMP. It supports you in planning projects and administrating data management tasks throughout the whole data life cycle. The tool is an outcome of a project co-funded by the German Research Foundation (DFG) between 2015 and 2020 and is constantly developed and optimized. The University Library of LMU Munich and the Max Planck Digital Library offer instances of the web-based software on their servers (which means both institutions offer their "own" RDMO application). You can register using your email or ORCID id for [LMU RDMO](https://rdmo.ub.uni-muenchen.de/) or your MPG login (Shibboleth) for [MPG RDMO](https://rdmo.mpdl.mpg.de/).
 
 Key features of RDMO:
 
 -   **Templates and guidance**: To create a DMP (called a project in RDMO), choose one of the pre-built templates that are designed as questionnaires. The questions highlight the aspects we discussed [earlier](dmp.qmd#components-of-a-dmp) and guide you step-by-step through the creation process. The questionnaires are based on the requirements of different research funding agencies, e.g., the German Research Foundation (DFG). 
--   **Collaboration-friendly**: It is possible to work collaboratively on one data management plan as a team. Therefore, RDMO supports different roles for the project members: visitor, author, manager and owner. The owner can edit and delete the project, whereas a visitor has read-only rights. 
--   **Import and export**: Furthermore, RDMO offers import and export functionalities, providing you with flexibility. A DMP can be exported to formats like PDF, XML, or Markdown. The exported document provides a good guide for internal documentation and could be a suitable tool for reporting to the funding agency.  
+-   **Collaboration-friendly**: It is possible to work collaboratively on one DMP as a team. Therefore, RDMO supports different roles for the project members: visitor, author, manager and owner. The owner can edit and delete the project, whereas a visitor has read-only rights. 
+-   **Import and export**: Furthermore, RDMO offers import and export features. A DMP can be exported to formats like PDF, XML, or Markdown. The exported document provides a good guide for internal documentation and could be a suitable tool for reporting to the funding agency.  
 -   **Version control**: RDMO stores only the current version of a DMP, but the "Snapshot" feature allows you to manually track changes and revert to previous versions, giving you full control over your data management plan. 
 
-Further information on the features of RDMO can be found here: [RDMO Quick Start Guide by LMU University Library (Download, PDF)](https://rdmo.ub.uni-muenchen.de/doc/Quick_Start_Guide_RDMO.pdf) and [Quick Start to RDMO for MPG](https://rdmo.mpdl.mpg.de/quickstart/).
+Further information on the features of RDMO can be found here: [RDMO Quick Start Guide by University Library of LMU Munich (Download, PDF)](https://rdmo.ub.uni-muenchen.de/doc/Quick_Start_Guide_RDMO.pdf) and [Quick Start to RDMO for MPG](https://rdmo.mpdl.mpg.de/quickstart/).
 
 ::: {.callout-note}
 ## Excursion: Further DMP tools
@@ -218,9 +221,9 @@ In addition to RDMO, a variety of DMP tools exist. The following table[^1] provi
 | Name | Provider | Templates |
 |---------|-----|------|------|
 | [ARGOS](https://argos.openaire.eu/home)               | OpenAIRE, EUDAT                               |      [CHIST-ERA](https://www.chistera.eu/)   |
-| [DMPonline](https://dmponline.dcc.ac.uk/)             | Digital Curation Center (DCC)                 |      European programs (e.g. ERC, Horizon Europe), funding agencies from different European countries, mainly the UK, DDC template   |
-| [DMPTool](https://dmptool.org/)                       | University of California, California Digital Library      |      mostly US funding agencies, DCC template |
-| [Data Stewardship Wizard](https://ds-wizard.org/)     | [ELIXIR CZ](https://www.elixir-czech.cz/) / [ELIXIR NL](https://www.dtls.nl/elixir-nl/)    |  Horizon Europe, Horizon 2020, Science Europe, [maDMP](https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard)    |
+| [DMPonline](https://dmponline.dcc.ac.uk/)             | Digital Curation Center (DCC)                 |      European programs (e.g. Horizon Europe), funding agencies from different European countries, mainly the UK; DDC template   |
+| [DMPTool](https://dmptool.org/)                       | University of California, California Digital Library      |      mostly US funding agencies; DCC template |
+| [Data Stewardship Wizard](https://ds-wizard.org/)     | [ELIXIR CZ](https://www.elixir-czech.cz/) / [ELIXIR NL](https://www.dtls.nl/elixir-nl/)    |  Horizon Europe, Science Europe, [maDMP](https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard)    |
 | [GFBio DMPT](https://dmp.gfbio.org/)     | GFBio    |  -    |
 
 : Overview of DMP tools
@@ -231,9 +234,9 @@ In addition to RDMO, a variety of DMP tools exist. The following table[^1] provi
 
 ::: callout-tip
 # Task 4: (~20 min)
-If you do not have a RDMO account, please register now. Either use the [LMU RDMO](https://rdmo.ub.uni-muenchen.de/) (register using your email or ORCID id) or [MPG RDMO](https://rdmo.mpdl.mpg.de/) (MPG login (Shibboleth)). Login and create a new project using the **RDMO template**. 
+If you do not yet have a RDMO account, please register now. Either use the [LMU RDMO](https://rdmo.ub.uni-muenchen.de/) (register using your email or ORCID id) or [MPG RDMO](https://rdmo.mpdl.mpg.de/) (MPG login: Shibboleth). Login and create a new project using the **RDMO template**. 
 
-Answer the questions for a subset of the following section(s) for the dataset you previously worked on:
+Answer the questions for a subset of the following sections for the dataset you previously worked on:
 
 - Content classification / Datasets
 - Content classification / Re-use
@@ -242,7 +245,7 @@ Answer the questions for a subset of the following section(s) for the dataset yo
 - Data usage / Data sharing and re-use
 - Metadata and referencing / Metadata
 
-You can summarize the outcome of the previous tasks and discuss your thoughts.  
+You can summarize the outcome of the previous tasks and discuss your thoughts with your group members.  
 :::
 
 :::{.callout-important collapse="true"}
