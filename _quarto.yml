@@ -3,7 +3,7 @@ project:
 
 website:
   title: "FAIR Data Management Workshop"
-  page-navigation: true
+  page-navigation: false
   page-footer: 
     center: "Developed for the LMU & MPG Open Science Summer School 2024, CCBY4.0"
   reader-mode: false
@@ -13,14 +13,16 @@ website:
   
   navbar:
     left:
-      - href: welcome.qmd
-        text: Welcome
+      - sidebar:course
       - href: about.qmd
         text: About
       
   sidebar:
+    id: course
+    title: "Course"
     style: "floating"
     search: true
+    collapse-level: 1
     
     contents:
       - section: "0) Welcome"
@@ -32,6 +34,7 @@ website:
             href: welcome.qmd#what-is-the-purpose-of-this-workshop
           - text: "Instructions"
             href: welcome.html#how-to
+      - text: "---"
       - section: "1) Organization"
         href: data-organisation.qmd
         contents:
@@ -41,6 +44,7 @@ website:
             href: data-organisation.qmdl#general-task
           - text: Aspects to look at
             href: data-organisation.qmd#aspects-to-look-at
+      - text: "---"
       - section: "2) Documentation"
         href: documentation.qmd
         contents:
@@ -50,6 +54,7 @@ website:
             text: README file
           - href: documentation.qmd#code-book
             text: Codebook
+      - text: "---"
       - section: "3) Publication"
         href: publication.qmd
         contents: 
@@ -61,6 +66,7 @@ website:
             text: Persistent identifier
           - href: publication.qmd#repository
             text: Repository
+      - text: "---"
       - section: "4) Data Management Plans"
         href: dmp.qmd
         contents:
