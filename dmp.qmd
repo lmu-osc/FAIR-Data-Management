@@ -5,26 +5,26 @@ link-external-newwindow: true
 
 ## Overview
 
-As the previous sections have shown, data management is a broad topic encompassing various aspects. Hence, good planning is essential to effectively manage all these aspects according to the [FAIR principles](https://www.go-fair.org/fair-principles/). A valuable tool for this purpose is a (research) data management plan (DMP). This part of the workshop provides an overview of the components of a DMP, offers tips on creating one, and introduces helpful tools. We conclude with a practical exercise where you will work on a small section of a DMP.
+As the previous sections have shown, data management is a broad topic encompassing various aspects. Hence, good planning is essential to effectively manage data according to the [FAIR principles](https://www.go-fair.org/fair-principles/). Writing a (research) data management plan (DMP) is ideal to predefine how data will be handled. This part of the workshop provides an overview of the components of a DMP, offers tips on creating one, and introduces helpful tools. It concludes with a practical exercise where you will work on a small section of a DMP.
 
 ## General information
 
-A data management plan is a written document describing the data you expect to collect or use during a research project. Further, a DMP shows how you will manage, describe, analyze, and store the data, as well as the mechanisms for sharing and preserving data when your project is complete. Thus, a data management plan accompanies and guides you throughout the project and encompasses all phases that research data go through in a project. Following the motto “start early, refine often”, creating a DMP at the beginning of your project enables it to be a living document that evolves alongside your research. Begin with basic information and enrich the document as your project progresses. Note that it is not required to answer all questions; stick to those relevant to your data. DMPs apply to any research project, from a PHD thesis to large collaborative research projects.
+A data management plan is a written document describing the data you expect to collect or use during a research project. Further, a DMP shows how you will manage, describe, analyze, and store the data, as well as the mechanisms for sharing and preserving data when your project is complete. Thus, a data management plan accompanies and guides you throughout the project and encompasses all phases that research data go through in a project. Following the motto “start early, refine often”, creating a DMP at the beginning of your project enables it to be a living document that evolves alongside your research. Begin with basic information and enrich the document as your project progresses. Note that it is not required to answer all questions; stick to those relevant to your data. DMPs apply to any research project, from a PhD thesis to large collaborative research projects.
 
 ## Components of a DMP
 
-Throughout a project, there are different processing stages regarding the data. You can illustrate the process as a life cycle with the following stages[^2]:  
+Throughout a project, there are different processing stages regarding data. You can illustrate the process as a life cycle with the following stages[^2]:  
 
 [![Research data life cycle](\images\RD-Lifecycle.png){width=80%}](https://www.fdm-bayern.org/forschungsdatenmanagement/#fd-lebenszyklus)
 
 [^2]: based on: [https://www.fdm-bayern.org/forschungsdatenmanagement/#fd-lebenszyklus](https://www.fdm-bayern.org/forschungsdatenmanagement/#fd-lebenszyklus)
 
-A data management plan covers all stages of the research data life cycle. Therefore, one can assign questions to each stage. By addressing these questions, you create an effective DMP:
+A data management plan covers all stages of the research data life cycle. Therefore, one can assign questions to each stage. By addressing these questions, you create an effective DMP. Exemplary questions include:
 
 - What data will be collected, and where do they come from?
 - Which metadata should be used to describe the data?
 - Where should the data be stored? During the project phase? After the project?
-- What is about Open Data? Do you plan to publish the data?
+- What about Open Data? Do you plan to publish the data?
 - Is sufficient staff provided? Does your project require special infrastructure?
 - How do you ensure the quality of your data?
 - Does your project process personal or sensitive data? What law will be applied? Are there ethnic aspects you need to consider?[^9]
@@ -48,7 +48,7 @@ Regarding data storage and security, the following three "S" encompass the topic
 
 ### Safe
 
-Safety focuses on the protection of data against physical loss.[^7] To ensure your data's safety and recoverability, establish a regular backup routine. This involves creating copies of your data at specified times and storing them separately from the originals, ideally adhering to the 3-2-1 rule (see below). Consider using external hard drives or USB sticks for local backups.[^3] Additionally, if your institution offers backup systems like [LRZ cloud storage](https://doku.lrz.de/cloud-storage-kurzbeschreibung-11476147.html?showLanguage=en_US) or [LRZ Sync+Share](https://syncandshare.lrz.de/login), you can store your data there where they have automated backup mechanisms. Another synched storage is [Keeper](https://keeper.mpdl.mpg.de/accounts/login/?next=/), a service available for all Max Planck employees.
+Safety focuses on the protection of data against physical loss.[^7] To ensure your data's safety and recoverability, establish a regular backup routine. This involves creating copies of your data at specified times and storing them separately from the originals, ideally adhering to the 3-2-1 rule (see below). Consider using external hard drives or USB sticks for local backups.[^3] Additionally, if your institution offers backup systems like [LRZ cloud storage](https://doku.lrz.de/cloud-storage-kurzbeschreibung-11476147.html?showLanguage=en_US) or [LRZ Sync+Share](https://syncandshare.lrz.de/login), you can store your data where they have automated backup mechanisms. Another synched storage is [Keeper](https://keeper.mpdl.mpg.de/accounts/login/?next=/), a service available for all Max Planck employees.
 
 ::: {.callout-warning}
 ## 3-2-1 rule
@@ -59,14 +59,15 @@ The 3-2-1 backup rule states that you should maintain three copies of your data 
 Remember, your backups should encompass your data files and include software applications if necessary. This ensures a comprehensive recovery if needed.[^3]
 
 For larger files exceeding 100GB, consider using services such as [GigaMove](https://gigamove.rwth-aachen.de/de) (RWTH Aachen) to share files efficiently. For long-term data preservation with advanced security features, explore [EUDAT B2ACCESS](https://b2access.eudat.eu/home/) – you can find more information about EUDAT services on their [website](https://eudat.eu/catalogue).
+--> Den sprung verstehe ich glaube ich nicht, eigentlich waren wir ja bei safe storage und jetzt geht es um teilen und langzeit Archivierung?
 
 [^3]: based on: [https://www.forschungsdaten.info/themen/speichern-und-rechnen/datensicherheit-und-backup/](https://www.forschungsdaten.info/themen/speichern-und-rechnen/datensicherheit-und-backup/)
 [^7]: based on: [https://www.baramundi.com/de-de/blog/artikel/unterschied-safety-security/](https://www.baramundi.com/de-de/blog/artikel/unterschied-safety-security/)
 
 ### Secure
 
-To protect data against unauthorized access and data misuse is one of the main goals of security.[^7] We recommend using access control mechanisms and encryption to prevent unauthorized access to the data and to protect sensitive information. 
-Confidential data is sensitive information that could cause harm if disclosed, such as details about endangered species, vulnerable archaeological sites, or personal information. Personal data is subject to strict privacy laws and requires secure handling. To protect both types of data, it is crucial to minimize the risk of identification through techniques like pseudonymization or anonymization. 
+Protecting data against unauthorized access and data misuse is one of the main goals of security.[^7] We recommend using access control mechanisms and encryption to prevent unauthorized access to data and to protect sensitive information. 
+Confidential data is sensitive information that could cause harm if disclosed, such as details about endangered species, vulnerable archaeological sites, or personal information. Personal data is subject to strict privacy laws and requires secure handling. To protect both types (--> BOTH types? Confidential and personal?) of data, it is crucial to minimize the risk of identification through techniques like pseudonymization or anonymization --> hier könnten wir noch links ergänzen, vielleicht auch zur GDPR?. 
 Additionally, strong password protection using reliable password management tools is essential to prevent unauthorized access.[^4]
 
 [^4]: based on: [https://doi.org/10.17605/OSF.IO/GDQ93](https://doi.org/10.17605/OSF.IO/GDQ93) and [https://www.forschungsdaten.info/themen/speichern-und-rechnen/datensicherheit-und-backup/](https://doi.org/10.17605/OSF.IO/GDQ93)
@@ -79,7 +80,7 @@ Data sustainability refers to data that persists across technological and human 
 
 ### Questions in the DMP 
 
-The following questions are part of the [RDMO](dmp.qmd#dmp-tool-rdmo) template, section "Data usage / Data storage and security" and "Data usage / Interoperability". For each question, we will provide you with example answers for two datasets. These answers do not rely on any existing project. Also, the data and some tools (e.g. software) are made up. The example answers are based on the information in this [example DMP](https://gitlab.rrze.fau.de/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/ERC/ERC_Example.md). The examples are intended to show how specific questions can be answered in a DMP. 
+The following questions are part of the [RDMO](dmp.qmd#dmp-tool-rdmo) template, section "Data usage / Data storage and security" and "Data usage / Interoperability". For each question, we will provide you with example answers for two datasets. These answers do not rely on any existing project. Also, the data and some tools (e.g. software) are invented. The example answers are based on the information in this [example DMP](https://gitlab.rrze.fau.de/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/ERC/ERC_Example.md). The examples are intended to show how specific questions can be answered in a DMP. 
 
 ::: {.callout-important title="Example data" collapse="true"}
 
