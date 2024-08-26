@@ -267,16 +267,16 @@ You might also suggest to your department/research group/institute/research comm
 
 ::: {.callout-important collapse=true}
 ## Solution: Example 3 
-- 5 section can be filled based on the Example dataset README alone.  
+- 5 sections can be filled based on the Example dataset README alone.  
 - Excluding the "METHODOLOGICAL INFORMATION" section, ~10 of the 19 open fields can be filled based on the information collected in task 2.1. 
 - Find the filled out README template for example 3 [here](/Example3_READMETemplate.md)
-- Note: Only the README file for the OSF repository was taken in consideration.
+- Note: Only the README file for the OSF repository was taken into consideration.
 :::
 
 ::: {.callout-important collapse=true}
 ## Solution: Example 4 
-- X section can be filled based on the Example dataset README alone. 
-- Excluding the "METHODOLOGICAL INFORMATION" section, ~XX of the 19 open fields can be filled based on the information collected in task 2.1. 
+- 4 sections can be filled based on the Example dataset README alone. 
+- Excluding the "METHODOLOGICAL INFORMATION" section, ~11 of the 19 open fields can be filled based on the information collected in task 2.1. 
 - Find the filled out README template for example 4 [here](/Example4_READMETemplate.md)
 :::
 
@@ -405,10 +405,16 @@ To improve the quality and usability of your codebook you can provide it as a JS
 
 ::: {.callout-important collapse=true}
 ## Solution: Example 3
+-  The data files can be open directly in the OSF repository. The column names are not very descriptive. 
+-  However each data file has a corresponding codebook in .json format that explains each of the columns. 
+-  The scripts, how to deploy them and how to generate result from the data is explained in the README-file.
 :::
 
 ::: {.callout-important collapse=true}
 ## Solution: Example 4
+-  The data files are all .log files that can be opened with a standard editor as ;-separated tables. 
+-  Columns are named relatively clear. 
+-  The scripts, how to deploy them and how to generate result from the data is explained in the README-file.
 :::
 
 ## Further Resources:
