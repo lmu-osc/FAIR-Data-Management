@@ -110,7 +110,7 @@ The following questions are part of the [RDMO](dmp.qmd#dmp-tool-rdmo) template, 
 
 **Secure**: 
 
-- Who is allowed to access the dataset (e.g. project members, partners of the project, only in-house, external partners)?
+- Who is allowed to access the dataset (e.g., project members, partners of the project, only in-house, external partners)?
 
 ::: {.callout-important title="Answer for example data" collapse="true"}
 
@@ -165,13 +165,14 @@ The following questions are part of the [RDMO](dmp.qmd#dmp-tool-rdmo) template, 
 
 ## Why is a DMP helpful?
 
-Creating a DMP may seem like a lot of work, but it also benefits you and your research:
+Creating a DMP may seem like (and certainly is) a lot of work, but it comes with numerous benefits for you and your research:
 
--   **Enhanced organization**: A DMP ensures your data is well-documented, organized, and easily accessible throughout the project.
--   **Improved reproducibility**: Clear documentation promotes transparency and facilitates replication of your research findings.
--   **Efficient data sharing**: A DMP helps preparing your data for publication and therefore simplifies data sharing once the project ends.
+-   **Enhanced organization**: A DMP forces you to think through important aspects before your project actually starts, ensuring that your data is well-documented, organized, and easily accessible throughout the project.
+-   **One living document**: It contains all information regarding data management for your project, so you can always go back, look things up, make changes or additions but you can also pass it on to e.g. new project members instead of explaining the same things over and over.
+-   **Improved reproducibility**: Thorough documentation promotes transparency and facilitates replication of your research findings.
+-   **Efficient data sharing**: A DMP helps considering important aspects for data publication (e.g., having participants' consent) and therefore simplifies data sharing once the project ends.
 
-As mentioned, a DMP addresses crucial technical, organizational, legal, and financial considerations for your project right from the beginning and provides a comprehensive overview of all potential data management tasks. It structures your workflow and builds the base for optimizations. Also, a DMP supports your own good scientific work by ensuring your data is complete, accurate and trustworthy.
+As mentioned, a DMP addresses crucial technical, organizational, legal, and financial considerations for your project right from the beginning and provides a comprehensive overview of all potential data management tasks. It structures your workflow and builds the basis for optimizations. Also, a DMP supports your own good scientific work by ensuring your data is complete, accurate and trustworthy.
 
 Furthermore, a data management plan can be part of applications and reports to third-party-funded projects. When applying for grants, submitting a DMP may be mandatory (see Excursion: Funder requirements). Beyond that, more and more institutions adopt guidelines for handling research data. You can find an overview of universities in Bavaria with a research data policy [here](https://www.fdm-bayern.org/policies/). 
 
@@ -197,13 +198,13 @@ Many funding agencies ask for information on handling research data. The followi
 
 ## DMP tool: RDMO
 
-Different software is used to streamline the DMP creation process, simplify workflows, and empower collaborative work.
+Different software is available to streamline the DMP creation process, simplify workflows, and empower collaborative work.
 
 ::: {.callout-warning title="DMP tool vs. repository"}
-It is essential to clarify the difference between a DMP tool and a repository: A DMP tool is a planning tool where you gather information about research data management in general, e.g. about the data collection, description, etc. You can also use it as a documentation tool. A repository whereas is a platform where you can store and publish your data. A DMP tool does not store your research data; instead, it is a project management tool that helps you (and others) keep track of your research data management.
+It is essential to clarify the difference between a DMP tool and a repository: A DMP tool is a planning tool where you gather information about research data management in general, e.g. about data collection, description, etc. You can also use it as a documentation tool but it does not store your actual research data. A repository in contrast is a platform where you eventually store and publish your data.
 :::
 
-One of these tools is the [Research Data Management Organiser (RDMO)](https://rdmorganiser.github.io/). RDMO is an [open-source](https://github.com/rdmorganiser) online tool designed to create, store and print your DMP. It supports you in planning projects and administrating data management tasks throughout the whole data life cycle. The tool is an outcome of a project co-funded by the German Research Foundation (DFG) between 2015 and 2020 and is constantly developed and optimized. The University Library of LMU Munich and the Max Planck Digital Library offer instances of the web-based software on their servers (which means both institutions offer their "own" RDMO application). You can register using your email or ORCID id for [LMU RDMO](https://rdmo.ub.uni-muenchen.de/) or your MPG login (Shibboleth) for [MPG RDMO](https://rdmo.mpdl.mpg.de/).
+One of these tools is the [Research Data Management Organiser (RDMO)](https://rdmorganiser.github.io/). RDMO is an [open-source](https://github.com/rdmorganiser) online tool designed to create, store and print your DMP. It supports you in planning projects and administrating data management tasks throughout the whole data life cycle. The tool is an outcome of a project co-funded by the German Research Foundation (DFG) between 2015 and 2020 and is constantly developed and optimized. The University Library of LMU Munich and the Max Planck Digital Library offer instances of the web-based software on their servers (which means both institutions offer their "own" RDMO application). You can register using your email or ORCID for [LMU RDMO](https://rdmo.ub.uni-muenchen.de/) or your MPG login (Shibboleth) for [MPG RDMO](https://rdmo.mpdl.mpg.de/).
 
 Key features of RDMO:
 
