@@ -210,7 +210,7 @@ A digital object identifier ([DOI](https://www.doi.org/)) points directly to a d
 
 ### Open Researcher and Contributor ID
 
-The Open Researcher and Contributor ID ([ORCID](https://orcid.org/)) provides a unique and persistent identifier that you yourself connect with your professional (scientific) information. This helps to recognize all your work, even if e.g., you change your name, one of your coauthors misspells it, or you move on to a new institution. Getting an ORCID is free and quick and meanwhile, several platforms, from grant application to manuscript submission and beyond, allow you to use your ORCID to log into their system.
+The Open Researcher and Contributor ID ([ORCID](https://orcid.org/)) provides a unique and persistent identifier that you yourself connect with your professional (scientific) information. This helps to recognize all your work, even if e.g., you change your name, one of your coauthors misspells it, or you move on to a new institution. Getting an ORCID is free and quick and meanwhile, several platforms, from grant application to manuscript submission and beyond, allow you to use your ORCID to log into their system. Note however, that this is a self-maintained identifier. It thus is only as up-to-date as you keep it.
 
 ### Research Organization Registry
 
