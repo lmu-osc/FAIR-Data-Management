@@ -5,8 +5,8 @@ link-external-newwindow: true
 
 ## Overview
 
-Data publication is the final step of FAIR data management, ensuring data **f**indability and **a**ccessibility (when done well). If you have taken care of the previous sections [Data organization]() and [Documentation](documentation.qmd) and thereby made your data **i**nteroperable and **r**eusable, publishing those data will take minimal effort.  
-Most commonly, data are published as supplements to journal articles and an increasing number of journals actually requires that. Data sets can also be published in specialized data journals (e.g., Scientific data, Data in Brief), which means that the article itself is a rich and detailed description of the data set. As you may have guessed, this option is mainly chosen for rather large, sampling-intensive data sets. Last but not least, it is also possible to publish an independent (without connected publication) data set in a repository and this is often required by funders as the DFG or EU. Irrespective of the publication option, there are common good practices when publishing data, namely
+Data publication is the final step of FAIR data management, ensuring data **F**indability and **A**ccessibility (when done well). If you have taken care of the previous sections [Data organization]() and [Documentation](documentation.qmd) and thereby made your data **I**nteroperable and **R**eusable, publishing those data will take minimal effort.  
+Most commonly, data are published as supplements to journal articles and an increasing number of journals actually require that. Data sets can also be published in specialized data journals (e.g., Scientific data, Data in Brief), which means that the article itself is a rich and detailed description of the data set. As you may have guessed, this option is mainly chosen for rather large, sampling-intensive data sets. Last but not least, it is also possible to publish an independent (without connected publication) data set in a repository and this is often required by funders like the DFG or EU. Irrespective of the publication option, there are common good practices when publishing data, namely
 
 -   indicating in the article that data and/or code are available,
 -   defining usage conditions,
@@ -18,7 +18,12 @@ These will be handled in the course of this chapter.
 ::: callout-warning
 ## Legal basis
 
-Even though publishing data (and code) is a prerequisite for transparent and reproducible research do note that in some cases the legal basis may prevent you from doing so. This most commonly concerns copyright or data protection issues. E.g., someone else may have the copyrights on the data you are working with and they do not allow the data to be published. Or when working with personal data (i.e., data from identifiable living people), you would violate subjects' rights according to the general data protection regulations (GDPR) when publishing these. There is a very nice [decision tree](https://zenodo.org/doi/10.5281/zenodo.3368292) (unfortunately only in German) that can help you find out whether and under what conditions you can publish your data set. Broadly speaking, publishing personal data is only possible if either they can be fully anonymized (and no longer fall under GDPR) or if participants consented to their data being published. It is hence important to consider even before collecting personal data, whether they ought to be published to eventually include that in the consent form.
+Even though publishing data (and code) is a prerequisite for transparent and reproducible research do note that in some cases the legal basis may prevent you from doing so. This most commonly concerns copyright or data protection issues. E.g., someone else may have the copyrights on the data you are working with and they do not allow the data to be published. Or when working with personal data (i.e., data from identifiable living people), you would violate subjects' rights according to the general data protection regulations (GDPR) when publishing these. 
+
+There is a very nice [decision tree](https://zenodo.org/doi/10.5281/zenodo.3368292) (unfortunately only in German) that can help you find out whether and under what conditions you can publish your data set. Broadly speaking, publishing personal data is only possible if either they can be fully anonymized (and no longer fall under GDPR) or if participants consented to their data being published. It is hence important to consider even before collecting personal data, whether they ought to be published to eventually include that in the consent form. If this topic is of interest to your research also check out Felix Schönbrodt's lecture on ["Data anonymity"](https://osf.io/j6fy8) from the Open Research Summer School 2023. 
+
+In seldom cases publishing data can also be limited due to concerns of national security. You should take a few minutes to consider whether your research could be misused by foreign powers. Also consider getting in contact with your supervisor, research department and/or legal department to clarify whether elements of export control policies might apply to your research. 
+
 :::
 
 ## Data Availability Statement
@@ -36,15 +41,15 @@ When submitting to a journal that uses a double-blind peer review process, it's 
 [^2]: Source https://www.cambridge.org/core/services/authors/open-data/data-availability-statements.
 
 ::: callout-tip
-## Task X:
+## Task 3.1:
 
-1.  Is your data set the basis for a published article?
+-  Is your data set the basis for a published article?
 
-2.  How did you find out?
+-  How did you find out?
 
-3.  If so, does the article include a Data Availability Statement?
+-  If so, does the article include a Data Availability Statement?
 
-4.  Where did you find it?
+-  Where did you find it?
 :::
 
 ::: {.callout-important collapse="true"}
@@ -153,19 +158,19 @@ In addition, there are two further labels, to dedicate the published work to the
 ![[PDM](https://creativecommons.org/publicdomain/mark/1.0/)](images/cc-pdm.png)
 :::
 
-As stated above, the CC0 label or the CC BY license should be your preferred choice. In (the unlikely) case that you need a more restrictive license, there is a nice graphical illustration to help you [choo-choo-choose your license](https://www.joeran.de/wp-content/dox/sites/10/cc-licencse-choo-choo-train.png).
+As stated above, the CC0 label or the CC BY license should be your preferred choice. In (the unlikely) case that you need a more restrictive license, there is a nice graphical illustration to help you: [choo-choo-choose your license](https://www.joeran.de/wp-content/dox/sites/10/cc-licencse-choo-choo-train.png).
 :::
 
 ::: callout-tip
-## Task X:
+## Task 3.2:
 
-Are you actually allowed to reuse your data set?
+-  Are you actually allowed to reuse your data set?
 
-If so, under which conditions?
+-  If so, under which conditions?
 :::
 
 ::: {.callout-important collapse="true"}
-## Solution: Group 1 (\~ 2 minutes if only the license is enough, if delving deeper into the conditions obviously longer)
+## Solution: Group 1 (\~ 2 minutes)
 
 1.  Yes.
 
@@ -173,7 +178,7 @@ If so, under which conditions?
 :::
 
 ::: {.callout-important collapse="true"}
-## Solution: Group 2 (\~ 2 minutes, as above)
+## Solution: Group 2 (\~ 2 minutes, if delving deeper into the conditions obviously longer)
 
 1.  Yes.
 
@@ -185,9 +190,6 @@ If so, under which conditions?
 
 1.  No.
 
-2.  
-
-    -   
 :::
 
 ::: {.callout-important collapse="true"}
@@ -204,26 +206,26 @@ Imagine a scenario in which a repository is no longer maintained, so that all da
 
 ### Digital object identifier
 
-A digital object identifier ([DOI](https://www.doi.org/)) points directly to a digital object rather than to its location online (unlike URL). You may know it already from publications. It consists of a unique number made up of a prefix and a suffix separated by a forward slash as e.g., 10.5281/zenodo.4322849. It allows things to be uniquely identified and accessed reliably by using the DOI proxy server https://doi.org/ and appending the DOI, e.g., https://doi.org/10.5281/zenodo.4322849. To avoid 
+A digital object identifier ([DOI](https://www.doi.org/)) points directly to a digital object rather than to its location online (unlike URL). You may know it already from publications. It consists of a unique number made up of a prefix and a suffix separated by a forward slash as e.g., 10.5281/zenodo.4322849. It allows things to be uniquely identified and accessed reliably by using the DOI proxy server https://doi.org/ and appending the DOI, e.g., https://doi.org/10.5281/zenodo.4322849. 
 
 ### Open Researcher and Contributor ID
 
-The Open Researcher and Contributor ID ([ORCID](https://orcid.org/)) provides a unique and persistent identifier that you yourself connect with your professional (scientific) information. This helps to recognize all your work, even if e.g., you change your name, one of your coauthors misspells it, or you move on to a new institution. Getting an ORCID is free and quick and meanwhile, several platforms, from grant application to manuscript submission and beyond, allow you to use your ORCID to log into their system.
+The Open Researcher and Contributor ID ([ORCID](https://orcid.org/)) provides a unique and persistent identifier that you yourself connect with your professional (scientific) information. This helps to recognize all your work, even if e.g., you change your name, one of your coauthors misspells it, or you move on to a new institution. Getting an ORCID is free and quick and meanwhile, several platforms, from grant application to manuscript submission and beyond, allow you to use your ORCID to log into their system. Note however, that this is a self-maintained identifier. It thus is only as up-to-date as you keep it.
 
 ### Research Organization Registry
 
 Last but not least, the Research Organization Registry ([ROR](https://ror.org/)) is a global, community-led registry of open persistent identifiers for research organizations. The LMU has one and all Max-Planck-Institutes have one as well. These are much easier to use than entering all the affiliation information whenever asked for it and at the same time help disambiguate institutional affiliations.
 
 ::: callout-tip
-## Task X:
+## Task 3.3:
 
-Can your data set be accessed reliably?
+-  Can your data set be accessed reliably?
 
-Who would you contact, if questions concerning the data set arose?
+-  Who would you contact, if questions concerning the data set arose?
 
-Is that contact still available?
+-  Is that contact still available?
 
-Does your institution have a ROR?
+-  Does your institution have a ROR?
 :::
 
 ::: {.callout-important collapse="true"}
@@ -235,7 +237,6 @@ Does your institution have a ROR?
 
 3.  Unsure, he has moved on but he also connected his ORCID profile, which is however not well maintained.
 
-4.  ???
 :::
 
 ::: {.callout-important collapse="true"}
@@ -243,11 +244,10 @@ Does your institution have a ROR?
 
 1.  Yes, via DOI https://doi.org/10.5282/ubm/data.288.
 
-2.  There is a contact person listed in the meta data with corresponding email address.
+2.  There is a contact person listed in the metadata with corresponding email address.
 
 3.  Unsure, he is not listed at the Institut für Soziologie anymore, but he also connected his ORCID profile in the article.
 
-4.  ???
 :::
 
 ::: {.callout-important collapse="true"}
@@ -259,7 +259,6 @@ Does your institution have a ROR?
 
 3.  Unsure, she has moved on, but there is no alternative.
 
-4.  ???
 :::
 
 ::: {.callout-important collapse="true"}
@@ -271,12 +270,12 @@ Does your institution have a ROR?
 
 3.  Yes, and he also connected his ORCID profile.
 
-4.  ???
 :::
+
 
 ## Repository
 
-Repositories are database systems to document, store and publish digital objects. Thereby, they ensure visibility (via meta data) and sustainability (via use of PIDs) of the digital objects they are holding. Repositories can be:  
+Repositories are database systems to document, store and publish digital objects. Thereby, they ensure visibility (via metadata) and sustainability (via use of PIDs) of the digital objects they are holding. Repositories can be:  
 
 - Discipline-specific (e.g. OpenNeuro)
 - General (e.g. Zenodo, OSF)
@@ -305,13 +304,13 @@ When searching re3data, most of these criteria are displayed beside the reposito
 
 
 ::: callout-tip
-## Task X:
+## Task 3.4:
 
-Which repository was used to publish your data set?
+-  Which repository was used to publish your data set?
 
-Can you find that repository on re3data.org?
+-  Can you find that repository on re3data.org?
 
-Under what criteria can you publish your data in that repository?
+-  Under what criteria can you publish your data in that repository?
 :::
 
 ::: {.callout-important collapse="true"}
@@ -357,5 +356,5 @@ Under what criteria can you publish your data in that repository?
 ::: callout-note
 ## Excursion: FAIR assessment tools 
 
-With the emerging requisite of research data being FAIR, a number of tools have been developed that automatically check how FAIR published data are. These tools have been evaluated and a nice overview has been published (c.p. https://zenodo.org/records/7701941). We invite you to play around with these tools, especially the automatic tools [F-uji Tool](https://www.f-uji.net/) and [FAIR enough](https://fair-enough.semanticscience.org/). E.g., you may input your dataset to different tools and look at the output, check whether the output confirms your impression of the dataset's reusability, or find a dataset that has been published in different repositories and see how that influences a tool's output (e.g., https://doi.org/10.5281/zenodo.7298798 vs. https://doi.org/10.17617/3.LLWRWR.
+With the emerging requisite of research data being FAIR, a number of tools have been developed that automatically check how FAIR published data are. These tools have been evaluated and a nice overview has been published (c.p. [https://zenodo.org/records/7701941](https://zenodo.org/records/7701941)). We invite you to play around with these tools, especially the automatic tools [F-uji Tool](https://www.f-uji.net/) and [FAIR enough](https://fair-enough.semanticscience.org/). E.g., you may input your dataset to different tools and look at the output, check whether the output confirms your impression of the dataset's reusability, or find a dataset that has been published in different repositories and see how that influences a tool's output (e.g., https://doi.org/10.5281/zenodo.7298798 vs. https://doi.org/10.17617/3.LLWRWR.)
 :::
