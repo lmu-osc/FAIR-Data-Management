@@ -25,7 +25,7 @@ author:
     orcid: 0000-0003-1368-2306
     email: Laura.Meier@ub.uni-muenchen.de 
     affiliation: 
-      - name: University Library Ludwig-Maximilians-Universität 
+      - name: University Library of LMU Munich
         city: Munich
         url: https://www.en.ub.uni-muenchen.de
         

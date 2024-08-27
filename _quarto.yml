@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "FAIR Data Management Workshop"
+  title: "FAIR Research Data Management Workshop"
   page-navigation: false
   page-footer: 
     center: "Developed for the LMU & MPG Open Science Summer School 2024, CCBY4.0"
@@ -12,30 +12,41 @@ website:
   
   
   navbar:
-    left:
-      - sidebar:course
-      - href: about.qmd
-        text: About
+    right:
+      - text: Course
+        menu:
+          - text: "0) Welcome"
+            href: index.qmd
+          - text: "1) Organization"
+            href: data-organisation.qmd
+          - text: "2) Documentation"
+            href: documentation.qmd
+          - text: "3) Publication"
+            href: publication.qmd
+          - text: "4) Data Management Plans"
+            href: dmp.qmd
+      - text: About
+        href: about.qmd
       
   sidebar:
     id: course
     title: "Course"
-    style: "floating"
+    style: floating
     search: true
     collapse-level: 1
-    
+
     contents:
-      - section: "0) Welcome"
-        href: welcome.qmd
+      - text: "0) Welcome"
+        href: index.qmd
         contents: 
           - text: "Target audience" 
-            href: welcome.qmd#who-is-this-workshop-for
+            href: index.qmd#who-is-this-workshop-for
           - text: "Benefits"
-            href: welcome.qmd#what-is-the-purpose-of-this-workshop
+            href: index.qmd#what-is-the-purpose-of-this-workshop
           - text: "Instructions"
-            href: welcome.html#how-to
+            href: index.html#how-to
       - text: "---"
-      - section: "1) Organization"
+      - text: "1) Organization"
         href: data-organisation.qmd
         contents:
           - text: General notes
@@ -45,7 +56,7 @@ website:
           - text: Aspects to look at
             href: data-organisation.qmd#aspects-to-look-at
       - text: "---"
-      - section: "2) Documentation"
+      - text: "2) Documentation"
         href: documentation.qmd
         contents:
           - href: documentation.qmd#metadata
@@ -55,7 +66,7 @@ website:
           - href: documentation.qmd#code-book
             text: Codebook
       - text: "---"
-      - section: "3) Publication"
+      - text: "3) Publication"
         href: publication.qmd
         contents: 
           - href: publication.qmd#data-availability-statement
@@ -67,7 +78,7 @@ website:
           - href: publication.qmd#repository
             text: Repository
       - text: "---"
-      - section: "4) Data Management Plans"
+      - text: "4) Data Management Plans"
         href: dmp.qmd
         contents:
           - href: dmp.qmd#general-information
@@ -86,7 +97,7 @@ format:
   html:
     theme: flatly
     css: styles.css
-    toc: true
+    toc: false
 
 editor: source
 
