@@ -34,11 +34,17 @@ Please note that this list is incomplete, and the questions may vary depending o
 [^9]: Questions based on: [https://www.fdm.uni-hamburg.de/fdm/datenmanagementplan.html](https://www.fdm.uni-hamburg.de/fdm/datenmanagementplan.html)
 
 ::: {.callout-note}
-## Excursion: Published DMPs
+## Excursion: Example DMPs
 
-Looking at published DMPs, especially from your discipline, may be helpful to gain a deeper insight into the topic. You can find them on different repositories, e.g. [Zenodo](https://zenodo.org/search?q=DMP&l=list&p=1&s=10&sort=bestmatch). 
+Looking at published DMPs, especially from your discipline, may be helpful to gain a deeper insight into the topic. 
+Have a look at the following list to find some example DMPs. (Note: some of these collections are not uptodate.)
 
-MK: Ich bin nicht sicher, ob dieser Link so hilfreich ist;) Die Intention finde ich gut, aber vielleicht finden wir einen Link, wo man wirklich direkt auf veröffentlichte DMPs kommt?
+- [Argos Published DMPs](https://argos.openaire.eu/explore-plans)
+- Digital Curation Centre [Example DMPs and Guidance](https://www.dcc.ac.uk/resources/data-management-plans/guidance-examples)
+- [Public DMPs by DMPonline](https://dmponline.dcc.ac.uk/public_plans)
+- LIBER Europe [DMP Catalogue](https://libereurope.eu/working-group/research-data-management/plans/)
+- [Examples for Horizon 2020 DMPs by the University of Vienna](https://phaidra.univie.ac.at/detail/o:1140797)
+- Data management plans in the [RIOjournal](https://riojournal.com/browse_journal_articles.php?form_name=filter_articles&selfurl=&backurl=&sortby=0&journal_id=17&search_hidden=dmp&search_in_=0&search_in_hidden=&alerts_subject_cats=&alerts_sdg_cats=&from_date=&to_date=&section_type%5B%5D=231&funding_agency=)
 
 :::
 
@@ -50,7 +56,7 @@ Regarding data storage and security, the following three "S" encompass the topic
 
 ### Safe
 
-Safety focuses on the protection of data against physical loss.[^7] To ensure your data's safety and recoverability, establish a regular backup routine. This involves creating copies of your data at specified times and storing them separately from the originals, ideally adhering to the 3-2-1 rule (see below). Consider using external hard drives or USB sticks for local backups.[^3] Additionally, if your institution offers backup systems like [LRZ cloud storage](https://doku.lrz.de/cloud-storage-kurzbeschreibung-11476147.html?showLanguage=en_US) or [LRZ Sync+Share](https://syncandshare.lrz.de/login), you can store your data where they have automated backup mechanisms. Another synched storage is [Keeper](https://keeper.mpdl.mpg.de/accounts/login/?next=/), a service available for all Max Planck employees. --> not sure this involves backups though, should double check!
+Safety focuses on the protection of data against physical loss.[^7] To ensure your data's safety and recoverability, establish a regular backup routine. This involves creating copies of your data at specified times and storing them separately from the originals, ideally adhering to the 3-2-1 rule (see below). Consider using external hard drives or USB sticks for local backups.[^3] Additionally, if your institution offers backup systems like [LRZ cloud storage](https://doku.lrz.de/cloud-storage-kurzbeschreibung-11476147.html?showLanguage=en_US) or [LRZ Sync+Share](https://syncandshare.lrz.de/login), you can store your data where they have automated backup mechanisms. Another synched storage is [Keeper](https://keeper.mpdl.mpg.de/accounts/login/?next=/), a service available for all Max Planck employees. 
 
 ::: {.callout-warning}
 ## 3-2-1 rule
@@ -60,23 +66,20 @@ The 3-2-1 backup rule states that you should maintain **three** copies of your d
 
 Remember, your backups should encompass your data files and include software applications if necessary. This ensures a comprehensive recovery if needed.[^3]
 
-For larger files exceeding 100GB, consider using services such as [GigaMove](https://gigamove.rwth-aachen.de/de) (RWTH Aachen) to share files efficiently. For long-term data preservation with advanced security features, explore [EUDAT B2ACCESS](https://b2access.eudat.eu/home/) – you can find more information about EUDAT services on their [website](https://eudat.eu/catalogue).
---> Den Sprung verstehe ich glaube ich nicht, eigentlich waren wir ja bei safe storage und jetzt geht es um teilen und langzeit Archivierung?
-
 [^3]: based on: [https://www.forschungsdaten.info/themen/speichern-und-rechnen/datensicherheit-und-backup/](https://www.forschungsdaten.info/themen/speichern-und-rechnen/datensicherheit-und-backup/)
 [^7]: based on: [https://www.baramundi.com/de-de/blog/artikel/unterschied-safety-security/](https://www.baramundi.com/de-de/blog/artikel/unterschied-safety-security/)
 
 ### Secure
 
 Protecting data against unauthorized access and data misuse is one of the main goals of security.[^7] We recommend using access control mechanisms and encryption to prevent unauthorized access to data and to protect sensitive information. 
-Confidential data is sensitive information that could cause harm if disclosed, such as details about endangered species, vulnerable archaeological sites, or personal information. Personal data is subject to strict privacy laws (cp. [General Data Protection Regulations](https://gdpr-info.eu/)) and requires secure handling. To protect both types (--> BOTH types? Confidential and personal?) of data, it is crucial to minimize the risk of identification through techniques like pseudonymization (i.e., replace personally identifiable information by a pseudonym) or anonymization (i.e., complete removal of personally identifiable information from the research data). 
+Confidential data is sensitive information that could cause harm if disclosed, such as details about endangered species, vulnerable archaeological sites, or personal information. Personal data is subject to strict privacy laws (cp. [General Data Protection Regulations](https://gdpr-info.eu/)) and requires secure handling. To protect sensitive data, it is crucial to minimize the risk of identification through techniques like pseudonymization (i.e., replace personally identifiable information by a pseudonym) or anonymization (i.e., complete removal of personally identifiable information from the research data). 
 Additionally, strong password protection using reliable password management tools is essential to prevent unauthorized access.[^4]
 
 [^4]: based on: [https://doi.org/10.17605/OSF.IO/GDQ93](https://doi.org/10.17605/OSF.IO/GDQ93) and [https://www.forschungsdaten.info/themen/speichern-und-rechnen/datensicherheit-und-backup/](https://doi.org/10.17605/OSF.IO/GDQ93)
 
 ### Sustainable 
 
-Data sustainability aims at making data persistent across technological and human evolution.[^8] Concretely, this means choosing file formats that are unlikely to become obsolete and ensuring the long-term readability and accessibility of your data. For more details on this topic, revisit [Part 1: Organization / File formats](data-organisation.qmd#file-formats) (*Link to data organisation/file formats*).
+Data sustainability aims at making data persistent across technological and human evolution.[^8] Concretely, this means choosing file formats that are unlikely to become obsolete and ensuring the long-term readability and accessibility of your data. For more details on this topic, revisit [Part 1: Organization / File formats](data-organisation.qmd#file-formats).
 
 [^8]: based on: [https://doi.org/10.1016/j.infoandorg.2023.100449](https://doi.org/10.1016/j.infoandorg.2023.100449)
 
@@ -239,7 +242,7 @@ In addition to RDMO, a variety of DMP tools exist. The following table[^1] provi
 
 ::: callout-tip
 # Task 4: (~20 min)
-If you do not yet have a RDMO account, please register now. Either use the [LMU RDMO](https://rdmo.ub.uni-muenchen.de/) (register using your email or ORCID id) or [MPG RDMO](https://rdmo.mpdl.mpg.de/) (MPG login: Shibboleth). Login and create a new project using the **RDMO catalog**. --> for MPDL it is called catalog, but maybe this differs?
+If you do not yet have a RDMO account, please register now. Either use the [LMU RDMO](https://rdmo.ub.uni-muenchen.de/) (register using your email or ORCID id) or [MPG RDMO](https://rdmo.mpdl.mpg.de/) (MPG login: Shibboleth). Login and create a new project using the **RDMO catalog**.
 
 Answer the questions for a subset of the following sections for the dataset you previously worked on:
 
