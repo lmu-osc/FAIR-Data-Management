@@ -9,7 +9,7 @@ Effective documentation is a crucial aspect of FAIR data management, ensuring th
 
 ## Metadata
 
-Metadata are "data that provide information about other data"[^1], describing the context, content, and structure of a dataset. It contains essential information about the data, such as authorship, creation context, contents, provenance and accessibility. Making it possible to understand and work with the data effectively. By providing a clear understanding of the data's origin, and meaning, metadata play a critical role in ensuring data quality, reproducibility, and FAIRness.
+Metadata are "data that provide information about other data"[^1], describing the context, content, and structure of a dataset. They contain essential information about the dataset, such as authorship, creation context, contents, provenance and accessibility. Metadata enable to understand and work with the data effectively. By providing a clear understanding of the data's origin, and meaning, metadata play a critical role in ensuring data quality, reproducibility, and FAIRness.
 
 [^1]: „metadata“. Merriam-Webster Dictionary, accessed 7. July 2024, [www.merriam-webster.com/dictionary/metadata](www.merriam-webster.com/dictionary/metadata).
 
@@ -18,6 +18,7 @@ Metadata are "data that provide information about other data"[^1], describing th
 
 Can you answer all of these questions by looking through your (example) dataset? \
 (Concentrate on what you can find on the dataset level and only look further if you have the time.)
+(( CommDW: Sehe ich das richtig, dass an der Stelle noch in keine readme-Datei reingeschaut werden soll, also nur der Inhalt der Datensatz-Seite angeschaut werden soll? Falls ja: "(Concentrate on what you can find on the dataset level, don't look into any README file yet.)" ))
 
 -   Who created the dataset?\
 -   What do the data files contain?\
@@ -26,7 +27,7 @@ Can you answer all of these questions by looking through your (example) dataset?
 -   Why was the dataset generated?\
 -   How was the dataset generated?\
 -   What research is this dataset connected to?\
--   Can this dataset be re-used?\
+-   Can this dataset be re-used?\  (( CommDW: Dieser letzte Punkt wird auch bei der Lizenz bei 'Publication' abgefragt. ))
 
 Discuss:\
 Where did you find this information?\
@@ -39,13 +40,13 @@ Bonus:\
 ::: {.callout-warning}
 ## Tips on where to find metadata
 
-Metadata can be found at several different points:
+Metadata can be found at several places:
 
 1.  Repository description: You are often asked about entering metadata, when you upload your dataset to a repository. The quality and extent of metadata you can provide varies from repository to repository. We will cover repositories in Chapter 3).
 
-2.  README file: Before you publish your dataset you might already want to keep track of your metadata. A good way to not loose the overview yourself and inform others is by creating a README file. We will cover README files in the next section.
+2.  README file: Already before you publish your dataset, you should keep track of your metadata, in order to prevent loosing the overview yourself, and for informing others. A good way to do that is creating a README file. We will cover README files in the next section.
 
-3. Related publication: Most datasets that are published are connected to scientific papers, which detail what has been done to generate the dataset, what it consists of and its analysis process. While this can provide very detailed information it makes it difficult to assess the dataset on its own.  
+3. Related publication: Most datasets that are published are connected to scientific papers, which detail what has been done to generate the dataset, what it consists of and its analysis process. While this can provide very detailed information, it makes it difficult to assess the dataset on its own. 
 :::
 
 :::{.callout-important collapse="true"}
@@ -155,7 +156,7 @@ Metadata can be found at several different points:
 
 ::: {.callout-note }
 ## Excursion: Community Standards
-Community standards for metadata allow for improved comparison between datasets. Some disciplines have agreed-upon formal standards that define how metadata should be documented. If you publish your data via a discipline specific repository it is likely that their entry form already guides you through the community metadata standard. You can look for metadata standards that are specific to your discipline e.g. via [FAIRsharing.org](https://fairsharing.org/search?fairsharingRegistry=Standard). If a standard for your research field exist you should follow it as best as possible.
+Community standards for metadata allow for improved comparison between datasets. Some disciplines have agreed-upon formal standards that define how metadata should be documented. If you publish your data via a discipline specific repository, it is likely that their entry form already guides you through the community metadata standard. You can look for metadata standards that are specific to your discipline e.g. via [FAIRsharing.org](https://fairsharing.org/search?fairsharingRegistry=Standard). If a standard for your research field exists, you should follow it as good as possible.
 
 Even if your discipline does not adhere to strict standards, there is an advantage in using generic standards. By using controlled vocabularies or ontologies for your metadata you can increase the machine-readability and -actionability of your data.
 
@@ -164,16 +165,16 @@ Machine-readability refers to the ability of machines (computers, algorithms, et
 
 ## README file
 
-We already established that metadata and README files are strongly connected. They form a great way to provide an introduction to and documentation of a dataset and its research context. A README file is a plain text file often written in markdown and therefore named "README.md". This naming convention helps spotting the README file for humans and machines alike, e.g. in GitHub repositories the README.md file is identified automatically and its content displayed on the repositories main page. The README file should be one of the first files your create for a new project. You can then continue filling it with the relevant information.
+We already established that metadata and README files are strongly connected. They form a great way to provide an introduction to and documentation of a dataset and its research context. A README file is a plain text file often written in markdown and then named "README.md". This naming convention helps spotting the README file for humans and machines alike, e.g. in GitHub repositories the README.md file is identified automatically and its content displayed on the repositories main page. The README file should be one of the first files your create for a new project. You can then continue filling it with the relevant information.
 
-What should be in a README file? - Ideally all the answers to the questions posed under the metadata section should be given in the README file. To determine what should be best included in your README file, it can also be helpful to go through the questions of a [Research Data Management Plan](RDMP.qmd). While your README file should be very descriptive it is also important to stay concise and clear. Avoid e.g. using jargon to improve inter-disciplinary usage.
+What should be in a README file? - Ideally all the answers to the questions posed under the metadata section should be given in the README file. To determine what should be best included in your README file, it can also be helpful to go through the questions of a [Research Data Management Plan](RDMP.qmd). While your README file should be very descriptive, it is also important to stay concise and clear. Avoid e.g. using jargon to improve inter-disciplinary usage.
 
 ::: {.callout-tip}
 # Task 2.2: (~10 min)
 
 -   Download and open the README file of your example dataset in a text editor of your choice.
 -   Copy the template into another text editor file. 
--   Where does the provided information of the example README differ from the template below? Mark the sections of the template in \*\*bold\*\* that you can answer solely from the provided README. 
+-   Where does the provided information of the example README differ from the template below? Mark the sections of the template in \*\*bold\*\* that you can answer solely from the provided README. (( CommDW: Ich vermute, das Fett-Machen ist nur zur schnelleren Übersicht gedacht? Hilft aber nur, wenn die Teilnehmer gerade einen Markdown-Editor nutzen. Vielleicht einfacher und passender in Hinblick auf den nächsten Punkt: "Count the sections of the template that you can answer solely from the provided README." ))
 -   How many of the 19 open fields of the template could you answer based on your solutions from task 2.1?
 -   Discuss: What information can be found in the README example that is not contained in the template but contributes to understanding the data set? 
 
@@ -282,14 +283,17 @@ You might also suggest to your department/research group/institute/research comm
 
 ## Codebook
 
-Whereas general metadata and README information typically focus on the dataset or project as a whole, codebooks delve deeper, providing detailed explanations and clarifications about the specific data contained in individual files. A code book should make all components of a dataset file self-explanatory. It helps to identify e.g what certain variables and value labels mean or in which format the data points have been collected. This makes the dataset more accessible by allowing re-users to work independent of a research paper. Some people include this information in the README file. However, this can significantly extent the length of the README. It is always best to keep README files concise to maintain their readability.
+Whereas general metadata and README information typically focus on the dataset or project as a whole, codebooks delve deeper, providing detailed explanations and clarifications about the specific data contained in individual files. A code book should make all components of a dataset file self-explanatory. It helps to identify e.g. what certain variables and value labels mean or in which format the data points have been collected. This enhances the FAIRness of the dataset, because it allows to re-use it independent of the availability an associated research paper.
 
-If all of your data files are structured and labeled according to the same system it is enough to provide one codebook that describes and explain this system. If you have differently structured files you should consider providing multiple codebooks.
+Some people include this information in the README file. However, this can significantly extent the length of the README. We recommend to keep README files concise to maintain their readability.
+
+If all of your data files are structured and labeled according to the same system it is enough to provide one codebook that describes and explains this system. If you have differently structured files you should consider providing multiple codebooks.
 
 Here are some of the elements that can be included in a codebook:
 
 -   variables
 -   value labels
+-   measuring unit
 -   data types
 -   data format
 -   data dictionary
@@ -314,7 +318,7 @@ A first step is to provide this information about your data is in a .csv table, 
 
 ### Advanced level:
 
-To improve the quality and usability of your codebook you can provide it as a JSON file. This has the advantage to be machine-readable and -actionable. It makes it easier to extract this information and work with it in coding scripts.
+Depending on the complexity of your data, you can improve your codebook by providing it as a JSON file. This has the advantage to be machine-readable and -actionable. It makes it easier to extract this information and work with it in coding scripts.
 
 ::: {.callout-note collapse="true"}
 # Example of a detailed JSON code book
