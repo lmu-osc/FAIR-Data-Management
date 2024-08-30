@@ -37,10 +37,12 @@ website:
         contents:
           - text: General notes
             href: data-organisation.qmd#general-notes
-          - text: General task
-            href: data-organisation.qmdl#general-task
-          - text: Aspects to look at
-            href: data-organisation.qmd#aspects-to-look-at
+          - text: Folder structure
+            href: data-organisation.qmd#folder-structure
+          - text: File and folder names
+            href: data-organisation.qmd#file-and-folder-names
+          - text: File formats
+            href: data-organisation.qmd#file-formats
       - section: "2) Documentation"
         href: documentation.qmd
         contents:
