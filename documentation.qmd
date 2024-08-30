@@ -17,8 +17,7 @@ Metadata are "data that provide information about other data"[^1], describing th
 ## Task 2.1: (~10 min)
 
 Can you answer all of these questions by looking through your (example) dataset? \
-(Concentrate on what you can find on the dataset level and only look further if you have the time.)
-(( CommDW: Sehe ich das richtig, dass an der Stelle noch in keine readme-Datei reingeschaut werden soll, also nur der Inhalt der Datensatz-Seite angeschaut werden soll? Falls ja: "(Concentrate on what you can find on the dataset level, don't look into any README file yet.)" ))
+(Concentrate on what you can find on the dataset level, don't look into any README file yet.)
 
 -   Who created the dataset?\
 -   What do the data files contain?\
@@ -27,7 +26,7 @@ Can you answer all of these questions by looking through your (example) dataset?
 -   Why was the dataset generated?\
 -   How was the dataset generated?\
 -   What research is this dataset connected to?\
--   Can this dataset be re-used?\  (( CommDW: Dieser letzte Punkt wird auch bei der Lizenz bei 'Publication' abgefragt. ))
+-   Can this dataset be re-used?\ 
 
 Discuss:\
 Where did you find this information?\
@@ -51,6 +50,8 @@ Metadata can be found at several places:
 
 :::{.callout-important collapse="true"}
 ## Solution: Example 1 
+Answers from different sources have been brought together.
+
 -   Who created the dataset? 
     + Göckede, Mathias; Reum, Friedemann; Heimann, Martin
 -   What do the data files contain?
@@ -76,6 +77,8 @@ Metadata can be found at several places:
 
 :::{.callout-important collapse="true"}
 ## Solution: Example 2 
+Answers from different sources have been brought together.
+
 -   Who created the dataset?
     + Tekles, Alexander; Auspurg, Katrin; Bornmann, Lutz
 -   What do the data files contain?
@@ -101,6 +104,8 @@ Metadata can be found at several places:
 
 :::{.callout-important collapse="true"}
 ## Solution: Example 3 
+Answers from different sources have been brought together.
+
 -   Who created the dataset?\
     + Sarah Polk; Maike Kleemeyer (0000-0002-9388-5535)
 -   What do the data files contain?\
@@ -126,6 +131,8 @@ Metadata can be found at several places:
 
 :::{.callout-important collapse="true"}
 ## Solution: Example 4 
+Answers from different sources have been brought together. 
+
 -   Who created the dataset?\
     + Dominik Deffner; Benjamin (Kahl) 
 -   What do the data files contain?\
@@ -150,7 +157,7 @@ Metadata can be found at several places:
     + [https://doi.org/10.1038/s41467-024-47010-3](https://doi.org/10.1038/s41467-024-47010-3) (Not provided on dataset level) 
 -   Can this dataset be re-used?\
     + The dataset is under a CC BY 4.0, which would allow re-use under the given conditions.
-    + However, the GitHub repository is connected to an Apache License 2.0, which makes it difficult to know what license applies.  
+    + However, the GitHub repository is connected to an Apache License 2.0, which makes it difficult to know which license applies.  
 :::
 
 
@@ -174,7 +181,7 @@ What should be in a README file? - Ideally all the answers to the questions pose
 
 -   Download and open the README file of your example dataset in a text editor of your choice.
 -   Copy the template into another text editor file. 
--   Where does the provided information of the example README differ from the template below? Mark the sections of the template in \*\*bold\*\* that you can answer solely from the provided README. (( CommDW: Ich vermute, das Fett-Machen ist nur zur schnelleren Übersicht gedacht? Hilft aber nur, wenn die Teilnehmer gerade einen Markdown-Editor nutzen. Vielleicht einfacher und passender in Hinblick auf den nächsten Punkt: "Count the sections of the template that you can answer solely from the provided README." ))
+-   Where does the provided information of the example README differ from the template below? Count the sections of the template that you can answer solely from the provided README. (The sections will be marked as \*\*bold\*\* in the example solution files.) 
 -   How many of the 19 open fields of the template could you answer based on your solutions from task 2.1?
 -   Discuss: What information can be found in the README example that is not contained in the template but contributes to understanding the data set? 
 
