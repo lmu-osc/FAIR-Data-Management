@@ -163,7 +163,7 @@ The dataset has 42 files, but no folder structure. Folders are not needed here, 
 > 
 > In case there are no folders, you may discuss whether it would make sense to add folders.
 
-Dataset contains 6 files, whithout folder structure. However, 2 of them are of type 'tar.gz', which contain compressed ASCII files. Content is described in the README file.
+The Dataset contains 6 files, whithout folder structure. However, 2 of them are of type 'tar.gz', which contain compressed ASCII files. The content is described in the README file.
 Also the tar.gz files do not contain many files, thus no further folder structure is needed.
 :::
 
@@ -175,9 +175,9 @@ Also the tar.gz files do not contain many files, thus no further folder structur
 
 Following notes relate to the content of `OSF Storage`.
 
-- Yes, grouped into data, code (scripts) etc
-- Described in README file, but not completely.
-- Only up to 8 files, one folder level
+- Yes, files are grouped into data, code (scripts) etc.
+- The content is described in the README file, but not completely.
+- There are up to 8 files per folder, one folder level.
 :::
 
 ::: {.callout-important collapse="true" title="Solution: Task 1.1, Group 4"}
@@ -289,10 +289,10 @@ For further reading: GitHub recommends version names like '1.3.2' for the releas
 > - What about the length of the names?
 > - Discuss: What would you leave as it is, what would you change, or what are the alternatives?
 
-- Files consist of prefix `amb_hourly_qc_wc4.4_cal6.0_`, followed by year and month (e.g. `2014_08`), followed by `_core-params.csv`. Prefix might be intuitive for researchers of that field, not explicitly described.
-- Probably the prefix has some meaning, but it is not explicitly stated in the README.
+- Files consist of prefix `amb_hourly_qc_wc4.4_cal6.0_`, followed by year and month (e.g. `2014_08`), followed by `_core-params.csv`. Prefix might be intuitive for researchers of that field, but it is not explicitly described.
+- Probably the prefix has some meaning, but as it is not explicitly stated in the README, we can only speculate.
 - Yes, files are sorted according to the month of measurement.
-- Yes: File name `AMB hourly, readme.rtf` contains spaces and a comma. The other file names contain several dots (should only be before the file extension `csv`).
+- Yes: File name `AMB hourly, readme.rtf` contains spaces and a comma. The other file names contain several dots (should only be one dot, namely before the file extension `csv`).
 - Length is not problematic, but longer than needed.
 - Replace `AMB hourly, readme.rtf` by `README.rtf`. The other file names can be shortened, e.g. `HourlyCoreParams_2014_08.csv`. And if the file name prefix `amb_hourly_qc_wc4.4_cal6.0_` contains relevant information, this should be explicitly given in the metadata or README file.
 :::
@@ -305,9 +305,9 @@ For further reading: GitHub recommends version names like '1.3.2' for the releas
 > - What about the length of the names?
 > - Discuss: What would you leave as it is, what would you change, or what are the alternatives?
 
-- The dataset contains only 6 files, thus there is not really a convention available. The non-intuitive parts `wos` and `fo` are explained in the README file (namely "Web of Science data" and "Faculty Opinions data"). The files inside the tar.gz-files seem to follow some convention, and their content is explicitly mentioned in the README file.
+- The dataset contains only 6 files, thus there is not really a convention available, and also not needed. The non-intuitive parts `wos` and `fo` are explained in the README file (namely "Web of Science data" and "Faculty Opinions data"). The files inside the tar.gz-files seem to follow some convention, and their content is explicitly mentioned in the README file.
 - Probably yes. Anyhow, their content is mentioned in the README file.
-- Not many files, does order not important.
+- Only few files, does order not important.
 - No problematic characters found.
 - Length of the names: OK
 :::
@@ -324,7 +324,7 @@ Following notes relate to the content of `OSF Storage`.
 
 - Not so clear, but not many files, thus no clear conventions needed. However, the files in folder `result` are lacking an explanation in the README file, and their names are not very intuitive.
 - Meaning not clear for all files.
-- Not many files, thus order not important.
+- Only few files, thus order not important.
 - No problematic characters found in `OSF Storage`.
 - Length of the names: OK
 :::
@@ -342,7 +342,7 @@ Following notes relate to the content of `OSF Storage`.
 - Subfolders are not in a chronological order, because the date is given in a disadvantageous format (e.g. `01_09_2022`) - better would be `2022_09_01` or `2022-09-01`.
 - Yes: Folder name `Stan model code` contains spaces.
 - Length of the names: OK
-- In case folder name `01_09_2022__10_13_33` stands for timestamp 2022-09-01T10:13:33, it could be renamed to `20220901T101333` or `2022-09-01_101333`.
+- If folder name `01_09_2022__10_13_33` stands for timestamp 2022-09-01T10:13:33, then it could be renamed to `20220901T101333` or `2022-09-01_101333`.
 :::
 
 ## File formats
@@ -424,12 +424,12 @@ For some years, the Unicode-based file format "UTF-8" has been available, which 
 
 - Files are ASCII files, thus open.
 - Yes, ASCII is suitable for long-term archiving.
-- Easy to open, e.g. with text editor
-- Tabular shape
-- Ok, as each file is below 1 MB.
-- Shape: easy to understand, meaning of column see README file
+- Easy to open, e.g. with text editor.
+- Files have tabular shape.
+- OK, file sizes are below 1 MB.
+- Shape: easy to understand, meaning of the columns given in README file.
 - Most data analysis programs have import functions for csv. The quotes in the first column might be cumbersome for some import routines.
-- Tab-separated files, spreadsheet files, etc
+- Tab-separated files, spreadsheet files, etc.
 :::
 
 ::: {.callout-important collapse="true" title="Solution: Task 1.3, Group 2"}
@@ -442,14 +442,14 @@ For some years, the Unicode-based file format "UTF-8" has been available, which 
 > - Are they machine-readable and standardized? How easy is it to write a script to read the files?
 > - Which alternative formats exist?
 
-- The small files are ASCII or UTF-8 files, thus open. The tar.gz files are compressed TAR-files, also open formats.
+- The small files are ASCII or UTF-8 files, thus open. The tar.gz files are compressed TAR-files, thus also in an open format.
 - Yes, ASCII is definitively suitable for long-term archiving. Also tar.gz files are widely used and can thus be considered suitable for long-term archiving.
-- The tar.gz files need specific software for extraction, which are freely available, but maybe not installed everywhere, and not all people are familiar with them. Thus it is commandable that the extaction is described in the README file. However, the file size of several GB can be problematic for users having a slow internet connection. And unpacked, the largest file is more than 26 GB, more than the RAM size of many computers.
+- The tar.gz files need specific software for extraction, which is freely available, but maybe not installed everywhere, and not all people are familiar with. Thus it is commandable that the extaction is described in the README file. However, the file size of several GB can be problematic for users having a slow internet connection. And unpacked, the largest file is more than 26 GB, more than the RAM size of many computers.
 - The data files (inside the tar.gz) are not complex, just tables.
 - Due to compression, the file size is reduced for storage and download. However, the tables contain many digits, probably more than needed. Reducing them would decrease file size. Binary files instead of ASCII files would need less time for loading.
-- Shape: easy to understand, meaning of column see README file
+- Shape: easy to understand, meaning of column see README file.
 - Most data analysis programs have import functions for csv.
-- Binary files like [HDF](https://de.wikipedia.org/wiki/Hierarchical_Data_Format) could be used (cf note above related to performance).
+- Binary files like [HDF](https://de.wikipedia.org/wiki/Hierarchical_Data_Format), which could enhance performance.
 :::
 
 ::: {.callout-important collapse="true" title="Solution: Task 1.3, Group 3"}
@@ -464,12 +464,12 @@ For some years, the Unicode-based file format "UTF-8" has been available, which 
 
 Following notes relate to the content of "OSF Storage".
 
-- Most files open: ASCII tables, JSON files, R scripts. But what are "nii.gz" files in folder "results" - maybe zipped [NIfTI](https://en.wikipedia.org/wiki/Neuroimaging_Informatics_Technology_Initiative) files?
+- Most files are in an open format: ASCII tables, JSON files, R scripts. But what are "nii.gz" files in folder "results" - maybe zipped [NIfTI](https://en.wikipedia.org/wiki/Neuroimaging_Informatics_Technology_Initiative) files?
 - Yes for ASCII tables and JSON files; maybe yes for nii.gz files.
 - ASCII tables and JSON files: easy to open with every text editor, special software or libraries needed for nii.gz.
 - Files in folder `data` are tables (csv) or Codebooks (in JSON format) describing those.
-- Ok, because the files are not very large.
-- ASCII tables an JSON files are easy to understand by humans; nii.gz needs suitable software.
+- OK, because the files are not very large.
+- ASCII tables and JSON files are easy to understand by humans; nii.gz needs suitable software.
 - Most data analysis programs have import functions for csv, also JSON import functions are available for several programs.
 - For csv-tables: Tab-separated files, spreadsheet files, etc; for JSON: XML
 :::
@@ -484,12 +484,12 @@ Following notes relate to the content of "OSF Storage".
 > - Are they machine-readable and standardized? How easy is it to write a script to read the files?
 > - Which alternative formats exist?
 
-- Files are stored as ASCII tables or plain text files, i.e. in open formats.
+- Files are stored as ASCII tables or plain text files, which are open formats.
 - Yes, suitable for long-term archiving.
 - Easy, readable with text editor.
 - Data files are ASCII tables.
 - Due to compression, the file size is reduced for storage and download. Binary files instead of ASCII files would need less time for loading.
-- Format easy to understand by humans, but columns not explicitly described
+- The format is easy to understand by humans, but the columns are not explicitly described.
 - Most data analysis programs have import functions for semicolon-separated tables.
 - Binary files like [HDF](https://de.wikipedia.org/wiki/Hierarchical_Data_Format) could be used (cf note above related to performance).
 :::
@@ -600,7 +600,7 @@ Time,Temp,Rain
 - ASCII
 - Has many digits, e.g. `986.223944276841`.
 - No information about missing values found in README file. But file `amb_hourly_qc_wc4.4_cal6.0_2017_03_core-params.csv` contains `NA`.
-- Time is ISO 8601 conform, except that a space is given between date and time of day, e.g. `2017-03-23 09:30:00`. In readme file mentioned: "All times given in GMT"
+- Time is ISO 8601 conform, except that a space is given between date and time of day, e.g. `2017-03-23 09:30:00`. In readme file mentioned: "All times given in GMT".
 - Comma as column separator, whitespace only between date and time of day, no missing columns found.
 - Not self-explaining but mentioned in README file, also the units.
 :::
@@ -649,7 +649,7 @@ Following notes relate to the content of `OSF Storage`.
 
 - Data tables are ASCII files.
 - Numbers: e.g. `73.12958` - looks reasonable
-- Special numbers or contents: Some Coluns contain parenthesis - what is their meaning?
+- Special numbers or contents: Some Columns contain parenthesis - what is their meaning?
 - Time: Time column with seconds(?) since start time?
 - Tables: Semicolon as column separator, also semicolon after last column.
 - The README file says "Variable names should be quite descriptive, but please get in touch in case anything is unclear", but not all columns are so clear to understand.
