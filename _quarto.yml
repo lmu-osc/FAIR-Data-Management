@@ -15,7 +15,7 @@ website:
     left:
       - text: Course
         menu:
-          - text: "0) Welcome"
+          - text: "Welcome"
             href: index.qmd
           - text: "1) Organization"
             href: data-organisation.qmd
@@ -33,7 +33,7 @@ website:
     search: true
     
     contents:
-      - section: "0) Welcome"
+      - section: "Welcome"
         href: index.qmd
         contents: 
           - text: "Target audience" 
