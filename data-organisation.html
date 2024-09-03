@@ -1,0 +1,1906 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.551">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>FAIR Research Data Management Workshop - 1) Organization</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">FAIR Research Data Management Workshop</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-course" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Course</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-course">    
+        <li>
+    <a class="dropdown-item" href="./index.html">
+ <span class="dropdown-text">Welcome</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./data-organisation.html">
+ <span class="dropdown-text">1) Organization</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./documentation.html">
+ <span class="dropdown-text">2) Documentation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./publication.html">
+ <span class="dropdown-text">3) Publication</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dmp.html">
+ <span class="dropdown-text">4) Data Management Plans</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data-organisation.html">1) Organization</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html#who-is-this-workshop-for" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Target audience</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html#what-is-the-purpose-of-this-workshop" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Benefits</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html#how-to" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Instructions</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./data-organisation.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">1) Organization</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data-organisation.html#general-notes" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">General notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data-organisation.html#folder-structure" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Folder structure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data-organisation.html#file-and-folder-names" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">File and folder names</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data-organisation.html#file-formats" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">File formats</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./documentation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2) Documentation</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./documentation.html#metadata" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Metadata</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./documentation.html#readme-file" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">README file</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./documentation.html#code-book" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Codebook</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./publication.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3) Publication</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./publication.html#data-availability-statement" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Availability Statement</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./publication.html#license" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">License</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./publication.html#persistent-identifier" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Persistent identifier</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./publication.html#repository" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Repository</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./dmp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4) Data Management Plans</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./dmp.html#general-information" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">General information</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./dmp.html#components-of-a-dmp" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Components of a DMP</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./dmp.html#example-data-storage-and-security" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Example</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./dmp.html#why-is-a-dmp-helpful" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Why is a DMP helpful?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./dmp.html#dmp-tool-rdmo" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">RDMO</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#general-notes" id="toc-general-notes" class="nav-link active" data-scroll-target="#general-notes">General notes</a></li>
+  <li><a href="#folder-structure" id="toc-folder-structure" class="nav-link" data-scroll-target="#folder-structure">Folder structure</a></li>
+  <li><a href="#file-and-folder-names" id="toc-file-and-folder-names" class="nav-link" data-scroll-target="#file-and-folder-names">File and folder names</a></li>
+  <li><a href="#file-formats" id="toc-file-formats" class="nav-link" data-scroll-target="#file-formats">File formats</a>
+  <ul class="collapse">
+  <li><a href="#special-file-types-tabular-text-file-optional" id="toc-special-file-types-tabular-text-file-optional" class="nav-link" data-scroll-target="#special-file-types-tabular-text-file-optional">Special file types: tabular text file (optional)</a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/quarto-dev/quarto-demo/edit/main/data-organisation.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/quarto-dev/quarto-demo/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">1) Organization</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="general-notes" class="level2">
+<h2 class="anchored" data-anchor-id="general-notes">General notes</h2>
+<p>Research data is valuable for researchers and forms the basis for their research. Therefore, it is advisable to structure the data well to save time and effort in the daily handling of research data. In this part of the workshop, we will look closer at organizational aspects of data management, mainly the folder structure, file and folder naming, and file formats.</p>
+<p>A clear and consistent folder structure and folder and file naming convention are important for making your data <a href="https://www.go-fair.org/fair-principles/">findable</a>. You should think about it beforehand in order to avoid inconsistencies or the need to rename large amounts of data.</p>
+<p>Your structure and your naming conventions should be intuitive. However, we recommend to explicitly describe them (typically in a <a href="./documentation.html#readme-file">README file</a>) because they may not be that intuitive for others or your future self (“why did I do it like this?”).</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="(General) Task 1: (~ 30 minutes in total)">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+(General) Task 1: (~ 30 minutes in total)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>Check the file (and potentially folder) structure of the dataset.</p>
+<p>For the aspects mentioned in the sections below, think and discuss about:</p>
+<ul>
+<li>Check the current situation: What is done, how, and why?</li>
+<li>Discuss:
+<ul>
+<li>What would you leave as it is, what would you change, or what are the alternatives? And why?</li>
+<li>How can you improve the dataset?</li>
+</ul></li>
+</ul>
+<p>The most important part of this task is the group discussion because there are several possible solutions for most aspects.</p>
+</div>
+</div>
+</div>
+<p>In the following sections, you’ll find some input on the organizational aspects you should consider. Note that not all of them may apply to each dataset. Besides the tasks, we’ll provide some general hints and rules. Some rules only apply to some use cases, and sometimes, there are good arguments for not sticking to every rule. However, in such cases you should know (and potentially document) why you decide differently.</p>
+</section>
+<section id="folder-structure" class="level2">
+<h2 class="anchored" data-anchor-id="folder-structure">Folder structure</h2>
+<p>At the start of your research project, you have to decide how to arrange your files and folders. This decision depends on the structure of your data and documentation. Organizational choices may involve trade-offs, such as the number of files per folder versus folder depth, intuitive names versus strict naming conventions, and structuring by processing level, access permissions, file size, or other criteria.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Task 1.1: (~ 5 minutes)">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Task 1.1: (~ 5 minutes)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>Look at the folder structure (but not at the details of the folder or file names yes, which will be the next task).</p>
+<ul>
+<li>Is the folder structure intuitive and logical (what is done, how, and why)?</li>
+<li>Is it explicitly described? Where can you find this information (metadata of repository or in a README file)?</li>
+<li>How many files are stored per folder, and how deeply are they nested?</li>
+<li>Discuss: What would you leave as it is, what would you change, or what are the alternatives?</li>
+</ul>
+<p>In case there are no folders, you may discuss whether it would make sense to add folders.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled" title="Avoid too long file paths.">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Avoid too long file paths.
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>Depending on the operating system, the total path length has an upper limit, e.g.&nbsp;255 characters. Exceeding this limit will cause errors. Also note that the path of the copy may be even longer than your original path if you synchronize or backup your data, which can cause your sync or backup job to fail. Therefore, try to keep your full path clearly below such upper limits.</p>
+<ul>
+<li>Bad example: <code>X:/Projects/Microscopy_Project/Microscopy_Projects_2024/October_2024/RawData_October2024/Microscopy_RawData_Image003.tif</code></li>
+<li>Better: <code>X:/Projects/Microscopy/2024-10/RawData/Image003.tif</code></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Further hints on folder structure">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Further hints on folder structure
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Avoid deeply nested folder structures: SubSubSubSubSubFolders can be pretty inconvenient.</li>
+<li>Avoid too many files or subfolders within one folder:<br>
+It can be quite inconvenient to look through dozens of heterogeneous file names. In case of clearly structured file names (e.g.&nbsp;numbered files like <code>Image003.tif</code> or <code>Plot01_Part03.tab</code>), a larger number of elements per folder can also be fine. However, for huge amounts of files (several thousand), the performance of the file explorer may decrease.</li>
+<li>In case different project members should have different access restrictions to files, this could also be considered in your folder structure.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="Examples">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Examples
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Example for structuring a dataset: organized by file type<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<pre><code>+ DatasetA
+  + Data
+    + Processed
+    + Raw
+  + Results
+    + Figure1.tif
+    + Figure2.tif</code></pre>
+<p>Example for structuring a dataset: organized by analysis<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<pre><code>+ DatasetB
+  + Figure1
+    + RawData
+    + Results
+      + Figure1.tif
+  + Figure2
+    + RawData
+    + Results
+      + Figure2.tif</code></pre>
+<p>Example for a project folder structure<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>:</p>
+<pre><code>+ Project_Folder
+  + 1_Project_Management
+    + Finance
+    + Proposals
+    + Reports
+  + 2_Ethics_and_Governance
+    + Consent_Forms
+    + Ethical_Approvals
+  + 3_Dissemination
+    + Presentations
+    + Publications
+    + Publicity
+  + Experiment_01
+    + Data
+    + Data_Analysis
+    + Inputs
+    + Outputs</code></pre>
+<p>Example for a project folder structure<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>:</p>
+<pre><code>\\file.mpic.de\projects\ExampleProject\
+  + GeneralOverview  # General documentation of the project
+  + Meetings         # Meeting notes, presentations
+  + INST             # Instruments
+    + Instrument1    # One folder per instrument
+      + Doc          # Documentation for this instrument
+      + L_0          # Raw data
+      + L_2          # Processed/analyzed data on original resolution
+        + Product1   # One folder per data product
+          + Code     # Code used for creating the data of this product
+          + Data     # Data files of this product
+          + Doc      # Documentation for this data product
+      + L_3          # Gridded data products
+        + Product1   # One folder per data product (e.g. hourly averages)
+          + Code     # Code used for creating the data of this product
+          + Data     # Data files of this product
+          + Doc      # Documentation for this data product
+      + Labbook      # Labbook (photos of paper logbook or exports from ELN)</code></pre>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Solution: Task 1.1, Group 1">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution: Task 1.1, Group 1
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<ul>
+<li>Is the folder structure intuitive and logical (what is done, how, and why)?</li>
+<li>Is it explicitly described? Where can you find this information (metadata of repository or in a README file)?</li>
+<li>How many files are stored per folder, and how deeply are they nested?</li>
+<li>Discuss: What would you leave as it is, what would you change, or what are the alternatives?</li>
+</ul>
+<p>In case there are no folders, you may discuss whether it would make sense to add folders.</p>
+</blockquote>
+<p>The dataset has 42 files, but no folder structure. Folders are not needed here, because all files (except for the README file) are of same type, just for different months. However, one could make one subfolder per year.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Solution: Task 1.1, Group 2">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution: Task 1.1, Group 2
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<ul>
+<li>Is the folder structure intuitive and logical (what is done, how, and why)?</li>
+<li>Is it explicitly described? Where can you find this information (metadata of repository or in a README file)?</li>
+<li>How many files are stored per folder, and how deeply are they nested?</li>
+<li>Discuss: What would you leave as it is, what would you change, or what are the alternatives?</li>
+</ul>
+<p>In case there are no folders, you may discuss whether it would make sense to add folders.</p>
+</blockquote>
+<p>The Dataset contains 6 files, whithout folder structure. However, 2 of them are of type ‘tar.gz’, which contain compressed ASCII files. The content is described in the README file. Also the tar.gz files do not contain many files, thus no further folder structure is needed.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Solution: Task 1.1, Group 3">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution: Task 1.1, Group 3
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<ul>
+<li>Is the folder structure intuitive and logical (what is done, how, and why)?</li>
+<li>Is it explicitly described? Where can you find this information (metadata of repository or in a README file)?</li>
+<li>How many files are stored per folder, and how deeply are they nested?</li>
+<li>Discuss: What would you leave as it is, what would you change, or what are the alternatives?</li>
+</ul>
+</blockquote>
+<p>Following notes relate to the content of <code>OSF Storage</code>.</p>
+<ul>
+<li>Yes, files are grouped into data, code (scripts) etc.</li>
+<li>The content is described in the README file, but not completely.</li>
+<li>There are up to 8 files per folder, one folder level.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Solution: Task 1.1, Group 4">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution: Task 1.1, Group 4
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<ul>
+<li>Is the folder structure intuitive and logical (what is done, how, and why)?</li>
+<li>Is it explicitly described? Where can you find this information (metadata of repository or in a README file)?</li>
+<li>How many files are stored per folder, and how deeply are they nested?</li>
+<li>Discuss: What would you leave as it is, what would you change, or what are the alternatives?</li>
+</ul>
+</blockquote>
+<p>On dataset-level, there is only one zip file, no folders. However, within the zip file, there is a folder structure:</p>
+<ul>
+<li>Yes, intuitive structure: separation between data tables and scripts, …</li>
+<li>Explicitly described in README file.</li>
+<li>Around 3 to 4 folder levels. Folder <code>Data/Group</code> has 40 subfolders with 9 files each.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="file-and-folder-names" class="level2">
+<h2 class="anchored" data-anchor-id="file-and-folder-names">File and folder names</h2>
+<p>In the next section, we will explore best practices for file and folder naming to create a clear and organized data structure. File or folder names have the following primary purposes:</p>
+<ul>
+<li>Always: Uniquely identify the file or folder (within a folder),</li>
+<li>Often: Give information about its content, e.g.&nbsp;<code>README.txt</code>, <code>MeetingProtocol.docx</code>, <code>Temperature_RawData.tab</code>,</li>
+<li>Sometimes: Enable logical order when sorting alphabetically, e.g.&nbsp;<code>1_RawData</code>, <code>2_PreProcessed</code>, <code>3_Processed</code>, <code>4_Combined</code>.</li>
+</ul>
+<p>Generally, the same rules apply to the naming of folders and files. They shall allow to choose the desired file amongst all the other files of the folder. Therefore, the names should be concise and intuitive (if applicable). For instance, a file named <code>XYZ123</code> might not be immediately clear, so it’s important to explain its purpose somewhere, typically in a <a href="./documentation.html#readme-file">README file</a>. Well-structured folders have clear naming conventions, which are explicitly described.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Task 1.2: (~ 10 minutes)">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Task 1.2: (~ 10 minutes)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<ul>
+<li>What is the convention of the naming used in this dataset? Is it intuitive and logical? Is it explicitly described?</li>
+<li>Are the names meaningful? Are there misleading names?</li>
+<li>In case of multiple files: Do they appear in a logical order when sorted alphabetically?</li>
+<li>Are there problematic characters like spaces, non-ASCII characters, etc.?</li>
+<li>What about the length of the names?</li>
+<li>Discuss: What would you leave as it is, what would you change, or what are the alternatives?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled" title="Do not use bad characters.">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Do not use bad characters.
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>Depending on the operating system and application, some characters are forbidden or may lead to problems and, thus, should be avoided.</p>
+<ul>
+<li>Very bad: Any non-ASCII character, e.g., <code>öäüßµαδ°±•€→☺É</code></li>
+<li>Bad: Any whitespace character, e.g.&nbsp;<code>File 1.txt</code>. They can cause problems, e.g., in some batch tasks, in particular, if one forgets to surround the name with quotes. Furthermore, double or multiple spaces and spaces at the beginning of the name are not clearly visible.</li>
+<li>Forbidden in Windows: <code>\/:*?"&lt;&gt;|</code></li>
+<li>Also not recommended: <code>,;()[]{}</code> etc.</li>
+</ul>
+<p>To summarize: You should only use Latin letters A-Z, a-z, digits 0-9, underscore, hyphen and dot, i.e.&nbsp;following characters: <code>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789_-.</code></p>
+<p>Furthermore, the dot should only be used in file names, and there only once before the file extension, e.g.&nbsp;“Notes.txt”. Some programs use a dot or underscore as the first character for special file types, e.g.&nbsp;<code>_quarto.yml</code> or <code>.git</code> and thus should be avoided for regular data files.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled" title="No 'hello.txt' and 'Hello.txt' in same folder.">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+No ‘hello.txt’ and ‘Hello.txt’ in same folder.
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>Ensure that subfolders and files have unique names within a folder, even in case-insensitive ways. For example, do not put two files named <code>hello.txt</code> and <code>Hello.txt</code> in the same folder.</p>
+<p>This note is particularly relevant for Linux users, where putting both files in the same folder is possible. However, in Windows, that is not allowed. Thus, sharing such a folder between users of different operating systems would cause problems.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Excursion: Ordering and timestamps">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Excursion: Ordering and timestamps
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>A naming convention can enable a logical order of the file or folder names when sorting them alphabetically. Here, we provide some tips:</p>
+<ul>
+<li>When names include numbers, leading zeros are often helpful:
+<ul>
+<li>Ordering with “0”:<br>
+<code>Scan01.csv</code>, <code>Scan02.csv</code>, <code>Scan03.csv</code>, <code>Scan04.csv</code>, <code>Scan05.csv</code>, <code>Scan06.csv</code>,<br>
+<code>Scan07.csv</code>, <code>Scan08.csv</code>, <code>Scan09.csv</code>, <code>Scan10.csv</code>, <code>Scan11.csv</code>, <code>Scan12.csv</code></li>
+<li>Ordering without:<br>
+<code>Scan1.csv</code>, <code>Scan10.csv</code>, <code>Scan11.csv</code>, <code>Scan12.csv</code>, <code>Scan2.csv</code>, <code>Scan3.csv</code>,<br>
+<code>Scan4.csv</code>, <code>Scan5.csv</code>, <code>Scan6.csv</code>, <code>Scan7.csv</code>, <code>Scan8.csv</code>, <code>Scan9.csv</code></li>
+</ul></li>
+<li>Timestamps should always be given with a leading zero and ‘from big to small’, i.e.&nbsp;year, month, day of month, hour, minute, second. This recommendation complies with the international format <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a> (e.g.&nbsp;“2024-07-31”, “2024-07-31T2313”).
+<ul>
+<li>Very bad: <code>13Jan2024</code>, <code>21April2021</code>, <code>3Dec2025</code></li>
+<li>Also bad: <code>03122025</code>, <code>13012024</code>, <code>21042021</code></li>
+<li>Good: <code>2021-04-21</code>, <code>2024-01-13</code>, <code>2025-12-03</code></li>
+<li>Also ok: <code>20210421</code>, <code>20240113</code>, <code>20251203</code></li>
+<li>Including time of day: <code>20210421T0345</code>, <code>20240113T1730</code>, <code>20251203T1900</code> for 03:45, 17:30, 19:00</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Further good practice for file naming">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Further good practice for file naming
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Include relevant information in the file name. However, don’t misuse a file name as a way to store all your metadata.</li>
+<li>Avoid overly long names (a maximum of 32 characters is suggested). Mind also note above about the full path length.</li>
+<li>Avoid to moving or renaming folders or files. This is especially relevant when you or others have referred to the file by using its file name or path.</li>
+<li>Generate a <a href="./documentation.html#readme-file">README file</a> explaining file nomenclature (including the meaning of acronyms or abbreviations), file organization and versioning. Store this file on top of the folder structure for easy accessibility.</li>
+</ul>
+<p>There are different possibilities to indicate logical units in a name without using a whitespace:</p>
+<ul>
+<li>Kebab-case: <code>The-quick-brown-fox-jumps-over-the-lazy-dog.txt</code></li>
+<li>CamelCase: <code>TheQuickBrownFoxJumpsOverTheLazyDog.txt</code></li>
+<li>Snake_case:&nbsp;<code>The_quick_brown_fox_jumps_over_the_lazy_dog.txt</code></li>
+</ul>
+<p>Compromises often have to be made, such as including relevant information versus avoiding long names. Note that folder names with a precise and narrow meaning may become outdated when further content is filled in over time. Because of that, <a href="./publication.html#persistent-identifier">persistent identifiers (PID)</a> typically avoid to include semantic information, e.g.&nbsp;<code>doi:10.17617/3.1STIJV</code>.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Excursion: Versioning">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Excursion: Versioning
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-15" class="callout-15-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Documents may evolve over time. File versioning allows for reverting to earlier versions if needed and shall allow for keeping track of changes, including documentation on the underlying rationale and people involved.</p>
+<p>Version control can be done either manually by using naming conventions or by using a version control system like <a href="https://git-scm.com/">Git</a>. The following hints apply to manual version control, meaning that you store both the current and previous versions in your file system.</p>
+<ul>
+<li>Versions should be numbered consecutively, e.g.&nbsp;<code>Handbook_v3.pdf</code>. Major changes (v1, v2, v3, …) can be distinguished from minor ones (v1-1, v1-2, v1-3 or 1a, 1b, 1c). You may use leading zeros if you expect more than nine versions.</li>
+<li>Alternatively, a date or timestamp could indicate the version, e.g.&nbsp;<code>Handbook_v20240725.pdf</code>.</li>
+<li>You may use qualifiers such as “raw” or “processed” for data or “draft” or “internal” for documents. However, note that terms such as “final”, “final2”, “final-revised”, “final-changed_again”, and “final_ready” can be confusing. In other words: Avoid “final” naming.</li>
+<li>Document your versioning convention, e.g.&nbsp;what you mean with major or minor changes.</li>
+<li>Document the essential changes you have made between the versions.</li>
+</ul>
+<p>For further reading: GitHub recommends version names like ‘1.3.2’ for the releases of software products, details see <a href="https://semver.org/">Semantic Versioning 2.0.0</a>.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Solution: Task 1.2, Group 1">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution: Task 1.2, Group 1
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-16" class="callout-16-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<ul>
+<li>What is the convention of the naming used in this dataset? Is it intuitive and logical? Is it explicitly described?</li>
+<li>Are the names meaningful? Are there misleading names?</li>
+<li>In case of multiple files: Do they appear in a logical order when sorted alphabetically?</li>
+<li>Are there problematic characters like spaces, non-ASCII characters, etc.?</li>
+<li>What about the length of the names?</li>
+<li>Discuss: What would you leave as it is, what would you change, or what are the alternatives?</li>
+</ul>
+</blockquote>
+<ul>
+<li>Files consist of prefix <code>amb_hourly_qc_wc4.4_cal6.0_</code>, followed by year and month (e.g.&nbsp;<code>2014_08</code>), followed by <code>_core-params.csv</code>. Prefix might be intuitive for researchers of that field, but it is not explicitly described.</li>
+<li>Probably the prefix has some meaning, but as it is not explicitly stated in the README, we can only speculate.</li>
+<li>Yes, files are sorted according to the month of measurement.</li>
+<li>Yes: File name <code>AMB hourly, readme.rtf</code> contains spaces and a comma. The other file names contain several dots (should only be one dot, namely before the file extension <code>csv</code>).</li>
+<li>Length is not problematic, but longer than needed.</li>
+<li>Replace <code>AMB hourly, readme.rtf</code> by <code>README.rtf</code>. The other file names can be shortened, e.g.&nbsp;<code>HourlyCoreParams_2014_08.csv</code>. And if the file name prefix <code>amb_hourly_qc_wc4.4_cal6.0_</code> contains relevant information, this should be explicitly given in the metadata or README file.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Solution: Task 1.2, Group 2">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution: Task 1.2, Group 2
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-17" class="callout-17-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<ul>
+<li>What is the convention of the naming used in this dataset? Is it intuitive and logical? Is it explicitly described?</li>
+<li>Are the names meaningful? Are there misleading names?</li>
+<li>In case of multiple files: Do they appear in a logical order when sorted alphabetically?</li>
+<li>Are there problematic characters like spaces, non-ASCII characters, etc.?</li>
+<li>What about the length of the names?</li>
+<li>Discuss: What would you leave as it is, what would you change, or what are the alternatives?</li>
+</ul>
+</blockquote>
+<ul>
+<li>The dataset contains only 6 files, thus there is not really a convention available, and also not needed. The non-intuitive parts <code>wos</code> and <code>fo</code> are explained in the README file (namely “Web of Science data” and “Faculty Opinions data”). The files inside the tar.gz-files seem to follow some convention, and their content is explicitly mentioned in the README file.</li>
+<li>Probably yes. Anyhow, their content is mentioned in the README file.</li>
+<li>Only few files, does order not important.</li>
+<li>No problematic characters found.</li>
+<li>Length of the names: OK</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Solution: Task 1.2, Group 3">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution: Task 1.2, Group 3
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-18" class="callout-18-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<ul>
+<li>What is the convention of the naming used in this dataset? Is it intuitive and logical? Is it explicitly described?</li>
+<li>Are the names meaningful? Are there misleading names?</li>
+<li>In case of multiple files: Do they appear in a logical order when sorted alphabetically?</li>
+<li>Are there problematic characters like spaces, non-ASCII characters, etc.?</li>
+<li>What about the length of the names?</li>
+<li>Discuss: What would you leave as it is, what would you change, or what are the alternatives?</li>
+</ul>
+</blockquote>
+<p>Following notes relate to the content of <code>OSF Storage</code>.</p>
+<ul>
+<li>Not so clear, but not many files, thus no clear conventions needed. However, the files in folder <code>result</code> are lacking an explanation in the README file, and their names are not very intuitive.</li>
+<li>Meaning not clear for all files.</li>
+<li>Only few files, thus order not important.</li>
+<li>No problematic characters found in <code>OSF Storage</code>.</li>
+<li>Length of the names: OK</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Solution: Task 1.2, Group 4">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution: Task 1.2, Group 4
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-19" class="callout-19-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<ul>
+<li>What is the convention of the naming used in this dataset? Is it intuitive and logical? Is it explicitly described?</li>
+<li>Are the names meaningful? Are there misleading names?</li>
+<li>In case of multiple files: Do they appear in a logical order when sorted alphabetically?</li>
+<li>Are there problematic characters like spaces, non-ASCII characters, etc.?</li>
+<li>What about the length of the names?</li>
+<li>Discuss: What would you leave as it is, what would you change, or what are the alternatives?</li>
+</ul>
+</blockquote>
+<ul>
+<li>The subfolders of <code>Data/Group</code> and <code>Data/Solo</code> have names like <code>01_09_2022__10_13_33</code>, which seem to refer to a date and maye time of day.</li>
+<li>Yes, names are meaningful and intuitive.</li>
+<li>Subfolders are not in a chronological order, because the date is given in a disadvantageous format (e.g.&nbsp;<code>01_09_2022</code>) - better would be <code>2022_09_01</code> or <code>2022-09-01</code>.</li>
+<li>Yes: Folder name <code>Stan model code</code> contains spaces.</li>
+<li>Length of the names: OK</li>
+<li>If folder name <code>01_09_2022__10_13_33</code> stands for timestamp 2022-09-01T10:13:33, then it could be renamed to <code>20220901T101333</code> or <code>2022-09-01_101333</code>.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="file-formats" class="level2">
+<h2 class="anchored" data-anchor-id="file-formats">File formats</h2>
+<p>A file format has to be chosen when storing information in a file. It builds the backbone of your data and is usually specified by the file extension (e.g.&nbsp;.txt). To keep your data <a href="https://www.go-fair.org/fair-principles/">interoperable</a>, the format needs a clear structure. This makes your data easy to read with many software products (e.g., out-of-the-box solutions or by writing a small script). Clear documentation of the file format shall be publicly available. Considering all these aspects, the chance is high that the file can be read in future, making it suitable for long-term preservation - which is one of our main goals when managing data. Therefore, open file formats are recommended, while proprietary formats should be avoided.</p>
+<p>Ideally, when choosing a suitable format, you’ll consider the following properties:</p>
+<ul>
+<li>Readable by humans with a simple editor</li>
+<li>Readable with many programs</li>
+<li>Easy to understand, low complexity</li>
+<li>Small (storage space)</li>
+<li>Quick to read (performance)</li>
+</ul>
+<p>However, usually compromises have to be made. For example, binary files are generally more performant than csv files and thus more suitable during the active research process. At the same time, csv is a well-established format for long-term preservation and is easier for humans to read.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Task 1.3: (~ 10 minutes)">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Task 1.3: (~ 10 minutes)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-20" class="callout-20-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Are the files stored in an open or a proprietary format?</li>
+<li>Is the file format used “future-proof”, e.g., suitable for long-term archiving?</li>
+<li>How easy is it to open the file (regarding available programs and file size)?</li>
+<li>How complex are the files? What is their internal structure?</li>
+<li>What about performance and file size?</li>
+<li>How easy is it to understand the file as humans?</li>
+<li>Are they machine-readable and standardized? How easy is it to write a script to read the files?</li>
+<li>Which alternative formats exist?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled" title="Avoid proprietary formats.">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-21-contents" aria-controls="callout-21" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Avoid proprietary formats.
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-21" class="callout-21-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>Often, proprietary formats have intentionally no proper documentation as the company behind the system wants to keep their business information behind closed doors. The companies sometimes even use technical protection mechanisms, making the file format readable only by commercial software. This reduces the interoperability and reusability of the files and, in the worst case, makes them unreadable in the long term. (Imagine the company that provided the software and file format no longer exists.) Furthermore, the files might contain hidden (potentially sensitive) information. Thus, such formats should be avoided.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Examples of recommended formats">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-22-contents" aria-controls="callout-22" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Examples of recommended formats
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-22" class="callout-22-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>In the following list, you’ll find some formats which are widely used, well-documented and readable with several programs.</p>
+<ul>
+<li>For documentation:
+<ul>
+<li>Plain text (.txt)</li>
+<li>HTML, XHTML, Markdown</li>
+<li>PDF (PDF/A-1)</li>
+<li>maybe: Rich Text Format (.rtf), Open Document Text (.odt), docx, …</li>
+</ul></li>
+<li>Tabular data:
+<ul>
+<li>Comma-separated values (.csv)</li>
+<li>Tab-delimited (.tab)</li>
+<li>maybe: Open Document Spreadsheet (.ods), xlsx, …</li>
+</ul></li>
+<li>Nested data:
+<ul>
+<li>JSON</li>
+<li>XML</li>
+</ul></li>
+<li>Further formats:
+<ul>
+<li>NetCDF, HDF5, …</li>
+<li>png, jpg, …</li>
+</ul></li>
+</ul>
+<p>Notes:</p>
+<ul>
+<li><strong>PDF</strong>: PDF has been developed by Adobe Inc.&nbsp;and thus originally had been a proprietary format, and several versions exist. Nevertheless, the format is widely used today. For archival purposes, a PDF/A version is the best choice. PDF is best suited for fixed documentation. However, editing PDF files or extracting data from them takes a lot of work.</li>
+<li><strong>Spreadsheet files</strong>: Spreadsheets may look nice, particularly when formatted in a colourful way. But for the machine-readability, this can cause problems. In particular, we do not recommend that you present relevant information just by formatting content differently. You can take this as a rule of thumb: Spreadsheet files like .xlsx or .ods are not well machine-readable.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Excursion: Premium format ASCII">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-23-contents" aria-controls="callout-23" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Excursion: Premium format ASCII
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-23" class="callout-23-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>A gold standard for storing digital information is an ASCII file. In an ASCII file, each byte represents one visible character (except for the white spaces and control characters like tab stop and linebreaks).</p>
+<p>Therefore, ASCII files can be read or opened by any text editor or data-processing software, even with programs like Excel, Word, Wordpad or web browsers (only possibly limited regarding the file size).</p>
+<p><strong>Characters beyond ASCII</strong>:</p>
+<p>An ASCII file can only contain the following visible characters: <code>!"#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~</code> Otherwise, it is not an ASCII file.</p>
+<p>For some years, the Unicode-based file format “UTF-8” has been available, which can represent many characters beyond the ASCII characters, like “ü”, “€”, and even some smilies ☺. Nowadays, UTF-8 is supported by many editors and browsers. The good thing about UTF-8 is that as long as a UTF-8 file contains only ASCII characters, the UTF-8 file is automatically an ASCII file. In other words, an ASCII file is a super-interoperable UTF-8 file.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Solution: Task 1.3, Group 1">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-24-contents" aria-controls="callout-24" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution: Task 1.3, Group 1
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-24" class="callout-24-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<ul>
+<li>Are the files stored in an open or a proprietary format?</li>
+<li>Is the file format used “future-proof”, e.g., suitable for long-term archiving?</li>
+<li>How easy is it to open the file (regarding available programs and file size)?</li>
+<li>How complex are the files? What is their internal structure?</li>
+<li>What about performance and file size?</li>
+<li>How easy is it to understand the file as humans?</li>
+<li>Are they machine-readable and standardized? How easy is it to write a script to read the files?</li>
+<li>Which alternative formats exist?</li>
+</ul>
+</blockquote>
+<ul>
+<li>Files are ASCII files, thus open.</li>
+<li>Yes, ASCII is suitable for long-term archiving.</li>
+<li>Easy to open, e.g.&nbsp;with text editor.</li>
+<li>Files have tabular shape.</li>
+<li>OK, file sizes are below 1 MB.</li>
+<li>Shape: easy to understand, meaning of the columns given in README file.</li>
+<li>Most data analysis programs have import functions for csv. The quotes in the first column might be cumbersome for some import routines.</li>
+<li>Tab-separated files, spreadsheet files, etc.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Solution: Task 1.3, Group 2">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-25-contents" aria-controls="callout-25" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution: Task 1.3, Group 2
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-25" class="callout-25-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<ul>
+<li>Are the files stored in an open or a proprietary format?</li>
+<li>Is the file format used “future-proof”, e.g., suitable for long-term archiving?</li>
+<li>How easy is it to open the file (regarding available programs and file size)?</li>
+<li>How complex are the files? What is their internal structure?</li>
+<li>What about performance and file size?</li>
+<li>How easy is it to understand the file as humans?</li>
+<li>Are they machine-readable and standardized? How easy is it to write a script to read the files?</li>
+<li>Which alternative formats exist?</li>
+</ul>
+</blockquote>
+<ul>
+<li>The small files are ASCII or UTF-8 files, thus open. The tar.gz files are compressed TAR-files, thus also in an open format.</li>
+<li>Yes, ASCII is definitively suitable for long-term archiving. Also tar.gz files are widely used and can thus be considered suitable for long-term archiving.</li>
+<li>The tar.gz files need specific software for extraction, which is freely available, but maybe not installed everywhere, and not all people are familiar with. Thus it is commandable that the extaction is described in the README file. However, the file size of several GB can be problematic for users having a slow internet connection. And unpacked, the largest file is more than 26 GB, more than the RAM size of many computers.</li>
+<li>The data files (inside the tar.gz) are not complex, just tables.</li>
+<li>Due to compression, the file size is reduced for storage and download. However, the tables contain many digits, probably more than needed. Reducing them would decrease file size. Binary files instead of ASCII files would need less time for loading.</li>
+<li>Shape: easy to understand, meaning of column see README file.</li>
+<li>Most data analysis programs have import functions for csv.</li>
+<li>Binary files like <a href="https://de.wikipedia.org/wiki/Hierarchical_Data_Format">HDF</a>, which could enhance performance.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Solution: Task 1.3, Group 3">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-26-contents" aria-controls="callout-26" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution: Task 1.3, Group 3
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-26" class="callout-26-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<ul>
+<li>Are the files stored in an open or a proprietary format?</li>
+<li>Is the file format used “future-proof”, e.g., suitable for long-term archiving?</li>
+<li>How easy is it to open the file (regarding available programs and file size)?</li>
+<li>How complex are the files? What is their internal structure?</li>
+<li>What about performance and file size?</li>
+<li>How easy is it to understand the file as humans?</li>
+<li>Are they machine-readable and standardized? How easy is it to write a script to read the files?</li>
+<li>Which alternative formats exist?</li>
+</ul>
+</blockquote>
+<p>Following notes relate to the content of “OSF Storage”.</p>
+<ul>
+<li>Most files are in an open format: ASCII tables, JSON files, R scripts. But what are “nii.gz” files in folder “results” - maybe zipped <a href="https://en.wikipedia.org/wiki/Neuroimaging_Informatics_Technology_Initiative">NIfTI</a> files?</li>
+<li>Yes for ASCII tables and JSON files; maybe yes for nii.gz files.</li>
+<li>ASCII tables and JSON files: easy to open with every text editor, special software or libraries needed for nii.gz.</li>
+<li>Files in folder <code>data</code> are tables (csv) or Codebooks (in JSON format) describing those.</li>
+<li>OK, because the files are not very large.</li>
+<li>ASCII tables and JSON files are easy to understand by humans; nii.gz needs suitable software.</li>
+<li>Most data analysis programs have import functions for csv, also JSON import functions are available for several programs.</li>
+<li>For csv-tables: Tab-separated files, spreadsheet files, etc; for JSON: XML</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Solution: Task 1.3, Group 4">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-27-contents" aria-controls="callout-27" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution: Task 1.3, Group 4
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-27" class="callout-27-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<ul>
+<li>Are the files stored in an open or a proprietary format?</li>
+<li>Is the file format used “future-proof”, e.g., suitable for long-term archiving?</li>
+<li>How easy is it to open the file (regarding available programs and file size)?</li>
+<li>How complex are the files? What is their internal structure?</li>
+<li>What about performance and file size?</li>
+<li>How easy is it to understand the file as humans?</li>
+<li>Are they machine-readable and standardized? How easy is it to write a script to read the files?</li>
+<li>Which alternative formats exist?</li>
+</ul>
+</blockquote>
+<ul>
+<li>Files are stored as ASCII tables or plain text files, which are open formats.</li>
+<li>Yes, suitable for long-term archiving.</li>
+<li>Easy, readable with text editor.</li>
+<li>Data files are ASCII tables.</li>
+<li>Due to compression, the file size is reduced for storage and download. Binary files instead of ASCII files would need less time for loading.</li>
+<li>The format is easy to understand by humans, but the columns are not explicitly described.</li>
+<li>Most data analysis programs have import functions for semicolon-separated tables.</li>
+<li>Binary files like <a href="https://de.wikipedia.org/wiki/Hierarchical_Data_Format">HDF</a> could be used (cf note above related to performance).</li>
+</ul>
+</div>
+</div>
+</div>
+<section id="special-file-types-tabular-text-file-optional" class="level3">
+<h3 class="anchored" data-anchor-id="special-file-types-tabular-text-file-optional">Special file types: tabular text file (optional)</h3>
+<p>Please note that the task in this section is optional. You can go through this section if you still have some time left during the workshop or read it afterwards.</p>
+<p>Tabular text files store data in a structured format, where each row represents a record and each column represents a field, with data separated by a designated column separator. Even after deciding to store tabular data in text files (e.g.&nbsp;files which can be opened in any editor), there are various ways and conventions to choose from:</p>
+<ul>
+<li>Column separator: typically tab or comma, sometimes space or semicolon</li>
+<li>Numeric values: handling of missing values (e.g.&nbsp;“NA”, ““, etc.)</li>
+<li>Representation of timestamps, e.g.&nbsp;“2024-08-01T08:59”</li>
+<li>Header lines with meta information?</li>
+<li>Encoding: Recommended is ASCII or UTF-8</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Task 1.4: (~ 5 minutes)">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-28-contents" aria-controls="callout-28" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Task 1.4: (~ 5 minutes)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-28" class="callout-28-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<ul>
+<li>How is the file encoded (e.g.&nbsp;ASCII, UTF-8)?</li>
+<li>Numbers: What about their precision (enough or too much)?</li>
+<li>Special numbers: Do special numbers like “NA”, ““,”N/A”, “999”, “0” occur? Is their meaning documented?</li>
+<li>Time: Which format is used for the date and time of day? Which time zone is used?</li>
+<li>Tables: What do you generally notice (regarding the choice of separator, whitespaces, missing columns)?</li>
+<li>Is the content of the table self-explaining? Is there a column description? What units were used? Is there detailed information elsewhere?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="Example">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-29-contents" aria-controls="callout-29" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Example
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-29" class="callout-29-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>First, you will find an example of a very bad file, followed by an improved version.</p>
+<p>File <code>Measured last month.txt</code>:</p>
+<pre><code>date, time,sensor,sensor
+03/07/24 12.00 AM,17.3
+03/07/24 1.00 AM,16.9
+03/07/24 2.00 AM,16.7
+03/07/24 3.00 AM,16.4
+03/07/24 4.00 AM,16.2
+03/07/24 5.00 AM,15.9
+03/07/24 6.00 AM
+03/07/24 7.00 AM
+03/07/24 8.00 AM
+03/07/24 9.00 AM,16.5
+03/07/24 10.00 AM,17.0,7.2
+03/07/24 11.00 AM,17.6,4.6
+03/07/24 12.00 PM,18.0
+03/07/24 1.00 PM,18.5</code></pre>
+<p>We gathered some comments on that file:</p>
+<ul>
+<li>First, we notice that the file name is bad. It contains spaces, and “last month” is no meaningful name (which month is considered as the actual one?).</li>
+<li>That file is not a proper csv file because it does not have a proper tabular shape:
+<ul>
+<li>The header line indicates that we have 4 columns. When looking at the data, one can assume that there is one comma too much as the date and time of day are stored in one column.</li>
+<li>Further, we have at most one comma leading into two columns in the data rows. This does not match the header. Therefore, we can assume that some values are missing.</li>
+</ul></li>
+<li>The header line contains twice the word “sensor”. Thus, the column names are not unique.</li>
+<li>The time column is horrible:
+<ul>
+<li>The date is given in an ambiguous format: you do not know if it is 03 July 2024 or 07 March 2024 or 24 July 2003, or 1924 or in the year 24 AD? You should use the international format <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a>, here “2024-03-07” for 7 March 2024.</li>
+<li>Time is given according to 12h clock with “AM” and “PM”. Hint: <strong>Never use “AM” or “PM”</strong> in a scientific context. Always use 24h clock!</li>
+<li>The hour is noted without a leading zero.</li>
+<li>Between hour and minute, a dot is used. It would be better to use a colon, e.g.&nbsp;“00:00”.</li>
+</ul></li>
+<li>Important information is missing (but might be given in a separate README file or Codebook), e.g.:
+<ul>
+<li>Time zone?</li>
+<li>What is the file about?</li>
+<li>Why are values missing?</li>
+<li>Unit?</li>
+</ul></li>
+</ul>
+<p>And here is a better version: File <code>Temp_Rain_202407.csv</code>:</p>
+<pre><code># Averaged temperature and precipitation of Ex_Emplum station
+#
+# File created on 2024-04-22 by Schlaubi Schlumpf.
+# This file contains temperature and precipitation measured at the fictitious weather station 'Ex_Emplum' at 55.432 degrees North, 55.678 degrees East.
+# Raw data have been averaged over 1 hour.
+# NA indicates missing values due to measurement interruption or instrument malfunction.
+# Column description:
+#   - Time: Start time of the 1-hour interval, given as UTC, in ISO 8601 format 'YYYY-MM-DDThh:mm'.
+#   - Temp: Temperature at 2 m above ground level, averaged over the 1-hour interval, in degrees Celsius. The error of the given value is expected to be below 0.3 degrees Celsius.
+#   - Rain: Precipitation height accumulated within the 1-hour interval, in mm. The error of the given value is expected to be below 0.5 mm.
+#
+Time,Temp,Rain
+2024-03-07T00:00,17.3,0
+2024-03-07T01:00,16.9,0
+2024-03-07T02:00,16.7,0
+2024-03-07T03:00,16.4,0
+2024-03-07T04:00,16.2,0
+2024-03-07T05:00,15.9,0
+2024-03-07T06:00,NA,NA
+2024-03-07T07:00,NA,NA
+2024-03-07T08:00,NA,NA
+2024-03-07T09:00,16.5,0
+2024-03-07T10:00,17.0,7.2
+2024-03-07T11:00,17.6,4.6
+2024-03-07T12:00,18.0,0
+2024-03-07T13:00,18.5,0</code></pre>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Solution: Task 1.4, Group 1">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-30-contents" aria-controls="callout-30" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution: Task 1.4, Group 1
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-30" class="callout-30-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<ul>
+<li>How is the file encoded (e.g.&nbsp;ASCII, UTF-8)?</li>
+<li>Numbers: What about their precision (enough or too much)?</li>
+<li>Special numbers: Do special numbers like “NA”, ““,”N/A”, “999”, “0” occur? Is their meaning documented?</li>
+<li>Time: Which format is used for the date and time of day? Which time zone is used?</li>
+<li>Tables: What do you generally notice (regarding the choice of separator, whitespaces, missing columns)?</li>
+<li>Is the content of the table self-explaining? Is there a column description? What units were used? Is there detailed information elsewhere?</li>
+</ul>
+</blockquote>
+<ul>
+<li>ASCII</li>
+<li>Has many digits, e.g.&nbsp;<code>986.223944276841</code>.</li>
+<li>No information about missing values found in README file. But file <code>amb_hourly_qc_wc4.4_cal6.0_2017_03_core-params.csv</code> contains <code>NA</code>.</li>
+<li>Time is ISO 8601 conform, except that a space is given between date and time of day, e.g.&nbsp;<code>2017-03-23 09:30:00</code>. In readme file mentioned: “All times given in GMT”.</li>
+<li>Comma as column separator, whitespace only between date and time of day, no missing columns found.</li>
+<li>Not self-explaining but mentioned in README file, also the units.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Solution: Task 1.4, Group 2">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-31-contents" aria-controls="callout-31" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution: Task 1.4, Group 2
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-31" class="callout-31-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<ul>
+<li>How is the file encoded (e.g.&nbsp;ASCII, UTF-8)?</li>
+<li>Numbers: What about their precision (enough or too much)?</li>
+<li>Special numbers: Do special numbers like “NA”, ““,”N/A”, “999”, “0” occur? Is their meaning documented?</li>
+<li>Time: Which format is used for the date and time of day? Which time zone is used?</li>
+<li>Tables: What do you generally notice (regarding the choice of separator, whitespaces, missing columns)?</li>
+<li>Is the content of the table self-explaining? Is there a column description? What units were used? Is there detailed information elsewhere?</li>
+</ul>
+</blockquote>
+<ul>
+<li>UTF-8, except for the tar.gz. The files inside those tar.gz are even ASCII files.</li>
+<li>Probably more digits than needed, e.g.&nbsp;<code>-13.333333333333336</code>. Considering the file size, shortening them could be worthwile.</li>
+<li>No information about missing values found in README file. But <code>NA</code> found in several files.</li>
+<li>Time: There seems to be no time column.</li>
+<li>Tables: Comma as column separator, no missing columns or whitespaces found.</li>
+<li>Not self-explaining but columns mentioned in README file.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Solution: Task 1.4, Group 3">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-32-contents" aria-controls="callout-32" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution: Task 1.4, Group 3
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-32" class="callout-32-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<ul>
+<li>How is the file encoded (e.g.&nbsp;ASCII, UTF-8)?</li>
+<li>Numbers: What about their precision (enough or too much)?</li>
+<li>Special numbers: Do special numbers like “NA”, ““,”N/A”, “999”, “0” occur? Is their meaning documented?</li>
+<li>Time: Which format is used for the date and time of day? Which time zone is used?</li>
+<li>Tables: What do you generally notice (regarding the choice of separator, whitespaces, missing columns)?</li>
+<li>Is the content of the table self-explaining? Is there a column description? What units were used? Is there detailed information elsewhere?</li>
+</ul>
+</blockquote>
+<p>Following notes relate to the content of <code>OSF Storage</code>.</p>
+<ul>
+<li>Encoding: ASCII files (except for the nii.gz files)</li>
+<li>Numbers: e.g.&nbsp;<code>0.878519</code> - looks reasonable</li>
+<li>No information about missing values found in README file. But <code>NA</code> found in several files.</li>
+<li>Time: There seems to be no time column.</li>
+<li>Tables: Comma as column separator, no missing columns or whitespaces found.</li>
+<li>Content of the table is explained in JSON file (Codebook).</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Solution: Task 1.4, Group 4">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-33-contents" aria-controls="callout-33" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution: Task 1.4, Group 4
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-33" class="callout-33-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<ul>
+<li>How is the file encoded (e.g.&nbsp;ASCII, UTF-8)?</li>
+<li>Numbers: What about their precision (enough or too much)?</li>
+<li>Special numbers: Do special numbers like “NA”, ““,”N/A”, “999”, “0” occur? Is their meaning documented?</li>
+<li>Time: Which format is used for the date and time of day? Which time zone is used?</li>
+<li>Tables: What do you generally notice (regarding the choice of separator, whitespaces, missing columns)?</li>
+<li>Is the content of the table self-explaining? Is there a column description? What units were used? Is there detailed information elsewhere?</li>
+</ul>
+</blockquote>
+<ul>
+<li>Data tables are ASCII files.</li>
+<li>Numbers: e.g.&nbsp;<code>73.12958</code> - looks reasonable</li>
+<li>Special numbers or contents: Some Columns contain parenthesis - what is their meaning?</li>
+<li>Time: Time column with seconds(?) since start time?</li>
+<li>Tables: Semicolon as column separator, also semicolon after last column.</li>
+<li>The README file says “Variable names should be quite descriptive, but please get in touch in case anything is unclear”, but not all columns are so clear to understand.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<p>Examples and notes have been adapted from: Onboarding into Research Data Management, Franke et al.&nbsp;2024, <a href="https://hdl.handle.net/21.11116/0000-000E-194D-1">https://hdl.handle.net/21.11116/0000-000E-194D-1</a>, file “FDM-Onboarding-2024_CPT-Slides.pdf” pages 44-51, 56-59.</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>adapted from <a href="https://datadryad.org/stash/best_practices#organize">https://datadryad.org/stash/best_practices#organize</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>adapted from <a href="https://datadryad.org/stash/best_practices#organize">https://datadryad.org/stash/best_practices#organize</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>adapted from Suse Prejawa (2021, <a href="https://hdl.handle.net/21.11116/0000-0008-662A-7">https://hdl.handle.net/21.11116/0000-0008-662A-7</a>)<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>adapted from a template used at the Max Planck Institute for Chemistry for measurement projects/campaigns (e.g.&nbsp;with a research aircraft)<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Developed for the LMU &amp; MPG Open Science Summer School 2024, CCBY4.0</p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/quarto-dev/quarto-demo/edit/main/data-organisation.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/quarto-dev/quarto-demo/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
