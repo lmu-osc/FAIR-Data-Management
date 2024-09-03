@@ -1,5 +1,5 @@
 ---
-title: "0) Welcome"
+title: "Welcome"
 link-external-newwindow: true
 ---
 
