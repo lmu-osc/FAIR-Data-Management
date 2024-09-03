@@ -15,7 +15,7 @@ A data management plan is a written document describing the data you expect to c
 
 Throughout a project, there are different processing stages regarding data. You can illustrate the process as a life cycle with the following stages:  
 
-[![[Research data life cycle by Jürgen Rohrwild](https://www.fdm-bayern.org/forschungsdatenmanagement/#fd-lebenszyklus)](images/RD-Lifecycle.png){fig-align="left" width="80%"}]
+[![Research data life cycle by Jürgen Rohrwild](images/RD-Lifecycle.png){fig-align="left" width="80%"}](https://www.fdm-bayern.org/forschungsdatenmanagement/#fd-lebenszyklus)
 
 A data management plan covers all stages of the research data life cycle by assigning questions to each stage. Addressing the questions relevant to your research project will result in a comprehensive DMP. Exemplary questions include:
 
