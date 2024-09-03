@@ -174,7 +174,7 @@ Machine-readability refers to the ability of machines (computers, algorithms, et
 
 We already established that metadata and README files are strongly connected. They form a great way to provide an introduction to and documentation of a dataset and its research context. A README file is a plain text file often written in markdown and then named "README.md". This naming convention helps spotting the README file for humans and machines alike, e.g. in GitHub repositories the README.md file is identified automatically and its content displayed on the repositories main page. The README file should be one of the first files your create for a new project. You can then continue filling it with the relevant information.
 
-What should be in a README file? - Ideally all the answers to the questions posed under the metadata section should be given in the README file. To determine what should be best included in your README file, it can also be helpful to go through the questions of a [Research Data Management Plan](RDMP.qmd). While your README file should be very descriptive, it is also important to stay concise and clear. Avoid e.g. using jargon to improve inter-disciplinary usage.
+What should be in a README file? - Ideally all the answers to the questions posed under the metadata section should be given in the README file. To determine what should be best included in your README file, it can also be helpful to go through the questions of a [Research Data Management Plan](dmp.qmd). While your README file should be very descriptive, it is also important to stay concise and clear. Avoid e.g. using jargon to improve inter-disciplinary usage.
 
 ::: {.callout-tip}
 # Task 2.2: (~10 min)
