@@ -9,6 +9,9 @@ website:
   reader-mode: false
   repo-url: https://github.com/quarto-dev/quarto-demo
   repo-actions: [edit, issue]
+  favicon: images/LMU_OSC_Book.png
+  margin-header: |
+    ![](/images/LMU-OSC_logo.jpg){width="175"}
   
   
   navbar:
@@ -90,7 +93,9 @@ website:
 
 format:
   html:
-    theme: flatly
+    theme:
+      - cosmo
+      - custom.scss
     css: styles.css
     toc: true
 
