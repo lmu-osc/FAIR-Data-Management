@@ -290,7 +290,7 @@ You might also suggest to your department/research group/institute/research comm
 
 ## Codebook
 
-Whereas general metadata and README information typically focus on the dataset or project as a whole, codebooks delve deeper, providing detailed explanations and clarifications about the specific data contained in individual files. A code book should make all components of a dataset file self-explanatory. It helps to identify e.g. what certain variables and value labels mean or in which format the data points have been collected. This enhances the FAIRness of the dataset, because it allows to re-use it independent of the availability an associated research paper.
+Whereas general metadata and README information typically focus on the dataset or project as a whole, codebooks delve deeper, providing detailed explanations and clarifications about the specific data contained in individual files. A codebook should make all components of a dataset file self-explanatory. It helps to identify e.g. what certain variables and value labels mean or in which format the data points have been collected. This enhances the FAIRness of the dataset, because it allows to re-use it independent of the availability of an associated research paper.
 
 Some people include this information in the README file. However, this can significantly extent the length of the README. We recommend to keep README files concise to maintain their readability.
 
@@ -418,7 +418,7 @@ Depending on the complexity of your data, you can improve your codebook by provi
 ## Solution: Example 3
 -  The data files can be open directly in the OSF repository. The column names are not very descriptive. 
 -  However each data file has a corresponding codebook in .json format that explains each of the columns. 
--  The scripts, how to deploy them and how to generate result from the data is explained in the README-file.
+-  The scripts, how to deploy them and how to generate result from the data is explained in the README file.
 :::
 
 ::: {.callout-important collapse=true}
