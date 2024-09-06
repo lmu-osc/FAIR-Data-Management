@@ -41,6 +41,8 @@ website:
             href: index.qmd#who-is-this-workshop-for
           - text: "Purpose"
             href: index.qmd#what-is-the-purpose-of-this-workshop
+          - text: "Benefits"
+            href: index.html#benefits
           - text: "Instructions"
             href: index.html#how-to
       - section: "1) Organization"

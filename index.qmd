@@ -31,9 +31,12 @@ Appreciation of adequate data management usually occurs when looking into someon
 
 ![Piled Higher and Deeper by Jorge Cham](images/phd052810s.gif){fig-align="left"}
 
-However, structures like this evolve over time. You can probably think of an example where your data folder tended to look similar, only that you are mastering your structures better than others.\
-With this workshop, we are artificially advancing your experience of navigating other researcher's data, thereby hoping to point out good and bad practices that shall soon inspire your own data management.\
-We do know that the trend towards transparent and reproducible research is increasing, and more and more journals require researchers to publish the data on which research results are based. And the effort of publishing these data is negligible if you have a good data management strategy in place right from the beginning. Publishing FAIR data, i.e., data that are of actual use to others, also comes with numerous scientific benefits:
+However, structures like this evolve over time and especially in the beginning of a project it is hard to imagine ending up with such a chaotic folder. Yet, more advanced participants can potentially think of an example where a folder tended to look similar, only that you are mastering your structures better than others.\
+This workshop will artificially advance your experience of navigating other researcher's data, thereby hoping to point out good and bad practices that shall soon inspire your own data management. It also highlights the importance of planing the management of your data very early in the course of the project to benefit most from it: Having well-organized and documented data will not only increase their value and accessibility for the wider research community but also for your future self, when going back into your data folder e.g., for a revision after a year.
+
+## Benefits
+
+We do know that the trend towards transparent and reproducible research is increasing, and more and more journals require researchers to publish the data on which their research results are based. The effort of publishing these data is negligible if you have a good data management strategy in place right from the beginning. Publishing FAIR data, i.e., data that are of actual use to others, also comes with numerous scientific benefits:
 
 -   Data can be reused and cited in a timely manner. Citation of the data by other researchers increases visibility and can strengthen the reputation of your research.
 -   New scientific collaborations may arise through data published according to FAIR, i.e., in reusable format. Collecting data is a time consuming business, so other researchers might as well benefit from already existing data (collected on public money), and you receive credit for producing the data.
@@ -43,7 +46,6 @@ Additional benefits are displayed in this graphic.
 
 ![Source: Hole, B. (2015). Open Science: A New publisher Perspective. Ubiquity press. ([CC BY 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode))](images/data-sharing.png){fig-align="left" width="75%"}
 
-The purpose of this workshop is thus to encourage you to plan the management of your data very early in the course of the project to benefit most from it. The extra amount of work this may take is well invested since having well-organized and documented data will not only increase their value and accessibility for the wider research community but also for your future self, when going back into your data folder e.g., for a revision after a year.
 
 ## How to?
 
@@ -54,7 +56,8 @@ Setting out this workshop, we quickly agreed that data management is best unders
 -   Example 3: [https://osf.io/6p9bf/](https://osf.io/6p9bf/)
 -   Example 4: [https://zenodo.org/records/10650333](https://zenodo.org/records/10650333)
 
-It is your job to investigate one of these datasets with a special focus on data organization, documentation, and publication aspects. We will conclude with an introduction to data management plans, a helpful planning tool to comply with the FAIR principles. In this section, we will also introduce important aspects of data storage. The topics are accompanied by distinct boxes that are color-coded for their content:
+It is your job to investigate one of these datasets with a special focus on data organization, documentation, and publication aspects. We will conclude with an introduction to data management plans, a helpful planning tool to comply with the FAIR principles. In this section, we will also introduce important aspects of data storage.\
+The topics are accompanied by distinct boxes that are color-coded for their content:
 
 ::: callout-warning
 ## Orange boxes contain information crucial for that topic
