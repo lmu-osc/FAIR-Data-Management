@@ -8,7 +8,8 @@ website:
     center: "Developed for the LMU & MPG Open Science Summer School 2024, CCBY4.0"
   reader-mode: false
   repo-url: https://github.com/quarto-dev/quarto-demo
-  repo-actions: [edit, issue]
+  repo-actions: [issue]
+  issue-url: https://github.com/lmu-osc/FAIR-Data-Management/issues/new
   
   
   navbar:
@@ -38,7 +39,7 @@ website:
         contents: 
           - text: "Target audience" 
             href: index.qmd#who-is-this-workshop-for
-          - text: "Benefits"
+          - text: "Purpose"
             href: index.qmd#what-is-the-purpose-of-this-workshop
           - text: "Instructions"
             href: index.html#how-to
@@ -60,7 +61,7 @@ website:
             text: Metadata 
           - href: documentation.qmd#readme-file
             text: README file
-          - href: documentation.qmd#code-book
+          - href: documentation.qmd#codebook
             text: Codebook
       - section: "3) Publication"
         href: publication.qmd
