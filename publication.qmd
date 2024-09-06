@@ -5,7 +5,7 @@ link-external-newwindow: true
 
 ## Overview
 
-Data publication is the final step of FAIR data management, ensuring data **F**indability and **A**ccessibility (when done well). If you have taken care of the previous sections [Data organization]() and [Documentation](documentation.qmd) and thereby made your data **I**nteroperable and **R**eusable, publishing those data will take minimal effort.  
+Data publication is the final step of FAIR data management, ensuring data **F**indability and **A**ccessibility (when done well). If you have taken care of the previous sections [Data organization](data-organisation.qmd) and [Documentation](documentation.qmd) and thereby made your data **I**nteroperable and **R**eusable, publishing those data will take minimal effort.  
 Most commonly, data are published as supplements to journal articles and an increasing number of journals actually require that. Data sets can also be published in specialized data journals (e.g., Scientific data, Data in Brief), which means that the article itself is a rich and detailed description of the data set. As you may have guessed, this option is mainly chosen for rather large, sampling-intensive data sets. Last but not least, it is also possible to publish an independent (without connected publication) data set in a repository and this is often required by funders like the DFG or EU. Irrespective of the publication option, there are common good practices when publishing data, namely
 
 -   indicating in the article that data and/or code are available,
@@ -18,7 +18,7 @@ These will be handled in the course of this chapter.
 ::: callout-warning
 ## Legal basis
 
-Even though publishing data (and code) is a prerequisite for transparent and reproducible research do note that in some cases the legal basis may prevent you from doing so. This most commonly concerns copyright or data protection issues. E.g., someone else may have the copyrights on the data you are working with and they do not allow the data to be published. Or when working with personal data (i.e., data from identifiable living people), you would violate subjects' rights according to the general data protection regulations (GDPR) when publishing these. 
+Even though publishing data (and code) is a prerequisite for transparent and reproducible research do note that in some cases the legal basis may prevent you from doing so. This most commonly concerns copyright or data protection issues. E.g., someone else may have the copyrights on the data you are working with and they do not allow the data to be published. Or when working with personal data (i.e., data from identifiable living people), you would violate subjects' rights according to the general data protection regulation (GDPR) when publishing these. 
 
 There is a very nice [decision tree](https://zenodo.org/doi/10.5281/zenodo.3368292) (unfortunately only in German) that can help you find out whether and under what conditions you can publish your data set. Broadly speaking, publishing personal data is only possible if either they can be fully anonymized (and no longer fall under GDPR) or if participants consented to their data being published. It is hence important to consider even before collecting personal data, whether they ought to be published to eventually include that in the consent form. If this topic is of interest to your research also check out Felix Schönbrodt's lecture on ["Data anonymity"](https://osf.io/j6fy8) from the Open Research Summer School 2023. 
 
@@ -30,7 +30,7 @@ In seldom cases publishing data can also be limited due to concerns of national 
 
 A Data Availability Statement (as well as a Code Availability Statement) is a special section in an article that states whether the authors have made the evidence supporting their findings available, and if so, where readers may access it. They are usually placed somewhere towards the end of the article, mostly before the Reference section. As part of their commitment to supporting open research, some journals now require all manuscripts to include a Data Availability Statement in order to be accepted for publication. Even if a journal does not require such a statement, it is highly recommendable to include it and make transparent that the data underlying the article's findings are available[^1]!
 
-[^1]: Source https://www.cambridge.org/core/services/authors/open-data/data-availability-statements.
+[^1]: Source [https://www.cambridge.org/core/services/authors/open-data/data-availability-statements](https://www.cambridge.org/core/services/authors/open-data/data-availability-statements).
 
 ::: callout-warning
 ## Double-blind peer review process
@@ -38,7 +38,7 @@ A Data Availability Statement (as well as a Code Availability Statement) is a sp
 When submitting to a journal that uses a double-blind peer review process, it's important to ensure that the information in the Data Availability Statement doesn't compromise the anonymity of you or your co-authors. If there is information in your Data Availability Statement that could be used to identify the manuscript authors (e.g., by linking to a repository that reveals author information), make sure to ask the journal what they would like you to do[^2].
 :::
 
-[^2]: Source https://www.cambridge.org/core/services/authors/open-data/data-availability-statements.
+[^2]: Source [https://www.cambridge.org/core/services/authors/open-data/data-availability-statements](https://www.cambridge.org/core/services/authors/open-data/data-availability-statements).
 
 ::: callout-tip
 ## Task 3.1:
@@ -110,9 +110,9 @@ If we in the end would like to share our research data and enable reuse for othe
 It is important to keep in mind that you can only define usage conditions by assigning licenses for work that "is yours", i.e., that you have the copyright for. This is not always the case for data. Data that result from a significant creative process (as is often the case in the humanities or qualitative social sciences) are more likely covered by copyright while data that result from rather simple measurement processes (as is often the case for natural or quantitative social sciences) are likely not covered. Also, note the distinction between the **instrument** used to create the data and the data themselves in this regard. E.g., if the data you are about to publish result from a comprehensive questionnaire that you have developed, **the questionnaire** ought to be protected by copyright whereas the data are most likely not. As mentioned in the beginning, you can only assign licenses to work that you hold the copyright for. If this is not the case or you are unsure, it is safest to go with CC0 as this is strictly speaking not a license, but rather a waiver of copyright. You explicitly release your work into the public domain.
 :::
 
-There are several licenses out there, as e.g. [Creative Commons](https://creativecommons.org/), [MIT](https://opensource.org/license/mit) (software), [Apache](https://www.apache.org/licenses/) (software), [Open Data Commons](https://opendatacommons.org/) and it ultimately is your responsibility to pick one. If you have no advise and you do not want to read through all licenses out there, the Creative Commons licences are usually a save choice (see box below). As rule of thumb, you may want to remember to go with the least restrictive license to maximize your data's reuse potential. A recent article gives the following recommendations [^3]:
+There are several licenses out there, as e.g. [Creative Commons](https://creativecommons.org/), [MIT](https://opensource.org/license/mit) (software), [Apache](https://www.apache.org/licenses/) (software), [Open Data Commons](https://opendatacommons.org/) and it ultimately is your responsibility to pick one. If you have no advise and you do not want to read through all licenses out there, the Creative Commons licences are usually a save choice (see box below). As rule of thumb, you may want to remember to go with the least restrictive license to maximize your data's reuse potential. A recent article gives the following recommendations[^3]:
 
-[^3]: Brettschneider, P., Axtmann, A., Böker, E., & von Suchodoletz, D. (2021): Offene Lizenzen für Forschungsdaten: Rechtliche Bewertung und Praxistauglichkeit verbreiteter Lizenzmodelle, in: O-Bib. Das Offene Bibliotheksjournal 8(3), pp. 1–22, https://doi.org/10.5282/o-bib/5749. \[only in German\]
+[^3]: Brettschneider, P., Axtmann, A., Böker, E., & von Suchodoletz, D. (2021): Offene Lizenzen für Forschungsdaten: Rechtliche Bewertung und Praxistauglichkeit verbreiteter Lizenzmodelle, in: O-Bib. Das Offene Bibliotheksjournal 8(3), pp. 1–22, [https://doi.org/10.5282/o-bib/5749](https://doi.org/10.5282/o-bib/5749). \[only in German\]
 
 -   Provide open research data under the CC-BY license or the CC0 label.
 -   If it can be assumed that research data are **not** protected by copyright, CC0 should be preferred.
@@ -129,7 +129,7 @@ Creative commons licenses are widely used in research and we will therefore go i
 -   BY: For "attribution", i.e., the obligation to credit the author and other parties designated for attribution
 -   ND: For "no derivatives", i.e., only verbatim copies of the work can be shared
 -   NC: For "non-commercial", i.e., commercial use is excluded from the license grant
--   SA: For "share alike", i.e., the work can be modified and modified versions can be published but only under the original or a compatible license.
+-   SA: For "share alike", i.e., the work can be modified and modified versions can be published but only under the original or a compatible license
 
 The following six licenses result from the combination of these four features, listed from most (left) to least (right) permissive here:
 
@@ -202,7 +202,7 @@ As stated above, the CC0 label or the CC BY license should be your preferred cho
 
 ## Persistent identifier
 
-Imagine a scenario in which a repository is no longer maintained, so that all data sets published in that repository are no longer available at the repository's URLs (a quite real scenario, as you can see in [this article](https://doi.org/10.48550/arXiv.2310.06712)). To avoid data loss, the original repository migrated its data sets to another repository, where it however gets a new URL. Consequently, if the corresponding article linked to its data set via the URL (e.g., https://osf.io/gn47c/), it can no longer be found. What now? In such cases, persistent identifiers (PIDs) are extremely helpful if not essential. The ones we consider crucial are listed below.
+Imagine a scenario in which a repository is no longer maintained, so that all data sets published in that repository are no longer available at the repository's URLs (a quite real scenario, as you can see in [this article](https://doi.org/10.48550/arXiv.2310.06712)). To avoid data loss, the original repository migrated its data sets to another repository, where it however gets a new URL. Consequently, if the corresponding article linked to its data set via the URL (e.g., [https://osf.io/gn47c/](https://osf.io/gn47c/)), it can no longer be found. What now? In such cases, persistent identifiers (PIDs) are extremely helpful if not essential. The ones we consider crucial are listed below.
 
 ### Digital object identifier
 
@@ -214,7 +214,7 @@ The Open Researcher and Contributor ID ([ORCID](https://orcid.org/)) provides a 
 
 ### Research Organization Registry
 
-Last but not least, the Research Organization Registry ([ROR](https://ror.org/)) is a global, community-led registry of open persistent identifiers for research organizations. The LMU has one and all Max-Planck-Institutes have one as well. These are much easier to use than entering all the affiliation information whenever asked for it and at the same time help disambiguate institutional affiliations.
+Last but not least, the Research Organization Registry ([ROR](https://ror.org/)) is a global, community-led registry of open persistent identifiers for research organizations. The LMU has one and all Max Planck Institutes have one as well. These are much easier to use than entering all the affiliation information whenever asked for it and at the same time help disambiguate institutional affiliations.
 
 ::: callout-tip
 ## Task 3.3:
@@ -281,7 +281,7 @@ Repositories are database systems to document, store and publish digital objects
 - General (e.g. Zenodo, OSF)
 - Institutional (e.g. Edmond MPG, Open Data LMU)
 
-The "Registry of research data repositories" ([Re3data.org](Re3data.org)) provides a collection of repositories with very nice search and overview functions. E.g., you can browse by subject (i.e., discipline).  
+If available, discipline-specific repositories are preferable, because  these are commonly used in a specific research field and researchers will most likely start searching for data in those repositories. The "Registry of research data repositories" ([Re3data.org](https://www.re3data.org/)) provides a collection of repositories with very nice search and overview functions. E.g., you can browse by subject (i.e., discipline).  
 
 ![re3data.org](images/re3data.png){fig-align="left" width=50%}
 
@@ -311,6 +311,8 @@ When searching re3data, most of these criteria are displayed beside the reposito
 -  Can you find that repository on re3data.org?
 
 -  Under what criteria can you publish your data in that repository?
+
+-  Is there a discipline-specific repository for your research field?
 :::
 
 ::: {.callout-important collapse="true"}
@@ -356,5 +358,5 @@ When searching re3data, most of these criteria are displayed beside the reposito
 ::: callout-note
 ## Excursion: FAIR assessment tools 
 
-With the emerging requisite of research data being FAIR, a number of tools have been developed that automatically check how FAIR published data are. These tools have been evaluated and a nice overview has been published (c.p. [https://zenodo.org/records/7701941](https://zenodo.org/records/7701941)). We invite you to play around with these tools, especially the automatic tools [F-uji Tool](https://www.f-uji.net/) and [FAIR enough](https://fair-enough.semanticscience.org/). E.g., you may input your dataset to different tools and look at the output, check whether the output confirms your impression of the dataset's reusability, or find a dataset that has been published in different repositories and see how that influences a tool's output (e.g., https://doi.org/10.5281/zenodo.7298798 vs. https://doi.org/10.17617/3.LLWRWR.)
+With the emerging requisite of research data being FAIR, a number of tools have been developed that automatically check how FAIR published data are. These tools have been evaluated and a nice overview has been published (c.p. [https://zenodo.org/records/7701941](https://zenodo.org/records/7701941)). We invite you to play around with these tools, especially the automatic tools [F-uji Tool](https://www.f-uji.net/) and [FAIR enough](https://fair-enough.semanticscience.org/). E.g., you may input your dataset to different tools and look at the output, check whether the output confirms your impression of the dataset's reusability, or find a dataset that has been published in different repositories and see how that influences a tool's output (e.g., [https://doi.org/10.5281/zenodo.7298798](https://doi.org/10.5281/zenodo.7298798) vs. [https://doi.org/10.17617/3.LLWRWR](https://doi.org/10.17617/3.LLWRWR).)
 :::
