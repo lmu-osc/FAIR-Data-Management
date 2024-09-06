@@ -659,5 +659,3 @@ Following notes relate to the content of `OSF Storage`.
 ## References
 
 Examples and notes have been adapted from: Onboarding into Research Data Management, Franke et al. 2024, [https://hdl.handle.net/21.11116/0000-000E-194D-1](https://hdl.handle.net/21.11116/0000-000E-194D-1), file "FDM-Onboarding-2024_CPT-Slides.pdf" pages 44-51, 56-59.
-
-
