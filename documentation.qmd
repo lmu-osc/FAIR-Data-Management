@@ -5,13 +5,13 @@ link-external-newwindow: true
 
 ## Overview
 
-Effective documentation is a crucial aspect of FAIR data management, ensuring that research data are not only well-organized but also easily discoverable, accessible, and reusable by others. In this section, we'll delve into the importance of documentation by exploring how to create best practice documentation that supports the entire research lifecycle. We'll cover the essential components like including metadata that provide context and description of the dataset, as well as README files that offer a concise introduction to the dataset. Additionally, we'll discuss the role of codebooks for making all components of the dataset self-explanatory.
+Effective documentation is a crucial aspect of [FAIR](https://www.go-fair.org/fair-principles/) data management, ensuring that research data are not only well-organized but also easily discoverable, accessible, and reusable by others. In this section, we'll delve into the importance of documentation by exploring how to create best practice documentation that supports the entire research lifecycle. We'll cover the essential components like including metadata that provide context and description of the dataset, as well as README files that offer a concise introduction to the dataset. Additionally, we'll discuss the role of codebooks for making all components of the dataset self-explanatory.
 
 ## Metadata
 
 Metadata are "data that provide information about other data"[^1], describing the context, content, and structure of a dataset. They contain essential information about the dataset, such as authorship, creation context, contents, provenance and accessibility. Metadata enable to understand and work with the data effectively. By providing a clear understanding of the data's origin, and meaning, metadata play a critical role in ensuring data quality, reproducibility, and FAIRness.
 
-[^1]: „metadata“. Merriam-Webster Dictionary, accessed 7. July 2024, [www.merriam-webster.com/dictionary/metadata](www.merriam-webster.com/dictionary/metadata).
+[^1]: „metadata“. Merriam-Webster Dictionary, accessed 7. July 2024, [https://www.merriam-webster.com/dictionary/metadata](https://www.merriam-webster.com/dictionary/metadata).
 
 ::: {.callout-tip}
 ## Task 2.1: (~10 min)
@@ -174,7 +174,7 @@ Machine-readability refers to the ability of machines (computers, algorithms, et
 
 We already established that metadata and README files are strongly connected. They form a great way to provide an introduction to and documentation of a dataset and its research context. A README file is a plain text file often written in markdown and then named "README.md". This naming convention helps spotting the README file for humans and machines alike, e.g. in GitHub repositories the README.md file is identified automatically and its content displayed on the repositories main page. The README file should be one of the first files your create for a new project. You can then continue filling it with the relevant information.
 
-What should be in a README file? - Ideally all the answers to the questions posed under the metadata section should be given in the README file. To determine what should be best included in your README file, it can also be helpful to go through the questions of a [Research Data Management Plan](dmp.qmd). While your README file should be very descriptive, it is also important to stay concise and clear. Avoid e.g. using jargon to improve inter-disciplinary usage.
+What should be in a README file? - Ideally all the answers to the questions posed under the metadata section should be given in the README file. To determine what should be best included in your README file, it can also be helpful to go through the questions of a (Research) [Data Management Plan](dmp.qmd). While your README file should be very descriptive, it is also important to stay concise and clear. Avoid e.g. using jargon to improve inter-disciplinary usage.
 
 ::: {.callout-tip}
 # Task 2.2: (~10 min)

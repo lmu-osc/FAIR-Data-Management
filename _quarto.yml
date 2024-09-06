@@ -48,47 +48,47 @@ website:
       - section: "1) Organization"
         href: data-organisation.qmd
         contents:
-          - text: General notes
+          - text: "General notes"
             href: data-organisation.qmd#general-notes
-          - text: Folder structure
+          - text: "Folder structure"
             href: data-organisation.qmd#folder-structure
-          - text: File and folder names
+          - text: "File and folder names"
             href: data-organisation.qmd#file-and-folder-names
-          - text: File formats
+          - text: "File formats"
             href: data-organisation.qmd#file-formats
       - section: "2) Documentation"
         href: documentation.qmd
         contents:
-          - href: documentation.qmd#metadata
-            text: Metadata 
-          - href: documentation.qmd#readme-file
-            text: README file
-          - href: documentation.qmd#codebook
-            text: Codebook
+          - text: "Metadata" 
+            href: documentation.qmd#metadata
+          - text: "README file"
+            href: documentation.qmd#readme-file
+          - text: "Codebook"
+            href: documentation.qmd#codebook
       - section: "3) Publication"
         href: publication.qmd
         contents: 
-          - href: publication.qmd#data-availability-statement
-            text: Data Availability Statement
-          - href: publication.qmd#license
-            text: License
-          - href: publication.qmd#persistent-identifier
-            text: Persistent identifier
-          - href: publication.qmd#repository
-            text: Repository
+          - text: "Data Availability Statement"
+            href: publication.qmd#data-availability-statement
+          - text: "License"
+            href: publication.qmd#license
+          - text: "Persistent identifier"
+            href: publication.qmd#persistent-identifier
+          - text: "Repository"
+            href: publication.qmd#repository
       - section: "4) Data Management Plans"
         href: dmp.qmd
         contents:
-          - href: dmp.qmd#general-information
-            text: General information
-          - href: dmp.qmd#components-of-a-dmp
-            text: Components of a DMP
-          - href: dmp.qmd#example-data-storage-and-security
-            text: Example
-          - href: dmp.qmd#why-is-a-dmp-helpful
-            text: Why is a DMP helpful?
-          - href: dmp.qmd#dmp-tool-rdmo
-            text: RDMO
+          - text: "General information"
+            href: dmp.qmd#general-information
+          - text: "Components of a DMP"
+            href: dmp.qmd#components-of-a-dmp
+          - text: "Example"
+            href: dmp.qmd#example-data-storage-and-security
+          - text: "Why is a DMP helpful?"
+            href: dmp.qmd#why-is-a-dmp-helpful
+          - text: "RDMO"
+            href: dmp.qmd#dmp-tool-rdmo
           
 
 format:
