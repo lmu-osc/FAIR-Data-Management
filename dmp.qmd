@@ -1,5 +1,5 @@
 ---
-title: "4) Data management plans"
+title: "4) Data Management Plans"
 link-external-newwindow: true
 ---
 
@@ -48,7 +48,7 @@ Have a look at the following list to find some example DMPs. (Note: some of thes
 
 ## Example: Data storage and security
 
-In this section, we approach a DMP from a practical perspective: In the following, we will look at one specific section of a DMP, namely "Data storage and security" and provide example answers for two datasets. Given that this is quite a relevant topic for data management that we have not yet covered in the previous sections, we start by providing some background information on data storage and security. (If you already feel comfortable with the topic, you can [skip this part](dmp.qmd#questions-in-the-dmp).) 
+In this section, we approach a DMP from a practical perspective: In the following, we will look at one specific section of a DMP, namely "Data storage and security" and provide example answers for two datasets. Given that this is quite a relevant topic for data management that we have not yet covered in the previous sections, we start by providing some background information on data storage and security. (If you already feel comfortable with the topic, you can [skip this part](dmp.qmd#example-answers-for-a-DMP).) 
 
 Regarding data storage and security, the following three "S" encompass the topic: safe - secure - sustainable. Now, we dive into the main principles of each part:
 
