@@ -37,7 +37,7 @@ At the start of your research project, you have to decide how to arrange your fi
 Organizational choices may involve trade-offs, such as the number of files per folder versus folder depth, intuitive names versus strict naming conventions, and structuring by processing level, access permissions, file size, or other criteria.
 
 ::: {.callout-tip icon="true" title="Task 1.1: (\~ 5 minutes)"}
-Look at the folder structure (but not at the details of the folder or file names yes, which will be the next task).
+Look at the folder structure (but not at the details of the folder or file names yet, which will be the next task).
 
 - Is the folder structure intuitive and logical (what is done, how, and why)?
 - Is it explicitly described? Where can you find this information (metadata of repository or in a README file)?
@@ -659,5 +659,3 @@ Following notes relate to the content of `OSF Storage`.
 ## References
 
 Examples and notes have been adapted from: Onboarding into Research Data Management, Franke et al. 2024, [https://hdl.handle.net/21.11116/0000-000E-194D-1](https://hdl.handle.net/21.11116/0000-000E-194D-1), file "FDM-Onboarding-2024_CPT-Slides.pdf" pages 44-51, 56-59.
-
-
