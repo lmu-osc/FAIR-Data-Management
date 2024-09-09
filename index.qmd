@@ -64,7 +64,7 @@ The topics are accompanied by distinct boxes that are color-coded for their cont
 :::
 
 ::: callout-note
-## Gray boxes contain excursions to related topics
+## Blue boxes contain excursions to related topics
 :::
 
 ::: callout-tip
