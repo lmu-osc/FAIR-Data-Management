@@ -5,7 +5,7 @@ link-external-newwindow: true
 
 ## Overview
 
-Data publication is the final step of FAIR data management, ensuring data **F**indability and **A**ccessibility (when done well). If you have taken care of the previous sections [Data organization](data-organisation.qmd) and [Documentation](documentation.qmd) and thereby made your data **I**nteroperable and **R**eusable, publishing those data will take minimal effort.  
+Data publication is the final step of [FAIR data management](https://www.go-fair.org/fair-principles/), ensuring data **F**indability and **A**ccessibility (when done well). If you have taken care of the previous sections [Data organization](data-organisation.qmd) and [Documentation](documentation.qmd) and thereby made your data **I**nteroperable and **R**eusable, publishing those data will take minimal effort.  
 Most commonly, data are published as supplements to journal articles and an increasing number of journals actually require that. Data sets can also be published in specialized data journals (e.g., Scientific data, Data in Brief), which means that the article itself is a rich and detailed description of the data set. As you may have guessed, this option is mainly chosen for rather large, sampling-intensive data sets. Last but not least, it is also possible to publish an independent (without connected publication) data set in a repository and this is often required by funders like the DFG or EU. Irrespective of the publication option, there are common good practices when publishing data, namely
 
 -   indicating in the article that data and/or code are available,

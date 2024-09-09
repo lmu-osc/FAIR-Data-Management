@@ -8,25 +8,9 @@ link-external-newwindow: true
 
 Research data is valuable for researchers and forms the basis for their research. Therefore, it is advisable to structure the data well to save time and effort in the daily handling of research data. In this part of the workshop, we will look closer at organizational aspects of data management, mainly the folder structure, file and folder naming, and file formats. 
 
-A clear and consistent folder structure and folder and file naming convention are important for making your data [interoperable](https://www.go-fair.org/fair-principles/). You should think about it beforehand in order to avoid inconsistencies or the need to rename large amounts of data.
+A clear and consistent folder structure and folder and file naming convention are important for making your data [**f**indable and **i**nteroperable](https://www.go-fair.org/fair-principles/). You should think about it beforehand in order to avoid inconsistencies or the need to rename large amounts of data.
 
 Your structure and your naming conventions should be intuitive. However, we recommend to explicitly describe them (typically in a [README file](documentation.qmd#readme-file)) because they may not be that intuitive for others or your future self ("why did I do it like this?").
-
-
-
-::: {.callout-tip collapse="false" icon="true" title="(General) Task 1: (\~ 30 minutes in total)"}
-Check the file (and potentially folder) structure of the dataset.
-
-For the aspects mentioned in the sections below, think and discuss about:
-
-- Check the current situation: What is done, how, and why?
-- Discuss:
-  - What would you leave as it is, what would you change, or what are the alternatives? And why?
-  - How can you improve the dataset?
-
-The most important part of this task is the group discussion because there are several possible solutions for most aspects.
-:::
-
 
 In the following sections, you'll find some input on the organizational aspects you should consider. Note that not all of them may apply to each dataset. Besides the tasks, we'll provide some general hints and rules. Some rules only apply to some use cases, and sometimes, there are good arguments for not sticking to every rule. However, in such cases you should know (and potentially document) why you decide differently.
 
