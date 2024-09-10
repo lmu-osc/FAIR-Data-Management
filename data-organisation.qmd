@@ -147,7 +147,7 @@ The dataset has 42 files, but no folder structure. Folders are not needed here, 
 > 
 > In case there are no folders, you may discuss whether it would make sense to add folders.
 
-The Dataset contains 6 files, whithout folder structure. However, 2 of them are of type 'tar.gz', which contain compressed ASCII files. The content is described in the README file.
+The dataset contains 6 files, whithout folder structure. However, 2 of them are of type 'tar.gz', which contain compressed ASCII files. The content is described in the README file.
 Also the tar.gz files do not contain many files, thus no further folder structure is needed.
 :::
 
