@@ -67,10 +67,10 @@ Answers from different sources have been brought together.
     + From the related publication: Sparse data coverage in the Arctic hampers our understanding of its carbon cycle dynamics and our predictions of the fate of its vast carbon reservoirs in a changing climate. In this paper, we present accurate measurements of atmospheric carbon dioxide (CO2) and methane (CH4) dry air mole fractions at the new atmospheric carbon observation station Ambarchik, which closes a large gap in the atmospheric trace gas monitoring network in northeastern Siberia.
 -   How was the dataset generated?
     + The atmospheric carbon observation station Ambarchik consists of a 27 m tall tower with two air inlets and meteorological measurements, while the majority of the instrumentation is hosted in a rack inside a building. Atmospheric mole fractions of CH4 , CO2 , and H2O are measured by an analyzer based on the cavity ring-down spectroscopy (CRDS) technique (G2301, Picarro Inc.), which is calibrated against WMO-traceable reference gases at regular intervals. 
--   What research is this data set connected to?
+-   What research is this dataset connected to?
     + Reum, F., Göckede, M., Lavric, J. V., Kolle, O., Zimov, S., Zimov, N., Pallandt, M., and Heimann, M.: Accurate measurements of atmospheric carbon dioxide and methane mole fractions at the Siberian coastal site Ambarchik, Atmos. Meas. Tech., 12, 5717-5740, 2019.
     + [https://doi.org/10.5194/amt-12-5717-2019](https://doi.org/10.5194/amt-12-5717-2019) (Not provided on dataset level)
--   Can this data set be re-used?
+-   Can this dataset be re-used?
     + Yes, under the conditions of the CC BY 4.0 License 
 
 :::
