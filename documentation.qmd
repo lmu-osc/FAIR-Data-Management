@@ -183,7 +183,7 @@ What should be in a README file? - Ideally all the answers to the questions pose
 -   Copy the template into another text editor file. 
 -   Where does the provided information of the example README differ from the template below? Count the sections of the template that you can answer solely from the provided README. (The sections will be marked as \*\*bold\*\* in the example solution files.) 
 -   How many of the 19 open fields of the template could you answer based on your solutions from task 2.1?
--   Discuss: What information can be found in the README example that is not contained in the template but contributes to understanding the data set? 
+-   Discuss: What information can be found in the README example that is not contained in the template but contributes to understanding the dataset? 
 
 For brevity reasons we exclude the last section "METHODOLOGICAL INFORMATION" from the provided example solutions.
 :::
@@ -194,11 +194,11 @@ For brevity reasons we exclude the last section "METHODOLOGICAL INFORMATION" fro
 
 This readme file was generated on \[YYYY-MM-DD\] by \[NAME\]
 
-\<help text in angle brackets should be deleted before finalizing your document\> \<\[text in square brackets should be changed for your specific data set\]\>
+\<help text in angle brackets should be deleted before finalizing your document\> \<\[text in square brackets should be changed for your specific dataset\]\>
 
 \# GENERAL INFORMATION
 
-Title of Data set: \
+Title of Dataset: \
 Description: \<provide a short description of the study/project\>
 
 \<provide at least one contact\>
@@ -223,13 +223,13 @@ Links to publications that cite or use the data:
 
 Links to other publicly accessible locations of the data:
 
-Links/relationships to ancillary data sets:
+Links/relationships to ancillary datasets:
 
 Was data derived from another source? If yes, list source(s):
 
 \# DATA & FILE OVERVIEW
 
-File List: \<list all files (or folders, as appropriate for data set organization) contained in the data set, with a brief description\>
+File List: \<list all files (or folders, as appropriate for dataset organization) contained in the dataset, with a brief description\>
 
 Relationship between files, if important:
 
@@ -333,7 +333,7 @@ Depending on the complexity of your data, you can improve your codebook by provi
 ``` <json>
 {
   "title": "Penguin Populations Code book",
-  "description": "Code book for the Penguin Populations data set",
+  "description": "Code book for the Penguin Populations dataset",
   "variables": [
     {
       "name": "species",
