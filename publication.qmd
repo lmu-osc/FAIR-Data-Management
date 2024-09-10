@@ -43,7 +43,7 @@ When submitting to a journal that uses a double-blind peer review process, it's 
 ::: callout-tip
 ## Task 3.1:
 
--  Is your data set the basis for a published article?
+-  Is your dataset the basis for a published article?
 
 -  How did you find out?
 
@@ -55,7 +55,7 @@ When submitting to a journal that uses a double-blind peer review process, it's 
 ::: {.callout-important collapse="true"}
 ## Solution: Group 1 (\~ 5 minutes)
 
-1.  Yes, this data set is the basis for a published article.
+1.  Yes, this dataset is the basis for a published article.
 
 2.  In the meta data field "Related Publication".
 
@@ -67,7 +67,7 @@ When submitting to a journal that uses a double-blind peer review process, it's 
 ::: {.callout-important collapse="true"}
 ## Solution: Group 2 (\~ 5 minutes)
 
-1.  Yes, this data set is the basis for a published article.
+1.  Yes, this dataset is the basis for a published article.
 
 2.  As part of the title.
 
@@ -79,7 +79,7 @@ When submitting to a journal that uses a double-blind peer review process, it's 
 ::: {.callout-important collapse="true"}
 ## Solution: Group 3 (\~ 5 minutes)
 
-1.  Yes, this data set is the basis for a published article.
+1.  Yes, this dataset is the basis for a published article.
 
 2.  It is stated in the README.
 
@@ -91,7 +91,7 @@ When submitting to a journal that uses a double-blind peer review process, it's 
 ::: {.callout-important collapse="true"}
 ## Solution: Group 4 (\~ 5 minutes)
 
-1.  Yes, this data set is the basis for a published article.
+1.  Yes, this dataset is the basis for a published article.
 
 2.  In "Related works", a link to a github repo is provided and when going there it is stated in the README.
 
@@ -102,7 +102,7 @@ When submitting to a journal that uses a double-blind peer review process, it's 
 
 ## License
 
-If we in the end would like to share our research data and enable reuse for other researchers, we should define conditions under which the data can be reused. At this point licenses come into play. Licenses are standard contracts that regulate usage rights for published work. As already mentioned, thereby enabling other people to reuse the published work. If no license is provided with a data set, it is not clear to others under which conditions they can reuse it and they might (against your good intentions) rather refrain from reusing it at all.
+If we in the end would like to share our research data and enable reuse for other researchers, we should define conditions under which the data can be reused. At this point licenses come into play. Licenses are standard contracts that regulate usage rights for published work. As already mentioned, thereby enabling other people to reuse the published work. If no license is provided with a dataset, it is not clear to others under which conditions they can reuse it and they might (against your good intentions) rather refrain from reusing it at all.
 
 ::: callout-warning
 ## License and Copyright
@@ -164,7 +164,7 @@ As stated above, the CC0 label or the CC BY license should be your preferred cho
 ::: callout-tip
 ## Task 3.2:
 
--  Are you actually allowed to reuse your data set?
+-  Are you actually allowed to reuse your dataset?
 
 -  If so, under which conditions?
 :::
@@ -202,7 +202,7 @@ As stated above, the CC0 label or the CC BY license should be your preferred cho
 
 ## Persistent identifier
 
-Imagine a scenario in which a repository is no longer maintained, so that all data sets published in that repository are no longer available at the repository's URLs (a quite real scenario, as you can see in [this article](https://doi.org/10.48550/arXiv.2310.06712)). To avoid data loss, the original repository migrated its data sets to another repository, where it however gets a new URL. Consequently, if the corresponding article linked to its data set via the URL (e.g., [https://osf.io/gn47c/](https://osf.io/gn47c/)), it can no longer be found. What now? In such cases, persistent identifiers (PIDs) are extremely helpful if not essential. The ones we consider crucial are listed below.
+Imagine a scenario in which a repository is no longer maintained, so that all datasets published in that repository are no longer available at the repository's URLs (a quite real scenario, as you can see in [this article](https://doi.org/10.48550/arXiv.2310.06712)). To avoid data loss, the original repository migrated its datasets to another repository, where it however gets a new URL. Consequently, if the corresponding article linked to its dataset via the URL (e.g., [https://osf.io/gn47c/](https://osf.io/gn47c/)), it can no longer be found. What now? In such cases, persistent identifiers (PIDs) are extremely helpful if not essential. The ones we consider crucial are listed below.
 
 ### Digital object identifier
 
@@ -219,9 +219,9 @@ Last but not least, the Research Organization Registry ([ROR](https://ror.org/))
 ::: callout-tip
 ## Task 3.3:
 
--  Can your data set be accessed reliably?
+-  Can your dataset be accessed reliably?
 
--  Who would you contact, if questions concerning the data set arose?
+-  Who would you contact, if questions concerning the dataset arose?
 
 -  Is that contact still available?
 
@@ -306,7 +306,7 @@ When searching re3data, most of these criteria are displayed beside the reposito
 ::: callout-tip
 ## Task 3.4:
 
--  Which repository was used to publish your data set?
+-  Which repository was used to publish your dataset?
 
 -  Can you find that repository on re3data.org?
 
