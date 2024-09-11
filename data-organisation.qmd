@@ -8,7 +8,7 @@ link-external-newwindow: true
 
 Research data is valuable for researchers and forms the basis for their research. Therefore, it is advisable to structure the data well to save time and effort in the daily handling of research data. In this part of the workshop, we will look closer at organizational aspects of data management, mainly the folder structure, file and folder naming, and file formats. 
 
-A clear and consistent folder structure and folder and file naming convention are important for making your data [**f**indable and **i**nteroperable](https://www.go-fair.org/fair-principles/). You should think about it beforehand in order to avoid inconsistencies or the need to rename large amounts of data.
+A clear and consistent folder structure and folder and file naming convention are important for making your data [**f**indable](https://www.go-fair.org/fair-principles/) and [**i**nteroperable](https://www.go-fair.org/fair-principles/). You should think about it beforehand in order to avoid inconsistencies or the need to rename large amounts of data.
 
 Your structure and your naming conventions should be intuitive. However, we recommend to explicitly describe them (typically in a [README file](documentation.qmd#readme-file)) because they may not be that intuitive for others or your future self ("why did I do it like this?").
 

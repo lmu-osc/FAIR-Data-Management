@@ -5,7 +5,7 @@ link-external-newwindow: true
 
 ## Overview
 
-Effective documentation is a crucial aspect of [FAIR](https://www.go-fair.org/fair-principles/) data management, ensuring that research data are not only well-organized but also easily **F**indable, **A**ccessible, and **R**eusable by others. In this section, we'll delve into the importance of documentation by exploring how to create best practice documentation that supports the entire research lifecycle. We'll cover the essential components like including metadata that provide context and description of the dataset, as well as README files that offer a concise introduction to the dataset. Additionally, we'll discuss the role of codebooks for making all components of the dataset self-explanatory.
+Effective documentation is a crucial aspect of [FAIR](https://www.go-fair.org/fair-principles/) data management, ensuring that research data are not only well-organized but also easily **f**indable, **a**ccessible, and **r**eusable by others. In this section, we'll delve into the importance of documentation by exploring how to create best practice documentation that supports the entire research data life cycle. We'll cover the essential components like including metadata that provide context and description of the dataset, as well as README files that offer a concise introduction to the dataset. Additionally, we'll discuss the role of codebooks for making all components of the dataset self-explanatory.
 
 ## Metadata
 
