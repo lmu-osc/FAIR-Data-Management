@@ -77,7 +77,7 @@ Additionally, strong password protection using reliable password management tool
 
 ### Sustainable 
 
-Data sustainability aims at making data persistent across technological and human evolution.[^8] Concretely, this means choosing file formats that are unlikely to become obsolete and ensuring the long-term readability and accessibility of your data. For more details on this topic, revisit [Part 1: Organization / File formats](data-organisation.qmd#file-formats).
+Data sustainability aims at making data persistent across technological and human evolution.[^8] Concretely, this means choosing file formats that are unlikely to become obsolete and ensuring the long-term readability and accessibility of your data. For more details on this topic, revisit [Part 3: Organization / File formats](data-organisation.qmd#file-formats).
 
 [^8]: based on: [https://doi.org/10.1016/j.infoandorg.2023.100449](https://doi.org/10.1016/j.infoandorg.2023.100449)
 
