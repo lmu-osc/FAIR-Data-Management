@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://lmu-osc.github.io/FAIR-Data-Management/data-organisation.html</loc>
-    <lastmod>2024-09-11T09:34:21.607Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/FAIR-Data-Management/index.html</loc>
-    <lastmod>2024-09-11T09:34:21.623Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/FAIR-Data-Management/Example3_READMETemplate.html</loc>
-    <lastmod>2024-09-11T09:34:21.607Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/FAIR-Data-Management/example-datasets.html</loc>
-    <lastmod>2024-09-11T09:34:21.607Z</lastmod>
+    <loc>https://lmu-osc.github.io/FAIR-Data-Management/publication.html</loc>
+    <lastmod>2024-10-11T14:13:36.590Z</lastmod>
   </url>
   <url>
     <loc>https://lmu-osc.github.io/FAIR-Data-Management/Example2_READMETemplate.html</loc>
-    <lastmod>2024-09-11T09:34:21.607Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/FAIR-Data-Management/Example1_READMETemplate.html</loc>
-    <lastmod>2024-09-11T09:34:21.607Z</lastmod>
+    <lastmod>2024-10-11T14:13:36.574Z</lastmod>
   </url>
   <url>
     <loc>https://lmu-osc.github.io/FAIR-Data-Management/documentation.html</loc>
-    <lastmod>2024-09-11T09:34:21.607Z</lastmod>
+    <lastmod>2024-10-11T14:13:36.578Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/FAIR-Data-Management/Example3_READMETemplate.html</loc>
+    <lastmod>2024-10-11T14:13:36.574Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/FAIR-Data-Management/Example1_READMETemplate.html</loc>
+    <lastmod>2024-10-11T14:13:36.574Z</lastmod>
   </url>
   <url>
     <loc>https://lmu-osc.github.io/FAIR-Data-Management/dmp.html</loc>
-    <lastmod>2024-09-11T09:34:21.607Z</lastmod>
+    <lastmod>2024-10-11T14:13:36.578Z</lastmod>
   </url>
   <url>
     <loc>https://lmu-osc.github.io/FAIR-Data-Management/Example4_READMETemplate.html</loc>
-    <lastmod>2024-09-11T09:34:21.607Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/FAIR-Data-Management/publication.html</loc>
-    <lastmod>2024-09-11T09:34:21.623Z</lastmod>
+    <lastmod>2024-10-11T14:13:36.574Z</lastmod>
   </url>
   <url>
     <loc>https://lmu-osc.github.io/FAIR-Data-Management/about.html</loc>
-    <lastmod>2024-09-11T09:34:21.607Z</lastmod>
+    <lastmod>2024-10-11T14:13:36.578Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/FAIR-Data-Management/data-organisation.html</loc>
+    <lastmod>2024-10-11T14:13:36.578Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/FAIR-Data-Management/index.html</loc>
+    <lastmod>2024-10-11T14:13:36.590Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/FAIR-Data-Management/example-datasets.html</loc>
+    <lastmod>2024-10-11T14:13:36.578Z</lastmod>
   </url>
 </urlset>
