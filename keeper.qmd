@@ -1,0 +1,26 @@
+---
+title: "Datasets"
+link-external-newwindow: true
+---
+
+On this page, you will find the link to a [Keeper repository](https://keeper.mpdl.mpg.de/d/a2ad214878ce47b2a85e/) where you can access the data without downloading it to your device. 
+
+## Group 1 
+Your dataset: [https://edmond.mpg.de/dataset.xhtml?persistentId=doi:10.17617/3.1STIJV](https://edmond.mpg.de/dataset.xhtml?persistentId=doi:10.17617/3.1STIJV)
+
+For your convenience, a copy of the files is available [here](https://keeper.mpdl.mpg.de/d/a2ad214878ce47b2a85e/), folder “Dataset1”.
+
+## Group 2
+Your dataset: [https://data.ub.uni-muenchen.de/288/](https://data.ub.uni-muenchen.de/288/)
+
+For your convenience, a copy of the files is available [here](https://keeper.mpdl.mpg.de/d/a2ad214878ce47b2a85e/), folder “Dataset2”. It will prevent you from having to download and uncompress this large amount of data.
+
+## Group 3
+Your dataset: [https://osf.io/6p9bf/](https://osf.io/6p9bf/)
+
+For your convenience, a copy of the files is available [here](https://keeper.mpdl.mpg.de/d/a2ad214878ce47b2a85e/), folder “Dataset3”. It will prevent you from having to download and uncompress this large amount of data.
+
+## Group 4
+Your dataset: [https://zenodo.org/records/10650333](https://zenodo.org/records/10650333)
+
+For your convenience, a copy of the files is available [here](https://keeper.mpdl.mpg.de/d/a2ad214878ce47b2a85e/), folder “Dataset4”. It will prevent you from having to download and uncompress this large amount of data.

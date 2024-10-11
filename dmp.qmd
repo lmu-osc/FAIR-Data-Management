@@ -25,7 +25,7 @@ A data management plan covers all stages of the research data life cycle by assi
 - What about Open Data? Do you plan to publish the data?
 - Does your project require personnel resources for data management? Does your project require special infrastructure?
 - How do you ensure the quality of your data?
-- Is your research project concerned with personal or sensitive data? What laws apply? Are there ethnic aspects you need to consider?[^9]
+- Is your research project concerned with personal or sensitive data? What laws apply? Are there ethical aspects you need to consider?[^9]
 
 Please note that this list is incomplete, and the questions may vary depending on your discipline and data specifics.
 

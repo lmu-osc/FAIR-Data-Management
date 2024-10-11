@@ -18,12 +18,12 @@ website:
         menu:
           - text: "Welcome"
             href: index.qmd
-          - text: "1) Organization"
-            href: data-organisation.qmd
+          - text: "1) Publication"
+            href: publication.qmd
           - text: "2) Documentation"
             href: documentation.qmd
-          - text: "3) Publication"
-            href: publication.qmd
+          - text: "3) Organization"
+            href: data-organisation.qmd
           - text: "4) Data Management Plans"
             href: dmp.qmd
       - text: About
@@ -45,27 +45,7 @@ website:
             href: index.html#benefits
           - text: "Instructions"
             href: index.html#how-to
-      - section: "1) Organization"
-        href: data-organisation.qmd
-        contents:
-          - text: "General notes"
-            href: data-organisation.qmd#general-notes
-          - text: "Folder structure"
-            href: data-organisation.qmd#folder-structure
-          - text: "File and folder names"
-            href: data-organisation.qmd#file-and-folder-names
-          - text: "File formats"
-            href: data-organisation.qmd#file-formats
-      - section: "2) Documentation"
-        href: documentation.qmd
-        contents:
-          - text: "Metadata" 
-            href: documentation.qmd#metadata
-          - text: "README file"
-            href: documentation.qmd#readme-file
-          - text: "Codebook"
-            href: documentation.qmd#codebook
-      - section: "3) Publication"
+      - section: "1) Publication"
         href: publication.qmd
         contents: 
           - text: "Data Availability Statement"
@@ -76,6 +56,26 @@ website:
             href: publication.qmd#persistent-identifier
           - text: "Repository"
             href: publication.qmd#repository
+      - section: "2) Documentation"
+        href: documentation.qmd
+        contents:
+          - text: "Metadata" 
+            href: documentation.qmd#metadata
+          - text: "README file"
+            href: documentation.qmd#readme-file
+          - text: "Codebook"
+            href: documentation.qmd#codebook
+      - section: "3) Organization"
+        href: data-organisation.qmd
+        contents:
+          - text: "General notes"
+            href: data-organisation.qmd#general-notes
+          - text: "Folder structure"
+            href: data-organisation.qmd#folder-structure
+          - text: "File and folder names"
+            href: data-organisation.qmd#file-and-folder-names
+          - text: "File formats"
+            href: data-organisation.qmd#file-formats
       - section: "4) Data Management Plans"
         href: dmp.qmd
         contents:

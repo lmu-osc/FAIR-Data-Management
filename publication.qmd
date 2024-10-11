@@ -5,8 +5,8 @@ link-external-newwindow: true
 
 ## Overview
 
-Data publication is the final step of [FAIR data management](https://www.go-fair.org/fair-principles/), ensuring data **F**indability and **A**ccessibility (when done well). If you have taken care of the previous sections [Data organization](data-organisation.qmd) and [Documentation](documentation.qmd) and thereby made your data **I**nteroperable and **R**eusable, publishing those data will take minimal effort.  
-Most commonly, data are published as supplements to journal articles and an increasing number of journals actually require that. Data sets can also be published in specialized data journals (e.g., Scientific data, Data in Brief), which means that the article itself is a rich and detailed description of the data set. As you may have guessed, this option is mainly chosen for rather large, sampling-intensive data sets. Last but not least, it is also possible to publish an independent (without connected publication) data set in a repository and this is often required by funders like the DFG or EU. Irrespective of the publication option, there are common good practices when publishing data, namely
+Data publication is the final step of [FAIR data management](https://www.go-fair.org/fair-principles/), ensuring data **f**indability and **a**ccessibility (when done well). If you have taken care of the previous sections [Data organization](data-organisation.qmd) and [Documentation](documentation.qmd) and thereby made your data **i**nteroperable and **r**eusable, publishing those data will take minimal effort.  
+Most commonly, data are published as supplements to journal articles and an increasing number of journals actually require that. Datasets can also be published in specialized data journals (e.g., Scientific data, Data in Brief), which means that the article itself is a rich and detailed description of the dataset. As you may have guessed, this option is mainly chosen for rather large, sampling-intensive datasets. Last but not least, it is also possible to publish an independent (without connected publication) dataset in a repository and this is often required by funders like the DFG or EU. Irrespective of the publication option, there are common good practices when publishing data, namely
 
 -   indicating in the article that data and/or code are available,
 -   defining usage conditions,
@@ -20,7 +20,7 @@ These will be handled in the course of this chapter.
 
 Even though publishing data (and code) is a prerequisite for transparent and reproducible research do note that in some cases the legal basis may prevent you from doing so. This most commonly concerns copyright or data protection issues. E.g., someone else may have the copyrights on the data you are working with and they do not allow the data to be published. Or when working with personal data (i.e., data from identifiable living people), you would violate subjects' rights according to the general data protection regulation (GDPR) when publishing these. 
 
-There is a very nice [decision tree](https://zenodo.org/doi/10.5281/zenodo.3368292) (unfortunately only in German) that can help you find out whether and under what conditions you can publish your data set. Broadly speaking, publishing personal data is only possible if either they can be fully anonymized (and no longer fall under GDPR) or if participants consented to their data being published. It is hence important to consider even before collecting personal data, whether they ought to be published to eventually include that in the consent form. If this topic is of interest to your research also check out Felix Schönbrodt's lecture on ["Data anonymity"](https://osf.io/j6fy8) from the Open Research Summer School 2023. 
+There is a very nice [decision tree](https://zenodo.org/doi/10.5281/zenodo.3368292) (unfortunately only in German) that can help you find out whether and under what conditions you can publish your dataset. Broadly speaking, publishing personal data is only possible if either they can be fully anonymized (and no longer fall under GDPR) or if participants consented to their data being published. It is hence important to consider even before collecting personal data, whether they ought to be published to eventually include that in the consent form. If this topic is of interest to your research also check out Felix Schönbrodt's lecture on ["Data anonymity"](https://osf.io/j6fy8) from the Open Research Summer School 2023. 
 
 In seldom cases publishing data can also be limited due to concerns of national security. You should take a few minutes to consider whether your research could be misused by foreign powers. Also consider getting in contact with your supervisor, research department and/or legal department to clarify whether elements of export control policies might apply to your research. 
 
@@ -43,7 +43,7 @@ When submitting to a journal that uses a double-blind peer review process, it's 
 ::: callout-tip
 ## Task 3.1:
 
--  Is your data set the basis for a published article?
+-  Is your dataset the basis for a published article?
 
 -  How did you find out?
 
@@ -53,9 +53,9 @@ When submitting to a journal that uses a double-blind peer review process, it's 
 :::
 
 ::: {.callout-important collapse="true"}
-## Solution: Group 1 (\~ 5 minutes)
+## Solution: Example 1 (\~ 5 minutes)
 
-1.  Yes, this data set is the basis for a published article.
+1.  Yes, this dataset is the basis for a published article.
 
 2.  In the meta data field "Related Publication".
 
@@ -65,9 +65,9 @@ When submitting to a journal that uses a double-blind peer review process, it's 
 :::
 
 ::: {.callout-important collapse="true"}
-## Solution: Group 2 (\~ 5 minutes)
+## Solution: Example 2 (\~ 5 minutes)
 
-1.  Yes, this data set is the basis for a published article.
+1.  Yes, this dataset is the basis for a published article.
 
 2.  As part of the title.
 
@@ -77,9 +77,9 @@ When submitting to a journal that uses a double-blind peer review process, it's 
 :::
 
 ::: {.callout-important collapse="true"}
-## Solution: Group 3 (\~ 5 minutes)
+## Solution: Example 3 (\~ 5 minutes)
 
-1.  Yes, this data set is the basis for a published article.
+1.  Yes, this dataset is the basis for a published article.
 
 2.  It is stated in the README.
 
@@ -89,9 +89,9 @@ When submitting to a journal that uses a double-blind peer review process, it's 
 :::
 
 ::: {.callout-important collapse="true"}
-## Solution: Group 4 (\~ 5 minutes)
+## Solution: Example 4 (\~ 5 minutes)
 
-1.  Yes, this data set is the basis for a published article.
+1.  Yes, this dataset is the basis for a published article.
 
 2.  In "Related works", a link to a github repo is provided and when going there it is stated in the README.
 
@@ -102,7 +102,7 @@ When submitting to a journal that uses a double-blind peer review process, it's 
 
 ## License
 
-If we in the end would like to share our research data and enable reuse for other researchers, we should define conditions under which the data can be reused. At this point licenses come into play. Licenses are standard contracts that regulate usage rights for published work. As already mentioned, thereby enabling other people to reuse the published work. If no license is provided with a data set, it is not clear to others under which conditions they can reuse it and they might (against your good intentions) rather refrain from reusing it at all.
+If we in the end would like to share our research data and enable reuse for other researchers, we should define conditions under which the data can be reused. At this point licenses come into play. Licenses are standard contracts that regulate usage rights for published work. As already mentioned, thereby enabling other people to reuse the published work. If no license is provided with a dataset, it is not clear to others under which conditions they can reuse it and they might (against your good intentions) rather refrain from reusing it at all.
 
 ::: callout-warning
 ## License and Copyright
@@ -164,13 +164,13 @@ As stated above, the CC0 label or the CC BY license should be your preferred cho
 ::: callout-tip
 ## Task 3.2:
 
--  Are you actually allowed to reuse your data set?
+-  Are you actually allowed to reuse your dataset?
 
 -  If so, under which conditions?
 :::
 
 ::: {.callout-important collapse="true"}
-## Solution: Group 1 (\~ 2 minutes)
+## Solution: Example 1 (\~ 2 minutes)
 
 1.  Yes.
 
@@ -178,7 +178,7 @@ As stated above, the CC0 label or the CC BY license should be your preferred cho
 :::
 
 ::: {.callout-important collapse="true"}
-## Solution: Group 2 (\~ 2 minutes, if delving deeper into the conditions obviously longer)
+## Solution: Example 2 (\~ 2 minutes, if delving deeper into the conditions obviously longer)
 
 1.  Yes.
 
@@ -186,14 +186,14 @@ As stated above, the CC0 label or the CC BY license should be your preferred cho
 :::
 
 ::: {.callout-important collapse="true"}
-## Solution: Group 3 (\~ 5 minutes)
+## Solution: Example 3 (\~ 5 minutes)
 
 1.  No.
 
 :::
 
 ::: {.callout-important collapse="true"}
-## Solution: Group 4 (\~ 2 minutes)
+## Solution: Example 4 (\~ 2 minutes)
 
 1.  Yes.
 
@@ -202,7 +202,7 @@ As stated above, the CC0 label or the CC BY license should be your preferred cho
 
 ## Persistent identifier
 
-Imagine a scenario in which a repository is no longer maintained, so that all data sets published in that repository are no longer available at the repository's URLs (a quite real scenario, as you can see in [this article](https://doi.org/10.48550/arXiv.2310.06712)). To avoid data loss, the original repository migrated its data sets to another repository, where it however gets a new URL. Consequently, if the corresponding article linked to its data set via the URL (e.g., [https://osf.io/gn47c/](https://osf.io/gn47c/)), it can no longer be found. What now? In such cases, persistent identifiers (PIDs) are extremely helpful if not essential. The ones we consider crucial are listed below.
+Imagine a scenario in which a repository is no longer maintained, so that all datasets published in that repository are no longer available at the repository's URLs (a quite real scenario, as you can see in [this article](https://doi.org/10.48550/arXiv.2310.06712)). To avoid data loss, the original repository migrated its datasets to another repository, where it however gets a new URL. Consequently, if the corresponding article linked to its dataset via the URL (e.g., [https://osf.io/gn47c/](https://osf.io/gn47c/)), it can no longer be found. What now? In such cases, persistent identifiers (PIDs) are extremely helpful if not essential. The ones we consider crucial are listed below.
 
 ### Digital object identifier
 
@@ -219,9 +219,9 @@ Last but not least, the Research Organization Registry ([ROR](https://ror.org/))
 ::: callout-tip
 ## Task 3.3:
 
--  Can your data set be accessed reliably?
+-  Can your dataset be accessed reliably?
 
--  Who would you contact, if questions concerning the data set arose?
+-  Who would you contact, if questions concerning the dataset arose?
 
 -  Is that contact still available?
 
@@ -229,7 +229,7 @@ Last but not least, the Research Organization Registry ([ROR](https://ror.org/))
 :::
 
 ::: {.callout-important collapse="true"}
-## Solution: Group 1 (\~ 5 minutes)
+## Solution: Example 1 (\~ 5 minutes)
 
 1.  Yes, via DOI https://doi.org/10.17617/3.1STIJV.
 
@@ -240,7 +240,7 @@ Last but not least, the Research Organization Registry ([ROR](https://ror.org/))
 :::
 
 ::: {.callout-important collapse="true"}
-## Solution: Group 2 (\~ 5 minutes)
+## Solution: Example 2 (\~ 5 minutes)
 
 1.  Yes, via DOI https://doi.org/10.5282/ubm/data.288.
 
@@ -251,7 +251,7 @@ Last but not least, the Research Organization Registry ([ROR](https://ror.org/))
 :::
 
 ::: {.callout-important collapse="true"}
-## Solution: Group 3 (\~ 5 minutes)
+## Solution: Example 3 (\~ 5 minutes)
 
 1.  No, it only has a URL.
 
@@ -262,7 +262,7 @@ Last but not least, the Research Organization Registry ([ROR](https://ror.org/))
 :::
 
 ::: {.callout-important collapse="true"}
-## Solution: Group 4 (\~ 5 minutes)
+## Solution: Example 4 (\~ 5 minutes)
 
 1.  Yes, via DOI https://doi.org/10.5281/zenodo.10650333.
 
@@ -306,7 +306,7 @@ When searching re3data, most of these criteria are displayed beside the reposito
 ::: callout-tip
 ## Task 3.4:
 
--  Which repository was used to publish your data set?
+-  Which repository was used to publish your dataset?
 
 -  Can you find that repository on re3data.org?
 
@@ -316,7 +316,7 @@ When searching re3data, most of these criteria are displayed beside the reposito
 :::
 
 ::: {.callout-important collapse="true"}
-## Solution: Group 1 (\~ 5 minutes)
+## Solution: Example 1 (\~ 5 minutes)
 
 1.  Edmond.
 
@@ -326,7 +326,7 @@ When searching re3data, most of these criteria are displayed beside the reposito
 :::
 
 ::: {.callout-important collapse="true"}
-## Solution: Group 4 (\~ 5 minutes)
+## Solution: Example 4 (\~ 5 minutes)
 
 1. Open Data LMU.
 
@@ -336,7 +336,7 @@ When searching re3data, most of these criteria are displayed beside the reposito
 :::
 
 ::: {.callout-important collapse="true"}
-## Solution: Group 3 (\~ 5 minutes)
+## Solution: Example 3 (\~ 5 minutes)
 
 1.  OSF.
 
@@ -346,7 +346,7 @@ When searching re3data, most of these criteria are displayed beside the reposito
 :::
 
 ::: {.callout-important collapse="true"}
-## Solution: Group 4 (\~ 5 minutes)
+## Solution: Example 4 (\~ 5 minutes)
 
 1.  Zenodo.
 

@@ -8,7 +8,7 @@ link-external-newwindow: true
 
 Research data is valuable for researchers and forms the basis for their research. Therefore, it is advisable to structure the data well to save time and effort in the daily handling of research data. In this part of the workshop, we will look closer at organizational aspects of data management, mainly the folder structure, file and folder naming, and file formats. 
 
-A clear and consistent folder structure and folder and file naming convention are important for making your data [**f**indable and **i**nteroperable](https://www.go-fair.org/fair-principles/). You should think about it beforehand in order to avoid inconsistencies or the need to rename large amounts of data.
+A clear and consistent folder structure and folder and file naming convention are important for making your data [**f**indable](https://www.go-fair.org/fair-principles/) and [**i**nteroperable](https://www.go-fair.org/fair-principles/). You should think about it beforehand in order to avoid inconsistencies or the need to rename large amounts of data.
 
 Your structure and your naming conventions should be intuitive. However, we recommend to explicitly describe them (typically in a [README file](documentation.qmd#readme-file)) because they may not be that intuitive for others or your future self ("why did I do it like this?").
 
@@ -128,7 +128,7 @@ Example for a project folder structure[^3]:
 
 :::
 
-::: {.callout-important collapse="true" title="Solution: Task 1.1, Group 1"}
+::: {.callout-important collapse="true" title="Solution: Example 1"}
 > - Is the folder structure intuitive and logical (what is done, how, and why)?
 > - Is it explicitly described? Where can you find this information (metadata of repository or in a README file)?
 > - How many files are stored per folder, and how deeply are they nested?
@@ -139,7 +139,7 @@ Example for a project folder structure[^3]:
 The dataset has 42 files, but no folder structure. Folders are not needed here, because all files (except for the README file) are of same type, just for different months. However, one could make one subfolder per year.
 :::
 
-::: {.callout-important collapse="true" title="Solution: Task 1.1, Group 2"}
+::: {.callout-important collapse="true" title="Solution: Example 2"}
 > - Is the folder structure intuitive and logical (what is done, how, and why)?
 > - Is it explicitly described? Where can you find this information (metadata of repository or in a README file)?
 > - How many files are stored per folder, and how deeply are they nested?
@@ -147,11 +147,11 @@ The dataset has 42 files, but no folder structure. Folders are not needed here, 
 > 
 > In case there are no folders, you may discuss whether it would make sense to add folders.
 
-The Dataset contains 6 files, whithout folder structure. However, 2 of them are of type 'tar.gz', which contain compressed ASCII files. The content is described in the README file.
+The dataset contains 6 files, whithout folder structure. However, 2 of them are of type 'tar.gz', which contain compressed ASCII files. The content is described in the README file.
 Also the tar.gz files do not contain many files, thus no further folder structure is needed.
 :::
 
-::: {.callout-important collapse="true" title="Solution: Task 1.1, Group 3"}
+::: {.callout-important collapse="true" title="Solution: Example 3"}
 > - Is the folder structure intuitive and logical (what is done, how, and why)?
 > - Is it explicitly described? Where can you find this information (metadata of repository or in a README file)?
 > - How many files are stored per folder, and how deeply are they nested?
@@ -164,7 +164,7 @@ Following notes relate to the content of `OSF Storage`.
 - There are up to 8 files per folder, one folder level.
 :::
 
-::: {.callout-important collapse="true" title="Solution: Task 1.1, Group 4"}
+::: {.callout-important collapse="true" title="Solution: Example 4"}
 > - Is the folder structure intuitive and logical (what is done, how, and why)?
 > - Is it explicitly described? Where can you find this information (metadata of repository or in a README file)?
 > - How many files are stored per folder, and how deeply are they nested?
@@ -265,7 +265,7 @@ Version control can be done either manually by using naming conventions or by us
 For further reading: GitHub recommends version names like '1.3.2' for the releases of software products, details see [Semantic Versioning 2.0.0](https://semver.org/).
 :::
 
-::: {.callout-important collapse="true" title="Solution: Task 1.2, Group 1"}
+::: {.callout-important collapse="true" title="Solution: Example 1"}
 > - What is the convention of the naming used in this dataset? Is it intuitive and logical? Is it explicitly described?
 > - Are the names meaningful? Are there misleading names?
 > - In case of multiple files: Do they appear in a logical order when sorted alphabetically?
@@ -281,7 +281,7 @@ For further reading: GitHub recommends version names like '1.3.2' for the releas
 - Replace `AMB hourly, readme.rtf` by `README.rtf`. The other file names can be shortened, e.g. `HourlyCoreParams_2014_08.csv`. And if the file name prefix `amb_hourly_qc_wc4.4_cal6.0_` contains relevant information, this should be explicitly given in the metadata or README file.
 :::
 
-::: {.callout-important collapse="true" title="Solution: Task 1.2, Group 2"}
+::: {.callout-important collapse="true" title="Solution: Example 2"}
 > - What is the convention of the naming used in this dataset? Is it intuitive and logical? Is it explicitly described?
 > - Are the names meaningful? Are there misleading names?
 > - In case of multiple files: Do they appear in a logical order when sorted alphabetically?
@@ -296,7 +296,7 @@ For further reading: GitHub recommends version names like '1.3.2' for the releas
 - Length of the names: OK
 :::
 
-::: {.callout-important collapse="true" title="Solution: Task 1.2, Group 3"}
+::: {.callout-important collapse="true" title="Solution: Example 3"}
 > - What is the convention of the naming used in this dataset? Is it intuitive and logical? Is it explicitly described?
 > - Are the names meaningful? Are there misleading names?
 > - In case of multiple files: Do they appear in a logical order when sorted alphabetically?
@@ -313,7 +313,7 @@ Following notes relate to the content of `OSF Storage`.
 - Length of the names: OK
 :::
 
-::: {.callout-important collapse="true" title="Solution: Task 1.2, Group 4"}
+::: {.callout-important collapse="true" title="Solution: Example 4"}
 > - What is the convention of the naming used in this dataset? Is it intuitive and logical? Is it explicitly described?
 > - Are the names meaningful? Are there misleading names?
 > - In case of multiple files: Do they appear in a logical order when sorted alphabetically?
@@ -396,7 +396,7 @@ Otherwise, it is not an ASCII file.
 For some years, the Unicode-based file format "UTF-8" has been available, which can represent many characters beyond the ASCII characters, like "ü", "€", and even some smilies ☺. Nowadays, UTF-8 is supported by many editors and browsers. The good thing about UTF-8 is that as long as a UTF-8 file contains only ASCII characters, the UTF-8 file is automatically an ASCII file. In other words, an ASCII file is a super-interoperable UTF-8 file.
 :::
 
-::: {.callout-important collapse="true" title="Solution: Task 1.3, Group 1"}
+::: {.callout-important collapse="true" title="Solution: Example 1"}
 > - Are the files stored in an open or a proprietary format?
 > - Is the file format used "future-proof", e.g., suitable for long-term archiving?
 > - How easy is it to open the file (regarding available programs and file size)?
@@ -416,7 +416,7 @@ For some years, the Unicode-based file format "UTF-8" has been available, which 
 - Tab-separated files, spreadsheet files, etc.
 :::
 
-::: {.callout-important collapse="true" title="Solution: Task 1.3, Group 2"}
+::: {.callout-important collapse="true" title="Solution: Example 2"}
 > - Are the files stored in an open or a proprietary format?
 > - Is the file format used "future-proof", e.g., suitable for long-term archiving?
 > - How easy is it to open the file (regarding available programs and file size)?
@@ -436,7 +436,7 @@ For some years, the Unicode-based file format "UTF-8" has been available, which 
 - Binary files like [HDF](https://de.wikipedia.org/wiki/Hierarchical_Data_Format), which could enhance performance.
 :::
 
-::: {.callout-important collapse="true" title="Solution: Task 1.3, Group 3"}
+::: {.callout-important collapse="true" title="Solution: Example 3"}
 > - Are the files stored in an open or a proprietary format?
 > - Is the file format used "future-proof", e.g., suitable for long-term archiving?
 > - How easy is it to open the file (regarding available programs and file size)?
@@ -458,7 +458,7 @@ Following notes relate to the content of "OSF Storage".
 - For csv-tables: Tab-separated files, spreadsheet files, etc; for JSON: XML
 :::
 
-::: {.callout-important collapse="true" title="Solution: Task 1.3, Group 4"}
+::: {.callout-important collapse="true" title="Solution: Example 4"}
 > - Are the files stored in an open or a proprietary format?
 > - Is the file format used "future-proof", e.g., suitable for long-term archiving?
 > - How easy is it to open the file (regarding available programs and file size)?
@@ -573,7 +573,7 @@ Time,Temp,Rain
 :::
 
 
-::: {.callout-important collapse="true" title="Solution: Task 1.4, Group 1"}
+::: {.callout-important collapse="true" title="Solution: Example 1"}
 > - How is the file encoded (e.g. ASCII, UTF-8)?
 > - Numbers: What about their precision (enough or too much)?
 > - Special numbers: Do special numbers like "NA", "", "N/A", "999", "0" occur? Is their meaning documented?
@@ -589,7 +589,7 @@ Time,Temp,Rain
 - Not self-explaining but mentioned in README file, also the units.
 :::
 
-::: {.callout-important collapse="true" title="Solution: Task 1.4, Group 2"}
+::: {.callout-important collapse="true" title="Solution: Example 2"}
 > - How is the file encoded (e.g. ASCII, UTF-8)?
 > - Numbers: What about their precision (enough or too much)?
 > - Special numbers: Do special numbers like "NA", "", "N/A", "999", "0" occur? Is their meaning documented?
@@ -605,7 +605,7 @@ Time,Temp,Rain
 - Not self-explaining but columns mentioned in README file.
 :::
 
-::: {.callout-important collapse="true" title="Solution: Task 1.4, Group 3"}
+::: {.callout-important collapse="true" title="Solution: Example 3"}
 > - How is the file encoded (e.g. ASCII, UTF-8)?
 > - Numbers: What about their precision (enough or too much)?
 > - Special numbers: Do special numbers like "NA", "", "N/A", "999", "0" occur? Is their meaning documented?
@@ -623,7 +623,7 @@ Following notes relate to the content of `OSF Storage`.
 - Content of the table is explained in JSON file (Codebook).
 :::
 
-::: {.callout-important collapse="true" title="Solution: Task 1.4, Group 4"}
+::: {.callout-important collapse="true" title="Solution: Example 4"}
 > - How is the file encoded (e.g. ASCII, UTF-8)?
 > - Numbers: What about their precision (enough or too much)?
 > - Special numbers: Do special numbers like "NA", "", "N/A", "999", "0" occur? Is their meaning documented?
