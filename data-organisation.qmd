@@ -411,7 +411,7 @@ Tabular text files store data in a structured format, where each row represents 
 - Special numbers: Do special numbers like "NA", "", "N/A", "999", "0" occur? Is their meaning documented?
 - Time: Which format is used for the date and time of day? Which time zone is used?
 - Tables: What do you generally notice (regarding the choice of separator, whitespaces, missing columns)?
-- Is the content of the table self-explaining? Is there a column description? What units were used? Is there detailed information elsewhere?
+- Is the content of the table self-explaining (column description, which units used), or is it explained elsewhere (README file or Codebook)?
 :::
 
 ::: {.callout-important collapse="true" title="Solution: Example 1"}
