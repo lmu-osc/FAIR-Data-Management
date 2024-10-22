@@ -51,7 +51,7 @@ Additional benefits are displayed in this graphic.
 
 Setting out this workshop, we quickly agreed that data management is best understood through learning by doing in a realistic setting: Imagine finding an article relevant to your research in a repository. Alongside the article, you find the associated data that you want to inspect further. Starting from this perspective, we look at publication aspects first and then move on to data documentation and organization.
 
-The whole workshop evolves around four published datasets:
+The whole workshop evolves around four published articles and their datasets:
 
 -   Example 1: [https://edmond.mpg.de/dataset.xhtml?persistentId=doi:10.17617/3.1STIJV](https://edmond.mpg.de/dataset.xhtml?persistentId=doi:10.17617/3.1STIJV)
 -   Example 2: [https://data.ub.uni-muenchen.de/288/](https://data.ub.uni-muenchen.de/288/)
