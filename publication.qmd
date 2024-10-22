@@ -44,9 +44,7 @@ When submitting to a journal that uses a double-blind peer review process, it's 
 ::: callout-tip
 ## Task 1.1:
 
--  Is your dataset the basis for a published article?
-
--  How did you find out?
+-  Only looking at the dataset, would you be able to tell whether the dataset is the basis for a published article?
 
 -  If so, does the article include a Data Availability Statement?
 
@@ -56,49 +54,41 @@ When submitting to a journal that uses a double-blind peer review process, it's 
 ::: {.callout-important collapse="true"}
 ## Solution: Example 1 (\~ 5 minutes)
 
-1.  Yes, this dataset is the basis for a published article.
+1.  Yes, there is a meta data field "Related Publication".
 
-2.  In the meta data field "Related Publication".
+2.  Yes, it does but without linking it to the data on Edmond. You should rather contact one coauthor without providing contact details.
 
-3.  Yes, it does but without linking it to the data on Edmond. You should rather contact one coauthor without providing contact details.
-
-4.  Before the Appendices.
+3.  Before the Appendices.
 :::
 
 ::: {.callout-important collapse="true"}
 ## Solution: Example 2 (\~ 5 minutes)
 
-1.  Yes, this dataset is the basis for a published article.
+1.  Yes, part of the title reveals it.
 
-2.  As part of the title.
+2.  Yes.
 
-3.  Yes.
-
-4.  In the very beginning following Abstract and Figures. However, no special section therefore not very intuitive to find.
+3.  In the very beginning following Abstract and Figures. However, no special section therefore not very intuitive to find.
 :::
 
 ::: {.callout-important collapse="true"}
 ## Solution: Example 3 (\~ 5 minutes)
 
-1.  Yes, this dataset is the basis for a published article.
+1.  Yes, but it is not obvious. It is stated in the README.
 
-2.  It is stated in the README.
+2.  Yes.
 
-3.  Yes.
-
-4.  In the "Open Research" section before the Reference section.
+3.  In the "Open Research" section before the Reference section.
 :::
 
 ::: {.callout-important collapse="true"}
 ## Solution: Example 4 (\~ 5 minutes)
 
-1.  Yes, this dataset is the basis for a published article.
+1.  Yes, but it is not obvious. In "Related works", a link to a github repo is provided and when going there it is stated in the README.
 
-2.  In "Related works", a link to a github repo is provided and when going there it is stated in the README.
+2.  Yes.
 
-3.  Yes.
-
-4.  As separate section before "Code availability" and the Reference section.
+3.  As separate section before "Code availability" and the Reference section.
 :::
 
 ## License
