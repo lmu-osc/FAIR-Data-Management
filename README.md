@@ -2,7 +2,7 @@
 
 Repository containing the website and all materials for the **FAIR Research Data Management** Workshop. 
 
-Website: 
+Website: [https://mpdl.github.io/FAIR-Data-Management/](https://mpdl.github.io/FAIR-Data-Management/)
 
 Authors: 
 - Maike Kleemeyer (0000-0002-9388-5535), MPI for Human Development
