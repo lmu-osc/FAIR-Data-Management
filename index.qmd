@@ -21,6 +21,11 @@ Please note that FAIR and open are not synonymous. Not all FAIR data is necessar
 [^1]: based on: [https://forschungsdaten.info/themen/veroeffentlichen-und-archivieren/faire-daten/](https://forschungsdaten.info/themen/veroeffentlichen-und-archivieren/faire-daten/)
 [^2]: based on: [https://snd.se/en/manage-data/prepare-and-share/FAIR-data-principles](https://snd.se/en/manage-data/prepare-and-share/FAIR-data-principles)
 
+
+To learn more about the importance of good data management, watch this humorous video (by the [NYU Health Sciences Library, 2013](https://hslguides.med.nyu.edu/data_management)) on the common challenges researchers face with data sharing and management. It highlights the importance of good data management practices for ensuring data can be easily found, understood, and used by others.
+
+{{< video https://www.youtube.com/embed/66oNv_DJuPc?si=siQPrfZXA4M7aMzl >}}
+
 ## Who is this workshop for?
 
 This workshop was designed for early career researchers who are either about to start or want to manage their empirical research data more effectively. Although it was developed with this target group in mind, it can most probably benefit many other researchers who are also consolidating their data management skills.
