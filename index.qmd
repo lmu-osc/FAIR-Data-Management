@@ -21,6 +21,11 @@ Please note that FAIR and open are not synonymous. Not all FAIR data is necessar
 [^1]: based on: [https://forschungsdaten.info/themen/veroeffentlichen-und-archivieren/faire-daten/](https://forschungsdaten.info/themen/veroeffentlichen-und-archivieren/faire-daten/)
 [^2]: based on: [https://snd.se/en/manage-data/prepare-and-share/FAIR-data-principles](https://snd.se/en/manage-data/prepare-and-share/FAIR-data-principles)
 
+
+To learn more about the importance of good data management, watch this humorous video (by the [NYU Health Sciences Library, 2013](https://hslguides.med.nyu.edu/data_management)) on the common challenges researchers face with data sharing and management. It highlights the importance of good data management practices for ensuring data can be easily found, understood, and used by others.
+
+{{< video https://www.youtube.com/embed/66oNv_DJuPc?si=siQPrfZXA4M7aMzl >}}
+
 ## Who is this workshop for?
 
 This workshop was designed for early career researchers who are either about to start or want to manage their empirical research data more effectively. Although it was developed with this target group in mind, it can most probably benefit many other researchers who are also consolidating their data management skills.
@@ -49,14 +54,17 @@ Additional benefits are displayed in this graphic.
 
 ## How to?
 
-Setting out this workshop, we quickly agreed that data management is best understood through learning by doing. For this reason, the whole workshop evolves around four published datasets:
+Setting out this workshop, we quickly agreed that data management is best understood through learning by doing in a realistic setting: Imagine finding an article relevant to your research in a repository. Alongside the article, you find the associated data that you want to inspect further. Starting from this perspective, we look at publication aspects first and then move on to data documentation and organization.
+
+The whole workshop evolves around four published articles and their datasets:
 
 -   Example 1: [https://edmond.mpg.de/dataset.xhtml?persistentId=doi:10.17617/3.1STIJV](https://edmond.mpg.de/dataset.xhtml?persistentId=doi:10.17617/3.1STIJV)
 -   Example 2: [https://data.ub.uni-muenchen.de/288/](https://data.ub.uni-muenchen.de/288/)
 -   Example 3: [https://osf.io/6p9bf/](https://osf.io/6p9bf/)
 -   Example 4: [https://zenodo.org/records/10650333](https://zenodo.org/records/10650333)
 
-It is your job to investigate one of these datasets with a special focus on data organization, documentation, and publication aspects. We will conclude with an introduction to data management plans, a helpful planning tool to comply with the FAIR principles. In this section, we will also introduce important aspects of data storage.\
+It is your job to investigate one of these datasets with a special focus on publication, documentation and data organization aspects. We will conclude with an introduction to data management plans, a helpful planning tool to comply with the FAIR principles. In this section, we will also introduce important aspects of data storage.
+
 The topics are accompanied by distinct boxes that are color-coded for their content:
 
 ::: callout-warning
