@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this tutorial, please cite it as below."
+authors:
+  - given-names: Maike
+    family-names: Kleemeyer
+    orcid: https://orcid.org/0000-0002-9388-5535
+    email: kleemeyer@mpib-berlin.mpg.de
+    affiliation: Max Planck Institute for Human Development
+  - given-names: Larissa
+    family-names: Leiminger
+    orcid: https://orcid.org/0000-0002-6491-3197
+    email: leiminger@mpdl.mpg.de
+    affiliation: Max Planck Digital Library
+  - given-names: Laura
+    family-names: Meier
+    orcid: https://orcid.org/0000-0003-1368-2306
+    email: Laura.Meier@ub.uni-muenchen.de
+    affiliation: University Library of Ludwig-Maximilians-Universität
+  - given-names: David
+    family-names: Walter
+    orcid: https://orcid.org/0000-0001-6807-5007
+    email: d.walter@mpdl.mpg.de
+    affiliation: Max Planck Digital Library
+title: "FAIR Research Data Management Tutorial"
+version: 0.0.1
+date-released: 2025-05-05
+repository-code: "https://github.com/lmu-osc/FAIR-Data-Management"
+url: "https://lmu-osc.github.io/FAIR-Data-Management/"
