@@ -45,6 +45,6 @@ This version of the material has been updated by the same group of creators for 
 
 The materials can be used, remixed, adapted and shared according to the [CC BY-SA 4.0 Licence](https://creativecommons.org/licenses/by-sa/4.0/). To cite this tutorial, please use the persistent Zenodo DOI for the version you consulted. Find the DOI and recommended citation format on the Zenodo record, linked from the [GitHub repository](https://github.com/lmu-osc/FAIR-Data-Management).
 
-Want to help improve our tutorial website? We welcome contributions from the community! To suggest a change or report an issue, please create a GitHub issue by clicking on the respective link on top-right of the website page.
+Want to help improve our tutorial website? We welcome contributions from the community! To suggest a change or report an issue, please create a GitHub issue by clicking on the link 'Report an issue' on the respective page.
 
 We welcome contributions from the community. If you have any suggestions for improvement or encounter any issues with the website, you can easily report them on [GitHub](https://github.com/lmu-osc/FAIR-Data-Management/issues/new) or reach out via [mail](mailto:rdm@ub.uni-muenchen.de).
