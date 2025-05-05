@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "FAIR Research Data Management Workshop"
+  title: "FAIR Research Data Management Tutorial"
   page-navigation: false
   page-footer: 
     center: "Developed for the LMU & MPG Open Science Summer School 2024, CC BY-SA 4.0"
