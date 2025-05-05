@@ -7,9 +7,9 @@ website:
   page-footer: 
     center: "Developed for the LMU & MPG Open Science Summer School 2024, CC BY-SA 4.0"
   reader-mode: false
-  repo-url: https://github.com/quarto-dev/quarto-demo
+  repo-url: https://github.com/lmu-osc/FAIR-Data-Management
   repo-actions: [issue]
-  issue-url: https://github.com/MPDL/FAIR-Data-Management/issues/new
+  issue-url: https://github.com/lmu-osc/FAIR-Data-Management/issues/new
   
   
   navbar:
