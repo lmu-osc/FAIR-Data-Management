@@ -1,6 +1,6 @@
 # FAIR-Data-Management
 
-Repository containing the website and all materials for the **FAIR Research Data Management** Workshop. 
+Repository containing the website and all materials for the **FAIR Research Data Management** Tutorial. 
 
 Website: [https://mpdl.github.io/FAIR-Data-Management/](https://mpdl.github.io/FAIR-Data-Management/)
 
@@ -14,8 +14,8 @@ This material was created for the LMU & MPG Open Science Summer School 2024. Dur
 
 This version of the material has been updated by the same group of creators for the MPG Open Science Ambassadors Meeting 2024. All self-paced training elements remain. 
 
-The materials can be used, remixed, adapted and shared according to the [CC BY-SA 4.0 Licence](https://creativecommons.org/licenses/by-sa/4.0/). To cite this workshop, please use:
+The materials can be used, remixed, adapted and shared according to the [CC BY-SA 4.0 Licence](https://creativecommons.org/licenses/by-sa/4.0/). To cite this tutorial, please use:
 
-“Kleemeyer, M., Leiminger, L., Meier, L. & Walter, D. (2024). FAIR Research Data Management Workshop. https://mpdl.github.io/FAIR-Data-Management/”
+“Kleemeyer, M., Leiminger, L., Meier, L. & Walter, D. (2024). FAIR Research Data Management Tutorial. https://mpdl.github.io/FAIR-Data-Management/”
 
 We welcome contributions from the community. If you have any suggestions for improvement or encounter any issues with the website, you can easily report them on [GitHub](https://github.com/MPDL/FAIR-Data-Management/issues/new) or reach out via mail: [MPDL](mailto:osip@mpdl.mpg.de) or [LMU](mailto:rdm@ub.uni-muenchen.de).

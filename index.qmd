@@ -3,19 +3,19 @@ title: "Welcome"
 link-external-newwindow: true
 ---
 
-We welcome you to the FAIR research data management workshop. This interactive course is centered around the FAIR principles and their practical application in managing your research data efficiently. FAIR is an acronym and encompasses: 
+We welcome you to the FAIR research data management tutorial. This interactive course is centered around the FAIR principles and their practical application in managing your research data efficiently. FAIR is an acronym and encompasses: 
 
 - **F**indable
 - **A**ccessible
 - **I**nteroperable
 - **R**eusable
 
-The FAIR data principles state that it should be easy to find research data, they should contain information about how to gain access to them, they should be compatible with other data, and possible to reuse.[^2] For instance, ensuring your data is well-organized and documented can make it easier for humans and machines to find and understand it and enable better reuse of the data. If the concept of the FAIR principles is new to you, take a minute to check this [comprehensive overview](https://www.go-fair.org/fair-principles/) of the GO FAIR initiative before starting this workshop.
+The FAIR data principles state that it should be easy to find research data, they should contain information about how to gain access to them, they should be compatible with other data, and possible to reuse.[^2] For instance, ensuring your data is well-organized and documented can make it easier for humans and machines to find and understand it and enable better reuse of the data. If the concept of the FAIR principles is new to you, take a minute to check this [comprehensive overview](https://www.go-fair.org/fair-principles/) of the GO FAIR initiative before starting this tutorial.
 
 ::: callout-warning
 ## FAIR principles and Open data
 
-Please note that FAIR and open are not synonymous. Not all FAIR data is necessarily open; some datasets fulfill the FAIR principles but are not considered open data. Economic or legal constraints (e.g. patents) may prevent the dataset from being publicly available. For FAIR data, the conditions and ways to access the data must be clearly defined.[^1] On the other hand, there are numerous datasets that are publicly available but do not comply with the FAIR principles, as you will most likely see in the course of this workshop.
+Please note that FAIR and open are not synonymous. Not all FAIR data is necessarily open; some datasets fulfill the FAIR principles but are not considered open data. Economic or legal constraints (e.g. patents) may prevent the dataset from being publicly available. For FAIR data, the conditions and ways to access the data must be clearly defined.[^1] On the other hand, there are numerous datasets that are publicly available but do not comply with the FAIR principles, as you will most likely see in the course of this tutorial.
 :::
 
 [^1]: based on: [https://forschungsdaten.info/themen/veroeffentlichen-und-archivieren/faire-daten/](https://forschungsdaten.info/themen/veroeffentlichen-und-archivieren/faire-daten/)
@@ -26,18 +26,18 @@ To learn more about the importance of good data management, watch this humorous 
 
 {{< video https://www.youtube.com/embed/66oNv_DJuPc?si=siQPrfZXA4M7aMzl >}}
 
-## Who is this workshop for?
+## Who is this tutorial for?
 
-This workshop was designed for early career researchers who are either about to start or want to manage their empirical research data more effectively. Although it was developed with this target group in mind, it can most probably benefit many other researchers who are also consolidating their data management skills.
+This tutorial was designed for early career researchers who are either about to start or want to manage their empirical research data more effectively. Although it was developed with this target group in mind, it can most probably benefit many other researchers who are also consolidating their data management skills.
 
-## What is the purpose of this workshop?
+## What is the purpose of this tutorial?
 
 Appreciation of adequate data management usually occurs when looking into someone else's data folder:
 
 ![Piled Higher and Deeper by Jorge Cham](images/phd052810s.gif){fig-align="left"}
 
 However, structures like this evolve over time and especially in the beginning of a project it is hard to imagine ending up with such a chaotic folder. Yet, more advanced participants can potentially think of an example where a folder tended to look similar, only that you are mastering your structures better than others.\
-This workshop will artificially advance your experience of navigating other researcher's data, thereby hoping to point out good and bad practices that shall soon inspire your own data management. It also highlights the importance of planing the management of your data very early in the course of the project to benefit most from it: Having well-organized and documented data will not only increase their value and accessibility for the wider research community but also for your future self, when going back into your data folder e.g., for a revision after a year.
+This tutorial will artificially advance your experience of navigating other researcher's data, thereby hoping to point out good and bad practices that shall soon inspire your own data management. It also highlights the importance of planing the management of your data very early in the course of the project to benefit most from it: Having well-organized and documented data will not only increase their value and accessibility for the wider research community but also for your future self, when going back into your data folder e.g., for a revision after a year.
 
 ## Benefits
 
@@ -54,9 +54,9 @@ Additional benefits are displayed in this graphic.
 
 ## How to?
 
-Setting out this workshop, we quickly agreed that data management is best understood through learning by doing in a realistic setting: Imagine finding an article relevant to your research in a repository. Alongside the article, you find the associated data that you want to inspect further. Starting from this perspective, we look at publication aspects first and then move on to data documentation and organization.
+Setting out this tutorial, we quickly agreed that data management is best understood through learning by doing in a realistic setting: Imagine finding an article relevant to your research in a repository. Alongside the article, you find the associated data that you want to inspect further. Starting from this perspective, we look at publication aspects first and then move on to data documentation and organization.
 
-The whole workshop evolves around four published articles and their datasets:
+The whole tutorial evolves around four published articles and their datasets:
 
 -   Example 1: [https://edmond.mpg.de/dataset.xhtml?persistentId=doi:10.17617/3.1STIJV](https://edmond.mpg.de/dataset.xhtml?persistentId=doi:10.17617/3.1STIJV)
 -   Example 2: [https://data.ub.uni-muenchen.de/288/](https://data.ub.uni-muenchen.de/288/)

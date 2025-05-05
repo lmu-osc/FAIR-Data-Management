@@ -5,7 +5,7 @@ link-external-newwindow: true
 
 ## Overview
 
-As the previous sections have shown, data management is a broad topic encompassing various aspects. Hence, good planning is essential to effectively manage data according to the [FAIR principles](https://www.go-fair.org/fair-principles/). Writing a (research) data management plan (DMP) is ideal to predefine how data will be handled. This part of the workshop provides an overview of the components of a DMP, offers tips on creating one, and introduces helpful tools. It concludes with a practical exercise where you will work on a small section of a DMP.
+As the previous sections have shown, data management is a broad topic encompassing various aspects. Hence, good planning is essential to effectively manage data according to the [FAIR principles](https://www.go-fair.org/fair-principles/). Writing a (research) data management plan (DMP) is ideal to predefine how data will be handled. This part of the tutorial provides an overview of the components of a DMP, offers tips on creating one, and introduces helpful tools. It concludes with a practical exercise where you will work on a small section of a DMP.
 
 ## General information
 

@@ -6,7 +6,7 @@ link-external-newwindow: true
 
 ## General notes
 
-Research data is valuable for researchers and forms the basis for their research. Therefore, it is advisable to structure the data well to save time and effort in the daily handling of research data. In this part of the workshop, we will look closer at organizational aspects of data management, mainly the folder structure, file and folder naming, and file formats. 
+Research data is valuable for researchers and forms the basis for their research. Therefore, it is advisable to structure the data well to save time and effort in the daily handling of research data. In this part of the tutorial, we will look closer at organizational aspects of data management, mainly the folder structure, file and folder naming, and file formats. 
 
 A clear and consistent folder structure and folder and file naming convention are important for making your data [**f**indable](https://www.go-fair.org/fair-principles/) and [**i**nteroperable](https://www.go-fair.org/fair-principles/). You should think about it beforehand in order to avoid inconsistencies or the need to rename large amounts of data.
 
@@ -395,7 +395,7 @@ For some years, the Unicode-based file format "UTF-8" has been available, which 
 
 ### Tabular text files (optional)
 
-Please note that the task in this section is optional. You can go through this section if you still have some time left during the workshop or read it afterwards.
+Please note that the task in this section is optional. You can go through this section if you still have some time left during the tutorial or read it afterwards.
 
 Tabular text files store data in a structured format, where each row represents a record and each column represents a field, with data separated by a designated column separator. Even after deciding to store tabular data in text files (e.g. files which can be opened in any editor), there are various ways and conventions to choose from:
 
