@@ -97,6 +97,8 @@ format:
       - cosmo
     css: styles.css
     toc: true
+    include-in-header:
+      - file: matomo_analytics.html
 
 editor: source
 
