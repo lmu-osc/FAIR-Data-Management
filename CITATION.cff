@@ -1,0 +1,56 @@
+cff-version: 1.2.0
+message: "If you use this tutorial, please cite it as below."
+authors:
+- family-names: "Kleemeyer"
+  given-names: "Maike"
+  orcid: "https://orcid.org/0000-0002-9388-5535"
+  affiliation:
+    - name: "Max Planck Institute for Human Development"
+      ror: "https://ror.org/02pp7px91"
+- family-names: "Leiminger"
+  given-names: "Larissa"
+  orcid: "https://orcid.org/0000-0002-6491-3197"
+  affiliation:
+    - name: "Max Planck Digital Library"
+      ror: "https://ror.org/0061msm67"
+- family-names: "Meier"
+  given-names: "Laura"
+  orcid: "https://orcid.org/0000-0003-1368-2306"
+  affiliation:
+    - name: "University Library of Ludwig-Maximilians-Universität"
+      ror: "https://ror.org/05591te55"
+- family-names: "Walter"
+  given-names: "David"
+  orcid: "https://orcid.org/0000-0001-6807-5007"
+  affiliation:
+    - name: "Max Planck Digital Library"
+      ror: "https://ror.org/02pp7px91"
+title: "FAIR Research Data Management Workshop"
+version: 0.1.0
+doi: "DOI_HERE_AFTER_GENERATED"
+date-released: 2024
+repository-code: "https://github.com/lmu-osc/FAIR-Data-Management"
+url: "https://lmu-osc.github.io/FAIR-Data-Management/"
+preferred-citation:
+  authors:
+  - family-names: "Kleemeyer"
+    given-names: "Maike"
+    orcid: "https://orcid.org/0000-0002-9388-5535"
+  - family-names: "Leiminger"
+    given-names: "Larissa"
+    orcid: "https://orcid.org/0000-0002-6491-3197"
+  - family-names: "Meier"
+    given-names: "Laura"
+    orcid: "https://orcid.org/0000-0003-1368-2306"
+  - family-names: "Walter"
+    given-names: "David"
+    orcid: "https://orcid.org/0000-0001-6807-5007"
+  title: "FAIR Research Data Management Workshop"
+  year: 2024
+  doi: "DOI_HERE_AFTER_GENERATED"
+  publisher:
+    name: "LMU Open Science Center"
+    ror: "https://ror.org/029e6qe04"
+  repository-code: "https://github.com/lmu-osc/FAIR-Data-Management"
+  url: "https://lmu-osc.github.io/FAIR-Data-Management/"
+  type: "book"
