@@ -1,12 +1,12 @@
 ---
-title: "1) Organization"
+title: "3) Organization"
 link-external-newwindow: true
 ---
 
 
 ## General notes
 
-Research data is valuable for researchers and forms the basis for their research. Therefore, it is advisable to structure the data well to save time and effort in the daily handling of research data. In this part of the workshop, we will look closer at organizational aspects of data management, mainly the folder structure, file and folder naming, and file formats. 
+Research data is valuable for researchers and forms the basis for their research. Therefore, it is advisable to structure the data well to save time and effort in the daily handling of research data. In this part of the tutorial, we will look closer at organizational aspects of data management, mainly the folder structure, file and folder naming, and file formats. 
 
 A clear and consistent folder structure and folder and file naming convention are important for making your data [**f**indable](https://www.go-fair.org/fair-principles/) and [**i**nteroperable](https://www.go-fair.org/fair-principles/). You should think about it beforehand in order to avoid inconsistencies or the need to rename large amounts of data.
 
@@ -19,17 +19,6 @@ In the following sections, you'll find some input on the organizational aspects 
 
 At the start of your research project, you have to decide how to arrange your files and folders. This decision depends on the structure of your data and documentation. 
 Organizational choices may involve trade-offs, such as the number of files per folder versus folder depth, intuitive names versus strict naming conventions, and structuring by processing level, access permissions, file size, or other criteria.
-
-::: {.callout-tip icon="true" title="Task 1.1: (\~ 5 minutes)"}
-Look at the folder structure (but not at the details of the folder or file names yet, which will be the next task).
-
-- Is the folder structure intuitive and logical (what is done, how, and why)?
-- Is it explicitly described? Where can you find this information (metadata of repository or in a README file)?
-- How many files are stored per folder, and how deeply are they nested?
-- Discuss: What would you leave as it is, what would you change, or what are the alternatives?
-
-In case there are no folders, you may discuss whether it would make sense to add folders.
-:::
 
 ::: {.callout-warning icon="true" title="Avoid too long file paths"}
 Depending on the operating system, the total path length has an upper limit, e.g. 255 characters. Exceeding this limit will cause errors. Also note that the path of the copy may be even longer than your original path if you synchronize or backup your data, which can cause your sync or backup job to fail.
@@ -52,27 +41,29 @@ Therefore, try to keep your full path clearly below such upper limits.
 Example for structuring a dataset: organized by file type[^1]
 
 ```
-+ DatasetA
-  + Data
-    + Processed
-    + Raw
-  + Results
++ Dataset
+  + DataTables
+    + 1_Raw
+    + 2_Processed
+  + Figures
     + Figure1.tif
-    + Figure2.tif
+    + Figure2a.tif
+    + Figure2b.tif
 ```
 
 Example for structuring a dataset: organized by analysis[^1]
 
 ```
-+ DatasetB
++ Dataset
   + Figure1
-    + RawData
-    + Results
-      + Figure1.tif
+    + 1_Raw
+    + 2_Processed
+    + Figure1.tif
   + Figure2
-    + RawData
-    + Results
-      + Figure2.tif
+    + 1_Raw
+    + 2_Processed
+    + Figure2a.tif
+    + Figure2b.tif
 ```
 
 [^1]: adapted from [https://datadryad.org/stash/best_practices#organize](https://datadryad.org/stash/best_practices#organize)
@@ -128,54 +119,39 @@ Example for a project folder structure[^3]:
 
 :::
 
-::: {.callout-important collapse="true" title="Solution: Example 1"}
-> - Is the folder structure intuitive and logical (what is done, how, and why)?
-> - Is it explicitly described? Where can you find this information (metadata of repository or in a README file)?
-> - How many files are stored per folder, and how deeply are they nested?
-> - Discuss: What would you leave as it is, what would you change, or what are the alternatives?
-> 
-> In case there are no folders, you may discuss whether it would make sense to add folders.
+::: {.callout-tip icon="true" title="Task 1.1: (\~ 5 minutes)"}
+Look at the folder structure (but not at the details of the folder or file names yet, which will be the next task).
 
+- Is the folder structure intuitive and logical (what is done, how, and why)?
+- Is it explicitly described? Where can you find this information (metadata of repository or in a README file)?
+- Discuss: What would you leave as it is, what would you change, or what are the alternatives?
+
+In case there are no folders, you may discuss whether it would make sense to add folders.
+:::
+
+::: {.callout-important collapse="true" title="Solution: Example 1"}
 The dataset has 42 files, but no folder structure. Folders are not needed here, because all files (except for the README file) are of same type, just for different months. However, one could make one subfolder per year.
 :::
 
 ::: {.callout-important collapse="true" title="Solution: Example 2"}
-> - Is the folder structure intuitive and logical (what is done, how, and why)?
-> - Is it explicitly described? Where can you find this information (metadata of repository or in a README file)?
-> - How many files are stored per folder, and how deeply are they nested?
-> - Discuss: What would you leave as it is, what would you change, or what are the alternatives?
-> 
-> In case there are no folders, you may discuss whether it would make sense to add folders.
-
 The dataset contains 6 files, whithout folder structure. However, 2 of them are of type 'tar.gz', which contain compressed ASCII files. The content is described in the README file.
 Also the tar.gz files do not contain many files, thus no further folder structure is needed.
 :::
 
 ::: {.callout-important collapse="true" title="Solution: Example 3"}
-> - Is the folder structure intuitive and logical (what is done, how, and why)?
-> - Is it explicitly described? Where can you find this information (metadata of repository or in a README file)?
-> - How many files are stored per folder, and how deeply are they nested?
-> - Discuss: What would you leave as it is, what would you change, or what are the alternatives?
-
 Following notes relate to the content of `OSF Storage`.
 
 - Yes, files are grouped into data, code (scripts) etc.
 - The content is described in the README file, but not completely.
-- There are up to 8 files per folder, one folder level.
 :::
 
 ::: {.callout-important collapse="true" title="Solution: Example 4"}
-> - Is the folder structure intuitive and logical (what is done, how, and why)?
-> - Is it explicitly described? Where can you find this information (metadata of repository or in a README file)?
-> - How many files are stored per folder, and how deeply are they nested?
-> - Discuss: What would you leave as it is, what would you change, or what are the alternatives?
-
 On dataset-level, there is only one zip file, no folders. However, within the zip file, there is a folder structure:
 
 - Yes, intuitive structure: separation between data tables and scripts, ...
 - Explicitly described in README file.
-- Around 3 to 4 folder levels. Folder `Data/Group` has 40 subfolders with 9 files each.
 :::
+
 
 ## File and folder names
 
@@ -185,16 +161,7 @@ In the next section, we will explore best practices for file and folder naming t
 * Often: Give information about its content, e.g. `README.txt`, `MeetingProtocol.docx`, `Temperature_RawData.tab`,
 * Sometimes: Enable logical order when sorting alphabetically, e.g. `1_RawData`, `2_PreProcessed`, `3_Processed`, `4_Combined`.
 
-Generally, the same rules apply to the naming of folders and files. They shall allow to choose the desired file amongst all the other files of the folder. Therefore, the names should be concise and intuitive (if applicable). For instance, a file named `XYZ123` might not be immediately clear, so it's important to explain its purpose somewhere, typically in a [README file](documentation.qmd#readme-file). Well-structured folders have clear naming conventions, which are explicitly described.
-
-::: {.callout-tip icon="true" title="Task 1.2: (\~ 10 minutes)"}
-- What naming convention is used in this dataset? Is it intuitive and logical? Is it explicitly described?
-- Are the names meaningful? Are there misleading names?
-- In case of multiple files: Do they appear in a logical order when sorted alphabetically?
-- Are there problematic characters like spaces, non-ASCII characters, etc.?
-- What about the length of the names?
-- Discuss: What would you leave as it is, what would you change, or what are the alternatives?
-:::
+Generally, the same rules apply to the naming of folders and files (except for the file extension after the dot, e.g. "README.txt"). They shall allow to choose the desired file amongst all the other files of the folder. Therefore, the names should be concise and intuitive (if applicable). For instance, a file named `XYZ123` might not be immediately clear, so it's important to explain its purpose somewhere, typically in a [README file](documentation.qmd#readme-file). Well-structured folders have clear naming conventions, which are explicitly described.
 
 ::: {.callout-warning icon="true" title="Do not use bad characters."}
 Depending on the operating system and application, some characters are forbidden or may lead to problems and, thus, should be avoided.
@@ -207,7 +174,7 @@ Depending on the operating system and application, some characters are forbidden
 To summarize: You should only use Latin letters A-Z, a-z, digits 0-9, underscore, hyphen and dot, i.e. following characters: `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789_-.`
 
 
-Furthermore, the dot should only be used in file names, and there only once before the file extension, e.g. "Notes.txt". Some programs use a dot or underscore as the first character for special file types, e.g. `_quarto.yml` or `.git` and thus should be avoided for regular data files.
+Furthermore, the dot should only be used in file names, and there only once before the file extension, e.g. `Notes.txt`. Some programs use a dot or underscore as the first character for special file types, e.g. `_quarto.yml` or `.git` and thus should be avoided for regular data files.
 :::
 
 ::: {.callout-warning icon="true" title="No 'hello.txt' and 'Hello.txt' in same folder."}
@@ -245,10 +212,56 @@ There are different possibilities to indicate logical units in a name without us
 
 - Kebab-case: `The-quick-brown-fox-jumps-over-the-lazy-dog.txt`
 - CamelCase: `TheQuickBrownFoxJumpsOverTheLazyDog.txt`
-- Snake_case: `The_quick_brown_fox_jumps_over_the_lazy_dog.txt`
+- Snake_case: `The_quick_brown_fox_jumps_over_the_lazy_dog.txt`
+- Not recommended: `The quick brown fox jumps over the lazy dog.txt` - Please don't do use spaces!
 
 Compromises often have to be made, such as including relevant information versus avoiding long names. Note that folder names with a precise and narrow meaning may become outdated when further content is filled in over time.
 Because of that, [persistent identifiers (PID)](publication.qmd#persistent-identifier) typically avoid to include semantic information, e.g. `doi:10.17617/3.1STIJV`.
+:::
+
+::: {.callout-tip icon="true" title="Task 1.2: (\~ 10 minutes)"}
+- Are the names intuitive, i.e. can you get an idea of the folder/file content without looking into a README file?
+- What naming convention is used in this dataset? Is it intuitive and logical? Is it explicitly described?
+- In case of multiple files: Do they appear in a logical order when sorted alphabetically?
+- Are there problematic characters like spaces, non-ASCII characters, etc.?
+- What about the length of the names?
+- Discuss: What would you leave as it is, what would you change, or what are the alternatives?
+:::
+
+::: {.callout-important collapse="true" title="Solution: Example 1"}
+- Probably the prefix has some meaning, but we can only speculate.
+- Files consist of prefix `amb_hourly_qc_wc4.4_cal6.0_`, followed by year and month (e.g. `2014_08`), followed by `_core-params.csv`. Prefix might be intuitive for researchers of that field, but it is not explicitly described.
+- Yes, files are sorted according to the month of measurement.
+- Yes: File name `AMB hourly, readme.rtf` contains spaces and a comma. The other file names contain several dots (should only be one dot, namely before the file extension `csv`).
+- Length is not problematic, but longer than needed.
+- Replace `AMB hourly, readme.rtf` by `README.rtf`. The other file names can be shortened, e.g. `HourlyCoreParams_2014_08.csv`. And if the file name prefix `amb_hourly_qc_wc4.4_cal6.0_` contains relevant information, this should be explicitly given in the metadata or README file.
+:::
+
+::: {.callout-important collapse="true" title="Solution: Example 2"}
+- Probably yes. Anyhow, their content is mentioned in the README file.
+- The dataset contains only 6 files, thus there is not really a convention available, and also not needed. The non-intuitive parts `wos` and `fo` are explained in the README file (namely "Web of Science data" and "Faculty Opinions data"). The files inside the tar.gz-files seem to follow some convention, and their content is explicitly mentioned in the README file.
+- Only few files, does order not important.
+- No problematic characters found.
+- Length of the names: OK
+:::
+
+::: {.callout-important collapse="true" title="Solution: Example 3"}
+Following notes relate to the content of `OSF Storage`.
+
+- Meaning not clear for all files.
+- Not so clear, but not many files, thus no clear conventions needed. However, the files in folder `result` are lacking an explanation in the README file, and their names are not very intuitive.
+- Only few files, thus order not important.
+- No problematic characters found in `OSF Storage`.
+- Length of the names: OK
+:::
+
+::: {.callout-important collapse="true" title="Solution: Example 4"}
+- Yes, names are meaningful and intuitive.
+- The subfolders of `Data/Group` and `Data/Solo` have names like `01_09_2022__10_13_33`, which seem to refer to a date and maye time of day.
+- Subfolders are not in a chronological order, because the date is given in a disadvantageous format (e.g. `01_09_2022`) - better would be `2022_09_01` or `2022-09-01`.
+- Yes: Folder name `Stan model code` contains spaces.
+- Length of the names: OK
+- If folder name `01_09_2022__10_13_33` stands for timestamp 2022-09-01T10:13:33, then it could be renamed to `20220901T101333` or `2022-09-01_101333`.
 :::
 
 ::: {.callout-note icon="true" title="Excursion: Versioning"}
@@ -265,69 +278,6 @@ Version control can be done either manually by using naming conventions or by us
 For further reading: GitHub recommends version names like '1.3.2' for the releases of software products, details see [Semantic Versioning 2.0.0](https://semver.org/).
 :::
 
-::: {.callout-important collapse="true" title="Solution: Example 1"}
-> - What is the convention of the naming used in this dataset? Is it intuitive and logical? Is it explicitly described?
-> - Are the names meaningful? Are there misleading names?
-> - In case of multiple files: Do they appear in a logical order when sorted alphabetically?
-> - Are there problematic characters like spaces, non-ASCII characters, etc.?
-> - What about the length of the names?
-> - Discuss: What would you leave as it is, what would you change, or what are the alternatives?
-
-- Files consist of prefix `amb_hourly_qc_wc4.4_cal6.0_`, followed by year and month (e.g. `2014_08`), followed by `_core-params.csv`. Prefix might be intuitive for researchers of that field, but it is not explicitly described.
-- Probably the prefix has some meaning, but as it is not explicitly stated in the README, we can only speculate.
-- Yes, files are sorted according to the month of measurement.
-- Yes: File name `AMB hourly, readme.rtf` contains spaces and a comma. The other file names contain several dots (should only be one dot, namely before the file extension `csv`).
-- Length is not problematic, but longer than needed.
-- Replace `AMB hourly, readme.rtf` by `README.rtf`. The other file names can be shortened, e.g. `HourlyCoreParams_2014_08.csv`. And if the file name prefix `amb_hourly_qc_wc4.4_cal6.0_` contains relevant information, this should be explicitly given in the metadata or README file.
-:::
-
-::: {.callout-important collapse="true" title="Solution: Example 2"}
-> - What is the convention of the naming used in this dataset? Is it intuitive and logical? Is it explicitly described?
-> - Are the names meaningful? Are there misleading names?
-> - In case of multiple files: Do they appear in a logical order when sorted alphabetically?
-> - Are there problematic characters like spaces, non-ASCII characters, etc.?
-> - What about the length of the names?
-> - Discuss: What would you leave as it is, what would you change, or what are the alternatives?
-
-- The dataset contains only 6 files, thus there is not really a convention available, and also not needed. The non-intuitive parts `wos` and `fo` are explained in the README file (namely "Web of Science data" and "Faculty Opinions data"). The files inside the tar.gz-files seem to follow some convention, and their content is explicitly mentioned in the README file.
-- Probably yes. Anyhow, their content is mentioned in the README file.
-- Only few files, does order not important.
-- No problematic characters found.
-- Length of the names: OK
-:::
-
-::: {.callout-important collapse="true" title="Solution: Example 3"}
-> - What is the convention of the naming used in this dataset? Is it intuitive and logical? Is it explicitly described?
-> - Are the names meaningful? Are there misleading names?
-> - In case of multiple files: Do they appear in a logical order when sorted alphabetically?
-> - Are there problematic characters like spaces, non-ASCII characters, etc.?
-> - What about the length of the names?
-> - Discuss: What would you leave as it is, what would you change, or what are the alternatives?
-
-Following notes relate to the content of `OSF Storage`.
-
-- Not so clear, but not many files, thus no clear conventions needed. However, the files in folder `result` are lacking an explanation in the README file, and their names are not very intuitive.
-- Meaning not clear for all files.
-- Only few files, thus order not important.
-- No problematic characters found in `OSF Storage`.
-- Length of the names: OK
-:::
-
-::: {.callout-important collapse="true" title="Solution: Example 4"}
-> - What is the convention of the naming used in this dataset? Is it intuitive and logical? Is it explicitly described?
-> - Are the names meaningful? Are there misleading names?
-> - In case of multiple files: Do they appear in a logical order when sorted alphabetically?
-> - Are there problematic characters like spaces, non-ASCII characters, etc.?
-> - What about the length of the names?
-> - Discuss: What would you leave as it is, what would you change, or what are the alternatives?
-
-- The subfolders of `Data/Group` and `Data/Solo` have names like `01_09_2022__10_13_33`, which seem to refer to a date and maye time of day.
-- Yes, names are meaningful and intuitive.
-- Subfolders are not in a chronological order, because the date is given in a disadvantageous format (e.g. `01_09_2022`) - better would be `2022_09_01` or `2022-09-01`.
-- Yes: Folder name `Stan model code` contains spaces.
-- Length of the names: OK
-- If folder name `01_09_2022__10_13_33` stands for timestamp 2022-09-01T10:13:33, then it could be renamed to `20220901T101333` or `2022-09-01_101333`.
-:::
 
 ## File formats
 
@@ -342,17 +292,6 @@ Ideally, when choosing a suitable format, you'll consider the following properti
 - Quick to read (performance)
 
 However, usually compromises have to be made. For example, binary files are generally more performant than csv files and thus more suitable during the active research process. At the same time, csv is a well-established format for long-term preservation and is easier for humans to read.
-
-::: {.callout-tip icon="true" title="Task 1.3: (\~ 10 minutes)"}
-- Are the files stored in an open or a proprietary format?
-- Is the file format used "future-proof", e.g., suitable for long-term archiving?
-- How easy is it to open the file (regarding available programs and file size)?
-- How complex are the files? What is their internal structure?
-- What about performance and file size?
-- How easy is it to understand the file as humans?
-- Are they machine-readable and standardized? How easy is it to write a script to read the files?
-- Which alternative formats exist?
-:::
 
 ::: {.callout-warning icon="true" title="Avoid proprietary formats."}
 Often, proprietary formats have intentionally no proper documentation as the company behind the system wants to keep their business information behind closed doors. The companies sometimes even use technical protection mechanisms, making the file format readable only by commercial software. This reduces the interoperability and reusability of the files and, in the worst case, makes them unreadable in the long term. (Imagine the company that provided the software and file format no longer exists.) Furthermore, the files might contain hidden (potentially sensitive) information. Thus, such formats should be avoided.
@@ -383,29 +322,18 @@ Notes:
 - **Spreadsheet files**: Spreadsheets may look nice, particularly when formatted in a colourful way. But for the machine-readability, this can cause problems. In particular, we do not recommend that you present relevant information just by formatting content differently. You can take this as a rule of thumb: Spreadsheet files like .xlsx or .ods are not well machine-readable.
 :::
 
-::: {.callout-note collapse="true" icon="true" title="Excursion: Premium format ASCII"}
-A gold standard for storing digital information is an ASCII file. In an ASCII file, each byte represents one visible character (except for the white spaces and control characters like tab stop and linebreaks).
-
-Therefore, ASCII files can be read or opened by any text editor or data-processing software, even with programs like Excel, Word, Wordpad or web browsers (only possibly limited regarding the file size). 
-
-**Characters beyond ASCII**:
-
-An ASCII file can only contain the following visible characters: ``!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~``
-Otherwise, it is not an ASCII file.
-
-For some years, the Unicode-based file format "UTF-8" has been available, which can represent many characters beyond the ASCII characters, like "ü", "€", and even some smilies ☺. Nowadays, UTF-8 is supported by many editors and browsers. The good thing about UTF-8 is that as long as a UTF-8 file contains only ASCII characters, the UTF-8 file is automatically an ASCII file. In other words, an ASCII file is a super-interoperable UTF-8 file.
+::: {.callout-tip icon="true" title="Task 1.3: (\~ 10 minutes)"}
+- Are the files stored in an open or a proprietary format?
+- Is the file format used "future-proof", e.g., suitable for long-term archiving?
+- How easy is it to open the file (regarding available programs and file size)?
+- How complex are the files? What is their internal structure?
+- What about performance and file size?
+- How easy is it to understand the file structure as humans?
+- Are they machine-readable and standardized? How easy is it to write a script to read the files?
+- Which alternative formats exist?
 :::
 
 ::: {.callout-important collapse="true" title="Solution: Example 1"}
-> - Are the files stored in an open or a proprietary format?
-> - Is the file format used "future-proof", e.g., suitable for long-term archiving?
-> - How easy is it to open the file (regarding available programs and file size)?
-> - How complex are the files? What is their internal structure?
-> - What about performance and file size?
-> - How easy is it to understand the file as humans?
-> - Are they machine-readable and standardized? How easy is it to write a script to read the files?
-> - Which alternative formats exist?
-
 - Files are ASCII files, thus open.
 - Yes, ASCII is suitable for long-term archiving.
 - Easy to open, e.g. with text editor.
@@ -417,15 +345,6 @@ For some years, the Unicode-based file format "UTF-8" has been available, which 
 :::
 
 ::: {.callout-important collapse="true" title="Solution: Example 2"}
-> - Are the files stored in an open or a proprietary format?
-> - Is the file format used "future-proof", e.g., suitable for long-term archiving?
-> - How easy is it to open the file (regarding available programs and file size)?
-> - How complex are the files? What is their internal structure?
-> - What about performance and file size?
-> - How easy is it to understand the file as humans?
-> - Are they machine-readable and standardized? How easy is it to write a script to read the files?
-> - Which alternative formats exist?
-
 - The small files are ASCII or UTF-8 files, thus open. The tar.gz files are compressed TAR-files, thus also in an open format.
 - Yes, ASCII is definitively suitable for long-term archiving. Also tar.gz files are widely used and can thus be considered suitable for long-term archiving.
 - The tar.gz files need specific software for extraction, which is freely available, but maybe not installed everywhere, and not all people are familiar with. Thus it is commandable that the extaction is described in the README file. However, the file size of several GB can be problematic for users having a slow internet connection. And unpacked, the largest file is more than 26 GB, more than the RAM size of many computers.
@@ -437,15 +356,6 @@ For some years, the Unicode-based file format "UTF-8" has been available, which 
 :::
 
 ::: {.callout-important collapse="true" title="Solution: Example 3"}
-> - Are the files stored in an open or a proprietary format?
-> - Is the file format used "future-proof", e.g., suitable for long-term archiving?
-> - How easy is it to open the file (regarding available programs and file size)?
-> - How complex are the files? What is their internal structure?
-> - What about performance and file size?
-> - How easy is it to understand the file as humans?
-> - Are they machine-readable and standardized? How easy is it to write a script to read the files?
-> - Which alternative formats exist?
-
 Following notes relate to the content of "OSF Storage".
 
 - Most files are in an open format: ASCII tables, JSON files, R scripts. But what are "nii.gz" files in folder "results" - maybe zipped [NIfTI](https://en.wikipedia.org/wiki/Neuroimaging_Informatics_Technology_Initiative) files?
@@ -459,15 +369,6 @@ Following notes relate to the content of "OSF Storage".
 :::
 
 ::: {.callout-important collapse="true" title="Solution: Example 4"}
-> - Are the files stored in an open or a proprietary format?
-> - Is the file format used "future-proof", e.g., suitable for long-term archiving?
-> - How easy is it to open the file (regarding available programs and file size)?
-> - How complex are the files? What is their internal structure?
-> - What about performance and file size?
-> - How easy is it to understand the file as humans?
-> - Are they machine-readable and standardized? How easy is it to write a script to read the files?
-> - Which alternative formats exist?
-
 - Files are stored as ASCII tables or plain text files, which are open formats.
 - Yes, suitable for long-term archiving.
 - Easy, readable with text editor.
@@ -478,10 +379,23 @@ Following notes relate to the content of "OSF Storage".
 - Binary files like [HDF](https://de.wikipedia.org/wiki/Hierarchical_Data_Format) could be used (cf note above related to performance).
 :::
 
+::: {.callout-note collapse="true" icon="true" title="Excursion: Premium format ASCII"}
+A gold standard for storing digital information is an ASCII file. In an ASCII file, each byte represents one visible character (except for the white spaces and control characters like tab stop and linebreaks).
 
-### Special file types: tabular text file (optional)
+Therefore, ASCII files can be read or opened by any text editor or data-processing software, even with programs like Excel, Word, Wordpad or web browsers (only possibly limited regarding the file size). 
 
-Please note that the task in this section is optional. You can go through this section if you still have some time left during the workshop or read it afterwards.
+**Characters beyond ASCII**:
+
+An ASCII file can only contain the following visible characters: ``!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~``
+Otherwise, it is not an ASCII file.
+
+For some years, the Unicode-based file format "UTF-8" has been available, which can represent many characters beyond the ASCII characters, like "ü", "€", and even some smilies ☺. Nowadays, UTF-8 is supported by many editors and browsers. The good thing about UTF-8 is that as long as a UTF-8 file contains only ASCII characters, the UTF-8 file is automatically an ASCII file. In other words, an ASCII file is a super-interoperable UTF-8 file.
+:::
+
+
+### Tabular text files (optional)
+
+Please note that the task in this section is optional. You can go through this section if you still have some time left during the tutorial or read it afterwards.
 
 Tabular text files store data in a structured format, where each row represents a record and each column represents a field, with data separated by a designated column separator. Even after deciding to store tabular data in text files (e.g. files which can be opened in any editor), there are various ways and conventions to choose from:
 
@@ -497,7 +411,45 @@ Tabular text files store data in a structured format, where each row represents 
 - Special numbers: Do special numbers like "NA", "", "N/A", "999", "0" occur? Is their meaning documented?
 - Time: Which format is used for the date and time of day? Which time zone is used?
 - Tables: What do you generally notice (regarding the choice of separator, whitespaces, missing columns)?
-- Is the content of the table self-explaining? Is there a column description? What units were used? Is there detailed information elsewhere?
+- Is the content of the table self-explaining (column description, which units used), or is it explained elsewhere (README file or Codebook)?
+:::
+
+::: {.callout-important collapse="true" title="Solution: Example 1"}
+- ASCII
+- Has many digits, e.g. `986.223944276841`.
+- No information about missing values found in README file. But file `amb_hourly_qc_wc4.4_cal6.0_2017_03_core-params.csv` contains `NA`.
+- Time is ISO 8601 conform, except that a space is given between date and time of day, e.g. `2017-03-23 09:30:00`. In readme file mentioned: "All times given in GMT".
+- Comma as column separator, whitespace only between date and time of day, no missing columns found.
+- Not self-explaining but mentioned in README file, also the units.
+:::
+
+::: {.callout-important collapse="true" title="Solution: Example 2"}
+- UTF-8, except for the tar.gz. The files inside those tar.gz are even ASCII files.
+- Probably more digits than needed, e.g. `-13.333333333333336`. Considering the file size, shortening them could be worthwile.
+- No information about missing values found in README file. But `NA` found in several files.
+- Time: There seems to be no time column.
+- Tables: Comma as column separator, no missing columns or whitespaces found.
+- Not self-explaining but columns mentioned in README file.
+:::
+
+::: {.callout-important collapse="true" title="Solution: Example 3"}
+Following notes relate to the content of `OSF Storage`.
+
+- Encoding: ASCII files (except for the nii.gz files)
+- Numbers: e.g. `0.878519` - looks reasonable
+- No information about missing values found in README file. But `NA` found in several files.
+- Time: There seems to be no time column.
+- Tables: Comma as column separator, no missing columns or whitespaces found.
+- Content of the table is explained in JSON file (Codebook).
+:::
+
+::: {.callout-important collapse="true" title="Solution: Example 4"}
+- Data tables are ASCII files.
+- Numbers: e.g. `73.12958` - looks reasonable
+- Special numbers or contents: Some Columns contain parenthesis - what is their meaning?
+- Time: Time column with seconds(?) since start time?
+- Tables: Semicolon as column separator, also semicolon after last column.
+- The README file says "Variable names should be quite descriptive, but please get in touch in case anything is unclear", but not all columns are so clear to understand.
 :::
 
 ::: {.callout-note collapse="true" icon="false" title="Example"}
@@ -572,72 +524,6 @@ Time,Temp,Rain
 ```
 :::
 
-
-::: {.callout-important collapse="true" title="Solution: Example 1"}
-> - How is the file encoded (e.g. ASCII, UTF-8)?
-> - Numbers: What about their precision (enough or too much)?
-> - Special numbers: Do special numbers like "NA", "", "N/A", "999", "0" occur? Is their meaning documented?
-> - Time: Which format is used for the date and time of day? Which time zone is used?
-> - Tables: What do you generally notice (regarding the choice of separator, whitespaces, missing columns)?
-> - Is the content of the table self-explaining? Is there a column description? What units were used? Is there detailed information elsewhere?
-
-- ASCII
-- Has many digits, e.g. `986.223944276841`.
-- No information about missing values found in README file. But file `amb_hourly_qc_wc4.4_cal6.0_2017_03_core-params.csv` contains `NA`.
-- Time is ISO 8601 conform, except that a space is given between date and time of day, e.g. `2017-03-23 09:30:00`. In readme file mentioned: "All times given in GMT".
-- Comma as column separator, whitespace only between date and time of day, no missing columns found.
-- Not self-explaining but mentioned in README file, also the units.
-:::
-
-::: {.callout-important collapse="true" title="Solution: Example 2"}
-> - How is the file encoded (e.g. ASCII, UTF-8)?
-> - Numbers: What about their precision (enough or too much)?
-> - Special numbers: Do special numbers like "NA", "", "N/A", "999", "0" occur? Is their meaning documented?
-> - Time: Which format is used for the date and time of day? Which time zone is used?
-> - Tables: What do you generally notice (regarding the choice of separator, whitespaces, missing columns)?
-> - Is the content of the table self-explaining? Is there a column description? What units were used? Is there detailed information elsewhere?
-
-- UTF-8, except for the tar.gz. The files inside those tar.gz are even ASCII files.
-- Probably more digits than needed, e.g. `-13.333333333333336`. Considering the file size, shortening them could be worthwile.
-- No information about missing values found in README file. But `NA` found in several files.
-- Time: There seems to be no time column.
-- Tables: Comma as column separator, no missing columns or whitespaces found.
-- Not self-explaining but columns mentioned in README file.
-:::
-
-::: {.callout-important collapse="true" title="Solution: Example 3"}
-> - How is the file encoded (e.g. ASCII, UTF-8)?
-> - Numbers: What about their precision (enough or too much)?
-> - Special numbers: Do special numbers like "NA", "", "N/A", "999", "0" occur? Is their meaning documented?
-> - Time: Which format is used for the date and time of day? Which time zone is used?
-> - Tables: What do you generally notice (regarding the choice of separator, whitespaces, missing columns)?
-> - Is the content of the table self-explaining? Is there a column description? What units were used? Is there detailed information elsewhere?
-
-Following notes relate to the content of `OSF Storage`.
-
-- Encoding: ASCII files (except for the nii.gz files)
-- Numbers: e.g. `0.878519` - looks reasonable
-- No information about missing values found in README file. But `NA` found in several files.
-- Time: There seems to be no time column.
-- Tables: Comma as column separator, no missing columns or whitespaces found.
-- Content of the table is explained in JSON file (Codebook).
-:::
-
-::: {.callout-important collapse="true" title="Solution: Example 4"}
-> - How is the file encoded (e.g. ASCII, UTF-8)?
-> - Numbers: What about their precision (enough or too much)?
-> - Special numbers: Do special numbers like "NA", "", "N/A", "999", "0" occur? Is their meaning documented?
-> - Time: Which format is used for the date and time of day? Which time zone is used?
-> - Tables: What do you generally notice (regarding the choice of separator, whitespaces, missing columns)?
-> - Is the content of the table self-explaining? Is there a column description? What units were used? Is there detailed information elsewhere?
-
-- Data tables are ASCII files.
-- Numbers: e.g. `73.12958` - looks reasonable
-- Special numbers or contents: Some Columns contain parenthesis - what is their meaning?
-- Time: Time column with seconds(?) since start time?
-- Tables: Semicolon as column separator, also semicolon after last column.
-- The README file says "Variable names should be quite descriptive, but please get in touch in case anything is unclear", but not all columns are so clear to understand.
-:::
 
 
 ## References
