@@ -119,7 +119,7 @@ Example for a project folder structure[^3]:
 
 :::
 
-::: {.callout-tip icon="true" title="Task 3.1: (\~ 5 minutes)"}
+::: {.callout-tip icon="true" title="Task 1.1: (\~ 5 minutes)"}
 Look at the folder structure (but not at the details of the folder or file names yet, which will be the next task).
 
 - Is the folder structure intuitive and logical (what is done, how, and why)?
@@ -219,7 +219,7 @@ Compromises often have to be made, such as including relevant information versus
 Because of that, [persistent identifiers (PID)](publication.qmd#persistent-identifier) typically avoid to include semantic information, e.g. `doi:10.17617/3.1STIJV`.
 :::
 
-::: {.callout-tip icon="true" title="Task 3.2: (\~ 10 minutes)"}
+::: {.callout-tip icon="true" title="Task 1.2: (\~ 10 minutes)"}
 - Are the names intuitive, i.e. can you get an idea of the folder/file content without looking into a README file?
 - What naming convention is used in this dataset? Is it intuitive and logical? Is it explicitly described?
 - In case of multiple files: Do they appear in a logical order when sorted alphabetically?
@@ -322,7 +322,7 @@ Notes:
 - **Spreadsheet files**: Spreadsheets may look nice, particularly when formatted in a colourful way. But for the machine-readability, this can cause problems. In particular, we do not recommend that you present relevant information just by formatting content differently. You can take this as a rule of thumb: Spreadsheet files like .xlsx or .ods are not well machine-readable.
 :::
 
-::: {.callout-tip icon="true" title="Task 3.3: (\~ 10 minutes)"}
+::: {.callout-tip icon="true" title="Task 1.3: (\~ 10 minutes)"}
 - Are the files stored in an open or a proprietary format?
 - Is the file format used "future-proof", e.g., suitable for long-term archiving?
 - How easy is it to open the file (regarding available programs and file size)?
@@ -405,7 +405,7 @@ Tabular text files store data in a structured format, where each row represents 
 - Header lines with meta information?
 - Encoding: Recommended is ASCII or UTF-8
 
-::: {.callout-tip icon="true" title="Task 3.4: (\~ 5 minutes)"}
+::: {.callout-tip icon="true" title="Task 1.4: (\~ 5 minutes)"}
 - How is the file encoded (e.g. ASCII, UTF-8)?
 - Numbers: What about their precision (enough or too much)?
 - Special numbers: Do special numbers like "NA", "", "N/A", "999", "0" occur? Is their meaning documented?
