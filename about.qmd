@@ -49,4 +49,4 @@ To cite the workshop, please use:
 
 > "Kleemeyer, M., Leiminger, L., Meier, L. & Walter, D. (2024). FAIR Research Data Management Workshop. [https://doi.org/10.17617/2.3694449](https://doi.org/10.17617/2.3694449)"
 
-We welcome contributions from the community. If you have any suggestions for improvement or encounter any issues with the website, you can easily report them on [GitHub](https://github.com/MPDL/FAIR-Data-Management/issues/new) or reach out via [mail](mailto:rdm@ub.uni-muenchen.de).
+We welcome contributions from the community. If you have any suggestions for improvement or encounter any issues with the website, you can easily report them on [GitHub](https://github.com/MPDL/FAIR-Data-Management/issues/new) or reach out via [mail](mailto:rdm@maxit.mpg.de).
