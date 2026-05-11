@@ -23,7 +23,7 @@ website:
           - text: "2) Documentation"
             href: documentation.qmd
           - text: "3) Organization"
-            href: data-organisation.qmd
+            href: data-organization.qmd
           - text: "4) Data Management Plans"
             href: dmp.qmd
       - text: About
@@ -66,16 +66,16 @@ website:
           - text: "Codebook"
             href: documentation.qmd#codebook
       - section: "3) Organization"
-        href: data-organisation.qmd
+        href: data-organization.qmd
         contents:
           - text: "General notes"
-            href: data-organisation.qmd#general-notes
+            href: data-organization.qmd#general-notes
           - text: "Folder structure"
-            href: data-organisation.qmd#folder-structure
+            href: data-organization.qmd#folder-structure
           - text: "File and folder names"
-            href: data-organisation.qmd#file-and-folder-names
+            href: data-organization.qmd#file-and-folder-names
           - text: "File formats"
-            href: data-organisation.qmd#file-formats
+            href: data-organization.qmd#file-formats
       - section: "4) Data Management Plans"
         href: dmp.qmd
         contents:
