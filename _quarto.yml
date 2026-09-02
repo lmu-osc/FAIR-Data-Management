@@ -34,50 +34,15 @@ website:
     contents:
       - text: "Overview"
         href: index.qmd
-      - section: "1) Publication"
+      - text: "1) Publication"
         href: publication.qmd
-        contents:
-          - href: publication.qmd#data-availability-statement
-            text: "Data Availability Statement"
-          - href: publication.qmd#license
-            text: "License"
-          - href: publication.qmd#persistent-identifier
-            text: "Persistent Identifier"
-          - href: publication.qmd#repository
-            text: "Repository"
-      - section: "2) Documentation"
+      - text: "2) Documentation"
         href: documentation.qmd
-        contents:
-          - href: documentation.qmd#metadata
-            text: "Metadata"
-          - href: documentation.qmd#readme-file
-            text: "README File"
-          - href: documentation.qmd#codebook
-            text: "Codebook"
-      - section: "3) Organization"
+      - text: "3) Organization"
         href: data-organisation.qmd
-        contents:
-          - href: data-organisation.qmd#general-notes
-            text: "General Notes"
-          - href: data-organisation.qmd#folder-structure
-            text: "Folder Structure"
-          - href: data-organisation.qmd#file-and-folder-names
-            text: "File and Folder Names"
-          - href: data-organisation.qmd#file-formats
-            text: "File Formats"
-      - section: "4) Data Management Plans"
+      - text: "4) Data Management Plans"
         href: dmp.qmd
-        contents:
-          - href: dmp.qmd#general-information
-            text: "General Information"
-          - href: dmp.qmd#components-of-a-dmp
-            text: "Components of a DMP"
-          - href: dmp.qmd#example-data-storage-and-security
-            text: "Example: Data Storage and Security"
-          - href: dmp.qmd#why-is-a-dmp-helpful
-            text: "Why is a DMP Helpful?"
-          - href: dmp.qmd#dmp-tool-rdmo
-            text: "DMP Tool: RDMO"
+
 # End Website
 
 # Begin Includes
