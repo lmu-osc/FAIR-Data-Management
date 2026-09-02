@@ -1,6 +1,5 @@
 ---
 title: "Welcome"
-link-external-newwindow: true
 ---
 
 We welcome you to the FAIR research data management tutorial. This interactive course is centered around the FAIR principles and their practical application in managing your research data efficiently. FAIR is an acronym and encompasses: 
@@ -86,3 +85,28 @@ Only open the box if you want to see the solution!
 :::
 
 We recommend that you look at the hands-on exercises first and see whether you already know their solutions. If things are unclear, you may return to the text anytime, but be aware that it is not necessary (and time will probably not permit) to read every paragraph and every box very carefully. The materials will, however, remain available, so you can always go back and reread more carefully!
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+
+::: {.callout-tip title="Support the LMU Open Science Center!"}
+
+**Like this tutorial? Be sure to give [the repository](https://github.com/lmu-osc/FAIR-Data-Management) a star and [follow us on GitHub](https://github.com/lmu-osc)!**
+:::
+
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="47.5%"}
+
+
+::: {.callout-tip title="Questions about this tutorial?"}
+**If you have questions for the author of this tutorial, please take a look at the [About](about.qmd) page.**
+:::
+
+:::
+
+::::

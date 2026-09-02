@@ -1,50 +1,69 @@
 ---
 title: "About"
-link-external-newwindow: true
+date: 2025-05-05
+citation:
+  type: webpage
+  title: "FAIR Research Data Management Tutorial"
+  container-title: "LMU Open Science Center"
+  url: https://lmu-osc.github.io/FAIR-Data-Management/
+  doi: "10.5281/zenodo.22249817"
+  version: 0.0.2
 author:
   - name: Maike Kleemeyer
-    id: mk
     orcid: 0000-0002-9388-5535
     email: kleemeyer@mpib-berlin.mpg.de
-    affiliation: 
+    affiliation:
       - name: Max Planck Institute for Human Development
         city: Berlin
         url: https://www.mpib-berlin.mpg.de/en 
         
   - name: Larissa Leiminger
-    id: ll
     orcid: 0000-0002-6491-3197
     email: leiminger@mpdl.mpg.de
-    affiliation: 
+    affiliation:
       - name: Max Planck Digital Library
         city: Munich
         url: https://www.mpdl.mpg.de/en/
   
   - name: Laura Meier
-    id: lm
     orcid: 0000-0003-1368-2306
-    email: Laura.Meier@ub.uni-muenchen.de 
-    affiliation: 
+    email: Laura.Meier@ub.uni-muenchen.de
+    affiliation:
       - name: University Library of Ludwig-Maximilians-Universität
         city: Munich
         url: https://www.en.ub.uni-muenchen.de
         
   - name: David Walter
-    id: dw
     orcid: 0000-0001-6807-5007
-    email: d.walter@mpdl.mpg.de 
-    affiliation: 
+    email: d.walter@mpdl.mpg.de
+    affiliation:
       - name: Max Planck Digital Library
         city: Munich
         url: https://www.mpdl.mpg.de/en/ 
 ---
 
-This material was created for the LMU & MPG Open Science Summer School 2024. During the Summer School the material was accompanied by slides and the tasks were done in groups. Independent of this event, the materials can be used to get an insight into Research Data Management in the context of Open Science and therefore with the goal of a FAIR publication. 
+This material was created for the LMU & MPG Open Science Summer School 2024. During the Summer School the material was accompanied by slides and the tasks were done in groups. Independent of this event, the materials can be used to get an insight into Research Data Management in the context of Open Science and therefore with the goal of a FAIR publication.
 
-This version of the material has been updated by the same group of creators for the MPG Open Science Ambassadors Meeting 2024. All self-paced training elements remain.  
+This version of the material has been updated by the same group of creators for the MPG Open Science Ambassadors Meeting 2024. All self-paced training elements remain.
 
-The materials can be used, remixed, adapted and shared according to the [CC BY-SA 4.0 Licence](https://creativecommons.org/licenses/by-sa/4.0/). To cite this tutorial, please use the persistent Zenodo DOI for the version you consulted. Find the DOI and recommended citation format on the Zenodo record, linked from the [GitHub repository](https://github.com/lmu-osc/FAIR-Data-Management).
+## Contributors
 
-Want to help improve our tutorial website? We welcome contributions from the community! To suggest a change or report an issue, please create a GitHub issue by clicking on the link 'Report an issue' on the respective page.
+This tutorial was authored by Maike Kleemeyer, Larissa Leiminger, Laura Meier, and David Walter (see the author metadata above for affiliations).
 
-We welcome contributions from the community. If you have any suggestions for improvement or encounter any issues with the website, you can easily report them on [GitHub](https://github.com/lmu-osc/FAIR-Data-Management/issues/new) or reach out via [mail](mailto:rdm@ub.uni-muenchen.de).
+## Licenses
+
+The tutorial content is available under the [**CC BY-SA 4.0**](https://creativecommons.org/licenses/by-sa/4.0/) license found at [LICENSE](LICENSE.md). The materials can be used, remixed, adapted, and shared according to the terms of that license.
+
+## Notes
+
+The tutorial was primarily written in 2024 for the LMU & MPG Open Science Summer School, and updated for the MPG Open Science Ambassadors Meeting 2024.
+
+Want to help improve our tutorial website? We welcome contributions from the community! To suggest a change or report an issue, please create a GitHub issue by clicking on the link 'Report an issue' on the respective page, or reach out via [mail](mailto:rdm@ub.uni-muenchen.de).
+
+## Tutorial Template Quarto Extension
+
+This tutorial was written using the [`lmu-osc/tutorial-template`](https://github.com/lmu-osc/tutorial-template) Quarto extension [@callahan2026].
+
+## How to Cite
+
+**To cite this tutorial, please refer to the project's [CITATION.cff](CITATION.cff) file or use the persistent Zenodo DOI for the version you consulted: [10.5281/zenodo.22249817](https://doi.org/10.5281/zenodo.22249817).**
