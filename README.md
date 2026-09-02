@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22249817.svg)](https://doi.org/10.5281/zenodo.22249817)
+
 # FAIR-Data-Management
 
 Repository containing the website and all materials for the **FAIR Research Data Management** Tutorial. 
