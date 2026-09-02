@@ -279,7 +279,7 @@ You might also suggest to your department/research group/institute/research comm
 
 -   1 section can be filled based on the Example dataset README alone.
 -   Excluding the "METHODOLOGICAL INFORMATION" section, \~12 of the 19 open fields can be filled based on the information collected in task 2.1.
--   Find the filled out README template for example 1 [here](example-1-readme-template.md)
+-   Find the filled out README template for example 1 [here](readme-templates/readme-example-1.md)
 :::
 
 ::: {.callout-important collapse="true"}
@@ -287,7 +287,7 @@ You might also suggest to your department/research group/institute/research comm
 
 -   2 sections can be filled based on the Example dataset README alone.
 -   Excluding the "METHODOLOGICAL INFORMATION" section, \~10 of the 19 open fields can be filled based on the information collected in task 2.1.
--   Find the filled out README template for example 2 [here](example-2-readme-template.md)
+-   Find the filled out README template for example 2 [here](readme-templates/readme-example-2.md)
 :::
 
 ::: {.callout-important collapse="true"}
@@ -295,7 +295,7 @@ You might also suggest to your department/research group/institute/research comm
 
 -   5 sections can be filled based on the Example dataset README alone.\
 -   Excluding the "METHODOLOGICAL INFORMATION" section, \~10 of the 19 open fields can be filled based on the information collected in task 2.1.
--   Find the filled out README template for example 3 [here](example-3-readme-template.md)
+-   Find the filled out README template for example 3 [here](readme-templates/readme-example-3.md)
 -   Note: Only the README file for the OSF repository was taken into consideration.
 :::
 
@@ -304,7 +304,7 @@ You might also suggest to your department/research group/institute/research comm
 
 -   4 sections can be filled based on the Example dataset README alone.
 -   Excluding the "METHODOLOGICAL INFORMATION" section, \~11 of the 19 open fields can be filled based on the information collected in task 2.1.
--   Find the filled out README template for example 4 [here](example-4-readme-template.md)
+-   Find the filled out README template for example 4 [here](readme-templates/readme-example-4.md)
 :::
 
 ## Codebook
