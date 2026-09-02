@@ -1,104 +1,103 @@
+# Begin Project
 project:
-  type: website
+  type: tutorial-template
+  # FYI: the tutorial-template project type is defined in the lmu-osc/tutorial-template extension
+# End Project
 
+# Begin Website
+repo-url: https://github.com/lmu-osc/FAIR-Data-Management
 website:
   title: "FAIR Research Data Management Tutorial"
-  page-navigation: false
-  page-footer: 
-    center: "Developed for the LMU & MPG Open Science Summer School 2024, CC BY-SA 4.0"
-  reader-mode: false
+  page-footer:
+    border: false
+    center: © 2025 Maike Kleemeyer, Larissa Leiminger, Laura Meier, David Walter. Published by LMU Open Science Center. Licensed under CC BY-SA 4.0.
   repo-url: https://github.com/lmu-osc/FAIR-Data-Management
-  repo-actions: [issue]
-  issue-url: https://github.com/lmu-osc/FAIR-Data-Management/issues/new
-  
-  
+
   navbar:
+    right:
+      - about.qmd
     left:
-      - text: Course
+      - href: index.qmd
+        text: Home
+    tools:
+      - icon: github
         menu:
-          - text: "Welcome"
-            href: index.qmd
-          - text: "1) Publication"
-            href: publication.qmd
-          - text: "2) Documentation"
-            href: documentation.qmd
-          - text: "3) Organization"
-            href: data-organisation.qmd
-          - text: "4) Data Management Plans"
-            href: dmp.qmd
-      - text: About
-        href: about.qmd
-      
+          - text: Source Code
+            href: https://github.com/lmu-osc/FAIR-Data-Management
+          - text: Report a Bug
+            href: https://github.com/lmu-osc/FAIR-Data-Management/issues
+      - icon: house-heart
+        url: https://www.osc.lmu.de/
+
   sidebar:
-    style: "floating"
-    search: true
-    
+    style: "docked"
     contents:
-      - section: "Welcome"
+      - text: "Overview"
         href: index.qmd
-        contents: 
-          - text: "Target audience" 
-            href: index.qmd#who-is-this-workshop-for
-          - text: "Purpose"
-            href: index.qmd#what-is-the-purpose-of-this-workshop
-          - text: "Benefits"
-            href: index.html#benefits
-          - text: "Instructions"
-            href: index.html#how-to
       - section: "1) Publication"
         href: publication.qmd
-        contents: 
-          - text: "Data Availability Statement"
-            href: publication.qmd#data-availability-statement
-          - text: "License"
-            href: publication.qmd#license
-          - text: "Persistent identifier"
-            href: publication.qmd#persistent-identifier
-          - text: "Repository"
-            href: publication.qmd#repository
+        contents:
+          - href: publication.qmd#data-availability-statement
+            text: "Data Availability Statement"
+          - href: publication.qmd#license
+            text: "License"
+          - href: publication.qmd#persistent-identifier
+            text: "Persistent Identifier"
+          - href: publication.qmd#repository
+            text: "Repository"
       - section: "2) Documentation"
         href: documentation.qmd
         contents:
-          - text: "Metadata" 
-            href: documentation.qmd#metadata
-          - text: "README file"
-            href: documentation.qmd#readme-file
-          - text: "Codebook"
-            href: documentation.qmd#codebook
+          - href: documentation.qmd#metadata
+            text: "Metadata"
+          - href: documentation.qmd#readme-file
+            text: "README File"
+          - href: documentation.qmd#codebook
+            text: "Codebook"
       - section: "3) Organization"
         href: data-organisation.qmd
         contents:
-          - text: "General notes"
-            href: data-organisation.qmd#general-notes
-          - text: "Folder structure"
-            href: data-organisation.qmd#folder-structure
-          - text: "File and folder names"
-            href: data-organisation.qmd#file-and-folder-names
-          - text: "File formats"
-            href: data-organisation.qmd#file-formats
+          - href: data-organisation.qmd#general-notes
+            text: "General Notes"
+          - href: data-organisation.qmd#folder-structure
+            text: "Folder Structure"
+          - href: data-organisation.qmd#file-and-folder-names
+            text: "File and Folder Names"
+          - href: data-organisation.qmd#file-formats
+            text: "File Formats"
       - section: "4) Data Management Plans"
         href: dmp.qmd
         contents:
-          - text: "General information"
-            href: dmp.qmd#general-information
-          - text: "Components of a DMP"
-            href: dmp.qmd#components-of-a-dmp
-          - text: "Example"
-            href: dmp.qmd#example-data-storage-and-security
-          - text: "Why is a DMP helpful?"
-            href: dmp.qmd#why-is-a-dmp-helpful
-          - text: "RDMO"
-            href: dmp.qmd#dmp-tool-rdmo
-          
+          - href: dmp.qmd#general-information
+            text: "General Information"
+          - href: dmp.qmd#components-of-a-dmp
+            text: "Components of a DMP"
+          - href: dmp.qmd#example-data-storage-and-security
+            text: "Example: Data Storage and Security"
+          - href: dmp.qmd#why-is-a-dmp-helpful
+            text: "Why is a DMP Helpful?"
+          - href: dmp.qmd#dmp-tool-rdmo
+            text: "DMP Tool: RDMO"
+# End Website
 
+# Begin Includes
+include-in-header:
+  - file: matomo-analytics.html
+include-after-body:
+  - file: footer/footer.html
+# End Includes
+
+# Begin Format
+# use only if needed. the default format for `tutorial-template` projects is tutorial-template-html+tutorial
+# we recommend just extending the definition below if you need to make format changes
 format:
-  html:
-    theme:
-      - cosmo
-    css: styles.css
-    toc: true
-    include-in-header:
-      - file: matomo_analytics.html
+  tutorial-template-html+tutorial:
+    css:
+      - footer/footer-style.css
+# End Format
 
+# Begin Editor
 editor: source
+# End Editor
 
+bibliography: references.bib
