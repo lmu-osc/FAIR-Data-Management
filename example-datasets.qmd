@@ -1,4 +1,6 @@
-# Example Datasets
+---
+title: "Example Datasets"
+---
 
 Your job is to investigate an existing dataset (discuss and note what is good or bad about it, which alternatives exist), to improve it, and to 'publish' the improved version. Note: As you shall not really publish the improved dataset in the end, the discussion is more important than the result. Do not hesitate to contact us for questions and for involving us in the discussion. 
 

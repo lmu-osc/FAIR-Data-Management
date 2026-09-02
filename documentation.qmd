@@ -1,6 +1,5 @@
 ---
 title: "2) Documentation"
-link-external-newwindow: true
 ---
 
 ## Overview
@@ -252,7 +251,7 @@ People involved with sample collection, processing, analysis and/or submission:
 
 
 ::: callout-tip
-# Task 2.2: (\~10 min)
+## Task 2.2: (\~10 min)
 
 We provided you with a template README file. You can copy and paste it into a text editor of your choice to use for your own future projects. 
 
@@ -280,7 +279,7 @@ You might also suggest to your department/research group/institute/research comm
 
 -   1 section can be filled based on the Example dataset README alone.
 -   Excluding the "METHODOLOGICAL INFORMATION" section, \~12 of the 19 open fields can be filled based on the information collected in task 2.1.
--   Find the filled out README template for example 1 [here](/Example1_READMETemplate.md)
+-   Find the filled out README template for example 1 [here](example-1-readme-template.md)
 :::
 
 ::: {.callout-important collapse="true"}
@@ -288,7 +287,7 @@ You might also suggest to your department/research group/institute/research comm
 
 -   2 sections can be filled based on the Example dataset README alone.
 -   Excluding the "METHODOLOGICAL INFORMATION" section, \~10 of the 19 open fields can be filled based on the information collected in task 2.1.
--   Find the filled out README template for example 2 [here](/Example2_READMETemplate.md)
+-   Find the filled out README template for example 2 [here](example-2-readme-template.md)
 :::
 
 ::: {.callout-important collapse="true"}
@@ -296,7 +295,7 @@ You might also suggest to your department/research group/institute/research comm
 
 -   5 sections can be filled based on the Example dataset README alone.\
 -   Excluding the "METHODOLOGICAL INFORMATION" section, \~10 of the 19 open fields can be filled based on the information collected in task 2.1.
--   Find the filled out README template for example 3 [here](/Example3_READMETemplate.md)
+-   Find the filled out README template for example 3 [here](example-3-readme-template.md)
 -   Note: Only the README file for the OSF repository was taken into consideration.
 :::
 
@@ -305,7 +304,7 @@ You might also suggest to your department/research group/institute/research comm
 
 -   4 sections can be filled based on the Example dataset README alone.
 -   Excluding the "METHODOLOGICAL INFORMATION" section, \~11 of the 19 open fields can be filled based on the information collected in task 2.1.
--   Find the filled out README template for example 4 [here](/Example4_READMETemplate.md)
+-   Find the filled out README template for example 4 [here](example-4-readme-template.md)
 :::
 
 ## Codebook
@@ -332,7 +331,7 @@ Here are some of the elements that can be included in a codebook:
 The basic level is to provide this information about your data in a .csv table, .txt file or .md (markdown) file. These are easy to create using a text editor of your choice. They can be opened by anyone, independent of proprietary systems, and are easily readable by humans.
 
 ::: {.callout-note collapse="true"}
-# Example of a simple .csv codebook
+## Example of a simple .csv codebook
 
 "variable","data_type","format"\
 "species","string","Adelie,Chinstrap,Gentoo"\
@@ -348,7 +347,7 @@ The basic level is to provide this information about your data in a .csv table, 
 Depending on the complexity of your data, you can improve your codebook by providing it as a JSON file. This has the advantage to be machine-readable and -actionable. It makes it easier to extract this information and work with it in coding scripts. 
 
 ::: {.callout-note collapse="true"}
-# Example of a detailed JSON code book
+## Example of a detailed JSON code book
 
 ``` <json>
 {
@@ -414,7 +413,7 @@ Depending on the complexity of your data, you can improve your codebook by provi
 :::
 
 ::: callout-tip
-# Task 2.3: (\~10 min)
+## Task 2.3: (\~10 min)
 
 Open one of the data files of your example dataset.
 
