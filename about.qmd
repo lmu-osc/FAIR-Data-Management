@@ -7,7 +7,7 @@ citation:
   container-title: "LMU Open Science Center"
   url: https://lmu-osc.github.io/FAIR-Data-Management/
   doi: "10.5281/zenodo.22249817"
-  version: 0.0.2
+  version: 0.1.0
 author:
   - name: Maike Kleemeyer
     orcid: 0000-0002-9388-5535
