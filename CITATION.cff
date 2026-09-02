@@ -22,7 +22,7 @@ authors:
     email: d.walter@mpdl.mpg.de
     affiliation: Max Planck Digital Library
 title: "FAIR Research Data Management Tutorial"
-version: 0.0.2
+version: 0.1.0
 date-released: 2025-05-05
 repository-code: "https://github.com/lmu-osc/FAIR-Data-Management"
 url: "https://lmu-osc.github.io/FAIR-Data-Management/"
