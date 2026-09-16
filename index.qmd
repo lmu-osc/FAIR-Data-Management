@@ -71,7 +71,7 @@ The topics are accompanied by distinct boxes that are color-coded for their cont
 :::
 
 ::: callout-note
-## Blue boxes contain excursions to related topics
+## Navy blue/cyan boxes contain excursions to related topics
 :::
 
 ::: callout-tip
