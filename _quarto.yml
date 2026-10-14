@@ -4,6 +4,9 @@ project:
   # FYI: the tutorial-template project type is defined in the lmu-osc/tutorial-template extension
 # End Project
 
+# Load the template's LMU branding explicitly.
+brand: _extensions/lmu-osc/tutorial-template/_extensions/lmu-osc/osc-brand/brand.yml
+
 # Begin Website
 repo-url: https://github.com/lmu-osc/FAIR-Data-Management
 website:

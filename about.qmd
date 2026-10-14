@@ -67,3 +67,8 @@ This tutorial was written using the [`lmu-osc/tutorial-template`](https://github
 ## How to Cite
 
 **To cite this tutorial, please refer to the project's [CITATION.cff](CITATION.cff) file or use the persistent Zenodo DOI for the version you consulted: [10.5281/zenodo.22249817](https://doi.org/10.5281/zenodo.22249817).**
+
+## References
+
+::: {#refs}
+:::

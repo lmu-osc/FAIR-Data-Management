@@ -37,7 +37,7 @@ Therefore, try to keep your full path clearly below such upper limits.
 
 ::: {.callout-note collapse="true" icon="false" title="Examples"}
 
-Example for structuring a dataset: organized by file type[^1]
+Example for structuring a dataset: organized by file type (adapted from @dryadGoodPractices)
 
 ```
 + Dataset
@@ -50,7 +50,7 @@ Example for structuring a dataset: organized by file type[^1]
     + Figure2b.tif
 ```
 
-Example for structuring a dataset: organized by analysis[^1]
+Example for structuring a dataset: organized by analysis (adapted from @dryadGoodPractices)
 
 ```
 + Dataset
@@ -65,9 +65,8 @@ Example for structuring a dataset: organized by analysis[^1]
     + Figure2b.tif
 ```
 
-[^1]: adapted from [https://datadryad.org/stash/best_practices#organize](https://datadryad.org/stash/best_practices#organize)
 
-Example for a project folder structure[^2]: 
+Example for a project folder structure (adapted from @prejawa2021):
 
 ```
 + Project_Folder
@@ -89,9 +88,8 @@ Example for a project folder structure[^2]:
     + Outputs
 ```
 
-[^2]: adapted from Suse Prejawa (2021, [https://hdl.handle.net/21.11116/0000-0008-662A-7](https://hdl.handle.net/21.11116/0000-0008-662A-7))
 
-Example for a project folder structure[^3]: 
+Example for a project folder structure (adapted from a measurement project/campaign template used at the Max Planck Institute for Chemistry [@mpicMeasurementTemplate]):
 
 ```
 \\file.mpic.de\projects\ExampleProject\
@@ -114,7 +112,6 @@ Example for a project folder structure[^3]:
       + Labbook      # Labbook (photos of paper logbook or exports from ELN)
 ```
 
-[^3]: adapted from a template used at the Max Planck Institute for Chemistry for measurement projects/campaigns (e.g. with a research aircraft)
 
 :::
 
@@ -525,7 +522,9 @@ File `Temp_Rain_202407.csv`:
 :::
 
 
-
 ## References
 
-Examples and notes have been adapted from: Onboarding into Research Data Management, Franke et al. 2024, [https://hdl.handle.net/21.11116/0000-000E-194D-1](https://hdl.handle.net/21.11116/0000-000E-194D-1), file "FDM-Onboarding-2024_CPT-Slides.pdf" pages 44-51, 56-59.
+Examples and notes have been adapted from *Onboarding into Research Data Management*, file "FDM-Onboarding-2024_CPT-Slides.pdf" [@franke2024, pp. 44–51, 56–59].
+
+::: {#refs}
+:::
